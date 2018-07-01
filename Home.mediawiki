@@ -2,3 +2,14 @@ Please read the [[FAQ]]
 
 
 Please join us on the [https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788 Endless-sphere forum]
+
+---
+
+How to submit a pull request to this wiki:
+# Manually create a fork of the Taffy wiki on your Github account:
+## Create a new repository on your github account. Let's call it "Taffy-Wiki".
+## Clone the Taffy wiki repo to your local machine somewhere: git clone git@github.com:atuttle/Taffy.wiki.git
+## Remove the original "origin" remote and add your github repo as new "origin" git remote rm origin and git remote add origin git@github.com:<YOUR_USERNAME>/Taffy-Wiki.git
+# Make your proposed changes locally, then push them to your github account: git push -u origin master ('-u origin master' only required the first time; afterwards just do git push)
+# Submit a ticket to the official Taffy issue tracker requesting me to review your changes and merge them in. Please be sure to include a link to your repo and describe what you've changed.
+# Goto #2
