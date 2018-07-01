@@ -1,7 +1,9 @@
 __TOC__
 
-= Question 1 =
-A: because of this and that
+= Can I use a brake sensor for hydraulic brakes or the "hidden wire brakes sensor"? =
+A: Yes, they both can be used. You can buy them in many online shops like PSWPower, on the section of parts for KT motor controllers. But note that you will need to wire them by yourself using [https://opensourceebikefirmware.bitbucket.io/kunteng_lcd3/LCD3_on_TSDZ2--Wire_KT-LCD_to_TSDZ2.html this information].
+
+The "hidden wire brakes sensor" needs in addition the 5V wire and that wire is only available on the TSDZ2 throttle version!!
 
 = Question 2 =
 A: because of this and that
