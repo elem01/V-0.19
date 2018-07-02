@@ -1,12 +1,30 @@
 __TOC__
 
-= Can I use a brake sensor for hydraulic brakes or the "hidden wire brakes sensor"? =
+= Blue nylon and metal gears =
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/blue_nylon_and_brass_gear.png]]
+
+When you buy a TSDZ2 motor, it will come with the blue nylon gear. The metal gear is available as an option on the online shops.
+
+== Should I install the metal gear? ==
+The blue nylon gear is weak and many users report that it fails. You can for instance, buy a metal gear and keep it as a spare part that you can use if blue nylon gear fails.
+
+See here how to replace the TSDZ2 gear: https://www.youtube.com/watch?v=CTbDKN2GzNE 
+
+= Brakes =
+
+== Should I install the brake sensors? ==
+A: Yes because that way you will avoid motor being working while you brake, that way saving battery and put less stress on the system in general (some say this will help to avoid damage of the nylon blue gear).
+
+== Can I use a brake sensor for hydraulic brakes or the "hidden wire brakes sensor"? ==
 A: Yes, they both can be used. You can buy them in many online shops like PSWPower, on the section of parts for KT motor controllers. But note that you will need to wire them by yourself using [https://opensourceebikefirmware.bitbucket.io/kunteng_lcd3/LCD3_on_TSDZ2--Wire_KT-LCD_to_TSDZ2.html this information].
 
 The "hidden wire brakes sensor" needs in addition the 5V wire and that wire is only available on the TSDZ2 throttle version!!
 
-= Question 2 =
-A: because of this and that
+== "hidden wire brakes sensor" on no throttle version ==
+A: This is an advanced install. Since "hidden wire brakes sensor" needs a 5V wire and that wire is not available on the TSDZ2 no throttle version, an option is to take the 5V wire from the LCD. Next pictures shows that, were 5V wire were connected to LCD3 programming header.
 
-== Question 2.1 ==
-A: because of this and that
+First, I hole was created for the extra 5V wire (black wire):
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/LCD3_extra_5V_wire_for_brake_sensor-01.jpg]]
+
+The 5V wire was connected to LCD3 programming header:
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/LCD3_extra_5V_wire_for_brake_sensor-02.jpg]]
