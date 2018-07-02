@@ -1,19 +1,20 @@
 __TOC__
 
-= Blue nylon and metal gears =
+= Nylon gear and metal gear =
+Nylon gear at left and metal gear at right:
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/blue_nylon_and_brass_gear.png]]
 
-When you buy a TSDZ2 motor, it will come with the blue nylon gear. The metal gear is available as an option on the online shops.
+When you buy a TSDZ2 motor, it will come with the nylon gear. The metal gear is available as optional part on the online shops, you can buy it but you will need to install by yourself.
 
 == Should I install the metal gear? ==
-The blue nylon gear is weak and many users report that it fails. You can for instance, buy a metal gear and keep it as a spare part that you can use if blue nylon gear fails.
+The nylon gear is more weak than the metal gear and many users report that it fails (but this depends on different factors). You can for instance, buy a metal gear and keep it as a spare part that you can use if nylon gear fails.
 
-See here how to replace the TSDZ2 gear: https://www.youtube.com/watch?v=CTbDKN2GzNE 
+See here how to install the TSDZ2 gear: https://www.youtube.com/watch?v=CTbDKN2GzNE 
 
 = Brakes =
 
 == Should I install the brake sensors? ==
-A: Yes because that way you will avoid motor being working while you brake, that way saving battery and put less stress on the system in general (some say this will help to avoid damage of the nylon blue gear).
+A: Yes because that way you will avoid motor being working while you brake, that way saving battery energy and put less stress on the system in general (some say this will help to avoid damage of the nylon gear).
 
 == Can I use a brake sensor for hydraulic brakes or the "hidden wire brakes sensor"? ==
 A: Yes, they both can be used. You can buy them in many online shops like PSWPower, on the section of parts for KT motor controllers. But note that you will need to wire them by yourself using [https://opensourceebikefirmware.bitbucket.io/kunteng_lcd3/LCD3_on_TSDZ2--Wire_KT-LCD_to_TSDZ2.html this information].
