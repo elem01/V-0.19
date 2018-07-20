@@ -17,12 +17,24 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 ** <u>battery state of charge in percentage</u>: this value can be shown as an option, on the temperature field. The percentage is based on battery power in watts/hour, where user can defined on LCD configurations menu the battery pack total watts/hour.
 
 * '''<u>Configurations screen</u>''': long click on up and down buttons to enter on this screen. On/off button click to enter on subscreens and on/off button click to cycle on subscreens
-** <u>0: wheel speed</u>:
+** <u>0: wheel speed</u>
 *** <u>0: max ebike wheel speed</u>: in km/h (not yet implemented on the motor controller).
 *** <u>1: ebike wheel perimeter</u>: in millimeters and this value is used, for instance, to calculate the ebike wheel speed.
 *** <u>2: wheel speed units</u>: 0 for kmh and 1 for mph.
-** <u>1: battery state of charge in watts/hour</u>:
+** <u>1: battery state of charge in watts/hour</u>
 *** <u>0: enable/disable show of battery state of charge in percentage</u>
 *** <u>1: battery state of charge increment or decrement</u>
 *** <u>2: battery pack total power in watts/hour</u>: this value is used to calculate battery state of charge based on discharged watts/hour.
 *** <u>3: set current watts/hour</u>
+** <u>2: battery max current</u>
+*** <u>0: battery max current</u>: in amps. Motor controller will use no more than this value. Motor controller firmware limits this value to a safe one, like 18 amps (but this can be configured on motor controller firmware, like for use 24 amps).
+** <u>3: advanced technical data</u>
+*** <u>0: adc throttle</u>
+*** <u>1: throttle</u>
+*** <u>2: adc pedal torque sensor</u>
+*** <u>3: pedal torque sensor</u>
+*** <u>4: pedal cadence</u>
+*** <u>5: pedal human power</u>
+*** <u>6: PWM duty_cycle</u>
+*** <u>7: motor speed in ERPs</u>
+*** <u>8: FOC angle</u>: the value must be multiplied by 1.4 to get and angle value in degrees.
