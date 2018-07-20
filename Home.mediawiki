@@ -1,5 +1,7 @@
 Please read the '''TSDZ2 [[FAQ]]'''
 
+See '''[[TSDZ2-and-KT-LCD3-advanced-features|TSDZ2 and LCD3 advanced features page]]'''
+
 Please help us improving the wiki - ask for write access here [https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788 Endless-sphere forum]
 
 ---
