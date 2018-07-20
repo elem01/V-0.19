@@ -1,7 +1,7 @@
 
 KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 
-* '''<u>Main screen</u>''':
+* '''<u>Main screen</u>''': this is the default screen after turn on the LCD.
 ** <u>assist level</u>: 5 levels in total and user can define (on firmware configuration) a custom scale value for each level.
 ** <u>ebike wheel speed</u>: in kms or mph.
 ** <u>battery power</u>: in watts.
@@ -12,6 +12,17 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 ** <u>odometer field</u>: the following information will cycle with on/off button click
 *** <u>battery voltage</u>: in volts.
 *** <u>battery current</u>: in amps.
-*** <u>battery power</u>: in watts/hour, the accumulated battery power used  since last battery full charge. This value is automatically reset when LCD3 turns on and battery voltage equals to charged battery and this value can also be reset or set to a custom value on the configurations.
+*** <u>battery power</u>: in watts/hour, the accumulated battery power used since last battery full charge. This value is automatically reset when LCD3 turns on and battery voltage equals to charged battery and this value can also be reset or set to a custom value on the configurations.
 *** <u>pedal cadence</u>: in RPMs.
 ** <u>battery state of charge in percentage</u>: this value can be shown as an option, on the temperature field. The percentage is based on battery power in watts/hour, where user can defined on LCD configurations menu the battery pack total watts/hour.
+
+* '''<u>Configurations screen</u>''': long click on up and down buttons to enter on this screen. On/off button click to enter on subscreens and on/off button click to cycle on subscreens
+** <u>0: wheel speed</u>:
+*** <u>0: max ebike wheel speed</u>: in km/h (not yet implemented on the motor controller).
+*** <u>1: ebike wheel perimeter</u>: in millimeters and this value is used, for instance, to calculate the ebike wheel speed.
+*** <u>2: wheel speed units</u>: 0 for kmh and 1 for mph.
+** <u>1: battery state of charge in watts/hour</u>:
+*** <u>0: enable/disable show of battery state of charge in percentage</u>
+*** <u>1: battery state of charge increment or decrement</u>
+*** <u>2: battery pack total power in watts/hour</u>: this value is used to calculate battery state of charge based on discharged watts/hour.
+*** <u>3: set current watts/hour</u>
