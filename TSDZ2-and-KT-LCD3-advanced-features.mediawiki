@@ -1,3 +1,6 @@
+OpenSource TSDZ2 motor controller firmware: https://github.com/OpenSource-EBike-firmware/TongSheng_TSDZ2_motor_controller_firmware
+
+OpenSource KT-LCD3 firmware: https://github.com/OpenSource-EBike-firmware/Kunteng_LCD3_firmware
 
 KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 
