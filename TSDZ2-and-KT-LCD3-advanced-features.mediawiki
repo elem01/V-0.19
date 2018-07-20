@@ -1,0 +1,37 @@
+
+KT-LCD3 shows and/or configure the following from TSDZ2 motor:
+
+* '''<u>Main screen</u>''':
+** <u>assist level</u>: 5 levels in total and user can define (on firmware configuration) a custom scale value for each level.
+** <u>ebike wheel speed</u>: in kms or mph.
+** <u>battery power</u>: in watts.
+** <u>battery state of charge</u>: 6 different levels (state of charge is based on battery voltage and can be setup on on firmware configuration)
+** <u>lights</u>: enabled with a button up long press. LCD backlight will be enabled when lights are enabled. (backlight intensity can be setup on on firmware configuration).
+** <u>walk assist</u>: although it is implemented on LCD, it is not yet implemented on the motor controller. Enabled with a button down long press.
+** <u>odometer field</u>: the following options will cycle with on/off button click
+*** <u>battery voltage</u> in volts.
+*** <u>battery current</u> in amps.
+
+assist_level_state ();
+  odometer ();
+  temperature ();
+  wheel_speed ();
+  walk_assist_state ();
+  power ();
+  battery_soc ();
+  lights_state ();
+  brake ();
+
+
+- battery state of charge based on discharged watts hour- motor power in watts
+- rider pedal power in watts
+- motor current
+- trip total Watts/hour
+- pedal torque value
+- pedal cadence
+- bicycle wheel speed (unlimited unlike the original LCD that limits to 45km/h)
+- motor assist level
+- brakes state
+- battery state of charge
+
+Read more here: https://opensourceebikefirmware.bitbucket.io/kunteng_lcd3
