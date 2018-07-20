@@ -2,25 +2,27 @@
 KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 
 * '''<u>Main screen</u>''': this is the default screen after turn on the LCD.
-** <u>assist level</u>: 5 levels in total and user can define (on firmware configuration) a custom scale value for each level.
-** <u>ebike wheel speed</u>: in kms or mph.
-** <u>battery power</u>: in watts.
-** <u>battery state of charge</u>: 6 different levels (state of charge is based on battery voltage and can be setup on on firmware configuration)
-** <u>lights</u>: enabled with a button up long press. LCD backlight will be enabled when lights are enabled. (backlight intensity can be setup on on firmware configuration).
-** <u>brake</u>: enabled when user press the ebike brakes
+** <u>assist level</u>: Assist level scales/amplify the torque sensor signal, if you want a higher assist level from the motor, choose the max assist level value. Assist level has 5 levels in total and user can define (on firmware configuration) a custom scale value for each level. Level 0 keep always the motor disabled.
+** <u>ebike wheel speed</u>: the value can be shown in kms or mph.
+** <u>battery power</u>: real time value in watts of the power being draw from the battery.
+** <u>battery state of charge</u>: 6 different levels. When battery is empty, the empty symbol on LCD will also blink (state of charge is based on battery voltage and can be setup on the motor controller firmware configuration)
+** <u>lights</u>: enabled with a button up long press, the motor controller will enable the ebike lights. LCD backlight will also be enabled. (backlight intensity can be setup on the motor controller firmware configuration).
+** <u>brake</u>: LCD symbol is enabled when user press the ebike brakes, good to check that sensor brakes are working.
 ** <u>walk assist</u>: although it is implemented on LCD, it is not yet implemented on the motor controller. Enabled with a button down long press.
 ** <u>odometer field</u>: the following information will cycle with on/off button click
-*** <u>battery voltage</u>: in volts.
-*** <u>battery current</u>: in amps.
-*** <u>battery power</u>: in watts/hour, the accumulated battery power used since last battery full charge. This value is automatically reset when LCD3 turns on and battery voltage equals to charged battery and this value can also be reset or set to a custom value on the configurations.
-*** <u>pedal cadence</u>: in RPMs.
-** <u>battery state of charge in percentage</u>: this value can be shown as an option, on the temperature field. The percentage is based on battery power in watts/hour, where user can defined on LCD configurations menu the battery pack total watts/hour.
+*** <u>battery voltage</u>: see your battery pack voltage.
+*** <u>battery current</u>: see the current being draw from your battery pack.
+*** <u>battery power</u>: see the accumulated battery power (in watts/hour) draw from your battery pack, since last battery full charge. This value is automatically reset when LCD turns on and battery voltage equals to charged battery voltage - this value can also be reset or set to a custom value on the configurations.
+*** <u>pedal cadence</u>: see the pedals cadence in rotations per minute.
+** <u>battery state of charge in percentage</u>: this value can be shown as an option on the temperature field. The percentage is based on the accumulated battery power draw from your battery pack and user can define on LCD configurations menu, the battery pack total watts/hour.
+
+* '''<u>Max battery power screen</u>''': Motor controller will automatically choose a battery current in a way to limit the max battery power usage. The battery current value will never be higher than the max battery current setup on the configurations screen. Long click on on/off and up buttons to enter on this screen. Up and down buttons to increase/decrease the value. Long click of on/off button lo leave.
 
 * '''<u>Configurations screen</u>''': long click on up and down buttons to enter on this screen. On/off button click to enter on subscreens and on/off button click to cycle on subscreens
 ** <u>0: wheel speed</u>
-*** <u>0: max ebike wheel speed</u>: in km/h (not yet implemented on the motor controller).
+*** <u>0: max ebike wheel speed</u>: max speed up to you will get assistance from the motor. In km/h (not yet implemented on the motor controller).
 *** <u>1: ebike wheel perimeter</u>: in millimeters and this value is used, for instance, to calculate the ebike wheel speed.
-*** <u>2: wheel speed units</u>: 0 for kmh and 1 for mph.
+*** <u>2: wheel speed units</u>: 0 for show ebike wheel speed kmh and 1 for mph.
 ** <u>1: battery state of charge in watts/hour</u>
 *** <u>0: enable/disable show of battery state of charge in percentage</u>
 *** <u>1: battery state of charge increment or decrement</u>
