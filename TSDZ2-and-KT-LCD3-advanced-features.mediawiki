@@ -7,31 +7,11 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 ** <u>battery power</u>: in watts.
 ** <u>battery state of charge</u>: 6 different levels (state of charge is based on battery voltage and can be setup on on firmware configuration)
 ** <u>lights</u>: enabled with a button up long press. LCD backlight will be enabled when lights are enabled. (backlight intensity can be setup on on firmware configuration).
+** <u>brake</u>: enabled when user press the ebike brakes
 ** <u>walk assist</u>: although it is implemented on LCD, it is not yet implemented on the motor controller. Enabled with a button down long press.
-** <u>odometer field</u>: the following options will cycle with on/off button click
-*** <u>battery voltage</u> in volts.
-*** <u>battery current</u> in amps.
-
-assist_level_state ();
-  odometer ();
-  temperature ();
-  wheel_speed ();
-  walk_assist_state ();
-  power ();
-  battery_soc ();
-  lights_state ();
-  brake ();
-
-
-- battery state of charge based on discharged watts hour- motor power in watts
-- rider pedal power in watts
-- motor current
-- trip total Watts/hour
-- pedal torque value
-- pedal cadence
-- bicycle wheel speed (unlimited unlike the original LCD that limits to 45km/h)
-- motor assist level
-- brakes state
-- battery state of charge
-
-Read more here: https://opensourceebikefirmware.bitbucket.io/kunteng_lcd3
+** <u>odometer field</u>: the following information will cycle with on/off button click
+*** <u>battery voltage</u>: in volts.
+*** <u>battery current</u>: in amps.
+*** <u>battery power</u>: in watts/hour, the accumulated battery power used  since last battery full charge. This value is automatically reset when LCD3 turns on and battery voltage equals to charged battery and this value can also be reset or set to a custom value on the configurations.
+*** <u>pedal cadence</u>: in RPMs.
+** <u>battery state of charge in percentage</u>: this value can be shown as an option, on the temperature field. The percentage is based on battery power in watts/hour, where user can defined on LCD configurations menu the battery pack total watts/hour.
