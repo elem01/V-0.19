@@ -26,13 +26,16 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 *** <u>0: max ebike wheel speed</u>: max speed up to you will get assistance from the motor. In km/h (not yet implemented on the motor controller).
 *** <u>1: ebike wheel perimeter</u>: in millimeters and this value is used, for instance, to calculate the ebike wheel speed.
 *** <u>2: wheel speed units</u>: 0 for show ebike wheel speed kmh and 1 for mph.
-** <u>1: battery state of charge in watts/hour</u>
+** <u>1: battery</u>
+*** <u>0: battery cells number</u>: this value is used only to calculate battery state of charge to indicate on LCD battery bars symbols. For 48V battery, use value of 13.
+*** <u>1: battery max current</u>: in amps. Motor controller will use no more than this value. Motor controller firmware limits this value to a safe one, like 18 amps (but this can be configured on motor controller firmware, like for use 24 amps).
+*** <u>2: battery low cut-off voltage</u>: in volts. The motor controller firmware will limit battery discharge when the battery discharge down to this value. For a 48V battery, if each cells low cut-off voltage is 3.0V, you can use the value of 39.0 (3.0 * 13 = 39.0).
+
+** <u>2: battery state of charge in watts/hour</u>
 *** <u>0: enable/disable show of battery state of charge in percentage</u>
 *** <u>1: battery state of charge increment or decrement</u>
 *** <u>2: battery pack total power in watts/hour</u>: this value is used to calculate battery state of charge based on discharged watts/hour.
 *** <u>3: set current watts/hour</u>
-** <u>2: battery max current</u>
-*** <u>0: battery max current</u>: in amps. Motor controller will use no more than this value. Motor controller firmware limits this value to a safe one, like 18 amps (but this can be configured on motor controller firmware, like for use 24 amps).
 ** <u>3: advanced technical data</u>
 *** <u>0: adc throttle</u>
 *** <u>1: throttle</u>
