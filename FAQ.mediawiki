@@ -29,3 +29,18 @@ First, I hole was created for the extra 5V wire (black wire):
 
 The 5V wire was connected to LCD3 programming header:
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/LCD3_extra_5V_wire_for_brake_sensor-02.jpg]]
+
+= Flexible OpenSource firmware =
+
+== Why stock LCDs VLCD5 and XH18 do not work ==
+
+When I received my TSDZ2 it come with VLCD5. This LCD is very limited, for instance it can't show basic information like battery voltage.
+Because our Flexible OpenSource firmware has advanced features it was found desirable to have a LCD that we can develop firmware for and that way we get the flexibility we need. On May 2018, a research was done and was selected LCD KT-LCD3 because:
+• is signal compatible with the TSDZ2 motor controller
+• is programmable with the same tools as the TSDZ2 motor controller firmware (we found that stock VLCD5 from TSDZ2 can't be programmed!)
+• is cheap and popular, easy to buy from many online shops that ship to worldwide
+• we already developed our own Flexible OpenSource firmware for KT motor controllers and we wanted to reuse our knowledge to our other projects
+
+== Are there plans to make the firmware compatible with stock LCDs VLCD5 and XH18 ==
+
+Would be possible but that way the advanced features would not be available and this firmware would have small advantages over the original firmware. We are not trying to save money, users that want the advanced features of our firmware will need spend some money and time.
