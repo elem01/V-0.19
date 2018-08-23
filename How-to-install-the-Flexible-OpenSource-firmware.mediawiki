@@ -1,2 +1,24 @@
-Follow the next steps:
-# [[How flash the Flexible OpenSource firmware on KT LCD3]]
+This notes will help you to install the Flexible OpenSource firmware on TSDZ2 motor controller and on KT-LCD3.
+
+'''IMPORTANT NOTE'''
+* Installing this firmware will void your warranty of TSDZ2 motor and KT-LCD3
+* There is no guaranty using this firmware, please use at your own risk
+
+__TOC__
+
+= Introduction =
+
+To use this firmware, other than owning a TSDZ2 motor, you need will need to buy the KT-LCD3. We also developed our firmware to this LCD so we have the flexibility we need.
+
+Although KT-LCD3 signals are compatible with TSDZ2 motor controller, they have different connectors and so you will have to connect the wires by yourself between them but this is a simple task.
+
+If you are afraid to do the installation, you can ask on an ebike local shop as they should easily be capable to do it since the technical difficult is easy.
+
+'''NOTE:''' For the TSDZ2 motor configurations found on online shops (36V, 48V, 52V, whichever power in watts, with throttle or without) the motor controller is just the same. The only relevant difference is brushless motor inside, that there are only 2 different: 36V and 48V motor (52V systems use the 48V motor).
+
+= Steps for the installation =
+
+# Buy online the KT-LCD3
+# Install our improved TSDZ2 original firmware
+# Wire KT-LCD to TSDZ2
+# [[How flash the Flexible OpenSource firmware on KT LCD3|Flash the firmware on KT-LCD3]]
