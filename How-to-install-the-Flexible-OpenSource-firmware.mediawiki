@@ -17,7 +17,7 @@ If you are afraid to do the installation, you can ask on an ebike local shop as 
 '''NOTE:''' For the TSDZ2 motor configurations found on online shops (36V, 48V, 52V, whichever power in watts, with throttle or without) the motor controller is just the same. The only relevant difference is brushless motor inside, that there are only 2 different: 36V and 48V motor (52V systems use the 48V motor).
 
 = Steps for the installation =
-Note: before start, please first read all the steps to find the tools the tools you will need to have.
+Note: before start, please first read all the steps to find the tools you will need to have.
 
 # [[KT-LCD3|Buy the KT-LCD3]]
 # [[How flash the Flexible OpenSource firmware on KT LCD3|Flash the firmware on KT-LCD3]]
