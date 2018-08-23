@@ -1,2 +1,2 @@
-
-1.
+Follow the next steps:
+# [[How flash the Flexible OpenSource firmware on KT LCD3]]
