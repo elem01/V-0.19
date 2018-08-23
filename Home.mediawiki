@@ -6,9 +6,11 @@ Here the feedback from [https://www.youtube.com/watch?v=YMQGmuYA6Vg jbalat], a l
 ''In fact the old firmware would feel like you are hitting a brick wall the faster you peddle but with this firmware it feels like a breath of fresh air. The faster you want to go the more it helps you.''
 ''When I got right near the end and still had some battery left I pumped the power up to 550W and was able to ride comfortably at 38km/hr with little effort. I would not have been able to do this with the old firmware with a battery that was so low.''
 
-'''Features and configurations of Flexible OpenSource firmware:''' [[TSDZ2 and KT LCD3 advanced features with Flexible OpenSource firmwares]]
+'''Features and configurations of Flexible OpenSource firmware:'''
+* [[TSDZ2 and KT LCD3 advanced features with Flexible OpenSource firmwares]]
 
-'''How to install the Flexible OpenSource firmware:''' [[How to install the Flexible OpenSource firmware]]
+'''How to install the Flexible OpenSource firmware:'''
+*[[How to install the Flexible OpenSource firmware]]
 
 Please read the '''TSDZ2 [[FAQ]]'''
 
