@@ -2,6 +2,12 @@ Please follow the next steps to be able to flash the firmware.
 
 __TOC__
 
+= Buy STLinkV2 clone =
+
+To be able to flash the firmware (both for TSDZ2 motor controller and KT-LCD3), you will need the cheap clone of STLinkV2, that you can buy on EBay as cheap as 2.3€
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/STLinkV2_clone.png]]
+
 = Wire the STLinkV2 to the LCD3 =
 
 Open the LCD3 and find the flashing pins top right side with label J7. From left to right on J7 pins, connect the  following pins:
