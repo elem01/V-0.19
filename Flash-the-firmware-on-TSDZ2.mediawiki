@@ -1,0 +1,26 @@
+__TOC__
+
+= Wire the STLinkV2 to the TSDZ2 wheel speed sensor cable =
+
+The microcontroller chip that need to be flashed with the firmware is the STM8S105. The needed wires connection for that are: GND, RST and SWIM. This wires are available on the wheel speed sensor cable (other than the wires needed for the sensor).
+
+Some options you have:
+# buy an extra speed sensor and cut the sensor from the cable and so you will have a cable with a connector that you can use only for programming
+# cut the cable to wire the needed wires for flashing and keep the other wires intact - this will work perfectly and you can avoid to buy the extra wheel speed sensor
+
+Here is the list of wires:
+The connections to STLinkV2 clone:
+* purple wire connect to STLinkV2 RST pin
+* orange wire connect to STLinkV2 GND pin
+* black wire connect to STLinkV2 SWIM pin
+
+Example of my wiring:
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/STLinkV2_to_TSDZ2_motor_controller-01.png]]
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/STLinkV2_to_TSDZ2_motor_controller-02.png]]
+
+= Download and flash the firmware =
+# [http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stsw-link004.html|Download STLink utility for Windows here]. This software is from the STM8S105 manufacture for flashing the firmware. NOTE: if you are on Linux or MAC, you can use other alternative tool. For instance, [https://opensourceebikefirmware.bitbucket.io/development_tsdz2/Various--2018.04.18_-_original_firmware_and_debug_session_using_OpenOCD.html|on Linux you can use stm8flash].
+# [https://github.com/OpenSource-EBike-firmware/TongSheng_TSDZ2_motor_controller_firmware/tree/master/TSDZ2_flexible_opensource_and_KT_LCD3_firmwares Download the firmware hex file from here]. Pick the file with name TSDZ2_XXV_motor-flexible_opensource_firmware-vxx.hex.
+# Finally, flash the firmware with the motor controller powered on.
