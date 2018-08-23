@@ -1,0 +1,28 @@
+Please follow the next steps to be able to flash the firmware.
+
+__TOC__
+
+= Wire the STLinkV2 to the LCD3 =
+
+Open the LCD3 and find the flashing pins top right side with label J7. From left to right on J7 pins, connect the  following pins:
+
+* pin1: connect to STLinkV2 5V pin
+* pin2: connect to STLinkV2 SWIM pin
+* pin3: connect to STLinkV2 GND pin
+* pin4: connect to STLinkV2 RST pin
+
+Some pictures:
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/KT-LCD3_flash_firmware-05.jpg]]
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/KT-LCD3_flash_firmware-04.jpg]]
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/KT-LCD3_flash_firmware-05.jpg]]
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/KT-LCD3_flash_firmware-02.jpg]]
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/KT-LCD3_flash_firmware-01.jpg]]
+
+= Download and flash our firmware =
+# [https://github.com/OpenSource-EBike-firmware/TongSheng_TSDZ2_motor_controller_firmware/tree/master/TSDZ2_flexible_opensource_and_KT_LCD3_firmwares Download the firmware hex file from here]. Pick the file with name KT_LCD3_flexible_opensource_firmware-vxx.hex.
+# Erase the STM8 as this way the read protection will be disabled. If you don't disable the read protection/erase, next step will fail.
+# Finally, flash the firmware. PLEASE NOTE that you need to keep pressed the LCD3 power button while flashing.
