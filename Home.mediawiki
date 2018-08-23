@@ -10,7 +10,7 @@ Here the feedback from [https://www.youtube.com/watch?v=YMQGmuYA6Vg jbalat], a l
 * [[TSDZ2 and KT LCD3 advanced features with Flexible OpenSource firmwares]]
 
 '''How to install the Flexible OpenSource firmware:'''
-*[[How to install the Flexible OpenSource firmware]]
+* [[How to install the Flexible OpenSource firmware]]
 
 Please read the '''TSDZ2 [[FAQ]]'''
 
