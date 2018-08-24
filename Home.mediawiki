@@ -9,6 +9,10 @@ Here the feedback from [https://www.youtube.com/watch?v=YMQGmuYA6Vg jbalat], a l
 ''In fact the old firmware would feel like you are hitting a brick wall the faster you peddle but with this firmware it feels like a breath of fresh air. The faster you want to go the more it helps you.''
 ''When I got right near the end and still had some battery left I pumped the power up to 550W and was able to ride comfortably at 38km/hr with little effort. I would not have been able to do this with the old firmware with a battery that was so low.''
 
+Also, for casainho (the developer that started this project), it is strategic to use and help develop OpenSource knowledge and technology for EBike motor controllers, because it is really important to create better alternatives to fight against the Climate Change -- here [http://www.solarflairlighting.com/pope-francis-letter-on-care-for-our-common-home|some words of Pope Francis]:
+
+''There is an urgent need to develop policies so that, in the next few years, the emission of carbon dioxide and other highly polluting gases can be drastically reduced, for example, substituting for fossil fuels and developing sources of renewable energy.''
+
 = Features and configurations =
 
 Curious about the '''[[TSDZ2 and KT LCD3 advanced features with Flexible OpenSource firmwares|features and configurations]]'''? [[TSDZ2 and KT LCD3 advanced features with Flexible OpenSource firmwares|see here]].
