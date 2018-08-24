@@ -1,5 +1,3 @@
-Download here the Flexible OpenSource TSDZ2 motor controller and KT-LCD3 firmwares: https://github.com/OpenSource-EBike-firmware/TongSheng_TSDZ2_motor_controller_firmware/tree/master/TSDZ2_flexible_opensource_and_KT_LCD3_firmwares
-
 KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 
 * '''<u>Main screen</u>''': this is the default screen after turn on the LCD.
