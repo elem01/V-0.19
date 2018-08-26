@@ -14,7 +14,7 @@ This firmware is being developed for free by the community of users, where some 
 According to the feedback of the users:
 * ''the TSDZ2 now feels more like the Bosch motor''
 * ''the bike feels very responsive and is very fast and agile whenever you need it to''
-* ''the info which shown on LCD makes the total package way better''
+* ''the info which is shown on LCD makes the total package way better''
 * ''this is GOLD. I still have a smile on my face''
 
 See the more users feedback here: [[Why should you use the Flexible OpenSource firmware on your TSDZ2]]
