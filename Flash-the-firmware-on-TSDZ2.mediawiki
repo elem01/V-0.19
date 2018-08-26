@@ -14,6 +14,8 @@ The connections to STLinkV2 clone:
 * orange wire connect to STLinkV2 GND pin
 * black wire connect to STLinkV2 SWIM pin
 
+NOTE: the wires should be short like 10 centimeters or you will probably get errors while trying to flash. If you need a long cable, try to use an USB extension instead.
+
 Example of my wiring:
 
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/STLinkV2_to_TSDZ2_motor_controller-01.png]]
