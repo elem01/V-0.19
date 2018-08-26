@@ -5,6 +5,10 @@ The TSDZ2 Flexible OpenSource firmware/embedded software runs on the TSDZ2 mid d
 
 This firmware is being developed for free by the community of users, where some of this developers work professionally developing this type of technology for very well known companies.
 
+'''IMPORTANT NOTES:'''
+* Installing this firmware will void your warranty of TSDZ2 motor and KT-LCD3
+* There is no guaranty using this firmware, please use at your own risk
+
 = Why should you use =
 
 According to the feedback of the users:
