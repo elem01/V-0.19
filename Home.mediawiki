@@ -1,3 +1,5 @@
+= '''About the TSDZ2 Flexible OpenSource firmware''' =
+
 __NOTOC__
 
 = Why should you use the Flexible OpenSource firmware on your TSDZ2 =
