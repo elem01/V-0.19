@@ -13,6 +13,11 @@ And the feedback from EndlessCadence user:
 
 ''(the Flexible OpenSource firmware) This is GOLD. The power, the smoothness... It's amazing! I still have a smile on my face. The bike feels very responsive and is very fast and agile whenever you need it to. It was also very smooth and powerful on a small hill.''
 
+And the feedback from bart1006 user: 
+
+''I just had my first test ride with the opensource firmware. Jiiihhaaa!!  :D  :D  :D''
+''Way and way better than I expected. How it picks up the power support is really super. I also have a bosch motor and this comes pretty close. The info which the firmware is showing on lcd makes the total package way better for me.''
+
 Also, for casainho (the developer that started this project), it is strategic to use and help develop OpenSource knowledge and technology for EBike motor controllers, because it is really important to create better alternatives to fight against the Climate Change -- here [http://www.solarflairlighting.com/pope-francis-letter-on-care-for-our-common-home|some words of Pope Francis]:
 
 ''There is an urgent need to develop policies so that, in the next few years, the emission of carbon dioxide and other highly polluting gases can be drastically reduced, for example, substituting for fossil fuels and developing sources of renewable energy.''
