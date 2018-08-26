@@ -6,7 +6,7 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 {|
 | '''wire color''' || '''function''' || '''description'''
 |-
-| green || P+ || battery voltage!!
+| green || P+ || battery voltage
 |-
 | black || GND || ground
 |-
