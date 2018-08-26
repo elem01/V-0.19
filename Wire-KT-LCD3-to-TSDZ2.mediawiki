@@ -58,3 +58,9 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 You can wire the brakes to brake wire and you will also need to wire the GND wire. If you are using a “hidden wire brake sensor”, you will also need to connect the 5V wire.
 
 For the throttle, you will need to connect the throttle wire, the GND and 5V wire.
+
+Some example of soldering wires:
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/solder_wires_example-02.jpg]]
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/solder_wires_example-01.jpg]]
