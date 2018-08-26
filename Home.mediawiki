@@ -1,7 +1,7 @@
 __NOTOC__
 = About the TSDZ2 Flexible OpenSource firmware =
 
-The TSDZ2 Flexible OpenSource firmware/embedded software runs on the TSDZ2 mid drive motor controller electronic board and has advanced features not available on the original/stock version. Please see on the next section the very positive feedback from users.
+The TSDZ2 Flexible OpenSource firmware/embedded software controls the TSDZ2 mid drive motor (runs inside the TSDZ2 electronic board) and has advanced features not available on the original/stock version. Please see on the next section the very positive feedback from users.
 
 This firmware is being developed for free by the community of users, where some of this developers work professionally developing this type of technology for very well known companies.
 
