@@ -1,6 +1,6 @@
 This notes will help you to install the Flexible OpenSource firmware on TSDZ2 motor controller and on KT-LCD3.
 
-'''IMPORTANT NOTE'''
+'''IMPORTANT NOTES:'''
 * Installing this firmware will void your warranty of TSDZ2 motor and KT-LCD3
 * There is no guaranty using this firmware, please use at your own risk
 
