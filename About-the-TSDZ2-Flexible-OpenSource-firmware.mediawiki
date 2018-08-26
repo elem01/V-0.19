@@ -1,0 +1,25 @@
+__NOTOC__
+
+= Why should you use the Flexible OpenSource firmware on your TSDZ2 =
+
+According to the feedback of the users:
+* ''the TSDZ2 now feels more like the Bosch motor''
+* ''the bike feels very responsive and is very fast and agile whenever you need it to''
+* ''the info which shown on LCD makes the total package way better''
+* ''this is GOLD. I still have a smile on my face''
+
+See the more users feedback here: [[Why should you use the Flexible OpenSource firmware on your TSDZ2]]
+
+= Features and configurations =
+
+Curious about the '''[[TSDZ2 and KT LCD3 advanced features with Flexible OpenSource firmwares|features and configurations]]'''? [[TSDZ2 and KT LCD3 advanced features with Flexible OpenSource firmwares|see here]].
+
+= How to install the firmware =
+
+Ready to '''[[How to install the Flexible OpenSource firmware|install the firmware]]'''? [[How to install the Flexible OpenSource firmware|see here]].
+
+= See also =
+
+Please read the '''TSDZ2 [[FAQ]]'''
+
+Join us on [https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788 Endless-sphere forum]
