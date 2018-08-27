@@ -39,12 +39,12 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 *** <u>2: PAS max cadence</u>: default value: 110. This value is used for calculation of human pedal power that will after be used for motor assist level.
 
 ** <u>4: advanced technical data</u>
-*** <u>0: adc throttle</u>
-*** <u>1: throttle</u>
-*** <u>2: adc pedal torque sensor</u>
-*** <u>3: pedal torque sensor</u>
-*** <u>4: pedal cadence</u>
-*** <u>5: pedal human power</u>
-*** <u>6: PWM duty_cycle</u>
-*** <u>7: motor speed in ERPs</u>
-*** <u>8: FOC angle</u>: the value must be multiplied by 1.4 to get and angle value in degrees.
+*** <u>0: adc throttle</u>: see the current value.
+*** <u>1: throttle</u>: see the current value.
+*** <u>2: adc pedal torque sensor</u>: see the current value.
+*** <u>3: pedal torque sensor</u>: see the current value.
+*** <u>4: pedal cadence</u>: see the current value.
+*** <u>5: pedal human power</u>: see the current value.
+*** <u>6: PWM duty_cycle</u>: see the current value.
+*** <u>7: motor speed in ERPs</u>: see the current value.
+*** <u>8: FOC angle</u>: see the current value. This value must be multiplied by 1.4 to get and angle value in degrees.
