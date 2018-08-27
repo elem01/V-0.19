@@ -27,7 +27,3 @@ Example of my wiring:
 # [http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stsw-link004.html Download STLink utility for Windows here]. This software is from the STM8S105 manufacture for flashing the firmware. NOTE: if you are on Linux or MAC, you can use other alternative tool. For instance, [https://opensourceebikefirmware.bitbucket.io/development_tsdz2/Various--2018.04.18_-_original_firmware_and_debug_session_using_OpenOCD.html on Linux you can use stm8flash].
 # [https://github.com/OpenSource-EBike-firmware/TongSheng_TSDZ2_motor_controller_firmware/tree/master/TSDZ2_flexible_opensource_and_KT_LCD3_firmwares Download the firmware hex file from here]. Pick the file with name TSDZ2_XXV_motor-flexible_opensource_firmware-vxx.hex.
 # Flash the firmware with the motor controller powered on.
-
-= Configure the options on LCD3 =
-
-Before start using, you must configure correctly the options on LCD3. For instance, you should configure your battery low voltage cut off (battery voltage when it is discharged) and all the other parameters -- follow to this page: [[TSDZ2 and KT LCD3 advanced features with Flexible OpenSource firmwares]].
