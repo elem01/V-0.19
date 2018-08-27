@@ -1,3 +1,5 @@
+NOTE: Before start using the firmware, you must configure correctly the options on LCD3. For instance, you should configure your battery low voltage cut off (battery voltage when it is discharged) and all the other parameters -- follow the next section.
+
 KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 
 * '''<u>Main screen</u>''': this is the default screen after turn on the LCD.
