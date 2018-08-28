@@ -20,7 +20,7 @@ If you are afraid to do the installation, you can ask on an ebike local shop as 
 Note: before start, please first read all the steps to find the tools you will need to have.
 
 # [[KT-LCD3|Buy the KT-LCD3]]
-# [[How flash the Flexible OpenSource firmware on KT LCD3|Flash the firmware on KT-LCD3]]
+# [[How to flash the Flexible OpenSource firmware on KT LCD3|Flash the firmware on KT-LCD3]]
 # [[Wire KT-LCD3 to TSDZ2]]
 # [[Flash the firmware on TSDZ2]]
 # [[TSDZ2 and KT LCD3 advanced features with Flexible OpenSource firmwares|Configure the options on LCD3]]
