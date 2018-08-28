@@ -28,7 +28,6 @@ Curious about the '''[[TSDZ2 and KT LCD3 advanced features with Flexible OpenSou
 Ready to '''[[How to install the Flexible OpenSource firmware|install the firmware]]'''? [[How to install the Flexible OpenSource firmware|see here]].
 
 = See also =
-
-Please read the '''TSDZ2 [[FAQ]]'''
-
-Join us on [https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788 Endless-sphere forum]
+* Please read the '''TSDZ2 [[FAQ]]'''
+* If you are looking to build the firmware from the sources and help on development, please follow to [[Development]]
+* Join us on [https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788 Endless-sphere forum]
