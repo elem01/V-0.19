@@ -35,12 +35,17 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 *** <u>2: battery pack total power in watts/hour</u>: this value is used to calculate battery state of charge based on discharged watts/hour.
 *** <u>3: set current watts/hour</u>
 
-** <u>3: various</u>
+** <u>3: assist level</u>
+*** <u>0: number of assist levels</u>: default value: 5. This is the number of available assist levels, max number is 9.
+*** <u>1: assist level factor</u>: this is the factor (for assist level 1) that is multiplied to the calculated human power that the rider does on the bicycle pedals and will scale the final motor assist level.
+*** <u>x: assist level factor</u>: factor for assist level x -- same as the previous and repeats for the next assist level.
+
+** <u>4: various</u>
 *** <u>0: motor voltage type</u>: default value: 0. 0 for 48V brushless motor (TSDZ2 52V version has a 48V brushless motor); 1 for 36V brushless motor. This configuration is needed for FOC calculations.
 *** <u>1: motor assistance startup without pedal rotation</u>: default value: 0 (disabled). 1 to enable this feature. Recommended to keep at 0 value if you don't have brake sensors installed. 
 *** <u>2: PAS max cadence</u>: default value: 110. This value is used for calculation of human pedal power that will after be used for motor assist level.
 
-** <u>4: advanced technical data</u>
+** <u>5: advanced technical data</u> (the following values are read only, user can't change them)
 *** <u>0: adc throttle</u>: see the current value.
 *** <u>1: throttle</u>: see the current value.
 *** <u>2: adc pedal torque sensor</u>: see the current value.
