@@ -42,9 +42,10 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 
 ** <u>4: startup power boost</u>: boost the initial motor startup, by increasing pedal torque sensitivity at startup
 *** <u>0: config</u>: default value: 1. 0 to enable power boost only when startup and bicycle wheel = 0; 1 every time pedal cadence or torque sensor are zero.
-*** <u>1: boost time</u>: default value = 25 (2.5 seconds). 0 to disable startup power boost feature.
-*** <u>2: boost fade out time</u>: default value = 25 (2.5 seconds).
-*** <u>3: assist level boost power</u>: this is the boost power (for assist level 1) in watts. Note that this value is not limited by the Max battery power screen value, it is although limited by the battery max current value.
+*** <u>1: limit boost power to max battery power value</u>: default value: 0. 1 to enable power boost limit to the Max battery power value.
+*** <u>2: boost time</u>: default value = 25 (2.5 seconds). 0 to disable startup power boost feature.
+*** <u>3: boost fade out time</u>: default value = 25 (2.5 seconds). Fade out from boost power to regular power.
+*** <u>4: assist level boost power</u>: this is the boost power (for assist level 1) in watts. Note that this value is not limited by the Max battery power screen value, it is although limited by the battery max current value.
 *** <u>x: assist level boost power</u>: this is the boost power for assist level x -- same as the previous and repeats for the next assist level.
 
 ** <u>5: various</u>
