@@ -28,7 +28,7 @@ See the more users feedback here: [[Why should you use the Flexible OpenSource f
 
 See here the '''[[TSDZ2 and KT LCD3 advanced features with Flexible OpenSource firmwares|features and configurations]]'''.
 
-= How to install the firmware =
+= How to install =
 
 * '''[[How to install the Flexible OpenSource firmware]]'''
 * [[How to install brake sensors]] (optional but recommended)
