@@ -12,6 +12,8 @@ To use this firmware, other than owning a TSDZ2 motor, you need will need to buy
 
 Although KT-LCD3 signals are compatible with TSDZ2 motor controller, they have different connectors and so you will have to connect the wires by yourself between them but this is a simple task.
 
+'''[https://www.youtube.com/watch?v=nj8GxKHut3o Jbalat did a series of videos explaining how to install the firmware]''' (please take note that some links on the video may be out of date).
+
 If you are afraid to do the installation, you can ask on an ebike local shop as they should easily be capable to do it since the technical difficult is easy.
 
 '''NOTE:''' For the TSDZ2 motor configurations found on online shops (36V, 48V, 52V, whichever power in watts, with throttle or without) the motor controller is just the same. The only relevant difference is brushless motor inside, that there are only 2 different: 36V and 48V motor (52V systems use the 48V motor).
