@@ -13,7 +13,7 @@ This firmware is being developed for free by the community of users, where some 
 
 According to the feedback of the users:
 * ''the TSDZ2 now feels more like the Bosch motor''
-* ''the motor is much more efficient, stronger, it's feel like I have a new motor''
+* ''the motor is more efficient, stronger, it's feel like I have a new motor''
 * ''the bike feels very responsive and is very fast and agile whenever you need it to''
 * ''the info which is shown on LCD makes the total package way better''
 * ''this is GOLD. I still have a smile on my face''
