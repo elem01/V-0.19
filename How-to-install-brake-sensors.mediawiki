@@ -1,0 +1,29 @@
+TSDZ2 supports the regular cheap ebike brake sensors, like levers brake sensor, magnetic brake sensors or the "hidden wire brakes sensor".
+
+You can buy brake sensors on online shops like BMSBattery or PSWPower, at prices like 5€ each pair.
+
+= Lever brake sensors and magnetic brake sensors =
+
+The lever brake sensors will substitute the original brake levers of the original bicycle. The magnetic brake sensors on the other side, can be glued on the original brake levers which is a good solution for hydraulic brakes.
+
+Both this type of brake sensors come with 2 wires and they act like a switch, you don't need to care about which wires of the brake sensor you connected to the motor controller wires. On the motor controller wires, you need to connect the brake sensor wires to GND and BRAKE wires -- please see here the motor controller wires list and colors: [[Wire-KT-LCD3-to-TSDZ2|Wire KT-LCD3 to TSDZ2]].
+
+= "HWB (hidden wire brakes) sensor" =
+
+Different from lever brake sensors and magnetic brake sensors, this ones have 3 wires and they need to be connected with a specific combination. Connect GND, 5V and BRAKE wires to the same wires of the motor controller -- please see here the motor controller wires list and colors: [[Wire-KT-LCD3-to-TSDZ2|Wire KT-LCD3 to TSDZ2]].
+
+HWB sensor wires:
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/HWB_brake_wires.jpg]]
+
+NOTE: The HWB sensor needed 5V wire is only available on the TSDZ2 throttle version - see next section for a possible solution on the TSDZ2 throttle no version.
+
+== "HWB (hidden wire brakes) sensor" on TSDZ2 no throttle version==
+
+This is an advanced install. Since "hidden wire brakes sensor" needs a 5V wire and that wire is not available on the TSDZ2 no throttle version, an option is to take the 5V wire from the LCD. Next pictures shows that, were 5V wire were connected to LCD3 programming header.
+
+First, I hole was created for the extra 5V wire (black wire):
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/LCD3_extra_5V_wire_for_brake_sensor-01.jpg]]
+
+The 5V wire was connected to LCD3 programming header:
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/LCD3_extra_5V_wire_for_brake_sensor-02.jpg]]
