@@ -17,6 +17,8 @@ According to the feedback of the users:
 * ''the info which is shown on LCD makes the total package way better''
 * ''this is GOLD. I still have a smile on my face''
 
+See here a [https://www.youtube.com/watch?v=IrWn6e8bIuQ Youtube video review done by Jbalat user].
+
 See the more users feedback here: [[Why should you use the Flexible OpenSource firmware on your TSDZ2]]
 
 = Features and configurations =
