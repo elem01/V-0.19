@@ -8,11 +8,16 @@ The sensor used is the LM35 that is very popular and easy buy online like on Eba
 
 The LM35 outputs a linear voltage over the temperature change. Because the only free header connector available on the TSDZ2 motor controller that reads an analog voltage signal is the one used for the throttle, the sensor is connected to that header and the throttle can not be connected and used.
 
-I connected LM35 to a connector so is possible to remove it when I need, for instance when I want to remove the motor.
+I connected LM35 to a connector so is possible to remove it when I need, for instance when I want to remove the motor:
+
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-02.jpg]]
 
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-01.jpg]]
 
+I wired the wires to the existing motor controllers wires for throttle. I decided to no cut the throttle wires but leave them in place in the case in future I still want to use them and not the temperature sensor:
+
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-04.jpg]]
+
+I first glued one face of LM35 to a metal face off the motor (the part of the motor that get's hot first) with a tape and them start to put silicone (high temperature version of silicone) and let it dry up to put the final amount and make sure the LM35 face is in close connection to the motor metal part:
 
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-03.jpg]]
