@@ -32,6 +32,7 @@ See here the '''[[TSDZ2 and KT LCD3 advanced features with Flexible OpenSource f
 
 * '''[[How to install the Flexible OpenSource firmware]]'''
 * [[How to install brake sensors]] (optional but recommended)
+* [[How to install motor temperature sensor]] (optional but recommended)
 
 = See also =
 * Please read the '''TSDZ2 [[FAQ]]'''
