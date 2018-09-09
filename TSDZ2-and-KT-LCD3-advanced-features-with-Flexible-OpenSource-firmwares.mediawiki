@@ -48,12 +48,12 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 *** <u>4: assist level boost power</u>: this is the boost power (for assist level 1) in watts. Note that this value is not limited by the Max battery power screen value, it is although limited by the battery max current value.
 *** <u>x: assist level boost power</u>: this is the boost power for assist level x -- same as the previous and repeats for the next assist level.
 
-** <u>5: motor temperature protection</u> The idea is to protect your motor from overheating and loose torque forever -- see here: [[TSDZ2 motor demagnetized due to overheating]]
+** <u>5: motor temperature protection (not existiing  on all Versions) </u> The idea is to protect your motor from overheating and loose torque forever -- see here: [[TSDZ2 motor demagnetized due to overheating]]
 *** <u>0: config</u>: default value: 0. 0 to disable. 1 to enable showing the temperature value. 2 to enable temperature value and enable current limiting control to avoid motor overheating.
 *** <u>1: motor temperature min value to start limiting the current</u>
 *** <u>2: motor temperature max value at which the current will be shutoff</u>
 
-** <u>6: various</u>
+** <u>6: various (This is Section 5 on older Firmware </u>
 *** <u>0: motor voltage type</u>: default value: 0. 0 for 48V brushless motor (TSDZ2 52V version has a 48V brushless motor); 1 for 36V brushless motor. This configuration is needed for FOC calculations.
 *** <u>1: motor assistance startup without pedal rotation</u>: default value: 0 (disabled). 1 to enable this feature. Recommended to keep at 0 value if you don't have brake sensors installed.
 *** <u>2: PAS max cadence</u>: default value: 110. This value is used for calculation of human pedal power that will after be used for motor assist level.
