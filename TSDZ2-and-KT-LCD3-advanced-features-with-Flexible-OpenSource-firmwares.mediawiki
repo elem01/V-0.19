@@ -24,6 +24,7 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 *** <u>0: max ebike wheel speed</u>: max speed up to you will get assistance from the motor. In km/h (not yet implemented on the motor controller).
 *** <u>1: ebike wheel perimeter</u>: in millimeters and this value is used, for instance, to calculate the ebike wheel speed.
 *** <u>2: wheel speed units</u>: 0 for show ebike wheel speed kmh and 1 for mph.
+
 ** <u>1: battery</u>
 *** <u>0: battery cells number</u>: this value is used only to calculate battery state of charge to indicate on LCD battery bars symbols. For 48V battery, use value of 13.
 *** <u>1: battery max current</u>: in amps. Motor controller will use no more than this value. Motor controller firmware limits this value to a safe one, like 18 amps (but this can be configured on motor controller firmware, like for use 24 amps).
@@ -48,12 +49,32 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 *** <u>4: assist level boost power</u>: this is the boost power (for assist level 1) in watts. Note that this value is not limited by the Max battery power screen value, it is although limited by the battery max current value.
 *** <u>x: assist level boost power</u>: this is the boost power for assist level x -- same as the previous and repeats for the next assist level.
 
-** <u>5: motor temperature protection (not existiing  on all Versions) </u> The idea is to protect your motor from overheating and loose torque forever -- see here: [[TSDZ2 motor demagnetized due to overheating]]
-*** <u>0: config</u>: default value: 0. 0 to disable. 1 to enable showing the temperature value. 2 to enable temperature value and enable current limiting control to avoid motor overheating.
-*** <u>1: motor temperature min value to start limiting the current</u>
-*** <u>2: motor temperature max value at which the current will be shutoff</u>
+== 5: motor temperature protection ==
 
-** <u>6: various (This is Section 5 on older Firmware) </u>
+This feature is for protecting your motor from overheating and avoid permanent damage/loss of torque -- see here: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature [[How to install motor temperature sensor|if you installed the motor temperature sensor]].
+
+=== How it works ===
+
+On LCD3 temperature field you will be able to see the motor temperature value. Once the configured minimum motor temperature value is hit, the motor current will start to be reduced and as long as it increases, the more the 
+current will be reduce. After hitting the configured maximum motor temperature value, the motor is shutoff.
+
+The temperature value shown on LCD3 will blink when the motor current is being limited and will blink faster for higher rates of limited current. Finally, if the motor is shutoff, the blink rate will be very fast.
+
+Possible configurations on LCD3:
+{|
+| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+|-
+| 0 || enable motor temperature sensor || 0 (disabled) || NOTE: if you don't have the [[How to install motor temperature sensor|motor temperature sensor installed]], you should disable this option and ignore the next configurations.
+|-
+| 1 || enable current limiting || 0 (disabled) || limit the motor current to avoid the motor get over the max temperature.
+|-
+| 2 || min temperature || 75 degrees Celsius || motor temperature value at which the motor current will start to be limited.
+|-
+| 3 || max temperature || 85 degrees Celsius || motor temperature max value at which the motor current will be zero / motor shutoff.
+|}
+
+
+** <u>6: various</u>
 *** <u>0: motor voltage type</u>: default value: 0. 0 for 48V brushless motor (TSDZ2 52V version has a 48V brushless motor); 1 for 36V brushless motor. This configuration is needed for FOC calculations.
 *** <u>1: motor assistance startup without pedal rotation</u>: default value: 0 (disabled). 1 to enable this feature. Recommended to keep at 0 value if you don't have brake sensors installed.
 *** <u>2: PAS max cadence</u>: default value: 110. This value is used for calculation of human pedal power that will after be used for motor assist level.
