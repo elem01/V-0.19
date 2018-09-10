@@ -22,11 +22,11 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 * '''<u>Configurations screen</u>''': long click on up and down buttons to enter on this screen. On/off button click to enter on subscreens and on/off button click to cycle on subscreens, long press  on/off to exit menue 
 
 
-== 0: (General Basic setup)==
+== 0: General Basic setup==
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Maximum Wheelspeed || 50 ||  Put in your speed limit, the motor will fade out from - 0.5 km/h to +2,0 km/h in Europe often 25 km/h
+| 0 || Maximum wheel speed || 50 ||  Put in your speed limit (by law) to run legal on public roads , the motor will fade out from - 0.5 km/h to +2,0 km/h in Europe often 25 km/h
 |-
 | 1 ||Wheel perimeter in mm  || 2050 || first estimate:  26''= 2050;  27''= 2150;  27.5''=2215;  28''= 2250;  29''=2300 
 |-
@@ -37,10 +37,17 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 
 
 
-** <u>1: battery</u>
-*** <u>0: battery cells number</u>: this value is used only to calculate battery state of charge to indicate on LCD battery bars symbols. For 48V battery, use value of 13.
-*** <u>1: battery max current</u>: in amps. Motor controller will use no more than this value. Motor controller firmware limits this value to a safe one, like 18 amps (but this can be configured on motor controller firmware, like for use 24 amps).
-*** <u>2: battery low cut-off voltage</u>: in volts. The motor controller firmware will limit battery discharge when the battery discharge down to this value. For a 48V battery, if each cells low cut-off voltage is 3.0V, you can use the value of 39.0 (3.0 * 13 = 39.0).
+== 1: Batterie setup==
+{|
+| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+|-
+| 0 || Number of cells || 13 ||  24V ->6/7?;  36v->10;   48V->13 based on the voltage of comon Samsung or Parasonic cells
+|-
+| 1 ||Maximum current of battery || 16?? ||This is the maximum current your batterie can supply, without damage, standard cells can suply 2C, means 2 times the capayity of cell without damage  with  1.7C you are quite save 
+|-
+| 2 || battery low cut-off voltage< || 39 ||  The controller will reduce power to stay over this limit! usualy 2.85-3.05 V per cell of (39.0 (3.0 * 13 = 39.0)).  The standard Samsung cells allow down to 2.75V but you need some savety margine because not all cells are discharging in the same way, but by setting too high you loose range  power on a discharged battery and capacity  I like 29V for 10 Cells  but 30V is saver 
+|}    
+
 
 ** <u>2: battery state of charge in watts/hour</u>
 *** <u>0: enable/disable show of battery state of charge in percentage</u>
