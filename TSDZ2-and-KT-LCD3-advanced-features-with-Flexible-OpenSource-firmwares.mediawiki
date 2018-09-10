@@ -19,11 +19,23 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 
 * '''<u>Max battery power screen</u>''': Motor controller will automatically choose a battery current in a way to limit the max battery power usage. The battery current value will never be higher than the max battery current setup on the configurations screen. Long click on on/off and up buttons to enter on this screen. Up and down buttons to increase/decrease the value. Long click of on/off button lo leave.
 
-* '''<u>Configurations screen</u>''': long click on up and down buttons to enter on this screen. On/off button click to enter on subscreens and on/off button click to cycle on subscreens
-** <u>0: wheel speed</u>
-*** <u>0: max ebike wheel speed</u>: max speed up to you will get assistance from the motor. In km/h (not yet implemented on the motor controller).
-*** <u>1: ebike wheel perimeter</u>: in millimeters and this value is used, for instance, to calculate the ebike wheel speed.
-*** <u>2: wheel speed units</u>: 0 for show ebike wheel speed kmh and 1 for mph.
+* '''<u>Configurations screen</u>''': long click on up and down buttons to enter on this screen. On/off button click to enter on subscreens and on/off button click to cycle on subscreens, long press  on/off to exit menue 
+
+
+== 0: (General Basic setup)==
+{|
+| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+|-
+| 0 || Maximum Wheelspeed || 50 ||  Put in your speed limit, the motor will fade out from - 0.5 km/h to +2,0 km/h in Europe often 25 km/h
+|-
+| 1 ||Wheel perimeter in mm  || 2050 || first estimate:  26''= 2050;  27''= 2150;  27.5''=2215;  28''= 2250;  29''=2300 
+|-
+| 2 || Speed Unit|| 0 km/h || 0 is km/h and  1 is miles per hour ( british miles of course)
+|}
+
+
+
+
 
 ** <u>1: battery</u>
 *** <u>0: battery cells number</u>: this value is used only to calculate battery state of charge to indicate on LCD battery bars symbols. For 48V battery, use value of 13.
@@ -63,17 +75,7 @@ The temperature value shown on LCD3 will blink when the motor current is being l
 
 Possible configurations on LCD3:
 
-Menue 0 (General Basic setup)
-{|
-| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
-|-
 
-| 0 || Maximum Wheelspeed || 50 ||  Put in your speed limit, the motor will fade out from - 0.5 km/h to +2,0 km/h in Europe often 25 km/h
-|-
-| 1 ||Wheep perimeter in mm  || 2050 ||  26" => 2050 27"=> 2150; 27.5"=>2215; 28"=>2250 29" => 2300 
-|-
-| 2 || Speed Unit|| 0 km/h || 0 is km/h and  1 is miles per hour ( british miles of course)
-|}
 
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
