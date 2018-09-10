@@ -61,6 +61,15 @@ current will be reduce. After hitting the configured maximum motor temperature v
 The temperature value shown on LCD3 will blink when the motor current is being limited and will blink faster for higher rates of limited current. Finally, if the motor is shutoff, the blink rate will be very fast.
 
 Possible configurations on LCD3:
+Menue 0 (General Basic setup)
+{|
+| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+|-
+| 0 || Maximum Wheelspee || 50 ||  Put in your speed limit, the motor will fade out from - 0.5 km/h to +2,0 km/h
+|-
+| 1 || Speed Unit|| 0 km/h || 0 is km/h and  1 is miles per hour ( british miles of course)
+|}
+
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
