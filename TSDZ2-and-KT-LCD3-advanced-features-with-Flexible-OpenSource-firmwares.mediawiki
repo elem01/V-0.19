@@ -37,7 +37,7 @@ THE FOLLOWING CONFIGURATION VALUES  ARE FOR VERSION 10!! YOU ALLWAYS NEED TO FLA
 
 
 
-== 1: Batterie voltage & current setup  ==
+== 1: Battery voltage & current setup  ==
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
@@ -49,7 +49,7 @@ THE FOLLOWING CONFIGURATION VALUES  ARE FOR VERSION 10!! YOU ALLWAYS NEED TO FLA
 |}    
 
 
-== 2: Battery pover setup ==
+== 2: Battery power setup ==
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
