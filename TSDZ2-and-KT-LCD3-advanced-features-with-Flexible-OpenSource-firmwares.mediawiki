@@ -43,7 +43,7 @@ THE FOLLOWING CONFIGURATION VALUES  ARE FOR VERSION 10!! YOU ALLWAYS NEED TO FLA
 |-
 | 0 || Number of cells || 13 ||  24V ->6/7?;  36v->10;   48V->13 based on the voltage of comon Samsung or Parasonic cells
 |-
-| 1 ||Maximum current of battery || 16?? ||This is the maximum current your batterie can supply, without damage, standard cells can suply 2C, means 2 times the capayity of cell without damage  with  1.7C you are quite save 
+| 1 ||Maximum current of battery || 16?? ||This is the maximum current your battery can supply, without damage, standard cells can suply 2C, means 2 times the capayity of cell without damage  with  1.7C you are quite save 
 |-
 | 2 || battery low cut-off voltage< || 39 ||  The controller will reduce power to stay over this limit! usualy 2.85-3.05 V per cell of (39.0 (3.0 * 13 = 39.0)).  The standard Samsung cells allow down to 2.75V but you need some savety margine because not all cells are discharging in the same way, but by setting too high you loose range  power on a discharged battery and capacity  I like 29V for 10 Cells  but 30V is saver 
 |}    
@@ -53,7 +53,7 @@ THE FOLLOWING CONFIGURATION VALUES  ARE FOR VERSION 10!! YOU ALLWAYS NEED TO FLA
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 ||Enable / disable percentage  of batterie charge  in temperature field   || 0 ?|| Switch for the gauge in the teperature field  0= off 1 = on, 
+| 0 ||Enable / disable percentage  of battery charge  in temperature field   || 0 ?|| Switch for the gauge in the teperature field  0= off 1 = on, 
 |-
 | 1 ||Increment or decrement of charge  || 0 ?|| You can swich if the percentage should go form 0% -100% (0?) or from 100% to 0% (1) 
 |-
