@@ -155,7 +155,7 @@ Possible configurations on LCD3:
 |-
 | 3 || Limit power || 0 || Determines whether power should be limited as well when offroad is not active. Enabled (1) or disabled (0)
 |-
-| 4 || Power limit || 250 W || The power limit in Watt. For certain EU countries this power limit is often 250W.
+| 4 || Power limit || 250 W || The power limit in Watt. For certain EU countries this power limit is often 250W. (Note  that this is the "rated long term  power" means power which can be guarntied, often with savety margine, maximum poweer is alowed to be higher. The  Bosch and Yamaha delivers up to 600w peak ! . 
 |}
 
 == 8: Various==
