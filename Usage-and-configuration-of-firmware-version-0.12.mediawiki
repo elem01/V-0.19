@@ -166,7 +166,7 @@ Possible configurations on LCD3:
 |-
 | 1 || Motor assistance startup without pedal rotation || 0 || Enabled (1) or disabled (0). Recommended to keep at 0 value if you don't have brake sensors installed.
 |-
-| 2 || PAS max cadence || 25 km/h || This speed limit is used when offroad mode is not active. Configure your speed which is legal for using on public roads. The motor will fade out from - 0.5 km/h to +2,0 km/h.
+| 2 || PAS max cadence || 25 km/h ||  This value is used for calculation of human pedal power that will after be used for motor assist level.
 |}
 
 == 9: Advanced technical data==
