@@ -7,7 +7,8 @@ This firmware is being developed for free by the community of users, where some 
 
 '''IMPORTANT NOTES:'''
 * Installing this firmware will void your warranty of TSDZ2 motor and KT-LCD3
-* There is no guaranty using this firmware, please use at your own risk
+* We're not responsible for and there is no guarantee using this firmware, please use it at your own risk.
+* We advice you to consult the laws of your country and tailor the motor configuration accordingly.
 
 = Why should you use =
 
