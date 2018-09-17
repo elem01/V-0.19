@@ -1,4 +1,4 @@
-The following applies to firmware version 0.12 only! At this moment 0.12 isn't yet released and is only available as beta firmware.
+The following applies to firmware version 0.12 only!
 
 CAUTION: always use the same firmware version for both the motor controller and LCD!
 
