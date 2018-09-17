@@ -58,13 +58,15 @@ Long click on up and down buttons to enter on this screen. On/off button click t
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 ||Enable / disable percentage  of battery charge  in temperature field   || 0 ?|| Switch for the gauge in the teperature field  0= off 1 = on, 
+| 0 || Enable / disable show the percentage of battery charge (SOC) in temperature field || 0 || Enable/disable for the gauge in the temperature field. 0 to disable and 1 to enable.
 |-
-| 1 ||Increment or decrement of charge  || 0 ?|| You can swich if the percentage should go form 0% -100% (0?) or from 100% to 0% (1) 
+| 1 || Increment or decrement || 0 || You can switch if the percentage should go form 0% - 100% or from 100% to 0% - set 0 for the first option and 1 for the other.
 |-
-| 2 ||Total watt hour || 0 || Adjust the battery pack  power,  the ones suplier give you is often to a quite low  cut of voltage. by using maybe 85 % -90 % of this you are fine I use 350 for my 386 wh battery with cut of 2.9V.  
+| 2 || Voltage to reset Wh counter || 54.2 (volts) || On power on the LCD, this value is compared to the battery voltage and if is lower, means that battery is fully charged and the Wh counter is reset.<br>To find the correct value for this field, fully charge your battery and measure the voltage on LCD3, use a slight lower voltage value for this field, example: my 48V battery charges up to 54.6 volts and so I use the value 54.2.
 |-
-||3 || Used power (wh) of battery || 0 || (as I understand it)  Here you put in  the start value what is already used from your Battery. for a charged one this is 0. This resets  when the LCD detects a full charged battery when switched on 
+| 3 || Total watt hour || 0 || Adjust the battery pack power. You can fully charge the battery and then discharge it fully and use the measured value to input here. The value that supplier give you is often to a quite high, you should expect a value of maybe 85% - 90% (I use 350 for my 386 wh battery).
+|-
+| 4 || Used  power (wh)  of battery || 0 || Counted value for used watt hour from the battery. This value is reset automatically when you power on the LCD and the battery is fully charged.
 |}
 
 == 3: Assist level setup ==
