@@ -5,11 +5,6 @@ The TSDZ2 Flexible OpenSource firmware/embedded software controls the Ebike Tong
 
 This firmware is being developed for free by the community of users, where some of this developers work professionally developing this type of technology for very well known companies.
 
-'''IMPORTANT NOTES:'''
-* Installing this firmware will void your warranty of TSDZ2 motor and KT-LCD3
-* We're not responsible for and there is no guarantee using this firmware, please use it at your own risk.
-* We advice you to consult the laws of your country and tailor the motor configuration accordingly.
-
 = Why should you use =
 
 According to the feedback of the users:
