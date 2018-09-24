@@ -23,8 +23,8 @@ See the more users feedback here: [[Why should you use the Flexible OpenSource f
 = Features and configurations =
 
 See here the TSDZ2 and KT LCD3 advanced features and the options to configure them:
-* [[Usage-and-configuration-of-firmware-version-0.12|Version 0.12 (latest)]]
-* [[Usage-and-configuration-of-firmware-version-0.13|Version 0.13 (not released yet)]]
+* [[Usage-and-configuration-of-firmware-version-0.13|Version 0.13 (latest)]]
+* [[Usage-and-configuration-of-firmware-version-0.12|Version 0.12]]
 * [[TSDZ2-and-KT-LCD3-advanced-features-with-Flexible-OpenSource-firmwares|Version < 0.12]]
 
 = How to install =
