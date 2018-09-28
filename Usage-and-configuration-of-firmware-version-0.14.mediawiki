@@ -94,7 +94,7 @@ Use higher values (more than what motor can give) to get more sensitivity from t
 | 2 || Assist level X power|| .... || The same a previous but for assist level X.
 |}
 
-== 4: startup power boost ==
+== 4: Startup power boost ==
 Here you can configure the BOOST feature. This feature gives a peak of power to the motor at startup. The amount of time of the peak as also the amount of motor power during the peak, can be configured. You can also disable this feature if you prefer.
 
 {|
@@ -114,7 +114,7 @@ Use higher values (more than what motor can give) to get more sensitivity from t
 | 5 || assist level X boost power || --- || The same a previous but for assist level X.
 |}
 
-== 5: motor temperature protection ==
+== 5: Motor temperature protection ==
 
 This feature is for protecting your motor from overheating and avoid permanent damage/loss of torque -- see here: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature [[How to install motor temperature sensor|if you installed the motor temperature sensor]].
 
