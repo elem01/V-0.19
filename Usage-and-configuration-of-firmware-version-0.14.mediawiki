@@ -131,11 +131,9 @@ Possible configurations on LCD3:
 |-
 | 0 || enable motor temperature sensor || 0 (disabled) || NOTE: if you don't have the [[How to install motor temperature sensor|motor temperature sensor installed]], you should disable this option and ignore the next configurations.
 |-
-| 1 || enable current limiting || 0 (disabled) || limit the motor current to avoid the motor get over the max temperature.
+| 1 || min temperature || 75 degrees Celsius || motor temperature value at which the motor current will start to be limited.
 |-
-| 2 || min temperature || 75 degrees Celsius || motor temperature value at which the motor current will start to be limited.
-|-
-| 3 || max temperature || 85 degrees Celsius || motor temperature max value at which the motor current will be zero / motor shutoff.
+| 2 || max temperature || 85 degrees Celsius || motor temperature max value at which the motor current will be zero / motor shutoff.
 |}
 
 == 6: LCD display configuration==
