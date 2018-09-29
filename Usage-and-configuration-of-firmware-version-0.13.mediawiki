@@ -55,13 +55,13 @@ This value can be a number from 7 to 14 -- example values: 7 for 24V battery; 10
 |-
 | 3 || Battery pack resistance || 130 (miliohms) || This value is needed to make battery state indicator work.<br><br>
 If you use a 0 value, you will see the battery state indicator fluctuating when the motor startup and pull energy from the battery. If you use the correct value, the fluctuation will disappear.
-|-
-| 4 || Battery pack SOC || - || Show current state of charge of the battery pack
 <br><br>
 How to calculate the battery pack resistance:<br>
 1. limit battery current to a know value like 10 amps<br>
 2. read the voltage drop when motor is pulling the 10 amps<br>
 3. calculate the resistance value, example for 10 amps current, R = U / I, R = 1.2 volts drop / 10 amps, R = 0.120 = 120 miliohms.
+|-
+| 4 || Battery pack SOC || - || Show current state of charge of the battery pack
 |}    
 
 == 2: Battery power setup ==
