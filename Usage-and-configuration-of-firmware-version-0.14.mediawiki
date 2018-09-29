@@ -61,9 +61,7 @@ How to calculate the battery pack resistance:<br>
 2. read the voltage drop when motor is pulling the 10 amps<br>
 3. calculate the resistance value, example for 10 amps current, R = U / I, R = 1.2 volts drop / 10 amps, R = 0.120 = 120 miliohms.
 |-
-| 4 || Battery pack SOC || - || Show current state of charge of the battery pack
-|-
-| 5 || Battery pack state indicator voltage || (volts) || This is the calculated voltage used for state indicator, considering the Battery pack resistance. You can see here what is the value and should not be lower when motor is pulling current, if you configured Battery pack resistance value correctly.
+| 4 || Battery pack state indicator voltage || (volts) || This is the calculated voltage used for state indicator, considering the Battery pack resistance. You can see here what is the value and should not be lower when motor is pulling current, if you configured Battery pack resistance value correctly.
 |}    
 
 == 2: Battery power setup ==
