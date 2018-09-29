@@ -50,11 +50,13 @@ Long click on up and down buttons to enter on this screen. On/off button click t
 |-
 | 1 || Battery low cut-off voltage || 39 (volts) ||  The controller will reduce power to stay over this limit! usualy 2.85-3.05 V per cell of (39.0 (3.0 * 13 = 39.0)). The standard Samsung cells allow down to 2.75V but you need some safety margin because not all cells are discharging in the same way, but by setting too high you loose range  power on a discharged battery and capacity, I like to use the value of 29 for 36V battery pack/10 cells.
 |-
-| 3 || Number of cells || 13 || This value is needed to make battery state indicator work.<br><br>
+| 2 || Number of cells || 13 || This value is needed to make battery state indicator work.<br><br>
 This value can be a number from 7 to 14 -- example values: 7 for 24V battery; 10 for 36V battery pack; 13 for 48V battery pack; 14 for 36V battery pack.
 |-
-| 4 || Battery pack resistance || 130 (miliohms) || This value is needed to make battery state indicator work.<br><br>
+| 3 || Battery pack resistance || 130 (miliohms) || This value is needed to make battery state indicator work.<br><br>
 If you use a 0 value, you will see the battery state indicator fluctuating when the motor startup and pull energy from the battery. If you use the correct value, the fluctuation will disappear.
+|-
+| 4 || Battery pack SOC || - || Show current state of charge of the battery pack
 <br><br>
 How to calculate the battery pack resistance:<br>
 1. limit battery current to a know value like 10 amps<br>
@@ -138,9 +140,9 @@ Possible configurations on LCD3:
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || LCD brightness when backlight is off || 1 || 1 means 5%? TBD
+| 0 || LCD brightness when backlight is off || 5 || 5%
 |-
-| 1 || LCD brightness when backlight is on || 16 || 16 means 80%? TBD
+| 1 || LCD brightness when backlight is on || 80 || 80%
 |-
 | 2 || LCD auto power off || 15 || Configured in minutes
 |-
