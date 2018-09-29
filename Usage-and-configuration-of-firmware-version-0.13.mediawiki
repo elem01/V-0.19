@@ -172,7 +172,7 @@ Possible configurations on LCD3:
 |-
 | 1 || Motor assistance startup without pedal rotation || 0 || Enabled (1) or disabled (0). Recommended to keep at 0 value if you don't have brake sensors installed.
 |-
-| 2 || PAS max cadence || 25 km/h ||  This value is used for calculation of human pedal power that will after be used for motor assist level.
+| 2 || PAS max cadence || 110 ||  This value is used for calculation of human pedal power that will after be used for motor assist level.
 |-
 | 3 || Reset trip distance and total trip distance || 0 || Increase the value to 10 and the trip distance and total trip distance will reset to zero.
 
