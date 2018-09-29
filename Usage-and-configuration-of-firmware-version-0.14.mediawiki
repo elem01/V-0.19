@@ -50,16 +50,18 @@ Long click on up and down buttons to enter on this screen. On/off button click t
 |-
 | 1 || Battery low cut-off voltage || 39 (volts) ||  The controller will reduce power to stay over this limit! usualy 2.85-3.05 V per cell of (39.0 (3.0 * 13 = 39.0)). The standard Samsung cells allow down to 2.75V but you need some safety margin because not all cells are discharging in the same way, but by setting too high you loose range  power on a discharged battery and capacity, I like to use the value of 29 for 36V battery pack/10 cells.
 |-
-| 3 || Number of cells || 13 || This value is needed to make battery state indicator work.<br><br>
+| 2 || Number of cells || 13 || This value is needed to make battery state indicator work.<br><br>
 This value can be a number from 7 to 14 -- example values: 7 for 24V battery; 10 for 36V battery pack; 13 for 48V battery pack; 14 for 36V battery pack.
 |-
-| 4 || Battery pack resistance || 130 (miliohms) || This value is needed to make battery state indicator work.<br><br>
+| 3 || Battery pack resistance || 130 (miliohms) || This value is needed to make battery state indicator work.<br><br>
 If you use a 0 value, you will see the battery state indicator fluctuating when the motor startup and pull energy from the battery. If you use the correct value, the fluctuation will disappear.
 <br><br>
 How to calculate the battery pack resistance:<br>
 1. limit battery current to a know value like 10 amps<br>
 2. read the voltage drop when motor is pulling the 10 amps<br>
 3. calculate the resistance value, example for 10 amps current, R = U / I, R = 1.2 volts drop / 10 amps, R = 0.120 = 120 miliohms.
+|-
+| 4 || Battery pack SOC || - || Show current state of charge of the battery pack
 |-
 | 5 || Battery pack state indicator voltage || (volts) || This is the calculated voltage used for state indicator, considering the Battery pack resistance. You can see here what is the value and should not be lower when motor is pulling current, if you configured Battery pack resistance value correctly.
 |}    
@@ -172,7 +174,7 @@ Possible configurations on LCD3:
 |-
 | 1 || Motor assistance startup without pedal rotation || 0 || Enabled (1) or disabled (0). Recommended to keep at 0 value if you don't have brake sensors installed.
 |-
-| 2 || PAS max cadence || 25 km/h ||  This value is used for calculation of human pedal power that will after be used for motor assist level.
+| 2 || PAS max cadence || 110 ||  This value is used for calculation of human pedal power that will after be used for motor assist level.
 |-
 | 3 || Reset trip distance and total trip distance || 0 || Increase the value to 10 and the trip distance and total trip distance will reset to zero.
 
