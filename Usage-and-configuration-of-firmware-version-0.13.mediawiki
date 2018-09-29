@@ -98,13 +98,13 @@ Here you can configure the BOOST feature. This feature gives a peak of power to 
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Config || 0 ||  0 to enable power boost only when startup and bicycle wheel speed is equal to zero; 1 to enable power boost every time pedal cadence or torque sensor are zero
+| 0 || Config || 1 ||  0 to enable power boost only when startup and bicycle wheel speed is equal to zero; 1 to enable power boost every time pedal cadence or torque sensor are zero
 |-
 | 1 || limit boost power to max battery power value || 0 || 1 to enable power boost limit to the Max battery power value and 0 to disable.
 |-
-| 2 || boost time || 25 (2.5 seconds) || 0 to disable startup power boost feature.
+| 2 || boost time || 2.5 (seconds) || 0 to disable startup power boost feature.
 |-
-| 3 || fade out/transition time || 25 (2.5 seconds) || fade out from boost power to regular power.
+| 3 || fade out/transition time || 2.5 (seconds) || fade out from boost power to regular power.
 |-
 | 4 || assist level 1 boost power || 200 || Max value of motor energy (in watts) that motor will use to assist you during power boost, on this assist level. The motor will use this max value only when you hit the max torque sensor force.<br><br>
 Use higher values (more than what motor can give) to get more sensitivity from the torque sensor, like you can setup a value of 2000 that will double the torque sensitivity comparing to use the value of 1000.
