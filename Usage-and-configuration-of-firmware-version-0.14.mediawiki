@@ -142,7 +142,7 @@ Possible configurations on LCD3:
 |-
 | 0 || LCD brightness when backlight is off || 5 || 5%
 |-
-| 1 || LCD brightness when backlight is on || 80 || 80%
+| 1 || LCD brightness when backlight is on || 50 || 50%
 |-
 | 2 || LCD auto power off || 15 || Configured in minutes
 |-
