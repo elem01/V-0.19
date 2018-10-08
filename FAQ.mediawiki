@@ -1,5 +1,9 @@
 __TOC__
 
+= Install TSDZ2 on full suspension bicycles =
+
+See here how to install: [[How to install TSDZ2 on a full suspension bicycle]]
+
 = Nylon gear and metal gear =
 Nylon gear at left and metal gear at right:
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/blue_nylon_and_brass_gear.png]]
