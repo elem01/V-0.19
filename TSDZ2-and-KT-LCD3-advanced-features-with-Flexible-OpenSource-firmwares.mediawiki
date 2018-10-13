@@ -24,6 +24,9 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 = 3. Configurations screen =
 
 * '''<u>Configurations screen</u>''': long click on up and down buttons to enter on this screen. On/off button click to enter on subscreens and on/off button click to cycle on subscreens, long press  on/off to exit menu
+
+* [[Usage-and-configuration-of-firmware-version-0.12|Version 0.12 (latest)]]
+* [[Usage-and-configuration-of-firmware-version-0.14|Version 0.14 (to be released)]]
  
 THE FOLLOWING CONFIGURATION VALUES  ARE FOR VERSION 10!! YOU ALWAYS NEED TO FLASH SAME VERSION ON BOTH, MOTOR AND LCD
 
