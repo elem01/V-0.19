@@ -1,4 +1,4 @@
-The following applies to firmware version 0.14.x only!
+The following applies to firmware version 0.13 only!
 
 CAUTION: always use the same firmware version for both the motor controller and LCD!
 
@@ -26,7 +26,6 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 = 2. Max battery power screen =
 Motor controller will automatically choose a battery current in a way to limit the max battery power usage. The battery current value will never be higher than the max battery current setup on the configurations screen. Long click on on/off and up buttons to enter on this screen. Up and down buttons to increase/decrease the value. Long click of on/off button lo leave.
 NOTE: this functionality cannot be used when offroad mode is enabled. Disable offroad mode first.
-NOTE: at the moment this feature isn't working very well, we suggest to leave the value to 0 to disable the feature.
 
 = 3. Configurations screen =
 Long click on up and down buttons to enter on this screen. On/off button click to enter on subscreens and on/off button click to cycle on subscreens, long press  on/off to exit menue
@@ -99,20 +98,18 @@ Here you can configure the BOOST feature. This feature gives a peak of power to 
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Feature toggle|| 0 ||  1 to enable the boost feature, 0 to disable
+| 0 || Config || 1 ||  0 to enable power boost only when startup and bicycle wheel speed is equal to zero; 1 to enable power boost every time pedal cadence or torque sensor are zero
 |-
-| 1 || Config || 1 ||  0 to enable power boost only when startup and bicycle wheel speed is equal to zero; 1 to enable power boost every time pedal cadence or torque sensor are zero
+| 1 || limit boost power to max battery power value || 0 || 1 to enable power boost limit to the Max battery power value and 0 to disable.
 |-
-| 2 || limit boost power to max battery power value || 0 || 1 to enable power boost limit to the Max battery power value and 0 to disable.
+| 2 || boost time || 2.5 (seconds) || 0 to disable startup power boost feature.
 |-
-| 3 || boost time || 2.5 (seconds) || 0 to disable startup power boost feature.
+| 3 || fade out/transition time || 2.5 (seconds) || fade out from boost power to regular power.
 |-
-| 4 || fade out/transition time || 2.5 (seconds) || fade out from boost power to regular power.
-|-
-| 5 || assist level 1 boost power || 200 || Max value of motor energy (in watts) that motor will use to assist you during power boost, on this assist level. The motor will use this max value only when you hit the max torque sensor force.<br><br>
+| 4 || assist level 1 boost power || 200 || Max value of motor energy (in watts) that motor will use to assist you during power boost, on this assist level. The motor will use this max value only when you hit the max torque sensor force.<br><br>
 Use higher values (more than what motor can give) to get more sensitivity from the torque sensor, like you can setup a value of 2000 that will double the torque sensitivity comparing to use the value of 1000.
 |-
-| 6 || assist level X boost power || --- || The same a previous but for assist level X.
+| 5 || assist level X boost power || --- || The same a previous but for assist level X.
 |}
 
 == 5: motor temperature protection ==
@@ -154,7 +151,7 @@ Possible configurations on LCD3:
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Offroad feature toggle|| 0 || enabled (1) or disabled (0)
+| 0 || Offroad functionality || 0 || enabled (1) or disabled (0)
 |-
 | 1 || Active on system startup || 0 || Determines whether offroad mode should be active on system startup. Enabled (1) or disabled (0)
 |-
