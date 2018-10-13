@@ -25,8 +25,10 @@ KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 
 = 2. Max battery power screen =
 Motor controller will automatically choose a battery current in a way to limit the max battery power usage. The battery current value will never be higher than the max battery current setup on the configurations screen. Long click on on/off and up buttons to enter on this screen. Up and down buttons to increase/decrease the value. Long click of on/off button lo leave.
-NOTE: this functionality cannot be used when offroad mode is enabled. Disable offroad mode first.
-NOTE: at the moment this feature isn't working very well, we suggest to leave the value to 0 to disable the feature.
+
+'''NOTES:'''
+* at the moment this feature isn't working very well, we suggest to leave the value to 0 to disable the feature until the issue is resolved.
+* this functionality cannot be used when offroad mode is enabled. Disable offroad mode first.
 
 = 3. Configurations screen =
 Long click on up and down buttons to enter on this screen. On/off button click to enter on subscreens and on/off button click to cycle on subscreens, long press  on/off to exit menue
@@ -130,11 +132,11 @@ Possible configurations on LCD3:
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || enable motor temperature sensor || 0 (disabled) || NOTE: if you don't have the [[How to install motor temperature sensor|motor temperature sensor installed]], you should disable this option and ignore the next configurations.
+| 0 || Feature toggle || 0 || 1 to enable the temperature control, 1 to disable. NOTE: if you don't have the [[How to install motor temperature sensor|motor temperature sensor installed]], you should disable this option and ignore the next configurations.
 |-
-| 1 || min temperature || 75 degrees Celsius || motor temperature value at which the motor current will start to be limited.
+| 1 || min temperature || 75 (°C) || motor temperature value at which the motor current will start to be limited.
 |-
-| 2 || max temperature || 85 degrees Celsius || motor temperature max value at which the motor current will be zero / motor shutoff.
+| 2 || max temperature || 85 (°C) || motor temperature max value at which the motor current will be zero / motor shutoff.
 |}
 
 == 6: LCD display configuration==
@@ -147,14 +149,18 @@ Possible configurations on LCD3:
 |-
 | 2 || LCD auto power off || 15 || Configured in minutes
 |-
-| 3 || LCD configurations reset to defaults || 0 || Increase the value to 10 and the LCD configurations will reset to the default values.
+| 3 || Reset to factory defaults || 0 ||
+#Increase the value to 10 
+#The display will turn off 
+#Turn it on again 
+#Factory default settings will be restored
 |}
 
 == 7: Offroad mode configuration==
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Offroad feature toggle|| 0 || enabled (1) or disabled (0)
+| 0 || Feature toggle|| 0 || enabled (1) or disabled (0)
 |-
 | 1 || Active on system startup || 0 || Determines whether offroad mode should be active on system startup. Enabled (1) or disabled (0)
 |-
