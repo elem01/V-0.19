@@ -103,7 +103,7 @@ Here you can configure the BOOST feature. This feature gives a peak of power to 
 |-
 | 0 || Feature toggle|| 0 ||  1 to enable the boost feature, 0 to disable
 |-
-| 1 || Config || 1 ||  0 to enable power boost only when startup and bicycle wheel speed is equal to zero; 1 to enable power boost every time pedal cadence or torque sensor are zero
+| 1 || On startup only / everytime || 1 ||  0 to enable power boost only when startup and bicycle wheel speed is equal to zero; 1 to enable power boost everytime pedal cadence or torque sensor are zero
 |-
 | 2 || limit boost power to max battery power value || 0 || 1 to enable power boost limit to the Max battery power value and 0 to disable.
 |-
