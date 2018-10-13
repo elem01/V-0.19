@@ -95,7 +95,7 @@ Use higher values (more than what motor can give) to get more sensitivity from t
 | 2 || Assist level X power|| .... || The same a previous but for assist level X.
 |}
 
-== 4: startup power boost ==
+== 4: Startup power boost ==
 Here you can configure the BOOST feature. This feature gives a peak of power to the motor at startup. The amount of time of the peak as also the amount of motor power during the peak, can be configured. You can also disable this feature if you prefer.
 
 {|
