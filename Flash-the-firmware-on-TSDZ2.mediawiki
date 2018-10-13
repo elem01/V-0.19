@@ -13,6 +13,7 @@ The connections to STLinkV2 clone:
 * purple wire connect to STLinkV2 RST pin
 * orange wire connect to STLinkV2 GND pin
 * black wire connect to STLinkV2 SWIM pin
+* brown wire connect to STLinkV2 VCC/5V pin (Optional - For those who want to flash without a battery attached)
 
 NOTE: the wires should be short like 10 centimeters or you will probably get errors while trying to flash. If you need a long cable, try to use an USB extension instead.
 
