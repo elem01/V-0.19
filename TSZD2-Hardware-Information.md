@@ -15,8 +15,9 @@ The only other IC on the board is the LCD controller [Holtek HT1622](http://www.
 
 Appears to be [variants with a different display driver](https://endless-sphere.com/forums/download/file.php?id=234155&mode=view) (SHT32E22) but it looks like its pin compatible for the connected pins.
 
-- [LT-LCD3 LCD Pattern](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTM-CTAZAUMd8RtW5SWPnMefDgj7QYZbeXzm2miu3nnYPnQ5ZL)
+- [KT-LCD3 LCD Pattern](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTM-CTAZAUMd8RtW5SWPnMefDgj7QYZbeXzm2miu3nnYPnQ5ZL)
 - [KT-LCD5 LCD Pattern](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThFBCCEStyp3k5i-E7BqNa28befkmFGdpKD2JHCAMJ5jXkLnptWw)
+- [KT-LCD6 LCD Pattern](https://elektrolurchbike.de/osCommerce2.3.1Deutsch/catalog/images/schema%20lcd6.jpg)
 
 [KT-LCD5B](https://opensourceebikefirmware.bitbucket.io/development/images/13-2.png) also appears to use the same chips, less voltage and power numbers. How compatible is it with LCD3? 
 
