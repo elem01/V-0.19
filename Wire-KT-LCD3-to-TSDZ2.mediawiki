@@ -1,8 +1,16 @@
-The KT-LCD3 is signal compatible with TSZD2 motor controller however it uses a different connector so you will need to do the wiring by yourself. I usually use 2.54mm breakaway male and female header as connectors. KT connectors looks like HIGO [https://www.higoconnector.com/products/z209bm-p-00-a0-1000/K999K#title mini-B Z209] and [https://www.higoconnector.com/products/z812am-p-00-a5-1000/z999K#title Main z812] types
+The KT-LCD3 is signal compatible with TSZD2 motor controller however it uses a different connector so you will need to do the wiring by yourself. I usually use 2.54mm breakaway male and female header as connectors. 
+
+TSDZ2 connector is (https://www.higoconnector.com HIGO) Mini-A, which is not on the website and (supposedly) is discontinued. So, something must be cut up to get connectors.
+* Get a spare controller $30 from PSWPower and use the cables, seems best value as you will have a spare controller pcb
+* Get Y speed sensor / light cable. Gives 2M 1F connector when cut up. $25
+* Get an [https://www.aliexpress.com/store/product/tongsheng-tsdz-speed-sensor-extension-cable-110cm-length/1971954_32833464583.html tsdz speed sensor extension cable] $39 (do these have 6 conductors inside?)
+* Find the source of [https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/tsdz2-plug-dimensions.jpg Higo Mini-A dimension connector]
+
+KT-LCD connectors looks like Higo [https://www.higoconnector.com/products/z209bm-p-00-a0-1000/K999K#title mini-B Z209], available from [https://www.e-bike-technologies.de/index.php/en/connectors/higo/dustcaps-for-higo-mini-b-connectors EBike Technologies].
 
 On the market, you can find TSZD2 motor with and without throttle connection. The cable that goes from the motor controller to LCD is different and here are the details -- you need to identify your cable signals (use a multimeter to measure between GND and P+ battery voltage):
 
-6 pin controller   [https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/tsdz2-plug-dimensions.jpg connector (can you identify type?)] (usually this is a TSDZ2 without throttle):
+6 pin controller [https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/tsdz2-plug-dimensions.jpg connector] (usually this is a TSDZ2 without throttle):
 {|
 | '''wire color''' || '''function''' || '''description'''
 |-
@@ -54,6 +62,7 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 |-
 | yellow wire || UART RX motor controller
 |}
+[https://www.endless-sphere.com/forums/download/file.php?id=239409&mode=view Connector Photo]
 
 You can wire the brakes to brake wire and you will also need to wire the GND wire. If you are using a “hidden wire brake sensor”, you will also need to connect the 5V wire.
 
