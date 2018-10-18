@@ -1,8 +1,8 @@
-The KT-LCD3 is signal compatible with TSZD2 motor controller however it uses a different connector so you will need to do the wiring by yourself. I usually use 2.54mm breakaway male and female header as connectors.
+The KT-LCD3 is signal compatible with TSZD2 motor controller however it uses a different connector so you will need to do the wiring by yourself. I usually use 2.54mm breakaway male and female header as connectors. KT connectors looks like HIGO [https://www.higoconnector.com/products/z209bm-p-00-a0-1000/K999K#title mini-B Z209] and [https://www.higoconnector.com/products/z812am-p-00-a5-1000/z999K#title Main z812] types
 
 On the market, you can find TSZD2 motor with and without throttle connection. The cable that goes from the motor controller to LCD is different and here are the details -- you need to identify your cable signals (use a multimeter to measure between GND and P+ battery voltage):
 
-6 pin controller (usually this is a TSDZ2 without throttle):
+6 pin controller   [https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/tsdz2-plug-dimensions.jpg connector (can you identify type?)] (usually this is a TSDZ2 without throttle):
 {|
 | '''wire color''' || '''function''' || '''description'''
 |-
@@ -59,8 +59,10 @@ You can wire the brakes to brake wire and you will also need to wire the GND wir
 
 For the throttle, you will need to connect the throttle wire, the GND and 5V wire.
 
-Some example of soldering wires:
+Some example of soldering wires :
 
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/solder_wires_example-02.jpg]]
+
+(nb. Correct way is to stagger the cuts so that they would not short even without heatshrink, this makes a small neat bundle)
 
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/solder_wires_example-01.jpg]]
