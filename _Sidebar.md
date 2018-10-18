@@ -4,4 +4,5 @@
 * **[How to install](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki#how-to-install)**
 * **[TSDZ2 FAQ](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/FAQ)**
 * **[TSDZ2 Hardware](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/TSZD2-Hardware-Information)**
+* **[Communication-Protocol](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Communication-Protocol)**
 * **[Development](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Development)**
