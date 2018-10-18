@@ -2,6 +2,28 @@ This project came from [Flexible Opensource Firmware](https://opensourceebikefir
 
 [Offical Tongsheng Protocol](https://endless-sphere.com/forums/download/file.php?id=239100) and reputedly better [Hurzhurz version](https://github.com/hurzhurz/tsdz2/blob/master/serial-communication.md#motor-control-flags)
 
+# Motor
+
+We know there are 2 type of motors: 36V 4000 RPMs and 48V 4000 RPMs (this later works at 52V also, is the same motor). As for the controller, is just the same for all different configurations: supports from battery 20V up to 60V. Yes, you can run 52v/14s on EITHER motor actually, the '36v type' motor will just spin a little faster with less torque than the '48v type' motor - but they both are compatible. 
+
+I am a little confused re battery voltage on the standard units, my 48V unit will not run on anything over 56.6v where as a 14s battery fully charged is 58.6v, are you saying that its the controller which is limiting the upper voltage and that we should be able to reprogramme it to suit ? Yes. The hardware supports that range of voltages I wrote before but original firmware is limiting.
+
+[Similar Kunteng Controller Schematic](https://opensourceebikefirmware.bitbucket.io/development/EmbeddedFiles/32-BMSBattery_S06S-Kuteng_EBike_motor_controller_schematic.pdf)
+
+*  Although uses the STM8S105C4 (should have 16kbytes flash memory) and the original firmware seems to use about 15kbytes of flash memory, I was able to flash a 18Kbytes flash memory (our OpenSource firmware for Kunteng controllers) and read after and it is the same -- this means the STM8S105C4 has at least the same flash memory size of STM8S105C6!! (This is something that is not new on ST microcontrollers.)
+* PB5 (ADC_AIN5) | in | battery_current (14 ADC bits step per 1 amp; this signal amplified by the opamp 358)
+Also found that there is a signal to protect from battery over current of about 22 amps. Also shunt should be of about 0.023 ohms resistance: 
+* The battery_current is measured using the LM385 opamp in an non inverting configuration. The pin 1 is the output and has a low pass filter.
+* The pin 3 (+) has the signal input and pin 2 (-) has the feedback loop, composed of R1 = 11k and R2 = 1k.
+* The gain is: (R1 / R2) + 1 = (11k / 1k) + 1 = 12.
+* We know that 1 Amp of battery current is equal to 14 ADC 8 bits steps, so 1 Amp = (5V / 255) * 14 = 0.275V.
+* Each 1 Amp at the shunt is then 0.275V / 12 = 0.023V. This also means shunt should has 0.023 ohms resistance.
+* Since there is a transistor that has a base resistor connected throught a 1K resisitor to the shunt voltage, and also the base has
+* another connected resistor of 27K, I think the transistor will switch on at arround 0.5V on the shunt voltage and that means arround 22 amps.
+* The microcontroller should read the turned on transistor signal on PD0, to detect the battery_over_current of 22 amps.
+Also, the microcontroller can disable the 5V voltage of the circuit and this way turn it of, including itself:
+* PD4 | out | enable/disable 5V output of the circuit, meaning it can turn off all the system including the microcontroller itself
+
 # Display Units
 
 Original TS displays VLCD5 and XH-18 use otp haier micros, and can't be changed. 
