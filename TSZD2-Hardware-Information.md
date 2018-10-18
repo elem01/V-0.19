@@ -23,6 +23,10 @@ Also found that there is a signal to protect from battery over current of about 
 * The microcontroller should read the turned on transistor signal on PD0, to detect the battery_over_current of 22 amps.
 Also, the microcontroller can disable the 5V voltage of the circuit and this way turn it of, including itself:
 * PD4 | out | enable/disable 5V output of the circuit, meaning it can turn off all the system including the microcontroller itself
+* So, there is a XL7005 (I think is sued another on top of the board):
+ Wide 5V to 80V Operation Voltage
+ Output Adjustable from 1.25V to 20V, 0.4A
+* LM358
 
 # Display Units
 
