@@ -1,6 +1,6 @@
 This project came from [Flexible Opensource Firmware](https://opensourceebikefirmware.bitbucket.io/FLEXIBLE_OPENSOURCE_FIRMWARE.html), and there is more information there, especially [Hardware information and manuals](https://opensourceebikefirmware.bitbucket.io/development_tsdz2/)
 
-[TOC]
+[TOC] ???How to have list of headers in markdown???
 
 [Offical Tongsheng Protocol](https://endless-sphere.com/forums/download/file.php?id=239100) and reputedly better [Hurzhurz version](https://github.com/hurzhurz/tsdz2/blob/master/serial-communication.md#motor-control-flags)
 
