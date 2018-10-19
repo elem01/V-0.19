@@ -31,6 +31,7 @@ Also, the microcontroller can disable the 5V voltage of the circuit and this way
 # Display Units
 
 Original TS displays VLCD5 and XH-18 use otp haier micros, and can't be changed. 
+OSEF uses [Kunteng](http://www.szktdz.com) displays
 
 [More display info](https://opensourceebikefirmware.bitbucket.io/development/Motor_controllers--BMSBattery_S_series--LCD_control_panel.html)
 
