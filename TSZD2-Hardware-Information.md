@@ -11,11 +11,11 @@ Most of the reverse engineering information is there, especially [Hardware infor
 
 # Connectors
 
-* [Connector Pinouts](https://github.com/hurzhurz/tsdz2/blob/master/pinout.md)
+TSDZ2 connectors are [HG-F.S-Z*09A, Mini-A](http://www.higocon.com/en/product/?24_38.html Higo). KT-LCD3 uses Higo MiniB
+
+* [TSDZ2 Connector Pinouts](https://github.com/hurzhurz/tsdz2/blob/master/pinout.md), [dimensions](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/tsdz2-plug-dimensions.jpg)
 * [LCD3 - TSZD2 Connectors and Wiring](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Wire-KT-LCD3-to-TSDZ2)
-
-
-[Connector closeup](https://sondorsforum.com/applications/core/interface/imageproxy/imageproxy.php?img=https%3A%2F%2Fi.imgur.com%2FGqfwM0S.jpg&key=1203f163b099843d28eb7d621793818bafcc3cbc1c177a2dd9ee66a2afc4ae07)
+* [KT-LCD3 Connector closeup](https://sondorsforum.com/applications/core/interface/imageproxy/imageproxy.php?img=https%3A%2F%2Fi.imgur.com%2FGqfwM0S.jpg&key=1203f163b099843d28eb7d621793818bafcc3cbc1c177a2dd9ee66a2afc4ae07)
 
 # Motor
 
@@ -29,7 +29,8 @@ V | R-Measured | R Single | L Single
 36 | ? | 0.94??? | 76uH
 48 | 0.25 | 0.125 | 135uH
 
-** Motor Controller
+## Motor Controller
+
 I am a little confused re battery voltage on the standard units, my 48V unit will not run on anything over 56.6v where as a 14s battery fully charged is 58.6v, are you saying that its the controller which is limiting the upper voltage and that we should be able to reprogramme it to suit ? Yes. The hardware supports that range of voltages I wrote before but original firmware is limiting.
 
 [Similar Kunteng Controller Schematic](https://opensourceebikefirmware.bitbucket.io/development/EmbeddedFiles/32-BMSBattery_S06S-Kuteng_EBike_motor_controller_schematic.pdf)
