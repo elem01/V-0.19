@@ -11,7 +11,7 @@ Most of the reverse engineering information is there, especially [Hardware infor
 
 # Connectors
 
-TSDZ2 connectors are [HG-F.S-Z*09A, Mini-A](http://www.higocon.com/en/product/?24_38.html Higo). KT-LCD3 uses Higo MiniB
+TSDZ2 connectors are [Higo HG-F.S-Z*09A, Mini-A](http://www.higocon.com/en/product/?24_38.html). KT-LCD3 uses Higo MiniB
 
 * [TSDZ2 Connector Pinouts](https://github.com/hurzhurz/tsdz2/blob/master/pinout.md), [dimensions](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/tsdz2-plug-dimensions.jpg)
 * [LCD3 - TSZD2 Connectors and Wiring](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Wire-KT-LCD3-to-TSDZ2)
