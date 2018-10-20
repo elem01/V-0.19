@@ -1,13 +1,35 @@
-This project came from [Flexible Opensource Firmware](https://opensourceebikefirmware.bitbucket.io/FLEXIBLE_OPENSOURCE_FIRMWARE.html), and there is more information there, especially [Hardware information and manuals](https://opensourceebikefirmware.bitbucket.io/development_tsdz2/)
+This project came from [Flexible Opensource Firmware](https://opensourceebikefirmware.bitbucket.io/FLEXIBLE_OPENSOURCE_FIRMWARE.html).
 
-[TOC] ???How to have list of headers in markdown???
+Most of the reverse engineering information is there, especially [Hardware information and manuals](https://opensourceebikefirmware.bitbucket.io/development_tsdz2/)
+
+[Hurzhurz information](https://github.com/hurzhurz/tsdz2) (look in the .md files)
+
+[toc] ___TOC___    ???How to have list of headers in markdown???
+{:toc}
 
 [Offical Tongsheng Protocol](https://endless-sphere.com/forums/download/file.php?id=239100) and reputedly better [Hurzhurz version](https://github.com/hurzhurz/tsdz2/blob/master/serial-communication.md#motor-control-flags)
+
+# Connectors
+
+* [Connector Pinouts](https://github.com/hurzhurz/tsdz2/blob/master/pinout.md)
+* [LCD3 - TSZD2 Connectors and Wiring](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Wire-KT-LCD3-to-TSDZ2)
+
+
+[Connector closeup](https://sondorsforum.com/applications/core/interface/imageproxy/imageproxy.php?img=https%3A%2F%2Fi.imgur.com%2FGqfwM0S.jpg&key=1203f163b099843d28eb7d621793818bafcc3cbc1c177a2dd9ee66a2afc4ae07)
 
 # Motor
 
 We know there are 2 type of motors: 36V 4000 RPMs and 48V 4000 RPMs (this later works at 52V also, is the same motor). As for the controller, is just the same for all different configurations: supports from battery 20V up to 60V. Yes, you can run 52v/14s on EITHER motor actually, the '36v type' motor will just spin a little faster with less torque than the '48v type' motor - but they both are compatible. 
 
+## Winding Resistance
+This should be a useful diagnostic, and tell us if TS changes the motors. [See](https://opensourceebikefirmware.bitbucket.io/development_tsdz2/About_Tongsheng_TSDZ2_mid_drive_motors--Motor.html)
+
+V | R-Measured | R Single | L Single
+-- | -- | -- | --
+36 | ? | 0.94??? | 76uH
+48 | 0.25 | 0.125 | 135uH
+
+** Motor Controller
 I am a little confused re battery voltage on the standard units, my 48V unit will not run on anything over 56.6v where as a 14s battery fully charged is 58.6v, are you saying that its the controller which is limiting the upper voltage and that we should be able to reprogramme it to suit ? Yes. The hardware supports that range of voltages I wrote before but original firmware is limiting.
 
 [Similar Kunteng Controller Schematic](https://opensourceebikefirmware.bitbucket.io/development/EmbeddedFiles/32-BMSBattery_S06S-Kuteng_EBike_motor_controller_schematic.pdf)
@@ -59,12 +81,6 @@ PA2 needs to be logic HIGH to keep the LCD on. this works like a keep alive. wri
 with PE3 you can short part of the resistors before the LDO. i think this is to accomodate different input voltages.
 
 STM8 reads the battery voltage on pin PE7. The current value is sent by the controller over UART. 
-
-## KT-LCD3 Connectors
-
-[LCD3 - TSZD2 Connectors and Wiring](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Wire-KT-LCD3-to-TSDZ2)
-
-[Connector closeup](https://sondorsforum.com/applications/core/interface/imageproxy/imageproxy.php?img=https%3A%2F%2Fi.imgur.com%2FGqfwM0S.jpg&key=1203f163b099843d28eb7d621793818bafcc3cbc1c177a2dd9ee66a2afc4ae07)
 
 # Stuffing Up!
 
