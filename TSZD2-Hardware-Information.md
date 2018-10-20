@@ -69,6 +69,10 @@ Also, the microcontroller can disable the 5V voltage of the circuit and this way
  Output Adjustable from 1.25V to 20V, 0.4A
 * LM358
 
+## Torque Sensor
+
+[Analysis](https://www.pedelecforum.de/forum/index.php?threads/funktionsprinzip-drehmomentsensor-im-mittelmotor-sfm-du-250-p-tsdz2.45029/)
+
 # Display Units
 
 - OSEF currently uses [Kunteng](http://www.szktdz.com) KT-LCD3 display with STM8
