@@ -29,9 +29,25 @@ V | R-Measured | R Single | L Single
 36 | ? | 0.94??? | 76uH
 48 | 0.25 | 0.125 | 135uH
 
+## Gears
+
+[see gears](https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&p=1388947&hilit=gear+ratio#p1388947)
+
+Gear | Teeth | Ratio | rpm@60rpm | Tooth Whine Hz@60rpm
+-- | -- | -- | -- | --
+Final Gear | 92 | 1 | 60 | 92
+Blue Shaft | 10 | 9.2 | 92
+Blue Gear | 36 | 9.2 | 552 | 331
+Motor Shaft| 8 | 41.4 | 2484 | 331
+Motor Poles | 8 | 331 | - | 331
+
+(One way to diagnose gear noise problems can be by spectrum analysis of the whine - you can get an audio analyser for phone.)
+
+Spragg clutch is [HF1216 bearing and it has a maximum torque of 12.2 Nm](https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&p=1399996&hilit=teeth+gear+ratio#p1399996)
+
 ## Motor Controller
 
-I am a little confused re battery voltage on the standard units, my 48V unit will not run on anything over 56.6v where as a 14s battery fully charged is 58.6v, are you saying that its the controller which is limiting the upper voltage and that we should be able to reprogramme it to suit ? Yes. The hardware supports that range of voltages I wrote before but original firmware is limiting.
+[see](https://opensourceebikefirmware.bitbucket.io/development_tsdz2/About_Tongsheng_TSDZ2_mid_drive_motors--Motor_controller.html) I am a little confused re battery voltage on the standard units, my 48V unit will not run on anything over 56.6v where as a 14s battery fully charged is 58.6v, are you saying that its the controller which is limiting the upper voltage and that we should be able to reprogramme it to suit ? Yes. The hardware supports that range of voltages I wrote before but original firmware is limiting.
 
 [Similar Kunteng Controller Schematic](https://opensourceebikefirmware.bitbucket.io/development/EmbeddedFiles/32-BMSBattery_S06S-Kuteng_EBike_motor_controller_schematic.pdf)
 
