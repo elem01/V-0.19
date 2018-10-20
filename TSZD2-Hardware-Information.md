@@ -71,8 +71,10 @@ Also, the microcontroller can disable the 5V voltage of the circuit and this way
 
 # Display Units
 
-Original TS displays VLCD5 and XH-18 use otp haier micros, and can't be changed. 
-OSEF uses [Kunteng](http://www.szktdz.com) displays
+- OSEF currently uses [Kunteng](http://www.szktdz.com) KT-LCD3 display with STM8
+- Original TS displays VLCD5 uses otp haier micros, and can't be changed. 
+- XH18 uses STM8, so may become usable. HH has started [xh18 lcd project](https://github.com/hurzhurz/xh18lcd). [pic](https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&p=1392107&hilit=xh18#p1392107) [[f/w]](https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&p=1413918&hilit=xh18#p1413918)
+
 
 [More display info](https://opensourceebikefirmware.bitbucket.io/development/Motor_controllers--BMSBattery_S_series--LCD_control_panel.html)
 
