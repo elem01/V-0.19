@@ -1,6 +1,6 @@
 The KT-LCD3 is signal compatible with TSZD2 motor controller however it uses a different connector so you will need to do the wiring by yourself. I usually use 2.54mm breakaway male and female header as connectors. 
 
-TSDZ2  [https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/tsdz2-plug-dimensions.jpg connector] is [http://www.higocon.com/en/product/?24_38.html Higo HG-F.S-Z*09A] (Mini-A). [https://www.higoconnector.com European Higo ] site no longer lists it  , and (supposedly) is discontinued.  
+TSDZ2  [https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/tsdz2-plug-dimensions.jpg 6 way connector] is [http://www.higocon.com/en/product/?24_38.html Higo HG-F.S-Z*09A] (Mini-A). [https://www.higoconnector.com European Higo ] site no longer lists it  , and (supposedly) is discontinued.  
 
 So, something must be cut up to get connectors.
 * Get a spare controller $30 from PSWPower and use the cables, seems best value as you will have a spare controller pcb
@@ -29,7 +29,7 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 | purple || brake || this signal is active low, meaning that when brakes are not active, this wire has 5V and with brakes active this wire has 0 volts.
 |}
 
-8 pin controller (usually this is a TSDZ2 with throttle):
+[https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&hilit=flash+lcd3&start=3525#p1415134 8 pin] controller (usually this is a TSDZ2 with throttle):
 {|
 | '''wire color''' || '''function''' || '''description'''
 |-
