@@ -6,9 +6,7 @@ NOTE: to use this motor temperature sensor you will loose the possibility to use
 
 The sensor used is the [LM35](http://www.ti.com/lit/ds/symlink/lm35.pdf) that is very popular and easy buy online like on Ebay. It is also very simple to interface with the TSDZ2 motor controller, where just 3 wires need to be connected (please see the information bellow).
 
-The LM35 outputs a linear voltage over the temperature change. Because the only free header connector available on the TSDZ2 motor controller that reads an analog voltage signal is the one used for the throttle, the sensor is connected to that header and the throttle can not be connected and used.
-
-The sensor outputs 10mV/degK i.e 2.98V @25C , 3.58V@85C
+The LM35 outputs a linear voltage, 10mV/K, over the temperature range, i.e 2.98V @25C , 3.58V@85C. Because the only free header connector available on the TSDZ2 motor controller that reads an analog voltage signal is the one used for the throttle, the sensor is connected to that header and the throttle can not be connected and used.
 
 I connected LM35 to a connector so is possible to remove it when I need, for instance when I want to remove the motor:
 
