@@ -51,7 +51,7 @@ Spragg clutch is [HF1216 bearing and it has a maximum torque of 12.2 Nm](https:/
 
 [Similar Kunteng Controller Schematic](https://opensourceebikefirmware.bitbucket.io/development/EmbeddedFiles/32-BMSBattery_S06S-Kuteng_EBike_motor_controller_schematic.pdf)
 
-*  Although uses the STM8S105C4 (should have 16kbytes flash memory) and the original firmware seems to use about 15kbytes of flash memory, I was able to flash a 18Kbytes flash memory (our OpenSource firmware for Kunteng controllers) and read after and it is the same -- this means the STM8S105C4 has at least the same flash memory size of STM8S105C6!! (This is something that is not new on ST microcontrollers.)
+*  Although uses the [STN8S105C4](https://opensourceebikefirmware.bitbucket.io/development_tsdz2/Datasheets_and_application_notes--STM8S105S4T6.html) (should have 16kbytes flash memory) and the original firmware seems to use about 15kbytes of flash memory, I was able to flash a 18Kbytes flash memory (our OpenSource firmware for Kunteng controllers) and read after and it is the same -- this means the STM8S105C4 has at least the same flash memory size of STM8S105C6!! (This is something that is not new on ST microcontrollers.)
 * PB5 (ADC_AIN5) | in | battery_current (14 ADC bits step per 1 amp; this signal amplified by the opamp 358)
 Also found that there is a signal to protect from battery over current of about 22 amps. Also shunt should be of about 0.023 ohms resistance: 
 * The battery_current is measured using the LM385 opamp in an non inverting configuration. The pin 1 is the output and has a low pass filter.
