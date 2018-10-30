@@ -4,5 +4,5 @@
 | `FOC` | Field Oriented Control - a new way of driving the motor which is more efficient|
 | `EPROM` | |
 | `ERPS` | |
-| `PWM Duty Cycle` | |
+| `PWM` | `PWM` Duty Cycle - |
 | `SOC` | State Of Charge - the percentage readout of home much battery is remaining, you can access it by pressing the middle and bottom buttons together|
