@@ -1,4 +1,4 @@
-| Term | Definition |
+|Term|Definition|
 |---|---|
 |`ADC`|
 |`FOC`| Field Oriented Control - a new way of driving the motor which is more efficient.|
