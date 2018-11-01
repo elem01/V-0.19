@@ -5,12 +5,14 @@ __TOC__
 The microcontroller chip that need to be flashed with the firmware is the STM8S105. The needed wires connection for that are: GND, RST and SWIM. This wires are available on the wheel speed sensor cable (other than the wires needed for the sensor).
 
 Some options you have:
-# buy an extra speed sensor and cut the sensor from the cable and so you will have a cable with a connector that you can use only for programming
+# buy an extra speed sensor and cut the sensor from the cable and so you will have a cable with a connector that you can use only for programming - be careful, it appears some speed sensors (eg with Y Splitter for light cables) do not have the wires connected required for flashing
+# buy a speed sensor extension cable (have not confirmed myself if all wires for flashing are present)
 # cut the cable to wire the needed wires for flashing and keep the other wires intact - this will work perfectly and you can avoid to buy the extra wheel speed sensor
+# super dodgy way - remove the plastic shells from one end of the connectors on the STLink cable, carefully cover the brass connectors in heat shrink (so you don't get any shorts), slightly increase the internal size of the connectors on the STLink cable by pushing them onto jtag males with 45 deg rotation and then carefully fit over the pins inside the male speed sensor cable coming from the motor. I also found that you don't need the RST pin connected (at least when flashing in Windows) which gives you more space when inserting into the male cable.
 
 Here is the list of wires:
 The connections to STLinkV2 clone:
-* purple wire connect to STLinkV2 RST pin
+* purple wire connect to STLinkV2 RST pin (Potentially optional, did not appear to be needed flashing from Windows)
 * orange wire connect to STLinkV2 GND pin
 * black wire connect to STLinkV2 SWIM pin
 * brown wire connect to STLinkV2 VCC/5V pin (Optional - For those who want to flash without a battery attached)
