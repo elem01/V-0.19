@@ -50,19 +50,25 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 | orange || throttle || wired with the 5V wire and black ground wire for 3 pin throttle
 |}
 
-= Connections between KT-LCD3 and TSDZ2 LCD cable =
+= Summary of connections between KT-LCD3 and TSDZ2 motor cable =
 {|
-| '''KT-LCD3 wire color''' || '''TSDZ2 controller wire function'''
+| '''KT-LCD3 wire color''' || '''6 wire color (no throttle)''' || ''' 8 wire color (throttle) ''' || '''TSDZ2 controller wire function'''
 |-
-| red wire || (P+) battery voltage
+| red wire || green wire || blue wire || (P+) battery voltage
 |-
-| blue wire || Vin
+| blue wire || white wire || red wire || Vin
 |-
-| black wire || GND ground
+| black wire || black wire || black wire || GND ground
 |-
-| green wire || UART TX motor controller
+| green wire || brown wire || brown wire || UART TX motor controller
 |-
-| yellow wire || UART RX motor controller
+| yellow wire || orange wire || yellow wire || UART RX motor controller
+|-
+| brake wire || na || green wire || Use with brakes
+|- 
+| throttle wire || na || orange wire || Use with throttle
+|- 
+| 5v wire || na || white wire || For hidden brakes and throttle
 |}
 [https://www.endless-sphere.com/forums/download/file.php?id=239409&mode=view Connector Photo]
 
