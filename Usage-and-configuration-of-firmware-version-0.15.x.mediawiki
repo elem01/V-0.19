@@ -89,12 +89,11 @@ Here you can choose how many assist levels are used (the ones you can choose on 
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Number of assist levels || 9 ||  Please select the number of assist levels you like to use from min. 1  to  max. 9 
+| 0 || Number of assist levels || 5 ||  Please select the number of assist levels you like to use from min. 1  to  max. 9 
 |-
-| 1 || Assist level 1 power || 400 || Max value of motor energy (in watts) that motor will use to assist you, on this assist level. The motor will use this max value only when you hit the max torque sensor force * max pedal cadence.<br><br>
-Use higher values (more than what motor can give) to get more sensitivity from the torque sensor, like you can setup a value of 2000 that will double the torque sensitivity comparing to use the value of 1000. 
+| 1 || Assist level 1 multiplier || 0.5 || The value with which the human pedaling power is multiplied. E.g. 0.5 * 200W (human power) = 100W assist power which results in 300W total power.
 |-
-| 2 || Assist level X power|| .... || The same a previous but for assist level X.
+| 2 || Assist level X multiplier|| .... || The desired multiplier for assist level X.
 |}
 
 == 4: Startup power boost ==
