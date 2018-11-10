@@ -108,14 +108,13 @@ Here you can configure the BOOST feature. This feature gives a peak of power to 
 |-
 | 2 || limit boost power to max battery power value || 0 || 1 to enable power boost limit to the Max battery power value and 0 to disable.
 |-
-| 3 || boost time || 2.5 (seconds) || 0 to disable startup power boost feature.
+| 3 || boost time || 2.0 (seconds) || -
 |-
-| 4 || fade out/transition time || 2.5 (seconds) || fade out from boost power to regular power.
+| 4 || fade out/transition time || 3.5 (seconds) || fade out from boost power to regular power.
 |-
-| 5 || assist level 1 boost power || 200 || Max value of motor energy (in watts) that motor will use to assist you during power boost, on this assist level. The motor will use this max value only when you hit the max torque sensor force.<br><br>
-Use higher values (more than what motor can give) to get more sensitivity from the torque sensor, like you can setup a value of 2000 that will double the torque sensitivity comparing to use the value of 1000.
+| 5 || assist level 1 boost multiplier|| 4 || See assist levels for more information about multipliers
 |-
-| 6 || assist level X boost power || --- || The same a previous but for assist level X.
+| 6 || assist level X boost multiplier || - || The desired boost multiplier for assist level X.
 |}
 
 == 5: Motor temperature protection ==
