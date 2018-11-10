@@ -29,7 +29,10 @@ Motor controller will automatically choose a battery current in a way to limit t
 '''NOTES:'''
 * this functionality cannot be used when offroad mode is enabled. Disable offroad mode first.
 
-= 3. Configurations screen =
+= 3. ODO field =
+TBD
+
+= 4. Configurations screen =
 Long click on up and down buttons to enter on this screen. On/off button click to enter on subscreens and on/off button click to cycle on subscreens, long press  on/off to exit menue
 
 == 0: General Basic setup==
