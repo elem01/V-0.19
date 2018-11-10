@@ -84,7 +84,7 @@ How to calculate the battery pack resistance:<br>
 
 == 3: Assist level setup ==
 
-Here you can choose how many assist levels are used (the ones you can choose on LCD3 when clicking up and down buttons). You can also choose the max power value in watts that motor will use to assist you.
+Here you can configure how many assist levels can be used and change their respective multipliers. The defaults should already work for most people.
 
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
