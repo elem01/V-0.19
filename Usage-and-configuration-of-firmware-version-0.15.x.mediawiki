@@ -180,7 +180,7 @@ Possible configurations on LCD3:
 | 0 || Motor voltage type || 0 || 
 * 0 for 48V brushless motor (TSDZ2 52V version has a 48V brushless motor)
 * 1 for 36V brushless motor.
-* 2 for experimental high cadence mode (only available in version 0.14.3 and up). Maybe not good for the motor, use at your own risk. Probably only suitable for 36V motors. Some users also increase the cadence to around 130 in configuration menu 8.2 (PAS max cadence).
+* 2 for experimental high cadence mode (only available in version 0.14.3 and up). Maybe not good for the motor, use at your own risk. Probably only suitable for 36V motors.
 This configuration is needed for FOC calculations.
 |-
 | 1 || Motor assistance startup without pedal rotation || 0 || Enabled (1) or disabled (0). Recommended to keep at 0 value if you don't have brake sensors installed.
