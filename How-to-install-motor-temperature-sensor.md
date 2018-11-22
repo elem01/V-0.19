@@ -20,8 +20,7 @@ There are two types of controller: 8 wire with throttle and 6 wire with no-throt
 ## LM35 
 
 I connected LM35 to a connector so is possible to remove it when I need, for instance when I want to remove the motor:
-
-[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-02.jpg]]
+<img src="https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-02.jpg" width="150">
 
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-01.jpg]]
 
