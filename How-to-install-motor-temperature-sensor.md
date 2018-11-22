@@ -12,17 +12,17 @@ The sensor used is the [LM35](http://www.ti.com/lit/ds/symlink/lm35.pdf) that is
 
 The LM35 outputs a linear voltage, 10mV/K, over the temperature range, i.e 0V@0C, 2.98V @25C , 3.58V@85C, 3.73V@100C. Because the only free header connector available on the TSDZ2 motor controller that reads an analog voltage signal is the one used for the throttle, the sensor is connected to that header and the throttle can not be connected and used.
 
-There are two types of controller: 8 wire with throttle and 6 wire with no-throttle. 
+There are two types of controller: 
 
-* 8 wire: You will cut the wires and connect sensor to them
-* 6 wire: You will pick the encapsulant away from the pcb and solder to the pcb.
+* 8 wire with throttle: You will cut the wires and connect sensor to them
+* 6 wire with no-throttle: You will pick the encapsulant away from the pcb and solder to the pcb.
 
 ## LM35 
 
 I connected LM35 to a connector so is possible to remove it when I need, for instance when I want to remove the motor:
-<img src="https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-02.jpg" width="150">
 
-[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-01.jpg]]
+<img src="https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-02.jpg" width="150"> 
+<img src="https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-01.jpg" width = 500>
 
 ## 8 Wire Throttle type. 
 
