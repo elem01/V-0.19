@@ -1,4 +1,4 @@
-The installation of the motor temperature sensor is optional. The advantage of installing the motor temperature sensor is to avoid permanent damage/loss of torque of TSDZ2 motor -- please read more here: [[TSDZ2 motor demagnetized due to overheating]].
+The installation of the motor temperature sensor is optional. The advantage of installing the motor temperature sensor is to avoid permanent damage/loss of torque of TSDZ2 motor -- please read more here: [[TSDZ2 motor demagnetized due to overheating]]. Youn can see the installation process in the [JBalat Install Video for 6 Wire controller](https://www.youtube.com/watch?v=Wb8Omk6e7GI)
 
 The firmware shows on LCD3 the motor temperature (this is optional) and can also reduce linearly the motor current while the motor temperature increases (this is optional).
 
@@ -6,13 +6,14 @@ NOTE: to use this motor temperature sensor you will loose the possibility to use
 
 The sensor used is the [LM35](http://www.ti.com/lit/ds/symlink/lm35.pdf) that is very popular and easy buy online like on Ebay. It is also very simple to interface with the TSDZ2 motor controller, where just 3 wires need to be connected (please see the information bellow).
 
-The LM35 outputs a linear voltage, 10mV/K, over the temperature range, i.e 2.98V @25C , 3.58V@85C. Because the only free header connector available on the TSDZ2 motor controller that reads an analog voltage signal is the one used for the throttle, the sensor is connected to that header and the throttle can not be connected and used.
+The LM35 outputs a linear voltage, 10mV/K, over the temperature range, i.e 0V@0C, 2.98V @25C , 3.58V@85C, 3.73V@100C. Because the only free header connector available on the TSDZ2 motor controller that reads an analog voltage signal is the one used for the throttle, the sensor is connected to that header and the throttle can not be connected and used.
 
-There are two types of controller 8 wire with throttle and 6 wire with no-throttle. 
+There are two types of controller: 8 wire with throttle and 6 wire with no-throttle. 
 
 * 8 wire: You will cut the wires and connect sensor to them
-* 6 wire: You will pick the encapsulant away from the pcb and solder to the pcb
+* 6 wire: You will pick the encapsulant away from the pcb and solder to the pcb.
 
+## LM35 
 
 I connected LM35 to a connector so is possible to remove it when I need, for instance when I want to remove the motor:
 
@@ -30,7 +31,7 @@ I first glued one face of LM35 to a metal face off the motor (the part of the mo
 
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-03.jpg]]
 
-## 6 WIre type:
+## 6 Wire , No-Throttle type:
 
 The connection points are clear in the [JBalat Install Video for 6 Wire](https://www.youtube.com/watch?v=Wb8Omk6e7GI)
 
