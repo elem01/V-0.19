@@ -1,4 +1,6 @@
-The installation of the motor temperature sensor is optional. The advantage of installing the motor temperature sensor is to avoid permanent damage/loss of torque of TSDZ2 motor -- please read more here: [[TSDZ2 motor demagnetized due to overheating]]. Youn can see the installation process in the [JBalat Install Video for 6 Wire controller](https://www.youtube.com/watch?v=Wb8Omk6e7GI)
+The installation of the motor temperature sensor is optional. The advantage of installing the motor temperature sensor is to avoid permanent damage/loss of torque of TSDZ2 motor -- please read more here: [[TSDZ2 motor demagnetized due to overheating]]. 
+
+You can see the installation process in the [JBalat Install Video for 6 Wire controller](https://www.youtube.com/watch?v=Wb8Omk6e7GI)
 
 The firmware shows on LCD3 the motor temperature (this is optional) and can also reduce linearly the motor current while the motor temperature increases (this is optional).
 
