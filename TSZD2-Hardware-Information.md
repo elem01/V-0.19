@@ -22,12 +22,12 @@ TSDZ2 connectors are [Higo HG-F.S-Z*09A, Mini-A](http://www.higocon.com/en/produ
 We know there are 2 type of motors: 36V 4000 RPMs and 48V 4000 RPMs (this later works at 52V also, is the same motor). As for the controller, is just the same for all different configurations: supports from battery 20V up to 60V. Yes, you can run 52v/14s on EITHER motor actually, the '36v type' motor will just spin a little faster with less torque than the '48v type' motor - but they both are compatible. 
 
 ## Winding Resistance
-This should be a useful diagnostic, and tell us if TS changes the motors. [See](https://opensourceebikefirmware.bitbucket.io/development_tsdz2/About_Tongsheng_TSDZ2_mid_drive_motors--Motor.html)
+This should be a useful diagnostic, and tell us if TS changes the motors. [See](https://opensourceebikefirmware.bitbucket.io/development_tsdz2/About_Tongsheng_TSDZ2_mid_drive_motors--Motor.html). R is measured between any pair of wires (so is 2 windings in series)
 
-V | R-Measured | R Single | L Single
+V | R-Measured | R Single | L Single | Measured??
 -- | -- | -- | --
-36 | ? | 0.94??? | 76uH
-48 | 0.25 | 0.125 | 135uH
+36 | 0.11 | 0.055 | 76uH | R measured (sb23Nov18), L estimated 76=135*(36/48)^2
+48 | 0.25 | 0.125 | 135uH |
 
 ## Gears
 
