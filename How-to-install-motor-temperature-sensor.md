@@ -4,7 +4,9 @@ You can see the installation process in the [JBalat Install Video for 6 Wire con
 
 The firmware shows on LCD3 the motor temperature (this is optional) and can also reduce linearly the motor current while the motor temperature increases (this is optional).
 
-NOTE: to use this motor temperature sensor you will loose the possibility to use the throttle. (If you can't/won't install the sensor then a useful diagnostic is the [non-reversible temperature label](https://nz.rs-online.com/web/p/temperature-sensitive-labels/7799772/) This permanently changes showing the maximum temperature)
+NOTE: to use this motor temperature sensor you will loose the possibility to use the throttle. 
+
+A useful diagnostic is the [non-reversible temperature label](https://nz.rs-online.com/web/p/temperature-sensitive-labels/7799772/). This permanently changes color showing the maximum temperature *ever* reached.
 
 The sensor used is the [LM35](http://www.ti.com/lit/ds/symlink/lm35.pdf) that is very popular and easy buy online like on Ebay. It is also very simple to interface with the TSDZ2 motor controller, where just 3 wires need to be connected (please see the information bellow).
 
