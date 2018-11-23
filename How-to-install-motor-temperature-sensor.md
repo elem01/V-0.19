@@ -6,7 +6,7 @@ The firmware shows on LCD3 the motor temperature (this is optional) and can also
 
 NOTE: to use this motor temperature sensor you will loose the possibility to use the throttle. 
 
-A useful diagnostic is the [non-reversible temperature label](https://nz.rs-online.com/web/p/temperature-sensitive-labels/7799772/). This permanently changes color showing the maximum temperature *ever* reached.
+## LM35 
 
 The sensor used is the [LM35](http://www.ti.com/lit/ds/symlink/lm35.pdf) that is very popular and easy buy online like on Ebay. It is also very simple to interface with the TSDZ2 motor controller, where just 3 wires need to be connected (please see the information bellow).
 
@@ -16,8 +16,6 @@ There are two types of controller:
 
 * 8 wire with throttle: You will cut the wires and connect sensor to them
 * 6 wire with no-throttle: You will pick the encapsulant away from the pcb and solder to the pcb.
-
-## LM35 
 
 I connected LM35 to a connector so is possible to remove it when I need, for instance when I want to remove the motor:
 
@@ -39,3 +37,8 @@ I first glued one face of LM35 to a metal face off the motor (the part of the mo
 The connection points are clear in the [JBalat Install Video for 6 Wire](https://www.youtube.com/watch?v=Wb8Omk6e7GI)
 
 ![6 wire motor control](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_motor_controller_without_throttle_wires.jpeg)
+
+A useful diagnostic is the [non-reversible temperature label](https://nz.rs-online.com/web/p/temperature-sensitive-labels/7799772/). This permanently changes color showing the maximum temperature *ever* reached. 
+
+## Non-Reverible Temperature Label
+<img src="https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/Temperature_Label_on_Motor1.jpg" width="300"> 
