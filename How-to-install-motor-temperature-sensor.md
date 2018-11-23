@@ -38,7 +38,8 @@ The connection points are clear in the [JBalat Install Video for 6 Wire](https:/
 
 ![6 wire motor control](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_motor_controller_without_throttle_wires.jpeg)
 
+## Non-Reverible Temperature Label
+
 A useful diagnostic is the [non-reversible temperature label](https://nz.rs-online.com/web/p/temperature-sensitive-labels/7799772/). This permanently changes color showing the maximum temperature *ever* reached. 
 
-## Non-Reverible Temperature Label
 <img src="https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/Temperature_Label_on_Motor1.jpg" width="300"> 
