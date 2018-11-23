@@ -15,6 +15,9 @@ V0.14 Link to some info????
 The below is inferred from the source without testing:
 
 2 byte numbers are little endian.
+
+## From Controller to LCD
+
 (put example here was 43 00 01 51 51 00 07 07 F4)
 
 Send frequency: 10 per second
@@ -42,3 +45,5 @@ Byte No. | example | description
 21,22 | ? | Pedal Torque x10
 23,24 | ? | Pedal Power x10
 25,26 | ? | CRC16
+
+## From LCD to Controller
