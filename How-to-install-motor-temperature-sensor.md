@@ -22,6 +22,8 @@ I connected LM35 to a connector so is possible to remove it when I need, for ins
 <img src="https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-02.jpg" width="150"> 
 <img src="https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/motor_temperature_sensor-01.jpg" width = 500>
 
+If you are getting your LM35 from Ali/ebay, then you might want to test them at 100C (in steam) before fitting, to be sure they work properly, as the calibration of random chinese knockoffs is not something you can be confident in.
+
 ## 8 Wire Throttle type. 
 
 I wired the wires to the existing motor controllers wires for throttle. I decided to no cut the throttle wires but leave them in place in the case in future I still want to use them and not the temperature sensor:
@@ -38,7 +40,7 @@ The connection points are clear in the [JBalat Install Video for 6 Wire](https:/
 
 ![6 wire motor control](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_motor_controller_without_throttle_wires.jpeg)
 
-## Non-Reverible Temperature Label
+## Non-Reversible Temperature Label
 
 A useful diagnostic is the [non-reversible temperature label](https://nz.rs-online.com/web/p/temperature-sensitive-labels/7799772/). This permanently changes color showing the maximum temperature *ever* reached. 
 
