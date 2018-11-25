@@ -4,3 +4,9 @@
 # Git clone the project or download zip file: [https://github.com/OpenSource-EBike-firmware/TongSheng_TSDZ2_motor_controller_firmware] (make sure to get the master branch)
 # Use any text editor to make the desired firmware changes.
 # Double-click Start_Compiling.bat to compile the firmware. The resulting main.ihx can be programmed in the controller.
+
+= How to compile the code on Linux =
+
+The stm8 eforth project is developed on linux.
+
+https://github.com/TG9541/stm8ef/wiki/STM8S-Programming
