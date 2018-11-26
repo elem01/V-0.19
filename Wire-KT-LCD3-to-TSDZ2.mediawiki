@@ -12,7 +12,7 @@ KT-LCD connectors looks like Higo [https://www.higoconnector.com/products/z209bm
 
 On the market, you can find TSZD2 motor with and without throttle connection. The cable that goes from the motor controller to LCD is different and here are the details -- you need to identify your cable signals (use a multimeter to measure between GND and P+ battery voltage):
 
-6 pin controller (usually this is a TSDZ2 without throttle):
+== 6 pin controller (usually this is a TSDZ2 without throttle): ==
 {|
 | '''wire color''' || '''function''' || '''description'''
 |-
@@ -31,7 +31,7 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 
 [[https://github.com/hurzhurz/tsdz2/raw/master/images/tsdz2-plug.jpg|100px]]
 
-[https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&hilit=flash+lcd3&start=3525#p1415134 8 pin] controller (usually this is a TSDZ2 with throttle):
+= [https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&hilit=flash+lcd3&start=3525#p1415134 8 pin] controller (usually this is a TSDZ2 with throttle): ==
 {|
 | '''wire color''' || '''function''' || '''description'''
 |-
@@ -51,6 +51,8 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 |-
 | orange || throttle || wired with the 5V wire and black ground wire for 3 pin throttle
 |}
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_8Pin_Connector_Higo_B8_Cable_Map_2.jpg | width=500px]]
 
 = Summary of connections between KT-LCD3 and TSDZ2 motor cable =
 {|
