@@ -20,6 +20,10 @@ Unknown
 * balance accuracy is needed
 * difficult to get reproducible or accurate results
 
+[Casainhos Technique](https://endless-sphere.com/forums/viewtopic.php?f=30&t=93818&p=1427541#p1427176)
+
 # Power Measurement
 
 ## Hill Climb
+
+The hill climb seems a good way to measure power without needing anything to be calibrated. (as long as you live somewhere with hills, or a multi-storey carpark with tight ramps).
