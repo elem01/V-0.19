@@ -1,4 +1,6 @@
-Serial comms happen at 9600bd, 5V-TTL, binary.
+Serial comms happen at 9600bd, 5V-TTL, binary. 
+
+[Protocol Information](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Communication-Protocol)
 
 # Connecting a Bluetooth Module
 
