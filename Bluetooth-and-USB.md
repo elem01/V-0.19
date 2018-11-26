@@ -4,7 +4,7 @@ Serial comms happen at 9600bd, 5V-TTL, binary.
 
 # Connecting a USB-Serial Module
 
-#Logging Data
+# Logging Data
 
 Realterm can log raw data on a PC
 
