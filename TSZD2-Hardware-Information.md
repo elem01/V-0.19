@@ -73,7 +73,12 @@ Also, the microcontroller can disable the 5V voltage of the circuit and this way
 
 ## Torque Sensor
 
-[Analysis](https://www.pedelecforum.de/forum/index.php?threads/funktionsprinzip-drehmomentsensor-im-mittelmotor-sfm-du-250-p-tsdz2.45029/)
+[Analysis](https://www.pedelecforum.de/forum/index.php?threads/funktionsprinzip-drehmomentsensor-im-mittelmotor-sfm-du-250-p-tsdz2.45029/)  (in german)
+[translate to english](https://translate.google.com/translate?sl=de&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=https%3A%2F%2Fwww.pedelecforum.de%2Fforum%2Findex.php%3Fthreads%2Ffunktionsprinzip-drehmomentsensor-im-mittelmotor-sfm-du-250-p-tsdz2.45029%2F&edit-text=)
+
+The PAS sensor is 24 magnets in the torque sensor coupling coil ring.
+
+(Calibrating Torque and Power](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Calibrating-Torque-and-Power)
 
 # Display Units
 
