@@ -31,7 +31,7 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 
 [[https://github.com/hurzhurz/tsdz2/raw/master/images/tsdz2-plug.jpg|100px]]
 
-= [https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&hilit=flash+lcd3&start=3525#p1415134 8 pin] controller (usually this is a TSDZ2 with throttle): ==
+== [https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&hilit=flash+lcd3&start=3525#p1415134 8 pin] controller (usually this is a TSDZ2 with throttle): ==
 {|
 | '''wire color''' || '''function''' || '''description'''
 |-
@@ -74,8 +74,9 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 |- 
 | 5v wire || na || white wire || For hidden brakes and throttle
 |}
-[https://www.endless-sphere.com/forums/download/file.php?id=239409&mode=view Connector Photo]
 
+* [https://www.endless-sphere.com/forums/download/file.php?id=239409&mode=view KT-LCD3 0.1" Motor Connector Photo]
+* [https://sondorsforum.com/applications/core/interface/imageproxy/imageproxy.php?img=https%3A%2F%2Fi.imgur.com%2FGqfwM0S.jpg&key=1203f163b099843d28eb7d621793818bafcc3cbc1c177a2dd9ee66a2afc4ae07 KT-LCD3 LCD end Round Connectors]
 You can wire the brakes to brake wire and you will also need to wire the GND wire. If you are using a “hidden wire brake sensor”, you will also need to connect the 5V wire.
 
 For the throttle, you will need to connect the throttle wire, the GND and 5V wire.
