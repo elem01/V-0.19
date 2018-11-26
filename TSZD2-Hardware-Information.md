@@ -82,9 +82,11 @@ The PAS sensor is 24 magnets in the torque sensor coupling coil ring.
 
 # Display Units
 
-- OSEF currently uses [Kunteng](http://www.szktdz.com) KT-LCD3 display with STM8
+- OSEF currently uses [Kunteng](http://www.szktdz.com) KT-LCD3 display with STM8, and is adding Bafang 850
 - Original TS displays VLCD5 uses otp haier micros, and can't be changed. 
 - XH18 uses STM8, so may become usable. HH has started [xh18 lcd project](https://github.com/hurzhurz/xh18lcd). [pic](https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&p=1392107&hilit=xh18#p1392107) [[f/w]](https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&p=1413918&hilit=xh18#p1413918)
+- [Blue and USB](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Bluetooth-and-USB)
+- [EBMDisplay ](http://www.wptm.hu/ebmdisplay/) Android App for Bluetooth
 
 
 [More display info](https://opensourceebikefirmware.bitbucket.io/development/Motor_controllers--BMSBattery_S_series--LCD_control_panel.html)
