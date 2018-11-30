@@ -68,11 +68,11 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 |-
 | yellow wire || green wire || orange wire || yellow wire || UART RX motor controller
 |-
-| brake wire ||  || purple || green wire || Use with brakes
+| brake wire || na || purple || green wire || Use with brakes
 |- 
-| throttle wire || na || orange wire || Use with throttle
+| throttle wire || na || na || orange wire || Use with throttle
 |- 
-| 5v wire || na || white wire || For hidden brakes and throttle
+| 5v wire || na || na || white wire || For hidden brakes and throttle
 |}
 
 * [https://www.endless-sphere.com/forums/download/file.php?id=239409&mode=view KT-LCD3 0.1" Motor Connector Photo]
