@@ -64,9 +64,9 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 |-
 | black wire || black wire || black wire || black wire || GND ground
 |-
-| green wire || white wire || brown wire || brown wire || UART TX motor controller
+| green wire || green wire || brown wire || brown wire || UART TX motor controller
 |-
-| yellow wire || green wire || orange wire || yellow wire || UART RX motor controller
+| yellow wire || white wire || orange wire || yellow wire || UART RX motor controller
 |-
 | brake wire || na || purple || green wire || Use with brakes
 |- 
