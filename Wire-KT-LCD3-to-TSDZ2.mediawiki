@@ -54,21 +54,21 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_8Pin_Connector_Higo_B8_Cable_Map_2.jpg | width=500px]]
 
-= Summary of connections between KT-LCD3 and TSDZ2 motor cable =
+= Summary of connections between KT-LCD3, Bafang 850C and TSDZ2 motor cable =
 {|
-| '''KT-LCD3 wire color''' || '''6 wire color (no throttle)''' || ''' 8 wire color (throttle) ''' || '''TSDZ2 controller wire function'''
+| '''KT-LCD3 wire color''' || '''Bafang 850C wire color''' || '''6 wire color (no throttle)''' || ''' 8 wire color (throttle) ''' || '''TSDZ2 controller wire function'''
 |-
-| red wire || green wire || blue wire || (P+) battery voltage
+| red wire || brown wire || green wire || blue wire || (P+) battery voltage
 |-
-| blue wire || white wire || red wire || Vin
+| blue wire || orange wire || white wire || red wire || Vin
 |-
-| black wire || black wire || black wire || GND ground
+| black wire || black wire || black wire || black wire || GND ground
 |-
-| green wire || brown wire || brown wire || UART TX motor controller
+| green wire || white wire || brown wire || brown wire || UART TX motor controller
 |-
-| yellow wire || orange wire || yellow wire || UART RX motor controller
+| yellow wire || green wire || orange wire || yellow wire || UART RX motor controller
 |-
-| brake wire || purple || green wire || Use with brakes
+| brake wire ||  || purple || green wire || Use with brakes
 |- 
 | throttle wire || na || orange wire || Use with throttle
 |- 
