@@ -118,4 +118,5 @@ STM8 reads the battery voltage on pin PE7. The current value is sent by the cont
 
 - [I burn my KT LCD3, I connect 48V version to 14s battery (about 58V)](https://endless-sphere.com/forums/viewtopic.php?f=2&t=94070&start=75#p1395703)
 - Plug the two connectors (M to F) of the motor unit together. Blows up controller. (Hint: paint connectors with different nail varnish colors or put colored heatshrink on.)
+- [Use a thread lock and check the fixing of bolts more often. I missed this moment and the body broke in half](https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&start=2750#p1395963)
 
