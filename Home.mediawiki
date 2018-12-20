@@ -1,9 +1,11 @@
 __NOTOC__
 = About the TSDZ2 Flexible OpenSource firmware/embedded software =
 
-This firmware/embedded software controls the Tongsheng TSDZ2 Ebike mid drive motor (is installed and runs inside the TSDZ2 electronic board) and the motor runs more efficient, making it stronger and uses less battery energy. The ebike will be also more responsive, fast and agile.
+This OpenSource firmware/embedded software adds advanced features and customization to TSDZ2 motor that are usually only present on expensive motor and big brands only. Also makes possible to use more advanced LCDs like the Bafang 850C color LCD or the KT-LCD3.
 
-This firmware/embedded software also controls the Kunteng KT-LCD3 and the Bafang 850C color LCD that shows advanced information like battery voltage, rider pedal power in watts or motor temperature. Also makes possible to quick configure by the user all the options!
+TSDZ2 Ebike mid drive motor runs more efficient, making it stronger and uses less battery energy. The ebike will be also more responsive, fast and agile.
+
+Bafang 850C color LCD and KT-LCD3 shows advanced information like battery voltage, rider pedal power in watts or motor temperature. Also the user can quickly configure all the options directly on the LCD!!
 
 This firmware is being developed for free by the community of users, where some of this developers work professionally developing this type of technology for very well known companies.
 
