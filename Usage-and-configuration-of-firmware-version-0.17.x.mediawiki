@@ -1,4 +1,4 @@
-The following applies to firmware version 0.15.x only!
+The following applies to firmware version 0.17.x only!
 
 CAUTION: always use the same firmware version for both the motor controller and LCD!
 
@@ -7,12 +7,13 @@ NOTE: Before start using the firmware, you must configure correctly the options 
 KT-LCD3 shows and/or configure the following from TSDZ2 motor:
 
 = 1. Main screen =
-* '''<u>Main screen</u>''': this is the default screen after turn on the LCD.
-** <u>assist level</u>: Assist level scales/amplify the torque sensor signal, if you want a higher assist level from the motor, choose the max assist level value. Assist level has 5 levels in total and user can define (on firmware configuration) a custom scale value for each level. Level 0 keep always the motor disabled.
-** <u>ebike wheel speed</u>: the value can be shown in kms or mph.
-** <u>battery power</u>: real time value in watts of the power being draw from the battery.
-** <u>battery state of charge</u>: 6 different levels. When battery is empty, the empty symbol on LCD will also blink (state of charge is based on battery voltage and can be setup on the motor controller firmware configuration)
-** <u>lights</u>: enabled with a button up long press, the motor controller will enable the ebike lights. LCD backlight will also be enabled. (backlight intensity can be setup on the motor controller firmware configuration).
+* '''<u>Main screen</u>'''
+** <u>Assist level</u>: assist level sets the motor power as a factor of the power that rider is doing on the pedals. For instance, if current assist level is 3 and if this level is configured as a factor of 2.0, when rider is doing on the pedals a power of 100 watts, the motor power will be then 200 watts.
+<br>The assist level is changed by pressing UP and DOWN buttons.
+** <u>Ebike wheel speed</u>: the value of wheel speed in kms or mph.
+** <u>Motor power</u>: power used by the motor (in watts) that is being draw from the battery.
+** <u>Battery state of charge</u>: Battery state of charge based on battery voltage. There are 6 different levels.<br>When battery is near empty, the battery symbol will be empty and blinking and the motor power will be reduced up to battery being totally empty.<br>The battery voltage used to calculate the state of charge has in consideration the battery pack resistance to avoid floating when power is being draw from the battery (the battery pack resistance value is set on configurations menu).
+** <u>Lights</u>: enabled with a button up long press, the motor controller will enable the ebike lights. LCD backlight will also be enabled. (backlight intensity can be setup on the motor controller firmware configuration).
 ** <u>brake</u>: LCD symbol is enabled when user press the ebike brakes, good to check that sensor brakes are working.
 ** <u>walk assist</u>: although it is implemented on LCD, it is not yet implemented on the motor controller. Enabled with a button down long press.
 ** <u>odometer field</u>: the following information will cycle with on/off button click
