@@ -1,7 +1,8 @@
-__NOTOC__
-= About the TSDZ2 Flexible OpenSource firmware =
+= About the TSDZ2 Flexible OpenSource firmware/embedded software =
 
-The TSDZ2 Flexible OpenSource firmware/embedded software controls the Ebike Tongsheng TSDZ2 mid drive motor (runs inside the TSDZ2 electronic board) and the motor runs more efficient (making it stronger and uses less battery energy), the ebike will be also more responsive, fast and agile.
+This firmware/embedded software controls the Tongsheng TSDZ2 Ebike mid drive motor (is installed and runs inside the TSDZ2 electronic board) and the motor runs more efficient, making it stronger and uses less battery energy. The ebike will be also more responsive, fast and agile.
+
+This firmware/embedded software also controls the Kunteng KT-LCD3 and the Bafang 850C color LCD that shows advanced information like battery voltage, rider pedal power in watts or motor temperature. Also makes possible to quick configure by the user all the options!
 
 This firmware is being developed for free by the community of users, where some of this developers work professionally developing this type of technology for very well known companies.
 
@@ -20,9 +21,9 @@ See here a [https://www.youtube.com/watch?v=IrWn6e8bIuQ Youtube video review don
 
 See the more users feedback here: [[Why should you use the Flexible OpenSource firmware on your TSDZ2]]
 
-= LCD information and configurations of TSDZ2 =
+= TSDZ2 configurations and information on LCD =
 
-[[Usage and configuration of firmware version 0.17.x|See here the LCD information and configurations of TSDZ2 motor]].
+[[Usage and configuration of firmware version 0.17.x|See here the TSDZ2 configurations and information on LCD]].
 
 = How to install =
 
@@ -31,6 +32,6 @@ See the more users feedback here: [[Why should you use the Flexible OpenSource f
 * [[How to install motor temperature sensor]] (optional but recommended)
 
 = See also =
-* Please read the '''TSDZ2 [[FAQ]]'''
+* Please read the '''[[FAQ|TSDZ2 FAQ]]'''
 * If you are looking to build the firmware from the sources and help on development, please follow to [[Development]]
 * Join us on [https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788 Endless-sphere forum]
