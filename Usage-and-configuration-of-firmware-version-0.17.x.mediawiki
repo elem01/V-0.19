@@ -24,7 +24,7 @@ NOTE: Before start using the firmware, you must configure correctly the options 
 **** <u>1.0 Trip distance</u>: can be reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
 **** <u>1.1 Distance since power on</u> this value is automatically reset at power on. You can also reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
 **** <u>1.2 Odometer</u>: can be set to a specific value on the configurations menu.
-*** <u>2. Battery state of charge (not shown if this feature is disable on configurations menu)</u>
+*** <u>2. Battery state of charge</u> (not shown if this feature is disable on configurations menu)
 **** <u>2.0 Battery state in percentage</u>
 **** <u>2.1 Battery discharged total watts hour value</u>
 *** <u>3. Battery</u>
@@ -34,7 +34,7 @@ NOTE: Before start using the firmware, you must configure correctly the options 
 **** <u>4.0 Rider pedal power</u>: in watts.
 **** <u>4.1 Pedal cadence</u>: in RPM.
 **** <u>4.2 Pedal torque</u>: in N.m.
-*** <u>5. Motor</u>
+*** <u>5. Motor</u> (not shown if this feature is disable on configurations menu)
 **** <u>5.0 Motor temperature</u> in degrees Celsius.
 
 == 2. Motor maximum power screen ==
