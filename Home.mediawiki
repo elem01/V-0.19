@@ -24,9 +24,9 @@ See here a [https://www.youtube.com/watch?v=IrWn6e8bIuQ Youtube video review don
 
 See the more users feedback here: [[Why should you use the Flexible OpenSource firmware on your TSDZ2]]
 
-= TSDZ2 configurations and information on LCD =
+= Information and configurations done on LCD =
 
-[[Usage and configuration of firmware version 0.17.x|See here the TSDZ2 configurations and information on LCD]].
+[[Usage and configuration of firmware version 0.17.x|See here all the information shown and  configurations done on the LCD]].
 
 = How to install =
 
