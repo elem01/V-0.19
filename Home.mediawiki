@@ -26,23 +26,11 @@ See the more users feedback here: [[Why should you use the Flexible OpenSource f
 
 = Features =
 
-== FOC motor control ==
-
-FOC motor control algorithm achieves the best possible motor torque versus motor current usage. Users are reporting that motor has higher torque and their batteries last long/higher trip range.
-
-== Battery ==
-
-=== Wide range of battery voltages: 24V up to 52V battery (7S up to 14S) ===
-
-Users can choose (a configuration on LCD) to use a battery from 7 cells up to 14 cells (can be any number on that interval).
-
-=== Battery low cut-off voltage ===
-
-Users can choose the battery low cut-off voltage (a configuration on LCD) and this way optimize the battery range and/or battery life.
-
-=== Battery SOC and resistance ===
-
-The LCD indicates the battery SOC based on the battery voltage and it has in consideration the battery pack resistance value (set on LCD configurations menu) to avoid fluctuations when motor is sourcing current from the battery.
+* '''FOC motor control'''<br>FOC motor control algorithm achieves the best possible motor torque versus motor current usage. Users are reporting that motor has higher torque and their batteries last long/higher trip range.<br>
+* '''Battery'''<br>
+** '''Wide range of battery voltages: 24V up to 52V battery (7S up to 14S)'''<br>Users can choose (a configuration on LCD) to use a battery from 7 cells up to 14 cells (can be any number on that interval).<br>
+** '''Battery low cut-off voltage'''<br>Users can choose the battery low cut-off voltage (a configuration on LCD) and this way optimize the battery range and/or battery life.<br>
+** '''Battery SOC and resistance '''<br>The LCD indicates the battery SOC based on the battery voltage and it has in consideration the battery pack resistance value (a configuration on LCD) to avoid fluctuations when motor is pulling current from the battery.<br>
 
 = Information and configurations done on LCD =
 
