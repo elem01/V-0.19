@@ -20,14 +20,22 @@ NOTE: Before start using the firmware, you must configure correctly the options 
 *** <u>Motor temperature</u>: motor temperature in degrees Celsius. When the power power is being limited due to over temperature, this field will blink (configure the temperature limits on configurations menu).
 *** <u>Battery state of charge in percentage</u>: this percentage value is based on the accumulated battery power draw from your battery pack (set options on configurations menu).
 ** <u>Odometer field</u>: this field can show a few variables that are logic grouped in sub fields. You can change between fields by pressing ON/OFF button and sub fields by quick pressing UP button followed a long press UP button (you will see temporary the field and sub field number blinking on wheel speed field).
-*** <u>Distance</u>
-**** <u>Distance1</u>
-**** <u>Distance2</u>
-**** <u>Distance3</u>
-*** <u>Battery voltage</u>: see your battery pack voltage.
-*** <u>Battery current</u>: see the current being draw from your battery pack.
-*** <u>Battery power</u>: see the accumulated battery power (in watts/hour) draw from your battery pack, since last battery full charge. This value is automatically reset when LCD turns on and battery voltage equals to charged battery voltage - this value can also be reset or set to a custom value on the configurations.
-*** <u>pedal cadence</u>: see the pedals cadence in rotations per minute.
+*** <u>1. Distance</u>
+**** <u>1.0 Trip distance</u>: can be reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
+**** <u>1.1 Distance since power on</u> this value is automatically reset at power on. You can also reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
+**** <u>1.2 Odometer</u>: can be set to a specific value on the configurations menu.
+*** <u>2. Battery state of charge (not shown if this feature is disable on configurations menu)</u>
+**** <u>2.0 Battery state in percentage</u>
+**** <u>2.1 Battery discharged total watts hour value</u>
+*** <u>3. Battery</u>
+**** <u>3.0 Battery voltage</u>
+**** <u>3.1 Battery current</u>: the current being draw by the motor.
+*** <u>4. Pedals</u>
+**** <u>4.0 Rider pedal power</u>: in watts.
+**** <u>4.1 Pedal cadence</u>: in RPM.
+**** <u>4.2 Pedal torque</u>: in N.m.
+*** <u>5. Motor</u>
+**** <u>5.0 Motor temperature</u> in degrees Celsius.
 
 == 2. Max battery power screen ==
 Motor controller will automatically choose a battery current in a way to limit the max battery power usage. The battery current value will never be higher than the max battery current setup on the configurations screen. Long click on on/off and up buttons to enter on this screen. Up and down buttons to increase/decrease the value. Long click of on/off button lo leave.
