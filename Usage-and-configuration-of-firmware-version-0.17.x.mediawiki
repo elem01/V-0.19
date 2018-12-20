@@ -4,34 +4,30 @@ CAUTION: always use the same firmware version for both the motor controller and 
 
 NOTE: Before start using the firmware, you must configure correctly the options on LCD3. For instance, you should configure your battery low voltage cut off (battery voltage when it is discharged) and all the other parameters -- follow the next section.
 
-KT-LCD3 shows and/or configure the following from TSDZ2 motor:
+= KT-LCD3 information and configurations =
 
-= 1. Main screen =
+== 1. Main screen ==
 * '''<u>Main screen</u>'''
-** <u>Assist level</u>: assist level sets the motor power as a factor of the power that rider is doing on the pedals. For instance, if current assist level is 3 and if this level is configured as a factor of 2.0, when rider is doing on the pedals a power of 100 watts, the motor power will be then 200 watts.
-<br>The assist level is changed by pressing UP and DOWN buttons.
+** <u>Assist level</u>: assist level sets the motor power as a factor of the power that rider is doing on the pedals. For instance, if current assist level is 3 and if this level is configured as a factor of 2.0, when rider is doing on the pedals a power of 100 watts, the motor power will be then 200 watts.<br>The assist level is changed by pressing UP and DOWN buttons.
 ** <u>Ebike wheel speed</u>: the value of wheel speed in kms or mph.
 ** <u>Motor power</u>: power used by the motor (in watts) that is being draw from the battery.
-** <u>Battery state of charge</u>: Battery state of charge based on battery voltage. There are 6 different levels.<br>When battery is near empty, the battery symbol will be empty and blinking and the motor power will be reduced up to battery being totally empty.<br>The battery voltage used to calculate the state of charge has in consideration the battery pack resistance to avoid floating when power is being draw from the battery (the battery pack resistance value is set on configurations menu).
-** <u>Lights</u>: enabled with a button up long press, the motor controller will enable the ebike lights. LCD backlight will also be enabled. (backlight intensity can be setup on the motor controller firmware configuration).
-** <u>brake</u>: LCD symbol is enabled when user press the ebike brakes, good to check that sensor brakes are working.
-** <u>walk assist</u>: although it is implemented on LCD, it is not yet implemented on the motor controller. Enabled with a button down long press.
-** <u>odometer field</u>: the following information will cycle with on/off button click
-*** <u>battery voltage</u>: see your battery pack voltage.
-*** <u>battery current</u>: see the current being draw from your battery pack.
-*** <u>battery power</u>: see the accumulated battery power (in watts/hour) draw from your battery pack, since last battery full charge. This value is automatically reset when LCD turns on and battery voltage equals to charged battery voltage - this value can also be reset or set to a custom value on the configurations.
+** <u>Battery state of charge</u>: Battery state of charge based on battery voltage. There are 6 different levels. When battery is near empty, the battery symbol will be empty and blinking and the motor power will be reduced up to battery being totally empty.<br>The battery voltage used to calculate the state of charge has in consideration the battery pack resistance to avoid floating when power is being draw from the battery (the battery pack resistance value is set on configurations menu).
+** <u>Lights</u>: enabled/disable with a long press of UP button (LCD back light will also be change, depending on the configurations) and the motor controller will enable/disable the ebike lights.
+** <u>Brake</u>: Brake symbol is enabled when user press the ebike brakes (good to check that sensor brakes are working).
+** <u>Walk assist</u>: enabled/disable with a long press of DOWN button. Although it is implemented on LCD, it is not yet implemented on the motor controller.
+** <u>Odometer field</u>: the following information will cycle with on/off button click
+*** <u>Battery voltage</u>: see your battery pack voltage.
+*** <u>Battery current</u>: see the current being draw from your battery pack.
+*** <u>Battery power</u>: see the accumulated battery power (in watts/hour) draw from your battery pack, since last battery full charge. This value is automatically reset when LCD turns on and battery voltage equals to charged battery voltage - this value can also be reset or set to a custom value on the configurations.
 *** <u>pedal cadence</u>: see the pedals cadence in rotations per minute.
 ** <u>battery state of charge in percentage</u>: this value can be shown as an option on the temperature field. The percentage is based on the accumulated battery power draw from your battery pack and user can define on LCD configurations menu, the battery pack total watts/hour.
 ** <u>offroad mode</u>: if you have enabled the offroad mode (see configuration section below) this can be activated with the ON/OFF and UP button combination and deactivated with the ON/OFF and DOWN button combination. When active, the assist symbol above the assist level will start blinking. Offroad mode is disabled and inactive by default. We do not recommend you to activate offroad mode on public roads. In many countries offroad mode may only be used on private property.
 
-= 2. Max battery power screen =
+== 2. Max battery power screen ==
 Motor controller will automatically choose a battery current in a way to limit the max battery power usage. The battery current value will never be higher than the max battery current setup on the configurations screen. Long click on on/off and up buttons to enter on this screen. Up and down buttons to increase/decrease the value. Long click of on/off button lo leave.
 
 '''NOTES:'''
 * this functionality cannot be used when offroad mode is enabled. Disable offroad mode first.
-
-= 3. ODO field =
-TBD
 
 = 4. Configurations screen =
 Long click on up and down buttons to enter on this screen. On/off button click to enter on subscreens and on/off button click to cycle on subscreens, long press  on/off to exit menue
