@@ -1,3 +1,4 @@
+__NOTOC__
 = About the TSDZ2 Flexible OpenSource firmware/embedded software =
 
 This firmware/embedded software controls the Tongsheng TSDZ2 Ebike mid drive motor (is installed and runs inside the TSDZ2 electronic board) and the motor runs more efficient, making it stronger and uses less battery energy. The ebike will be also more responsive, fast and agile.
