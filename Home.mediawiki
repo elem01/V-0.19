@@ -1,4 +1,4 @@
-__NOTOC__
+
 = About the TSDZ2 Flexible OpenSource firmware/embedded software =
 
 This OpenSource firmware/embedded software adds advanced features and customization to TSDZ2 motor that are usually only present on expensive motor and big brands only. Also makes possible to use more advanced LCDs like the Bafang 850C color LCD or the KT-LCD3.
@@ -11,7 +11,7 @@ This firmware is being developed for free by the community of users, where some 
 
 = Why should you use =
 
-According to the feedback of the users:
+Feedback from users:
 * ''the TSDZ2 now feels more like the Bosch motor''
 * ''the motor is more efficient, stronger, it's feel like I have a new motor''
 * ''the bike feels very responsive and is very fast and agile whenever you need it to''
@@ -23,6 +23,26 @@ See here a [https://www.youtube.com/watch?v=IrWn6e8bIuQ Youtube video review don
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/youtube_review_small.jpg]]
 
 See the more users feedback here: [[Why should you use the Flexible OpenSource firmware on your TSDZ2]]
+
+= Features =
+
+== FOC motor control ==
+
+FOC motor control algorithm achieves the best possible motor torque versus motor current usage. Users are reporting that motor has higher torque and their batteries last long/higher trip range.
+
+== Battery ==
+
+=== Wide range of battery voltages: 24V up to 52V battery (7S up to 14S) ===
+
+Users can choose (a configuration on LCD) to use a battery from 7 cells up to 14 cells (can be any number on that interval).
+
+=== Battery low cut-off voltage ===
+
+Users can choose the battery low cut-off voltage (a configuration on LCD) and this way optimize the battery range and/or battery life.
+
+=== Battery SOC and resistance ===
+
+The LCD indicates the battery SOC based on the battery voltage and it has in consideration the battery pack resistance value (set on LCD configurations menu) to avoid fluctuations when motor is sourcing current from the battery.
 
 = Information and configurations done on LCD =
 
