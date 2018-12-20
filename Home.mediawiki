@@ -20,13 +20,9 @@ See here a [https://www.youtube.com/watch?v=IrWn6e8bIuQ Youtube video review don
 
 See the more users feedback here: [[Why should you use the Flexible OpenSource firmware on your TSDZ2]]
 
-= Features and configurations =
+= LCD information and configurations of TSDZ2 =
 
-See here the TSDZ2 and KT LCD3 advanced features and the options to configure them:
-* [[Usage-and-configuration-of-firmware-version-0.15.x|Version 0.15.x (upcoming)]]
-* [[Usage-and-configuration-of-firmware-version-0.14.x|Version 0.14.x (latest)]]
-* [[Usage-and-configuration-of-firmware-version-0.12|Version 0.12 and 0.13.1]]
-* [[TSDZ2-and-KT-LCD3-advanced-features-with-Flexible-OpenSource-firmwares|Version < 0.12]]
+[[Usage and configuration of firmware version 0.17.x|See here the LCD information and configurations of TSDZ2 motor]].
 
 = How to install =
 
