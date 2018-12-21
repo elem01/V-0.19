@@ -4,6 +4,17 @@ __TOC__
 
 See here how to install: [[How to install TSDZ2 on a full suspension bicycle]]
 
+= Brakes =
+
+== Should I install the brake sensors? ==
+A: Yes because that way you will avoid motor being working while you brake, that way saving battery energy and put less stress on the system in general (some say this will help to avoid damage of the nylon gear).
+
+== Can I use a brake sensor for hydraulic brakes or the "hidden wire brakes sensor"? ==
+A: Yes, see here how to install: [[How to install brake sensors]].
+
+== Can I use "hidden wire brakes sensor" on TSDZ2 no throttle version? ==
+A: Yes, see here how to install: [[How to install brake sensors]].
+
 = Nylon gear and metal gear =
 Nylon gear at left and metal gear at right:
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/blue_nylon_and_brass_gear.png]]
@@ -15,16 +26,20 @@ The nylon gear is more weak than the metal gear and many users report that it fa
 
 See here how to install the TSDZ2 gear: https://www.youtube.com/watch?v=CTbDKN2GzNE 
 
-= Brakes =
+= Clutch =
 
-== Should I install the brake sensors? ==
-A: Yes because that way you will avoid motor being working while you brake, that way saving battery energy and put less stress on the system in general (some say this will help to avoid damage of the nylon gear).
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_main_gear_clutch.jpg]]
 
-== Can I use a brake sensor for hydraulic brakes or the "hidden wire brakes sensor"? ==
-A: Yes, see here how to install: [[How to install brake sensors]].
+The sprag clutch is a one way bearing in the tsdz2 ebike torque sensing motor that transfers your pedal torque to the main gear which is attached to the chain ring. After some time, this gear may began slipping/failing. Here is a video from jbalat showing how it happens when sprag clutch is failing: https://www.youtube.com/watch?v=PWlz4xw3pI8
 
-== Can I use "hidden wire brakes sensor" on TSDZ2 no throttle version? ==
-A: Yes, see here how to install: [[How to install brake sensors]].
+You can buy a new main gear, that includes the sprag clutch bearing, for about 30 euros on PSWPower.
+
+
+
+
+
+
+
 
 = Flexible OpenSource firmware =
 
