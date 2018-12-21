@@ -32,14 +32,13 @@ See here how to install the TSDZ2 gear: https://www.youtube.com/watch?v=CTbDKN2G
 
 The sprag clutch is a one way bearing in the tsdz2 ebike torque sensing motor that transfers your pedal torque to the main gear which is attached to the chain ring. After some time, this gear may began slipping/failing. Here is a video from jbalat showing how it happens when sprag clutch is failing: https://www.youtube.com/watch?v=PWlz4xw3pI8
 
-You can buy a new main gear, that includes the sprag clutch bearing, for about 30 euros on PSWPower.
+== How to repair clutch ==
 
+'''1. Buy a new main gear''' (includes the sprag clutch bearing)<br>
+You can buy a new main gear, that includes the sprag clutch bearing, for [http://www.pswpower.com/ven.php?cargo.2017-2s-mact about 30 euros on PSWPower].
 
-
-
-
-
-
+'''2. Install the new main gear<br>
+See this video from jbalat showing how to remove and install the main gear: https://www.youtube.com/watch?v=u-SY0rGMEMo
 
 = Flexible OpenSource firmware =
 
