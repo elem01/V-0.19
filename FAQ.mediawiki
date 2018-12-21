@@ -17,6 +17,7 @@ A: Yes, see here how to install: [[How to install brake sensors]].
 
 = Nylon gear and metal gear =
 Nylon gear at left and metal gear at right:
+
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/blue_nylon_and_brass_gear.png]]
 
 When you buy a TSDZ2 motor, it will come with the nylon gear. The metal gear is available as optional part on the online shops, you can buy it but you will need to install by yourself.
@@ -35,7 +36,7 @@ The sprag clutch is a one way bearing in the tsdz2 ebike torque sensing motor th
 == How to repair clutch ==
 
 '''1. Buy a new main gear''' (includes the sprag clutch bearing)<br>
-You can buy a new main gear, that includes the sprag clutch bearing, for [http://www.pswpower.com/ven.php?cargo.2017-2s-mact about 30 euros on PSWPower].
+You can buy a new main gear, that includes the sprag clutch bearing, [http://www.pswpower.com/ven.php?cargo.2017-2s-mact on PSWPower(about 30 euros)] or in any other shop.
 
 '''2. Install the new main gear<br>
 See this video from jbalat showing how to remove and install the main gear: https://www.youtube.com/watch?v=u-SY0rGMEMo
