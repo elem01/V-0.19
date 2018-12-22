@@ -202,6 +202,8 @@ Possible configurations on LCD3:
 This configuration is needed for FOC calculations.
 |-
 | 1 || Motor assistance startup without pedal rotation || 0 || Enabled (1) or disabled (0). Recommended to keep at 0 value if you don't have brake sensors installed.
+|-
+| 2 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
 |}
 
 == 9: Advanced technical data==
