@@ -54,11 +54,11 @@ Long press on UP and DOWN buttons to enter on this screen. Press UP or DOWN butt
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Maximum wheel speed || 50 ||  Put in your speed limit (by law) to run legal on public roads , the motor will fade out from - 0.5 km/h to +2,0 km/h in Europe often 25 km/h
+| 0 || Maximum wheel speed || 50 ||  Enter your speed limit (by law) to run legal on public roads. The motor will fade out from -0.5 km/h to +2,0 km/h. Tip: Europe has generally a speed limit of 25 km/h for E-Bikes.
 |-
 | 1 || Wheel perimeter || 2050 || Measure your wheel perimeter (search on Google on how to do it). First estimates: 26'' wheel = 2050;  27'' wheel = 2150;  27.5'' wheel =2215;  28'' wheel = 2250;  29'' wheel = 2300 
 |-
-| 2 || Speed Unit|| 0 km/h || 0 is km/h and 1 is miles per hour (British miles of course)
+| 2 ||Unit|| Metric || Set 0 for metric units (KPH and kilometers) or 1 for imperial units (MPH and miles)
 |}
 
 == 1: Battery ==
