@@ -50,7 +50,7 @@ How it works: the motor controller will automatically choose a battery current i
 == Configurations screen ==
 Long press on UP and DOWN buttons to enter on this screen. Press UP or DOWN buttons to enter on subscreens and press ON/OFF button to move to next subscreen. To exit, long press the ON/OFF button.
 
-=== 0: General Basic setup ===
+== 0: General Basic setup ==
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
