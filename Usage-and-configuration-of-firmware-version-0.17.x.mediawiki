@@ -76,47 +76,63 @@ Tip: The standard Samsung cells allow down to 2.75 V but you need some safety ma
 <br><br>
 Example values: 7 for 24 V battery; 10 for 36 V battery; 13 for 48 V battery; 14 for 52 V battery.
 |-
-| 3 || Internal resistance of battery || 130 (miliohms) || Set this value so the battery state indicator does not display a lower state of charge when pulling a lot of power from battery and the voltage sags.
+| 3 || Battery internal resistance || 130 milliohms || Set this value so the battery state indicator does not display a lower state of charge when pulling a lot of power from battery and the voltage sags.
 <br><br>
 Explanation: If you set the value to 0, you will see the battery state indicator fluctuating whenever the motor draws current from the battery. This is due to the internal resistance in the battery. The fluctuation will disappear and be filtered out with a correct value.
 <br><br>
 How to calculate the battery pack resistance:<br>
-1. Limit the battery current to a know value like 10 amps<br>
+1. Limit the battery current to a known value, e.g. 10 amps<br>
 2. Read the voltage drop when motor is pulling the 10 amps<br>
-3. Calculate the resistance value, example for 10 amps current, R = U / I, R = 1.2 volts drop / 10 amps, R = 0.120 = 120 miliohms.
+3. Calculate the resistance value
+<br><br>
+Example for 10 amps current, R = U / I, R = 1.2 volts drop / 10 amps, R = 0.120 = 120 milliohms.
 |-
-| 4 || Battery voltage SOC || - || Battery voltage State Of Charge (SOC) that is filtered using the battery pack resistance. Here you can see how the configured battery pack resistance affects battery voltage SOC.
+| 4 || Battery voltage (SOC) || - || Measured and continuously updated battery voltage State Of Charge (SOC). This value is filtered using the battery pack resistance. 
+<br><br>
+Tip: Here you can evaluate and test how the set internal resistance of the battery affects the voltage reading.
 |}    
 
 == 2: Battery power setup ==
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Enable / disable show the percentage of battery charge (SOC) in temperature field || 0 || Enable/disable for the gauge in the temperature field. 0 to disable and 1 to enable.
+| 0 || Percentage of battery charge (SOC) || 0 || Set (1) to enable or (0) to disable the gauge displaying percentage of battery charge (SOC). This value is displayed in the temperature field.
 |-
-| 1 || Increment or decrement || 0 || You can switch if the percentage should go form 0% - 100% or from 100% to 0% - set 0 for the first option and 1 for the other.
+| 1 || Increment or decrement || 0 || Set (1) if you wish the percentage should display consumed battery capacity and therefore go from 0 % to 100 % or set (0) if you prefer it shows percentage of remaining capcity and therefore 100 % to 0 %.
 |-
-| 2 || Voltage to reset Wh counter || 54.2 (volts) || On power on the LCD, this value is compared to the battery voltage and if is lower, means that battery is fully charged and the Wh counter is reset.<br>To find the correct value for this field, fully charge your battery and measure the voltage on LCD3, use a slight lower voltage value for this field, example: my 48V battery charges up to 54.6 volts and so I use the value 54.2.
+| 2 || Threshold voltage to reset watt-hour meter || 54.2 volt || When powering on the display this value is compared to the battery voltage. If it is lower the battery is expected to be fully charged and the watt-hour meter is reset.
+<br><br>
+Tip: To find a suitable value, fully charge the battery and measure the voltage on the KT-LCD3, use a slightly lower value for the threshold voltage. 
+<br><br>
+Example: my 48 V battery charges up to 54.6 volts, so I set the threshold to 54.2 volts.
 |-
-| 3 || Total watt hour || 0 || Adjust the battery pack power. You can fully charge the battery and then discharge it fully and use the measured value to input here. The value that supplier give you is often to a quite high, you should expect a value of maybe 85% - 90% (I use 350 for my 386 wh battery).
+| 3 || Total watt-hours of battery || 0 || Set the total capacity in watt-hours your battery has. 
+<br><br>
+Tip: fully charge the battery and then discharge it completely and use the measured value to input here. 
+<br><br>
+Tip: the capacities stated from suppliers are often too high, expect a value of around 80 % - 90 % of stated value. I use 350 Wh for my 386 Wh battery.
+<br><br>
+Tip: roughly calculate the capacity by multiplying the nominal voltage with the nominal ampere hours. Example: a 48 volt, 14.5 Ah battery has a nominal watt-hour capacity of 696 Wh.
 |-
-| 4 || Used  power (wh)  of battery || 0 || Counted value for used watt hour from the battery. This value is reset automatically when you power on the LCD and the battery is fully charged.
+| 4 || Consumed Wh || - || This meter displays consumed watt-hours since last reset. This value is reset automatically when you power on the LCD and the battery is fully charged, i.e., above the set threshold voltage.
 |}
 
 == 3: Assist level setup ==
 
-Here you can configure how many assist levels can be used and change their respective multipliers. The defaults should already work for most people.
+Here you can configure how many assist levels you wish to be able to select and also their respective multipliers. The defaults should already work for most people.
 
-Assist level sets the motor power as a factor of the power that rider is doing on the pedals. For instance, if current assist level is 3 and if this level is configured as a factor of 2.0, when rider is doing on the pedals a power of 100 watts, the motor power used will then be 200 watts.
+The assist level sets the motor power as a factor of the power the rider is generating on the crankshaft. For instance, if assist level 3 is chosen and configured with a multiplier of 2.0, when the rider is generating a power of 100 watts, the motor power will assist another 200 watts.
 
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Number of assist levels || 5 ||  Please select the number of assist levels you like to use from min. 1  to  max. 9 
+| 0 || Number of assist levels || 5 ||  Select the desired number of assist levels from a minimum of 1 to a maximum of 9. 
 |-
-| 1 || Assist level 1 multiplier || 0.5 || The value with which the human pedaling power is multiplied. E.g. 0.5 * 200W (human power) = 100W assist power which results in 300W total power.
+| 1 || Assist level 1 multiplier || 0.5 || The value with which the human pedaling power is multiplied with.
+<br><br>
+Example: 0.5 * 200 W (human power) = 100 W assist power. This results in 300 W total power.
 |-
-| 2 || Assist level X multiplier|| .... || The desired multiplier for assist level X.
+| 2 || Assist level X multiplier || .... || The desired multiplier for assist level X.
 |}
 
 == 4: Startup power boost ==
@@ -126,19 +142,23 @@ Here you can configure the BOOST feature. This feature gives a peak of power to 
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Feature toggle|| 0 ||  1 to enable the boost feature, 0 to disable
+| 0 || BOOST feature || 0 ||  Set (1) to enable or (0) to disable.
 |-
-| 1 || On startup only / everytime || 1 ||  0 to enable power boost only when startup and bicycle wheel speed is equal to zero; 1 to enable power boost everytime pedal cadence or torque sensor are zero
+| 1 || On startup only / everytime || 1 ||  Set (1) to enable BOOST feature every time pedal cadence or torque sensor value are zero. Set (0) to enable BOOST feature only when startup and bicycle wheel speed is equal to zero; 
 |-
-| 2 || limit boost power to max battery power value || 0 || 1 to enable power boost limit to the Max battery power value and 0 to disable.
+| 2 || limit BOOST power to max battery power || 0 || Set (1) to enable BOOST power limit to the maximum battery power value. Set (0) to disable.
 |-
-| 3 || boost time || 2.0 (seconds) || -
+| 3 || BOOST time || 2.0 seconds || Set time limit of BOOST.
 |-
-| 4 || fade out/transition time || 3.5 (seconds) || fade out from boost power to regular power.
+| 4 || Fade out BOOST || 3.5 seconds || Set time limit to transition of power from BOOST to regular power.
 |-
-| 5 || assist level 1 boost multiplier|| 4 || See assist levels for more information about multipliers
+| 5 || Assist level 1 BOOST multiplier|| 4 || Set the BOOST multipler corresponding to assist level 1.
+<br><br>
+Tip: See assist levels for more information about multipliers.
 |-
-| 6 || assist level X boost multiplier || - || The desired boost multiplier for assist level X.
+| 6 || Assist level X boost multiplier || - || Set the BOOST multipler corresponding to assist level X.
+<br><br>
+Tip: See assist levels for more information about multipliers.
 |}
 
 == 5: Motor temperature protection ==
@@ -156,14 +176,16 @@ Possible configurations on LCD3:
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Feature toggle || 0 || 1 to enable the temperature control, 1 to disable. NOTE: if you don't have the [[How to install motor temperature sensor|motor temperature sensor installed]], you should disable this option and ignore the next configurations.
+| 0 || Motor temperature protection || 0 || Set (1) to enable the motor temperature control or set (0) to disable. 
+<br><br>
+NOTE: if you do not have the [[How to install motor temperature sensor|motor temperature sensor installed]], you should disable this option and ignore the immediate configurations below.
 |-
-| 1 || min temperature || 75 (°C) || motor temperature value at which the motor current will start to be limited.
+| 1 || Minimum temperature || 75 °C || Set the minimum motor temperature at which the motor current will start to be limited.
 |-
-| 2 || max temperature || 85 (°C) || motor temperature max value at which the motor current will be zero / motor shutoff.
+| 2 || Maximum temperature || 85 °C || Set the maximum motor temperature at which the motor current will be completely blocked, i.e., motor shutoff.
 |}
 
-== 6: LCD display configuration==
+== 6: Display configuration ==
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
