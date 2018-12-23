@@ -163,11 +163,11 @@ Possible configurations on LCD3:
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || LCD brightness when backlight is off || 5 || 5%
+| 0 || LCD brightness when backlight is off || 5 || Percentage of brightness when backlight is turned off, e.g., 5 %
 |-
-| 1 || LCD brightness when backlight is on || 80 || 80%
+| 1 || LCD brightness when backlight is on || 80 || Percentage of brightness when backlight is turned on, e.g., 80 %
 |-
-| 2 || LCD auto power off || 15 || Configured in minutes
+| 2 || LCD auto power off || 15 || Automatic power off after set amount of minutes.
 |-
 | 3 || Reset to factory defaults || 0 ||
 #Increase the value to 10 
@@ -180,15 +180,15 @@ Possible configurations on LCD3:
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Feature toggle|| 0 || enabled (1) or disabled (0)
+| 0 || Feature toggle|| 0 || Select (1) to enable or (0) to disable.
 |-
-| 1 || Active on system startup || 0 || Determines whether offroad mode should be active on system startup. Enabled (1) or disabled (0)
+| 1 || Active on system startup || 0 || Determines whether offroad mode should be active on system startup. Select (1) to enable or select (0) to disable.
 |-
-| 2 || Speed limit || 25 km/h || This speed limit is used when offroad mode is not active. Configure your speed which is legal for using on public roads. The motor will fade out from - 0.5 km/h to +2,0 km/h.
+| 2 || Speed limit || 25 km/h || This speed limit is used when offroad mode is not active. Configure your speed which is legal for using on public roads. The motor will fade out power from -0.5 km/h to +2,0 km/h.
 |-
-| 3 || Limit power || 0 || Determines whether power should be limited as well when offroad is not active. Enabled (1) or disabled (0)
+| 3 || Limit power || 0 || Determines whether power should be limited when offroad mode is not active. Select (1) to enable or (0) to disable.
 |-
-| 4 || Power limit || 250 W || The power limit in Watt. For certain EU countries this power limit is often 250W.
+| 4 || Power limit || 250 W || The power limit in watts. For most countries in Europe the legal power limit is 250 W.
 |}
 
 == 8: Various==
@@ -198,10 +198,10 @@ Possible configurations on LCD3:
 | 0 || Motor voltage type || 0 || 
 * 0 for 48V brushless motor (TSDZ2 52V version has a 48V brushless motor)
 * 1 for 36V brushless motor.
-* 2 for experimental high cadence mode (only available in version 0.14.3 and up). Maybe not good for the motor, use at your own risk. Probably only suitable for 36V motors.
+* 2 for experimental high cadence mode (only available in version 0.14.3 and up). Maybe not good for the motor, use at your own risk. Probably only suitable for 36 V motors.
 This configuration is needed for FOC calculations.
 |-
-| 1 || Motor assistance startup without pedal rotation || 0 || Enabled (1) or disabled (0). Recommended to keep at 0 value if you don't have brake sensors installed.
+| 1 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep at disabled (0) if you do not have brake sensors installed.
 |-
 | 2 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
 |}
@@ -210,21 +210,21 @@ This configuration is needed for FOC calculations.
 {|
 | '''submenu number''' || '''configuration name''' || '''description'''
 |-
-| 0 || ADC throttle || see the current value
+| 0 || ADC throttle || See the current value
 |-
-| 1 || Throttle || see the current value
+| 1 || Throttle || See the current value
 |-
-| 2 || ADC pedal torque sensor || see the current value
+| 2 || ADC pedal torque sensor || See the current value
 |-
-| 3 || Pedal torque sensor || see the current value
+| 3 || Pedal torque sensor || See the current value
 |-
-| 4 || Pedal cadence || see the current value
+| 4 || Pedal cadence || See the current value
 |-
-| 5 || Pedal human power || see the current value
+| 5 || Pedal human power || See the current value
 |-
-| 6 || PWM duty cycle || see the current value
+| 6 || PWM duty cycle || See the current value
 |-
-| 7 || Motor speed in ERPs || see the current value
+| 7 || Motor speed in ERPs || See the current value
 |-
-| 8 || FOC angle || see the current value. This value must be multiplied by 1.4 to get and angle value in degrees.
+| 8 || FOC angle || See the current value. This value must be multiplied by 1.4 to get angle value in degrees.
 |}
