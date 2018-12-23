@@ -54,7 +54,7 @@ Long press on UP and DOWN buttons to enter on this screen. Press UP or DOWN butt
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 ||Unit|| Metric || Set 0 for metric units (km/h and kilometers) or 1 for imperial units (mph and miles)
+| 0 ||Unit|| Metric || Set (0) for metric units (km/h and kilometers) or (1) for imperial units (mph and miles)
 |-
 | 1 || Maximum wheel speed || 50 ||  Enter your speed limit (by law) to run legal on public roads. The motor will fade out from -0.5 km/h to +2,0 km/h. Tip: Europe has generally a speed limit of 25 km/h for E-Bikes.
 |-
@@ -66,20 +66,24 @@ Long press on UP and DOWN buttons to enter on this screen. Press UP or DOWN butt
 {|
 | '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
 |-
-| 0 || Maximum current of battery || 16 (amps) || This is the maximum current that will be pulled from your batteries by the motor. This value is limited internally by the firmware to the safe value of 18 amps.
+| 0 || Maximum current from battery || 16 ampere || Set maximum allowable current to be pulled from the battery. This value is limited internally by the firmware to the safe value of 18 ampere.
 |-
-| 1 || Battery low cut-off voltage || 39 (volts) || The controller will reduce power to stay over this limit! usually 2.85-3.05 volts per cell of (39.0 volts for: 3.0 volts * 13 cells = 39.0 volts). The standard Samsung cells allow down to 2.75V but you need some safety margin because not all cells are discharging in the same way, but by setting too high you loose range power on a discharged battery and capacity, I like to use the value of 29 for 36V battery pack/10 cells.
+| 1 || Battery low-cut-off voltage || 39 volt || The controller will reduce power to stay over this limit! Calculate the limit by multiplying amount of cells in series with the safe cut-off-voltage per cell, which is usually between 2.8 - 3.0 volts. Example: 39.0 volts for: 13 cells in series * 3.0 volts = 39.0 volts. 
+<br><br>
+Tip: The standard Samsung cells allow down to 2.75 V but you need some safety margin because not all cells have exactly the same capacity. But setting a too large value you loose range and power. I like to use the value of 29 V for a 36 V battery pack (= 10 cells in series).
 |-
-| 2 || Number of cells || 13 || This value is needed to make battery state indicator work.<br><br>
-This value can be a number from 7 to 14 -- example values: 7 for 24V battery; 10 for 36V battery pack; 13 for 48V battery pack; 14 for 52V battery pack.
+| 2 || Number of cells in series || 13 || Set this value so the battery state indicator works properly. This value can be any integer from 7 to 14
+<br><br>
+Example values: 7 for 24 V battery; 10 for 36 V battery; 13 for 48 V battery; 14 for 52 V battery.
 |-
-| 3 || Battery pack resistance || 130 (miliohms) || This value is needed to make battery state indicator work.<br><br>
-If you use a 0 value, you will see the battery state indicator fluctuating when the motor startup and pull energy from the battery. If you use the correct value, the fluctuation will disappear.
+| 3 || Internal resistance of battery || 130 (miliohms) || Set this value so the battery state indicator does not display a lower state of charge when pulling a lot of power from battery and the voltage sags.
+<br><br>
+Explanation: If you set the value to 0, you will see the battery state indicator fluctuating whenever the motor draws current from the battery. This is due to the internal resistance in the battery. The fluctuation will disappear and be filtered out with a correct value.
 <br><br>
 How to calculate the battery pack resistance:<br>
-1. limit battery current to a know value like 10 amps<br>
-2. read the voltage drop when motor is pulling the 10 amps<br>
-3. calculate the resistance value, example for 10 amps current, R = U / I, R = 1.2 volts drop / 10 amps, R = 0.120 = 120 miliohms.
+1. Limit the battery current to a know value like 10 amps<br>
+2. Read the voltage drop when motor is pulling the 10 amps<br>
+3. Calculate the resistance value, example for 10 amps current, R = U / I, R = 1.2 volts drop / 10 amps, R = 0.120 = 120 miliohms.
 |-
 | 4 || Battery voltage SOC || - || Battery voltage State Of Charge (SOC) that is filtered using the battery pack resistance. Here you can see how the configured battery pack resistance affects battery voltage SOC.
 |}    
