@@ -156,7 +156,7 @@ Here you can configure the BOOST feature. This feature gives a peak of power to 
 <br><br>
 Tip: See assist levels for more information about multipliers.
 |-
-| 6 || Assist level X boost multiplier || - || Set the BOOST multipler corresponding to assist level X.
+| 6 || Assist level X BOOST multiplier || - || Set the BOOST multipler corresponding to assist level X.
 <br><br>
 Tip: See assist levels for more information about multipliers.
 |}
