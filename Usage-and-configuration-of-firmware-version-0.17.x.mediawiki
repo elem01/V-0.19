@@ -43,16 +43,19 @@ In the maximum motor power sub menu you can set a limit to maximum motor power. 
 Access this screen by long pressing ON/OFF and UP buttons. Press UP and DOWN buttons to increase/decrease the value. Exit this screen by long pressing the ON/OFF button.
 
 How it works: the motor controller will automatically limit current and therefore limit maximum motor power. As the battery discharges and the voltage decreases the motor controller will adapt and adjust the current to maintain the set limit.
-<br>
-Note that it is not possible to set a higher motor power than the maximum allowed battery current set by user.
 
 '''NOTES:'''
-* this functionality cannot be used when offroad mode is enabled. Disable offroad mode first.
+* This function cannot be used when offroad mode is enabled. Disable offroad mode first.
+* It is not possible to set a higher motor power than the maximum allowed battery current set by user.
+
 
 == Configurations screen ==
-Long press on UP and DOWN buttons to enter on this screen. Press UP or DOWN buttons to enter on subscreens and press ON/OFF button to move to next subscreen. To exit, long press the ON/OFF button.
+*To enter configuration menu: long press UP and DOWN buttons.
+*To enter sub menus: press UP or DOWN button
+*To move to next subscreen: press ON/OFF button 
+*To exit: long press the ON/OFF button
 
-== 0: General Basic setup ==
+== 0: General Setup ==
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -64,6 +67,8 @@ Long press on UP and DOWN buttons to enter on this screen. Press UP or DOWN butt
 <br><br>
 Tip: Search on Google how to measure wheel circumference. But for a quick setup with ball park values use: 26'' wheel = 2050;  27'' wheel = 2150;  27.5'' wheel =2215;  28'' wheel = 2250;  29'' wheel = 2300 
 |}
+<br>
+
 
 == 1: Battery ==
 
@@ -95,8 +100,10 @@ Example for 10 amps current, R = U / I, R = 1.2 volts drop / 10 amps, R = 0.120 
 <br><br>
 Tip: Here you can evaluate and test how the set internal resistance of the battery affects the voltage reading.
 |}    
+<br>
 
-== 2: Battery power setup ==
+
+== 2: Battery Capacity Setup ==
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -120,8 +127,10 @@ Tip: roughly calculate the capacity by multiplying the nominal voltage with the 
 |-
 | 4 || Consumed Wh || - || This meter displays consumed watt-hours since last reset. This value is reset automatically when you power on the LCD and the battery is fully charged, i.e., above the set threshold voltage.
 |}
+<br>
 
-== 3: Assist level setup ==
+
+== 3: Assist Levels ==
 
 Here you can configure how many assist levels you wish to be able to select and also their respective multipliers. The defaults should already work for most people.
 
@@ -138,10 +147,12 @@ Example: 0.5 * 200 W (human power) = 100 W assist power. This results in 300 W t
 |-
 | 2 || Assist level X multiplier || .... || The desired multiplier for assist level X.
 |}
+<br>
 
-== 4: Startup power boost ==
 
-Here you can configure the BOOST feature. This feature gives a peak of power to the motor at startup. The amount of time of the peak as also the amount of motor power during the peak, can be configured. You can also disable this feature if you prefer.
+== 4: Startup BOOST function ==
+
+Here you can enable, disable and configure the BOOST feature. This feature helps from standstills where you might need greater assistance. It gives more power during a set time and then fades the power back to normal assistance. To configure the function for you likening please set appropriate values.
 
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
@@ -164,19 +175,19 @@ Tip: See assist levels for more information about multipliers.
 <br><br>
 Tip: See assist levels for more information about multipliers.
 |}
+<br>
 
-== 5: Motor temperature protection ==
 
-This feature is for protecting your motor from overheating and avoid permanent damage/loss of torque -- see here: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature [[How to install motor temperature sensor|if you installed the motor temperature sensor]].
+== 5: Motor Temperature Protection ==
+
+This function protects your motor from overheating resulting in permanent damage/loss of torque. See: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature if you have installed the [[How to install motor temperature sensor| motor temperature sensor]].
 
 === How it works ===
 
-On LCD3 temperature field you will be able to see the motor temperature value. Once the configured minimum motor temperature value is hit, the motor current will start to be reduced and as long as it increases, the more the 
-current will be reduce. After hitting the configured maximum motor temperature value, the motor is shutoff.
+If you have installed the [[How to install motor temperature sensor| motor temperature sensor]] and you enable the function, you will be able to see the motor temperature in the temperature field of the display. When the set minimum motor temperature threshold is reached, the motor current will start to be limited. If the temperature keeps rising this will result in even more current, and therefore overall power, limitations. If the maximum motor temperature is reached the current will be completely limited.
 
-The temperature value shown on LCD3 will blink when the motor current is being limited and will blink faster for higher rates of limited current. Finally, if the motor is shutoff, the blink rate will be very fast.
+The temperature value on the display will blink if the motor current is being limited. As the function limits the current more it will blink faster corresponding to higher limitations on current. Finally, if the current is completely limited, the blink rate will be very fast.
 
-Possible configurations on LCD3:
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -188,8 +199,10 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 |-
 | 2 || Maximum temperature || 85 °C || Set the maximum motor temperature at which the motor current will be completely blocked, i.e., motor shutoff.
 |}
+<br>
 
-== 6: Display configuration ==
+
+== 6: Display ==
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -205,8 +218,10 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 #Turn it on again 
 #Factory default settings will be restored
 |}
+<br>
 
-== 7: Offroad mode configuration==
+
+== 7: Offroad Mode ==
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -220,8 +235,10 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 |-
 | 4 || Power limit || 250 W || The power limit in watts. For most countries in Europe the legal power limit is 250 W.
 |}
+<br>
 
-== 8: Various==
+
+== 8: Various ==
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -235,8 +252,10 @@ This configuration is needed for FOC calculations.
 |-
 | 2 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
 |}
+<br>
 
-== 9: Advanced technical data==
+
+== 9: Advanced Technical Data==
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Description'''
 |-
