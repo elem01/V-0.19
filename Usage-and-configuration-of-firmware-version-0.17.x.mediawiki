@@ -52,19 +52,21 @@ Long press on UP and DOWN buttons to enter on this screen. Press UP or DOWN butt
 
 == 0: General Basic setup ==
 {|
-| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 ||Unit|| Metric || Set (0) for metric units (km/h and kilometers) or (1) for imperial units (mph and miles)
 |-
 | 1 || Maximum wheel speed || 50 ||  Enter your speed limit (by law) to run legal on public roads. The motor will fade out from -0.5 km/h to +2,0 km/h. Tip: Europe has generally a speed limit of 25 km/h for E-Bikes.
 |-
-| 2 || Wheel perimeter || 2050 || Measure your wheel perimeter (search on Google on how to do it). First estimates: 26'' wheel = 2050;  27'' wheel = 2150;  27.5'' wheel =2215;  28'' wheel = 2250;  29'' wheel = 2300 
+| 2 || Wheel circumference || 2050 || Enter your wheel circumference so that speed and distance is correctly calculated.
+<br><br>
+Tip: Search on Google how to measure wheel circumference. But for a quick setup with ball park values use: 26'' wheel = 2050;  27'' wheel = 2150;  27.5'' wheel =2215;  28'' wheel = 2250;  29'' wheel = 2300 
 |}
 
 == 1: Battery ==
 
 {|
-| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Maximum current from battery || 16 ampere || Set maximum allowable current to be pulled from the battery. This value is limited internally by the firmware to the safe value of 18 ampere.
 |-
@@ -94,7 +96,7 @@ Tip: Here you can evaluate and test how the set internal resistance of the batte
 
 == 2: Battery power setup ==
 {|
-| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Percentage of battery charge (SOC) || 0 || Set (1) to enable or (0) to disable the gauge displaying percentage of battery charge (SOC). This value is displayed in the temperature field.
 |-
@@ -124,7 +126,7 @@ Here you can configure how many assist levels you wish to be able to select and 
 The assist level sets the motor power as a factor of the power the rider is generating on the crankshaft. For instance, if assist level 3 is chosen and configured with a multiplier of 2.0, when the rider is generating a power of 100 watts, the motor power will assist another 200 watts.
 
 {|
-| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Number of assist levels || 5 ||  Select the desired number of assist levels from a minimum of 1 to a maximum of 9. 
 |-
@@ -140,7 +142,7 @@ Example: 0.5 * 200 W (human power) = 100 W assist power. This results in 300 W t
 Here you can configure the BOOST feature. This feature gives a peak of power to the motor at startup. The amount of time of the peak as also the amount of motor power during the peak, can be configured. You can also disable this feature if you prefer.
 
 {|
-| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || BOOST feature || 0 ||  Set (1) to enable or (0) to disable.
 |-
@@ -174,7 +176,7 @@ The temperature value shown on LCD3 will blink when the motor current is being l
 
 Possible configurations on LCD3:
 {|
-| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Motor temperature protection || 0 || Set (1) to enable the motor temperature control or set (0) to disable. 
 <br><br>
@@ -187,7 +189,7 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 
 == 6: Display configuration ==
 {|
-| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || LCD brightness when backlight is off || 5 || Percentage of brightness when backlight is turned off, e.g., 5 %
 |-
@@ -204,7 +206,7 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 
 == 7: Offroad mode configuration==
 {|
-| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Feature toggle|| 0 || Select (1) to enable or (0) to disable.
 |-
@@ -219,7 +221,7 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 
 == 8: Various==
 {|
-| '''submenu number''' || '''configuration name''' || '''default value''' || '''description'''
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Motor voltage type || 0 || 
 * 0 for 48V brushless motor (TSDZ2 52V version has a 48V brushless motor)
@@ -234,7 +236,7 @@ This configuration is needed for FOC calculations.
 
 == 9: Advanced technical data==
 {|
-| '''submenu number''' || '''configuration name''' || '''description'''
+| '''Submenu number''' || '''Configuration name''' || '''Description'''
 |-
 | 0 || ADC throttle || See the current value
 |-
