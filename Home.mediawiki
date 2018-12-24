@@ -39,7 +39,7 @@ See the more users feedback here: [[Why should you use the Flexible OpenSource f
 
 = Information and configurations done on LCD =
 
-[[Usage and configuration of firmware version 0.17.x|See here all the information shown and  configurations done on the LCD]].
+[[Usage and configuration of firmware version 0.17.x| Information and configuration on the KT-LCD3]].
 
 = How to install =
 
