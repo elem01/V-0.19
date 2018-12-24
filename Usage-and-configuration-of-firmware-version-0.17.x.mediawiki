@@ -1,8 +1,8 @@
 The following applies to firmware version 0.17.x only!
 
-CAUTION: always use the same firmware version for both the motor controller and LCD!
+CAUTION: always use the same firmware version for both the motor controller and LCD unless otherwise specified!
 
-NOTE: Before start using the firmware, you must configure correctly the options on LCD3. For instance, you should configure your battery low voltage cut off (battery voltage when it is discharged) and all the other parameters -- follow the next section.
+NOTE: Before using the mid drive with new firmware, you must configure the options on the display correctly. For instance, you should configure your battery low voltage cut off so as to not over discharge the battery. Do set all other parameters also.
 
 = KT-LCD3 information and configurations =
 
@@ -38,11 +38,13 @@ NOTE: Before start using the firmware, you must configure correctly the options 
 **** <u>5.0 Motor temperature</u> in degrees Celsius.
 
 == 2. Motor maximum power screen ==
-Here you can set a limit to the motor maximum power. This can be useful for various reasons, like controlling the battery range for long travels.
+In the maximum motor power sub menu you can set a limit to maximum motor power. This can be useful for various reasons, like controlling the battery range for long travels.
 
 Access this screen by long pressing ON/OFF and UP buttons. Press UP and DOWN buttons to increase/decrease the value. Exit this screen by long pressing the ON/OFF button.
 
-How it works: the motor controller will automatically choose a battery current in a way to limit the motor maximum power usage (even with the battery voltage drops with the discharging, you will get a continuous motor maximum power assistance).<br>The battery current value will never be higher than the max battery current setup on the configurations screen.
+How it works: the motor controller will automatically limit current and therefore limit maximum motor power. As the battery discharges and the voltage decreases the motor controller will adapt and adjust the current to maintain the set limit.
+<br>
+Note that it is not possible to set a higher motor power than the maximum allowed battery current set by user.
 
 '''NOTES:'''
 * this functionality cannot be used when offroad mode is enabled. Disable offroad mode first.
