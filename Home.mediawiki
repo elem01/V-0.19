@@ -48,6 +48,6 @@ See the more users feedback here: [[Why should you use the Flexible OpenSource f
 * [[How to install motor temperature sensor]] (optional but recommended)
 
 = See also =
-* Please read the '''[[FAQ|TSDZ2 FAQ]]'''
-* If you are looking to build the firmware from the sources and help on development, please follow to [[Development]]
-* Join us on [https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788 Endless-sphere forum]
+* If you have any questions please read the '''[[FAQ|FAQ]]'''.
+* If you are looking to build the firmware from the source code and/or contribute to the development, please take a look at [[Development]].
+* Join us on the official Endless Sphere thread; [https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788 Endless Sphere thread].
