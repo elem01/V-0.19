@@ -43,9 +43,16 @@ See this video from jbalat showing how to remove and install the main gear: http
 
 = TSDZ2 different (mechanical) versions =
 
+There are at least 2 TSDZ2 different (mechanical) versions. The most recent version seems the one that has a helical main gear. Some pictures:
+
+The main gear at top is helical:<br>
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_v1_and_v2-main_gear.jpg]]
+
+Helical gear on the motor at right side:<br>
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_v1_and_v2.jpg]]
 
-
+The main gear on the left side is helical (with broken bearing). The bearing has the reference CSK30P, that can be found online as a "CSK30P bearing sprag clutch":
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_v1_and_v2-main_gear-v2_broke_bearing.jpg]]
 
 = Flexible OpenSource firmware =
 
