@@ -41,6 +41,12 @@ You can buy a new main gear, that includes the sprag clutch bearing, [http://www
 '''2. Install the new main gear<br>
 See this video from jbalat showing how to remove and install the main gear: https://www.youtube.com/watch?v=u-SY0rGMEMo
 
+= TSDZ2 different (mechanical) versions =
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_v1_and_v2.jpg]]
+
+
+
 = Flexible OpenSource firmware =
 
 == Why stock LCDs VLCD5 and XH18 do not work ==
