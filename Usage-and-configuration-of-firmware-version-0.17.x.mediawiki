@@ -104,20 +104,27 @@ Tip: Here you can evaluate and test how the set internal resistance of the batte
 
 
 == 2: Battery Capacity Setup ==
+
+Under this configuration menu you can set parameters to display the state of charge of your E-Bike battery. If this function is enabled it will display how many watt-hours have been consumed since last charge and what percentage remains of the battery. Depending on preferences it is possible to set so that percentage of consumed charge is displayed instead of percentage of remaining charge.
+
+Tip: If this function is enabled you will be able to see percentage of charge in the temperature field on your display. To enable or disable just click the ON/OFF-button together with the DOWN-button at the same time. Do not forget to enable and set up the function below. 
+
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Percentage of battery charge (SOC) || 0 || Set (1) to enable or (0) to disable the gauge displaying percentage of battery charge (SOC). This value is displayed in the temperature field.
+| 0 || Enable and set State of Charge function || 0 || Set (1) to enable state of charge function where it will display watt-hours consumed and percentage of charge remaining. 
+<br><br>
+Set (2) if you wish to see watt-hours consumed and percentage of consumed charge. 
+<br><br>
+Set (0) to disable the function.
 |-
-| 1 || Increment or decrement || 0 || Set (1) if you wish the percentage should display consumed battery capacity and therefore go from 0 % to 100 % or set (0) if you prefer it shows percentage of remaining capcity and therefore 100 % to 0 %.
-|-
-| 2 || Threshold voltage to reset watt-hour meter || 54.2 volt || When powering on the display this value is compared to the battery voltage. If it is lower the battery is expected to be fully charged and the watt-hour meter is reset.
+| 1 || Threshold voltage to reset watt-hour meter || 54.2 volt || When powering on the display this value is compared to the battery voltage. If it is lower, the battery is expected to be fully charged and the watt-hour meter is reset.
 <br><br>
 Tip: To find a suitable value, fully charge the battery and measure the voltage on the KT-LCD3, use a slightly lower value for the threshold voltage. 
 <br><br>
 Example: my 48 V battery charges up to 54.6 volts, so I set the threshold to 54.2 volts.
 |-
-| 3 || Total watt-hours of battery || 0 || Set the total capacity in watt-hours your battery has. 
+| 2 || Total watt-hours of battery || 0 || Set the total capacity in watt-hours your battery has. 
 <br><br>
 Tip: fully charge the battery and then discharge it completely and use the measured value to input here. 
 <br><br>
@@ -125,7 +132,7 @@ Tip: the capacities stated from suppliers are often too high, expect a value of 
 <br><br>
 Tip: roughly calculate the capacity by multiplying the nominal voltage with the nominal ampere hours. Example: a 48 volt, 14.5 Ah battery has a nominal watt-hour capacity of 696 Wh.
 |-
-| 4 || Consumed Wh || - || This meter displays consumed watt-hours since last reset. This value is reset automatically when you power on the LCD and the battery is fully charged, i.e., above the set threshold voltage.
+| 3 || Consumed watt-hours || - || This value represents consumed watt-hours since last reset. It is reset automatically when you power on the LCD and the battery is fully charged, i.e., above the set threshold voltage.
 |}
 <br>
 
