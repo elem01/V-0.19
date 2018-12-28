@@ -112,9 +112,9 @@ Tip: If this function is enabled you will be able to see percentage of charge in
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Enable and set State of Charge function || 0 || Set (1) to enable state of charge function where it will display watt-hours consumed and percentage of charge remaining. 
+| 0 || Enable and set State of Charge function || 0 || Set (1) to enable function. It will display watt-hours consumed and percentage of charge remaining, i.e., display percentage value from 100 % to 0 %. 
 <br><br>
-Set (2) if you wish to see watt-hours consumed and percentage of consumed charge. 
+Set (2) to enable function. It will display watt-hours consumed and percentage of charge consumed, i.e., display percentage value from 0 % to 100 %. 
 <br><br>
 Set (0) to disable the function.
 |-
