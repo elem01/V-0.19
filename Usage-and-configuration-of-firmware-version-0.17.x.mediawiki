@@ -230,7 +230,7 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 
 == 7: Offroad Mode ==
 
-This function enables user to limit speed and power when using bike on road with a simple switch. When using the bike off road where laws may be different it is possible to toggle Offroad mode and unlock a higher speed or power limit. Set parameters suitable for your specific laws and preferences.
+This function enables user to limit speed and power when using bike on road. When using the bike off road where laws may be different it is possible to toggle Offroad mode and unlock a higher speed or power limit. Set parameters suitable for your specific laws and preferences.
 
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
