@@ -25,18 +25,21 @@ NOTE: Before using the mid drive with new firmware, you must configure the optio
 **** <u>1.0 Trip distance</u>: can be reset by quickly pressing DOWN button followed by a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
 **** <u>1.1 Distance since power on</u> this value is automatically reset at power on. You can also reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
 **** <u>1.2 Odometer</u>: can be set to a specific value on the configurations menu.
-*** <u>2. Battery state of charge</u> (not shown if this feature is disable on configurations menu)
-**** <u>2.0 Battery state in percentage</u>
-**** <u>2.1 Battery discharged total watts hour value</u>
-*** <u>3. Battery</u>
-**** <u>3.0 Battery voltage</u>
-**** <u>3.1 Battery current</u>: the current being draw by the motor.
+*** <u>2. Battery State of Charge</u> (not shown if function is disabled in configuration menu)
+**** <u>2.0 State of charge in percentage</u>
+**** <u>2.1 Consumed watt-hours</u>
+*** <u>3. Battery State</u>
+**** <u>3.0 Voltage:</u> Voltage of battery.
+**** <u>3.1 Current:</u>: instantaneous current drawn from battery.
 *** <u>4. Pedals</u>
 **** <u>4.0 Rider pedal power</u>: in watts.
-**** <u>4.1 Pedal cadence</u>: in RPM.
-**** <u>4.2 Pedal torque</u>: in N.m.
-*** <u>5. Motor</u> (not shown if this feature is disable on configurations menu)
-**** <u>5.0 Motor temperature</u> in degrees Celsius.
+**** <u>4.1 Pedal cadence</u>: in revolutions per minute.
+**** <u>4.2 Pedal torque</u>: in newton meter.
+*** <u>5. Motor Temperature</u> (not shown if function is disabled in configuration menu)
+**** <u>5.0 Motor temperature:</u> Temperature of motor.
+*** <u>6. Time Measurement </u>
+**** <u>6.0 Time Measurement:</u> Time measured since display is powered on.
+**** <u>6.1 Total Time Measurement:</u> Total time measured since last reset.
 
 == 2. Motor maximum power screen ==
 In the maximum motor power sub menu you can set a limit to maximum motor power. This can be useful for various reasons, like controlling the battery range for long travels.
