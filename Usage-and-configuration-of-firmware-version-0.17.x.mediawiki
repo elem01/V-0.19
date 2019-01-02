@@ -53,7 +53,7 @@ How it works: the motor controller will automatically limit current and therefor
 * It is not possible to set a higher motor power than the maximum allowed battery current set by user.
 
 
-== Configurations screen ==
+== Configuration menu ==
 *To enter configuration menu: long press UP and DOWN buttons.
 *To enter sub menus: press UP or DOWN button
 *To move to next subscreen: press ON/OFF button 
