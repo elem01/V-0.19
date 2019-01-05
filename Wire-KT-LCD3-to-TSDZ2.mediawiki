@@ -26,7 +26,7 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 |-
 | orange || UART RX motor controller || receives digital data to LCD
 |-
-| purple || brake || this signal is active low, meaning that when brakes are not active, this wire has 5V and with brakes active this wire has 0 volts.
+| purple || brake || this signal is active low, meaning that when brakes are not active, this wire has 5V and with brakes active this wire has 0 volts.<br>Leave this wire unconnected if you will not be using brake sensors.
 |}
 
 [[https://github.com/hurzhurz/tsdz2/raw/master/images/tsdz2-plug.jpg|100px]]
@@ -45,8 +45,8 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 |-
 | yellow || UART RX motor controller || receives digital data to LCD
 |-
-| green || brake || this signal is active low, meaning that when brakes are not active, this wire has 5V and with brakes active this wire has 0 volts. Wired with the 5V wire and black GND wire for 3 pin throttle
-|-
+| green || brake || this signal is active low, meaning that when brakes are not active, this wire has 5V and with brakes active this wire has 0 volts. Wired with the 5V wire and black GND wire for 3 pin throttle.<br>Leave this wire unconnected if you will not be using brake sensors.
+-
 | white || 5V ||
 |-
 | orange || throttle || wired with the 5V wire and black ground wire for 3 pin throttle
