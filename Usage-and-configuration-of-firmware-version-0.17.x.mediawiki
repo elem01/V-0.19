@@ -259,9 +259,10 @@ This function enables user to limit speed and power when using bike on road. Whe
 | 0 || Motor voltage type || 0 ||
 Depending on type of motor, select appropriate value so that FOC calculations are correctly executed. The voltage of the battery does not matter, this value should always be set depending on type of motor.
 <br><br>
-* 0 for 48 V brushless motor (TSDZ2 52 V version has a 48 V brushless motor).
-* 1 for 36 V brushless motor.
-* 2 for experimental high cadence mode (only available in version 0.14.3 and up). Maybe not good for the motor, use at your own risk. Probably only suitable for 36 V motors.
+* Set 0 for 48 V brushless motor (TSDZ2 52 V version has a 48 V brushless motor).
+* Set 1 for 36 V brushless motor.
+* Set 2 (EXPERIMENTAL) for the 48 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
+* Set 3 (EXPERIMENTAL) for the 36 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
 |-
 | 1 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep at disabled (0) if you do not have brake sensors installed.
 |-
