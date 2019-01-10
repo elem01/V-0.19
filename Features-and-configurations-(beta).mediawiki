@@ -1,4 +1,4 @@
-The following applies to firmware version 0.17.x only!
+The following applies to firmware version 0.18.X only!
 
 CAUTION: always use the same firmware version for both the motor controller and LCD unless otherwise specified!
 
