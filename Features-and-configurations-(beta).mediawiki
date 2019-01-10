@@ -264,9 +264,11 @@ Depending on type of motor, select appropriate value so that FOC calculations ar
 * Set 2 (EXPERIMENTAL) for the 48 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
 * Set 3 (EXPERIMENTAL) for the 36 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
 |-
-| 1 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep at disabled (0) if you do not have brake sensors installed.
+| 1 || Current ramp up, inverse step || 1953 || Set value that defines acceleration. A higher value corresponds to slower acceleration. Be careful not to select too fast acceleration.
 |-
-| 2 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
+| 2 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep at disabled (0) if you do not have brake sensors installed.
+|-
+| 3 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
 |}
 <br>
 
