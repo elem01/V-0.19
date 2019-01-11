@@ -215,7 +215,9 @@ Here you can enable or disable the cruise function.
 |-
 | 0 || Enable/disable cruise function || 0 ||  Set (1) to enable or set (0) to disable the cruise function.
 |-
-| 1 || Hold-to-maintain || 1 || Set (1) to enable or set (0) to disable the hold-to-maintain feature. When hold-to-maintain is enabled it is necessary to hold the down button for the cruise function to maintain speed. If disabled the bike will maintain speed until any button is pressed.
+| 1 || Hold-to-maintain || 1 || Set (1) to enable or set (0) to disable the hold-to-maintain feature. 
+<br><br>
+NOTE: When hold-to-maintain is enabled it is necessary to hold the down button for the cruise function to maintain speed. If disabled the bike will maintain speed until any button is pressed.
 |-
 <br>
 
