@@ -168,7 +168,7 @@ Here you can enable or disable the walk assist function. And also configure the 
 The walk assist PWM value sets the motor duty cycle. It is an open loop controller. A PWM value of 30 will set the target duty cycle to 30. Maximum settable PWM in the walk assist function is limited to a value of 100.
 
 '''NOTES:'''
-* There are only as many walk assist levels as there are assist levels. Configured above under 3: Assist Levels.
+* There are only as many walk assist levels as there are assist levels. This is configured under 3: Assist Levels.
 * Carefully test and set appropriate values.
 * The function is only active in speeds below 6 km/h or around 4 mph.
 <br>
