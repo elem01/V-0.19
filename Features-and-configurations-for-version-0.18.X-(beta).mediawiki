@@ -156,12 +156,12 @@ The assist level sets the motor power as a factor of the power the rider is gene
 <br><br>
 Example: 0.5 * 200 W (human power) = 100 W assist power. This results in 300 W total power.
 |-
-| 2 || Assist level X multiplier || .... || The desired multiplier for assist level X.
+| X || Assist level X multiplier || .... || The desired multiplier for assist level X.
 |}
 <br>
 
 
-== 3: Walk Assist ==
+== 4: Walk Assist ==
 
 Here you can enable or disable the walk assist function. And also configure the motor duty cycle in each and every enabled assist level. The defaults should work for most situations.
 
@@ -171,11 +171,12 @@ The walk assist PWM value sets the motor duty cycle. It is an open loop controll
 
 * There are only as many walk assist levels as there are assist levels. Configured above under 3: Assist Levels.
 * Carefully test and set appropriate values.
+* The function is only active in speeds below 6 km/h or around 4 mph.
 <br>
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Enable/disable walk assist function || 0 ||  Enable (1) or disable (0) the walk assist function.
+| 0 || Enable/disable walk assist function || 0 ||  Set (1) to enable or set (0) to disable the walk assist function.
 |-
 | - || Walk assist level 0 || 0 || -
 |-
@@ -200,7 +201,25 @@ The walk assist PWM value sets the motor duty cycle. It is an open loop controll
 <br>
 
 
-== 4: Startup BOOST function ==
+== X: Cruise Function (BETA) ==
+
+Here you can enable or disable the cruise function.
+
+'''NOTES:'''
+
+* The cruise function only works at speeds above 6 km/h or around 4 mph.
+
+<br>
+{|
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
+|-
+| 0 || Enable/disable cruise function || 0 ||  Set (1) to enable or set (0) to disable the cruise function.
+|-
+| 1 || Hold-to-maintain || 1 || Set (1) to enable or set (0) to disable the hold-to-maintain feature. When hold-to-maintain is enabled it is necessary to hold the down button for the cruise function to maintain speed. If disabled the bike will maintain speed until any button is pressed.
+|-
+<br>
+
+== 5: Startup BOOST function ==
 
 Here you can enable, disable and configure the BOOST feature. This feature helps from standstills where you might need greater assistance. It gives more power during a set time and then fades the power back to normal assistance. To configure the function for you likening please set appropriate values.
 
@@ -228,7 +247,7 @@ Tip: See assist levels for more information about multipliers.
 <br>
 
 
-== 5: Motor Temperature Protection ==
+== 6: Motor Temperature Protection ==
 
 This function protects your motor from overheating resulting in permanent damage/loss of torque. See: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature if you have installed the [[How to install motor temperature sensor| motor temperature sensor]].
 
@@ -252,7 +271,7 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 <br>
 
 
-== 6: Display ==
+== 7: Display ==
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -271,7 +290,7 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 <br>
 
 
-== 7: Offroad Mode ==
+== 8: Offroad Mode ==
 
 This function enables user to limit speed and power when using bike on road. When using the bike off road where laws may be different it is possible to toggle Offroad mode and unlock a higher speed or power limit. Set parameters suitable for your specific laws and preferences.
 
@@ -291,7 +310,7 @@ This function enables user to limit speed and power when using bike on road. Whe
 <br>
 
 
-== 8: Various ==
+== 9: Various ==
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -312,7 +331,7 @@ Depending on type of motor, select appropriate value so that FOC calculations ar
 <br>
 
 
-== 9: Advanced Technical Data==
+== 10: Advanced Technical Data==
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Description'''
 |-
