@@ -40,6 +40,10 @@ NOTE: Before using the mid drive with new firmware, you must configure the optio
 *** <u>6. Time Measurement </u>
 **** <u>6.0 Time Measurement:</u> Time measured since display is powered on.
 **** <u>6.1 Total Time Measurement:</u> Total time measured since last reset.
+*** <u>7. Wheel Speed </u>
+**** <u>7.0 Current wheel speed </u> Current wheel speed.
+**** <u>7.1 Average wheel speed </u> The average speed since power on.
+**** <u>7.2 Peak wheel speed </u> The measured peak value of wheel speed since power on.
 
 == 2. Motor maximum power screen ==
 In the maximum motor power sub menu you can set a limit to maximum motor power. This can be useful for various reasons, like controlling the battery range for long travels.
