@@ -7,44 +7,85 @@ NOTE: Before using the mid drive with new firmware, you must configure the optio
 = KT-LCD3 information and configurations =
 
 == 1. Main screen ==
-* '''<u>Main screen</u>'''
-** <u>Assist level</u>: assist level sets the motor power as a factor of the power that rider is doing on the pedals. For instance, if current assist level is 3 and if this level is configured as a factor of 2.0, when rider is doing on the pedals a power of 100 watts, the motor power used will then be 200 watts.<br>The assist level is changed by pressing UP and DOWN buttons.
-** <u>Ebike wheel speed</u>: the value of wheel speed in kms or mph.
-** <u>Motor power</u>: power used by the motor (in watts) that is being draw from the battery.
-** <u>Battery state of charge</u>: Battery state of charge based on battery voltage. There are 6 different levels. When battery is near empty, the battery symbol will be empty and blinking and the motor power will be reduced up to battery being totally empty.<br>The battery voltage used to calculate the state of charge has in consideration the battery pack resistance to avoid floating when power is being draw from the battery (the battery pack resistance value is set on configurations menu).
-** <u>Lights</u>: enabled/disable with a long press of UP button (LCD back light will also be change, depending on the configurations) and the motor controller will enable/disable the ebike lights.
-** <u>Brake</u>: Brake symbol is enabled when user press the ebike brakes (good to check that sensor brakes are working).
-** <u>Time Measurement</u>: Time measurement functions. Switch between TM or TTM to get measured time either from trip or user last reset.
-** <u>Walk assist</u>: Enable/disable with a long hold of DOWN button at speeds below 8 km/h (approximately 5 mph). The motor will start to give assistance and maintain a walking pace. To set different power levels simply select appropriate assist level.
+
+* '''<u>Assist level field</u>'''
+The assist level field displays the active assist level. This sets the motor power as a factor of the power that rider is generating on the pedals. For instance, if current assist level is 3 and if this level is configured as a factor of 2.0, when rider is doing on the pedals a power of 100 watts, the motor power supplied will be 200 watts. The assist level is changed by pressing either UP or DOWN button.
+<br><br><br>
+
+* '''<u>Wheel speed field</u>'''
+This sub field displays information about speed. The values are displayed in either metric or imperial units and the user can change from a couple of different speed measurements. The default one is current wheel speed. Other ones are average speed since power on and peak speed since power on.
+<br><br>
+* <u>1. Wheel speed </u>
+** <u>1.0 Wheel speed</u>
+** <u>1.1 Average wheel speed since power on</u>
+** <u>1.2 Peak wheel speed since power on</u>
+<br><br>
+
+* '''<u>Motor power field</u>'''
+The motor power field displays instantaneous motor power in watts.
+<br><br><br>
+
+* '''<u>Battery state of charge bar</u>'''
+Battery state of charge based on battery voltage. There are 6 different levels. When battery is near empty, the battery symbol will be empty and blinking and the motor power will be reduced up to battery being totally empty.<br>The battery voltage used to calculate the state of charge has in consideration the battery pack resistance to avoid floating when power is being draw from the battery (the battery pack resistance value is set on configurations menu).
+<br><br><br>
+
+* '''<u>Lights symbol</u>'''
+Enabled/disable with a long press of UP button (LCD back light will also be change, depending on the configurations) and the motor controller will enable/disable the ebike lights.
+<br><br><br>
+
+* '''<u>Brake symbol</u>'''
+Brake symbol is enabled when user press the ebike brakes (good to check that sensor brakes are working).
+<br><br><br>
+
+* '''<u>Time Measurement field</u>'''
+Time measurement functions. Displays either TM or TTM to get measured time either from trip or user last reset.
+<br><br>
+* <u>1. Time measurement </u>
+** <u>1.0 TM since power on</u>
+** <u>1.1 TTM since last reset </u>
+<br><br><br>
+
+* '''<u>Walk assist</u>'''
+Enable/disable with a long hold of DOWN button at speeds below 8 km/h (approximately 5 mph). The motor will start to give assistance and maintain a walking pace. To set different power levels simply select appropriate assist level.
+<br><br><br>
+
 ** <u>Cruise</u>: Enable/disable with a long hold of DOWN button at speeds above 8 km/h (approximately 5 mph). The motor will save the current wheel speed and maintain it for as long as the DOWN button is pressed.
+<br><br><br>
+
 ** <u>Offroad mode</u>: if you have enabled the offroad mode (see configuration section below) this can be activated with the ON/OFF and UP button combination and deactivated with the ON/OFF and DOWN button combination. When active, the assist symbol above the assist level will start blinking. Offroad mode is disabled and inactive by default. We do not recommend you to activate offroad mode on public roads. In many countries offroad mode may only be used on private property.
+<br><br><br>
+
 ** <u>Motor temperature / battery state of charge in percentage</u>: this field can show either the motor temperature (when the sensor is installed), the battery state in percentage or none (you can switch what is shown by pressing POWER and UP buttons simultaneously).
 *** <u>Motor temperature</u>: motor temperature in degrees Celsius. When the power power is being limited due to over temperature, this field will blink (configure the temperature limits on configurations menu).
 *** <u>Battery state of charge in percentage</u>: this percentage value is based on the accumulated battery power draw from your battery pack (set options on configurations menu).
-** <u>Odometer field</u>: this field can show a few variables that are logic grouped in sub fields. You can change between fields by pressing ON/OFF button and sub fields by quick pressing UP button followed a long press UP button (you will see temporary the field and sub field number blinking on wheel speed field).
-*** <u>1. Distance</u>
-**** <u>1.0 Trip distance</u>: can be reset by quickly pressing DOWN button followed by a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
-**** <u>1.1 Distance since power on</u> this value is automatically reset at power on. You can also reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
-**** <u>1.2 Odometer</u>: can be set to a specific value on the configurations menu.
-*** <u>2. Battery State of Charge</u> (not shown if function is disabled in configuration menu)
-**** <u>2.0 State of charge in percentage</u>
-**** <u>2.1 Consumed watt-hours</u>
-*** <u>3. Battery State</u>
-**** <u>3.0 Voltage:</u> Voltage of battery.
-**** <u>3.1 Current:</u>: instantaneous current drawn from battery.
-*** <u>4. Pedals</u>
-**** <u>4.0 Rider pedal power</u>: in watts.
-**** <u>4.1 Pedal cadence</u>: in revolutions per minute.
-**** <u>4.2 Pedal torque</u>: in newton meter.
-*** <u>5. Motor Temperature</u> (not shown if function is disabled in configuration menu)
-**** <u>5.0 Motor temperature:</u> Temperature of motor.
-*** <u>6. Time Measurement </u>
-**** <u>6.0 Time Measurement:</u> Time measured since display is powered on.
-**** <u>6.1 Total Time Measurement:</u> Total time measured since last reset.
-*** <u>7. Wheel Speed </u>
-**** <u>7.0 Current wheel speed </u> Current wheel speed.
-**** <u>7.1 Average wheel speed </u> The average speed since power on.
-**** <u>7.2 Peak wheel speed </u> The measured peak value of wheel speed since power on.
+<br><br><br>
+
+* '''<u>Odometer field</u>'''
+This field can show a few variables that are logically grouped in sub fields. You can change between fields by pressing ON/OFF button and sub fields by quick pressing UP button followed a long press UP button (you will see temporary the field and sub field number blinking on wheel speed field).
+<br><br>
+* <u>1. Distance</u>
+** <u>1.0 Trip distance</u>: can be reset by quickly pressing DOWN button followed by a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
+** <u>1.1 Distance since power on</u> this value is automatically reset at power on. You can also reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
+** <u>1.2 Odometer</u>: can be set to a specific value on the configurations menu.
+* <u>2. Battery State of Charge</u> (not shown if function is disabled in configuration menu)
+** <u>2.0 State of charge in percentage</u>
+** <u>2.1 Consumed watt-hours</u>
+* <u>3. Battery State</u>
+** <u>3.0 Voltage:</u> Voltage of battery.
+** <u>3.1 Current:</u>: instantaneous current drawn from battery.
+* <u>4. Pedals</u>
+** <u>4.0 Rider pedal power</u>: in watts.
+** <u>4.1 Pedal cadence</u>: in revolutions per minute.
+** <u>4.2 Pedal torque</u>: in newton meter.
+* <u>5. Motor Temperature</u> (not shown if function is disabled in configuration menu)
+** <u>5.0 Motor temperature:</u> Temperature of motor.
+* <u>6. Time Measurement </u>
+** <u>6.0 Time Measurement:</u> Time measured since display is powered on.
+** <u>6.1 Total Time Measurement:</u> Total time measured since last reset.
+* <u>7. Wheel Speed </u>
+** <u>7.0 Current wheel speed </u> Current wheel speed.
+** <u>7.1 Average wheel speed </u> The average speed since power on.
+** <u>7.2 Peak wheel speed </u> The measured peak value of wheel speed since power on.
 
 == 2. Motor maximum power screen ==
 In the maximum motor power sub menu you can set a limit to maximum motor power. This can be useful for various reasons, like controlling the battery range for long travels.
