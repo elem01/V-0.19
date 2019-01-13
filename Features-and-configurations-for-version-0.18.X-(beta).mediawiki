@@ -22,7 +22,15 @@ This sub field displays information about speed. The values are displayed in eit
 <br><br>
 
 * '''<u>Motor power field</u>'''
-The motor power field displays instantaneous motor power in watts.
+The motor power field displays instantaneous motor power in watts.In the maximum motor power sub menu you can set a limit to maximum motor power. This can be useful for various reasons, like controlling the battery range for long travels.
+
+Access this screen by long pressing ON/OFF and UP buttons. Press UP and DOWN buttons to increase/decrease the value. Exit this screen by long pressing the ON/OFF button.
+
+How it works: the motor controller will automatically limit current and therefore limit maximum motor power. As the battery discharges and the voltage decreases the motor controller will adapt and adjust the current to maintain the set limit.
+
+'''NOTES:'''
+* This function cannot be used when offroad mode is enabled. Disable offroad mode first.
+* It is not possible to set a higher motor power than the maximum allowed battery current set by user.
 <br><br><br>
 
 * '''<u>Battery state of charge bar</u>'''
@@ -86,20 +94,10 @@ This field can show a few variables that are logically grouped in sub fields. Yo
 ** <u>7.0 Current wheel speed </u> Current wheel speed.
 ** <u>7.1 Average wheel speed </u> The average speed since power on.
 ** <u>7.2 Peak wheel speed </u> The measured peak value of wheel speed since power on.
+<br><br><br>
 
-== 2. Motor maximum power screen ==
-In the maximum motor power sub menu you can set a limit to maximum motor power. This can be useful for various reasons, like controlling the battery range for long travels.
+== 2. Configuration menu ==
 
-Access this screen by long pressing ON/OFF and UP buttons. Press UP and DOWN buttons to increase/decrease the value. Exit this screen by long pressing the ON/OFF button.
-
-How it works: the motor controller will automatically limit current and therefore limit maximum motor power. As the battery discharges and the voltage decreases the motor controller will adapt and adjust the current to maintain the set limit.
-
-'''NOTES:'''
-* This function cannot be used when offroad mode is enabled. Disable offroad mode first.
-* It is not possible to set a higher motor power than the maximum allowed battery current set by user.
-
-
-== Configuration menu ==
 *To enter configuration menu: long press UP and DOWN buttons.
 *To enter sub menus: press UP or DOWN button
 *To move to next subscreen: press ON/OFF button 
