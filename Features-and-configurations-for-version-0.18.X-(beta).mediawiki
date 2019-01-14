@@ -167,7 +167,7 @@ Tip: Search on Google how to measure wheel circumference. But for a quick setup 
 <br>
 
 
-=== 1: Battery ===
+=== 1: Battery Setup ===
 
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
@@ -265,7 +265,7 @@ Here you can configure what variables to show in the main screen. More precisely
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Battery State || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is by default enabled (1). Set (0) to disable. 
+| 0 || Battery state || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is by default enabled (1). Set (0) to disable. 
 |-
 | 1 || Pedal data || 1|| Display of pedal data, i.e. rider pedal power, pedal cadence or pedal torque, in the odometer field is by default enabled (1). Set (0) to disable. 
 |-
