@@ -46,12 +46,16 @@ How it works: the motor controller will automatically limit current and therefor
 === Odometer Field === 
 This field can show a few variables that are logically grouped in sub fields. You can change between fields by pressing ON/OFF button and sub fields by quickly pressing UP button followed by a long press UP button. The current field and sub field numbers will temporarily be blinking on wheel speed field.
 <br><br>
+'''NOTES:'''
+<br>
+* Every sub field is only displayed if the function is enabled and not set to hidden in the configuration menu.
+<br><br>
 *<u>1. Distance</u>
 **<u>1.0 Trip distance</u>: can be reset by quickly pressing DOWN button followed by a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
 **<u>1.1 Distance since power on</u> this value is automatically reset at power on. You can also reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
 **<u>1.2 Odometer</u>: can be set to a specific value on the configurations menu.
 <br>
-*<u>2. Battery State of Charge</u> (not shown if function is disabled in configuration menu)
+*<u>2. Battery State of Charge</u>
 **<u>2.0 State of charge in percentage</u>
 **<u>2.1 Consumed watt-hours</u>
 <br>
@@ -64,7 +68,7 @@ This field can show a few variables that are logically grouped in sub fields. Yo
 **<u>4.1 Pedal cadence</u>: in revolutions per minute.
 **<u>4.2 Pedal torque</u>: in newton meter.
 <br>
-*<u>5. Motor Temperature</u> (not shown if function is disabled in configuration menu)
+*<u>5. Motor Temperature</u>
 **<u>5.0 Motor temperature:</u> Temperature of motor.
 <br>
 *<u>6. Time Measurement </u>
