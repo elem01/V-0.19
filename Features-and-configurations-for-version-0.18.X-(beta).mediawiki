@@ -14,7 +14,7 @@ The following applies to firmware version 0.18.X only!
 The assist level field displays the active assist level. This sets the motor power as a factor of the power that rider is generating on the pedals. For instance, if current assist level is 3 and if this level is configured as a factor of 2.0, when rider is doing on the pedals a power of 100 watts, the motor power supplied will be 200 watts. The assist level is changed by pressing either UP or DOWN button.
 <br><br>
 '''NOTES:'''
-<br><br>
+<br>
 * It is possible to configure the number of assist levels (1 to 9) in the configuration menu. 
 <br>
 
@@ -108,7 +108,7 @@ The brake symbol lights up when user engages the E-Bike brakes, if installed. Th
 Enable or disable walk assist with a long hold of DOWN button at speeds below 8 km/h (approximately 5 mph). The motor will start to give assistance and maintain a walking pace. At the same time the walk assist symbol will light up. To set different power levels simply select appropriate assist level. The power levels can be configured in the configuration menu.
 <br><br>
 '''NOTES:'''
-<br><br>
+<br>
 * This function can be disabled in the configuration menu.
 * Number of walk assist levels correspond to configured assist levels.
 <br>
@@ -117,9 +117,10 @@ Enable or disable walk assist with a long hold of DOWN button at speeds below 8 
 === Cruise === 
 Enable or disable the cruise function with a long hold of DOWN button at speeds above 8 km/h (approximately 5 mph). The motor will save the current wheel speed and maintain it for as long as the DOWN button is pressed. Simultaneously, the cruise symbol will light up to let the user know that the function is active.
 <br><br>
-'''NOTE:'''
-<br><br>
+'''NOTES:'''
+<br>
 * This function can be disabled in the configuration menu.
+* Use with safety in mind.
 <br>
 
 ---------------------------------------------------------------------------------------------
@@ -127,7 +128,7 @@ Enable or disable the cruise function with a long hold of DOWN button at speeds 
 If offroad mode is enabled it can be activated with the ON/OFF and UP button combination and deactivated with the ON/OFF and DOWN button combination. When active, the assist symbol above the assist level will start blinking. Offroad mode is disabled and inactive by default.
 <br><br>
 '''NOTES:'''
-<br><br>
+<br>
 * It is not recommended to activate offroad mode on public roads. 
 * In many countries offroad mode may only be used on private property.
 <br>
