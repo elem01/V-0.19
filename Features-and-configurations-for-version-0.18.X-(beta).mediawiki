@@ -254,7 +254,29 @@ Example: 0.5 * 200 W (human power) = 100 W assist power. This results in 300 W t
 <br>
 
 
-=== 4: Walk Assist ===
+=== 4: Main Screen Setup ===
+
+Here you can configure what variables to show in the main screen. More precisely what is shown in the odometer field.
+<br><br>
+'''NOTES:'''
+<br>
+* Some variables can only be reset in the odometer field so it is required to enable these variables to be able to reset.
+<br>
+{|
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
+|-
+| 0 || Battery State || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is by default enabled (1). Set (0) to disable. 
+|-
+| 1 || Pedal data || 1|| Display of pedal data, i.e. rider pedal power, pedal cadence or pedal torque, in the odometer field is by default enabled (1). Set (0) to disable. 
+|-
+| 2 || Time measurement || 1 || Display of time measurement, i.e. TM or TTM, in the odometer field is by default enabled (1). Set (0) to disable.
+|-
+| 3 || Wheel speed || 1 || Display of wheel speed, i.e. current wheel speed, average wheel speed or peak wheel speed, in the odometer field is by default enabled (1). Set (0) to disable. 
+|}
+<br>
+
+
+=== 5: Walk Assist ===
 
 Here you can enable or disable the walk assist function. And also configure the motor duty cycle in each and every enabled assist level. The defaults should work for most situations.
 
@@ -314,7 +336,7 @@ NOTE: When hold-to-maintain is enabled it is required to hold the down button fo
 |-
 <br>
 
-=== 5: Startup BOOST function ===
+=== 6: Startup BOOST function ===
 
 Here you can enable, disable and configure the BOOST feature. This feature helps from standstills where you might need greater assistance. It gives more power during a set time and then fades the power back to normal assistance. To configure the function for you likening please set appropriate values.
 
@@ -342,7 +364,7 @@ Tip: See assist levels for more information about multipliers.
 <br>
 
 
-=== 6: Motor Temperature Protection ===
+=== 7: Motor Temperature Protection ===
 
 This function protects your motor from overheating resulting in permanent damage/loss of torque. See: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature if you have installed the [[How to install motor temperature sensor| motor temperature sensor]].
 
@@ -366,7 +388,7 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 <br>
 
 
-=== 7: Display ===
+=== 8: Display ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -385,7 +407,7 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 <br>
 
 
-=== 8: Offroad Mode ===
+=== 9: Offroad Mode ===
 
 This function enables user to limit speed and power when using bike on road. When using the bike off road where laws may be different it is possible to toggle Offroad mode and unlock a higher speed or power limit. Set parameters suitable for your specific laws and preferences.
 
@@ -405,7 +427,7 @@ This function enables user to limit speed and power when using bike on road. Whe
 <br>
 
 
-=== 9: Various ===
+=== 10: Various ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -428,7 +450,7 @@ Depending on type of motor, select appropriate value so that FOC calculations ar
 <br>
 
 
-=== 10: Advanced Technical Data ===
+=== 11: Advanced Technical Data ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Description'''
 |-
