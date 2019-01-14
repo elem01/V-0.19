@@ -41,6 +41,52 @@ How it works: the motor controller will automatically limit current and therefor
 <br>
 
 ---------------------------------------------------------------------------------------------
+=== Odometer Field === 
+This field can show a few variables that are logically grouped in sub fields. You can change between fields by pressing ON/OFF button and sub fields by quickly pressing UP button followed by a long press UP button. The current field and sub field numbers will temporarily be blinking on wheel speed field.
+<br><br>
+* <u>1. Distance</u>
+** <u>1.0 Trip distance</u>: can be reset by quickly pressing DOWN button followed by a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
+** <u>1.1 Distance since power on</u> this value is automatically reset at power on. You can also reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
+** <u>1.2 Odometer</u>: can be set to a specific value on the configurations menu.
+* <u>2. Battery State of Charge</u> (not shown if function is disabled in configuration menu)
+** <u>2.0 State of charge in percentage</u>
+** <u>2.1 Consumed watt-hours</u>
+* <u>3. Battery State</u>
+** <u>3.0 Voltage:</u> Voltage of battery.
+** <u>3.1 Current:</u>: instantaneous current drawn from battery.
+* <u>4. Pedals</u>
+** <u>4.0 Rider pedal power</u>: in watts.
+** <u>4.1 Pedal cadence</u>: in revolutions per minute.
+** <u>4.2 Pedal torque</u>: in newton meter.
+* <u>5. Motor Temperature</u> (not shown if function is disabled in configuration menu)
+** <u>5.0 Motor temperature:</u> Temperature of motor.
+* <u>6. Time Measurement </u>
+** <u>6.0 Time Measurement:</u> Time measured since display is powered on.
+** <u>6.1 Total Time Measurement:</u> Total time measured since last reset.
+* <u>7. Wheel Speed </u>
+** <u>7.0 Current wheel speed </u> Current wheel speed.
+** <u>7.1 Average wheel speed </u> The average speed since power on.
+** <u>7.2 Peak wheel speed </u> The measured peak value of wheel speed since power on.
+<br>
+
+---------------------------------------------------------------------------------------------
+=== Motor Temperature Field === 
+This field can either show the motor temperature, when the function is enabled and the temperature sensor is installed, or the battery state of charge in percentage. It is also possible to set so that the field displays nothing. To toggle between the different states simply press the ON/OFF and UP buttons simultaneously.
+<br><br>
+* <u>Motor temperature</u>: Motor temperature in degrees Celsius. When the power power is being limited due to over temperature, this field will blink (configure the temperature limits in the configurations menu).
+* <u>Battery state of charge in percent</u>: This percentage value is based on measured watt hours consumed from the battery. Set different modes and read more in the configurations menu.
+<br>
+
+---------------------------------------------------------------------------------------------
+=== Time Measurement Field === 
+The time measurement field displays elapsed time since power on or since last reset. It displays either the TM symbol, stands for Time Measurement, or TTM symbol, stands for Total Time Measurement. This corresponds to the mentioned "time since power on" and "time since last reset".
+<br><br>
+* <u>1. Time measurement </u>
+** <u>1.0 (TM) - Elapsed time since power on</u>
+** <u>1.1 (TTM) - Elapsed time since last reset </u>
+<br>
+
+---------------------------------------------------------------------------------------------
 === Battery State of Charge Bar === 
 Battery state of charge based on battery voltage. There are 6 different levels. When battery is near empty, the battery symbol will be empty and blinking and the motor power will be reduced up to battery being totally empty.<br>The battery voltage used to calculate the state of charge has in consideration the battery pack resistance to avoid floating when power is being draw from the battery (the battery pack resistance value is set on configurations menu).
 <br>
@@ -53,15 +99,6 @@ Enabled or disable LCD backlight, headlights and lights symbol with a long press
 ---------------------------------------------------------------------------------------------
 === Brakes === 
 The brake symbol lights up when user engages the E-Bike brakes, if installed. This is also useful for checking that the E-Brakes are working properly and thus turn of the motor assistance when applied.
-<br>
-
----------------------------------------------------------------------------------------------
-=== Time Measurement field === 
-The time measurement field displays elapsed time since power on or since last reset. It displays either the TM symbol, stands for Time Measurement, or TTM symbol, stands for Total Time Measurement. This corresponds to the mentioned "time since power on" and "time since last reset".
-<br><br>
-* <u>1. Time measurement </u>
-** <u>1.0 (TM) - Elapsed time since power on</u>
-** <u>1.1 (TTM) - Elapsed time since last reset </u>
 <br>
 
 ---------------------------------------------------------------------------------------------
@@ -91,43 +128,6 @@ If offroad mode is enabled it can be activated with the ON/OFF and UP button com
 <br><br>
 * It is not recommended to activate offroad mode on public roads. 
 * In many countries offroad mode may only be used on private property.
-<br>
-
----------------------------------------------------------------------------------------------
-=== Motor Temperature Field === 
-This field can either show the motor temperature, when the function is enabled and the temperature sensor is installed, or the battery state of charge in percentage. It is also possible to set so that the field displays nothing. To toggle between the different states simply press the ON/OFF and UP buttons simultaneously.
-<br><br>
-* <u>Motor temperature</u>: Motor temperature in degrees Celsius. When the power power is being limited due to over temperature, this field will blink (configure the temperature limits in the configurations menu).
-* <u>Battery state of charge in percent</u>: This percentage value is based on measured watt hours consumed from the battery. Set different modes and read more in the configurations menu.
-<br>
-
----------------------------------------------------------------------------------------------
-=== Odometer Field === 
-This field can show a few variables that are logically grouped in sub fields. You can change between fields by pressing ON/OFF button and sub fields by quickly pressing UP button followed by a long press UP button. The current field and sub field numbers will temporarily be blinking on wheel speed field.
-<br><br>
-* <u>1. Distance</u>
-** <u>1.0 Trip distance</u>: can be reset by quickly pressing DOWN button followed by a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
-** <u>1.1 Distance since power on</u> this value is automatically reset at power on. You can also reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
-** <u>1.2 Odometer</u>: can be set to a specific value on the configurations menu.
-* <u>2. Battery State of Charge</u> (not shown if function is disabled in configuration menu)
-** <u>2.0 State of charge in percentage</u>
-** <u>2.1 Consumed watt-hours</u>
-* <u>3. Battery State</u>
-** <u>3.0 Voltage:</u> Voltage of battery.
-** <u>3.1 Current:</u>: instantaneous current drawn from battery.
-* <u>4. Pedals</u>
-** <u>4.0 Rider pedal power</u>: in watts.
-** <u>4.1 Pedal cadence</u>: in revolutions per minute.
-** <u>4.2 Pedal torque</u>: in newton meter.
-* <u>5. Motor Temperature</u> (not shown if function is disabled in configuration menu)
-** <u>5.0 Motor temperature:</u> Temperature of motor.
-* <u>6. Time Measurement </u>
-** <u>6.0 Time Measurement:</u> Time measured since display is powered on.
-** <u>6.1 Total Time Measurement:</u> Total time measured since last reset.
-* <u>7. Wheel Speed </u>
-** <u>7.0 Current wheel speed </u> Current wheel speed.
-** <u>7.1 Average wheel speed </u> The average speed since power on.
-** <u>7.2 Peak wheel speed </u> The measured peak value of wheel speed since power on.
 <br>
 
 ---------------------------------------------------------------------------------------------
