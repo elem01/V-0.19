@@ -1,10 +1,12 @@
-The following applies to firmware version 0.18.X only!
-
-CAUTION: always use the same firmware version for both the motor controller and LCD unless otherwise specified!
-
-NOTE: Before using the mid drive with new firmware, you must configure the options on the display correctly. For instance, you should configure your battery low voltage cut off so as to not over discharge the battery. Do set all other parameters also.
-
 = KT-LCD3: information and configuration =
+
+The following applies to firmware version 0.18.X only!
+<br><br><br>
+''' CAUTION: '''
+<br>
+* Always use the same firmware version for both the motor controller and LCD unless otherwise specified!
+* Before using the mid drive with new firmware, you must configure the options on the display correctly. For instance, you should configure your battery low voltage cut off so as to not over discharge the battery. Do set all other parameters also.
+<br>
 
 == 1. Main screen ==
 ---------------------------------------------------------------------------------------------
