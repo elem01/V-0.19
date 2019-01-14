@@ -7,69 +7,103 @@ NOTE: Before using the mid drive with new firmware, you must configure the optio
 = KT-LCD3 information and configurations =
 
 == 1. Main screen ==
-
-* '''<u>Assist level field</u>'''
+---------------------------------------------------------------------------------------------
+=== Assist Level Field ===
 The assist level field displays the active assist level. This sets the motor power as a factor of the power that rider is generating on the pedals. For instance, if current assist level is 3 and if this level is configured as a factor of 2.0, when rider is doing on the pedals a power of 100 watts, the motor power supplied will be 200 watts. The assist level is changed by pressing either UP or DOWN button.
-<br><br><br>
+<br><br>
+'''NOTES:'''
+<br><br>
+* It is possible to configure the number of assist levels (1 to 9) in the configuration menu. 
+<br>
 
-* '''<u>Wheel speed field</u>'''
+---------------------------------------------------------------------------------------------
+=== Wheel Speed Field === 
 This sub field displays information about speed. The values are displayed in either metric or imperial units and the user can change from a couple of different speed measurements. The default one is current wheel speed. Other ones are average speed since power on and peak speed since power on.
 <br><br>
 * <u>1. Wheel speed </u>
 ** <u>1.0 Wheel speed</u>
 ** <u>1.1 Average wheel speed since power on</u>
 ** <u>1.2 Peak wheel speed since power on</u>
-<br><br>
+<br>
 
-* '''<u>Motor power field</u>'''
-The motor power field displays instantaneous motor power in watts.In the maximum motor power sub menu you can set a limit to maximum motor power. This can be useful for various reasons, like controlling the battery range for long travels.
+---------------------------------------------------------------------------------------------
+=== Motor Power Field === 
+The motor power field displays instantaneous motor power in watts. In the maximum motor power sub menu you can set a limit to maximum motor power. This can be useful for various reasons, like controlling the battery range for long trips.
 
-Access this screen by long pressing ON/OFF and UP buttons. Press UP and DOWN buttons to increase/decrease the value. Exit this screen by long pressing the ON/OFF button.
+Access the sub menu by long pressing ON/OFF and UP buttons. Press or hold UP and DOWN buttons to increase or decrease the power limit. Exit this screen by long pressing the ON/OFF button.
 
 How it works: the motor controller will automatically limit current and therefore limit maximum motor power. As the battery discharges and the voltage decreases the motor controller will adapt and adjust the current to maintain the set limit.
-
+<br><br>
 '''NOTES:'''
+<br>
 * This function cannot be used when offroad mode is enabled. Disable offroad mode first.
 * It is not possible to set a higher motor power than the maximum allowed battery current set by user.
-<br><br><br>
+<br>
 
-* '''<u>Battery state of charge bar</u>'''
+---------------------------------------------------------------------------------------------
+=== Battery State of Charge Bar === 
 Battery state of charge based on battery voltage. There are 6 different levels. When battery is near empty, the battery symbol will be empty and blinking and the motor power will be reduced up to battery being totally empty.<br>The battery voltage used to calculate the state of charge has in consideration the battery pack resistance to avoid floating when power is being draw from the battery (the battery pack resistance value is set on configurations menu).
-<br><br><br>
+<br>
 
-* '''<u>Lights symbol</u>'''
-Enabled/disable with a long press of UP button (LCD back light will also be change, depending on the configurations) and the motor controller will enable/disable the ebike lights.
-<br><br><br>
+---------------------------------------------------------------------------------------------
+=== Lights === 
+Enabled or disable LCD backlight, headlights and lights symbol with a long press of UP button. The LCD backlight will change as configured by user.
+<br>
 
-* '''<u>Brake symbol</u>'''
-Brake symbol is enabled when user press the ebike brakes (good to check that sensor brakes are working).
-<br><br><br>
+---------------------------------------------------------------------------------------------
+=== Brakes === 
+The brake symbol lights up when user engages the E-Bike brakes, if installed. This is also useful for checking that the E-Brakes are working properly and thus turn of the motor assistance when applied.
+<br>
 
-* '''<u>Time Measurement field</u>'''
-Time measurement functions. Displays either TM or TTM to get measured time either from trip or user last reset.
+---------------------------------------------------------------------------------------------
+=== Time Measurement field === 
+The time measurement field displays elapsed time since power on or since last reset. It displays either the TM symbol, stands for Time Measurement, or TTM symbol, stands for Total Time Measurement. This corresponds to the mentioned "time since power on" and "time since last reset".
 <br><br>
 * <u>1. Time measurement </u>
-** <u>1.0 TM since power on</u>
-** <u>1.1 TTM since last reset </u>
-<br><br><br>
+** <u>1.0 (TM) - Elapsed time since power on</u>
+** <u>1.1 (TTM) - Elapsed time since last reset </u>
+<br>
 
-* '''<u>Walk assist</u>'''
-Enable/disable with a long hold of DOWN button at speeds below 8 km/h (approximately 5 mph). The motor will start to give assistance and maintain a walking pace. To set different power levels simply select appropriate assist level.
-<br><br><br>
+---------------------------------------------------------------------------------------------
+=== Walk Assist === 
+Enable or disable walk assist with a long hold of DOWN button at speeds below 8 km/h (approximately 5 mph). The motor will start to give assistance and maintain a walking pace. At the same time the walk assist symbol will light up. To set different power levels simply select appropriate assist level. The power levels can be configured in the configuration menu.
+<br><br>
+'''NOTES:'''
+<br><br>
+* This function can be disabled in the configuration menu.
+* Number of walk assist levels correspond to configured assist levels.
+<br>
 
-** <u>Cruise</u>: Enable/disable with a long hold of DOWN button at speeds above 8 km/h (approximately 5 mph). The motor will save the current wheel speed and maintain it for as long as the DOWN button is pressed.
-<br><br><br>
+---------------------------------------------------------------------------------------------
+=== Cruise === 
+Enable or disable the cruise function with a long hold of DOWN button at speeds above 8 km/h (approximately 5 mph). The motor will save the current wheel speed and maintain it for as long as the DOWN button is pressed. Simultaneously, the cruise symbol will light up to let the user know that the function is active.
+<br><br>
+'''NOTE:'''
+<br><br>
+* This function can be disabled in the configuration menu.
+<br>
 
-** <u>Offroad mode</u>: if you have enabled the offroad mode (see configuration section below) this can be activated with the ON/OFF and UP button combination and deactivated with the ON/OFF and DOWN button combination. When active, the assist symbol above the assist level will start blinking. Offroad mode is disabled and inactive by default. We do not recommend you to activate offroad mode on public roads. In many countries offroad mode may only be used on private property.
-<br><br><br>
+---------------------------------------------------------------------------------------------
+=== Offroad Mode === 
+If offroad mode is enabled it can be activated with the ON/OFF and UP button combination and deactivated with the ON/OFF and DOWN button combination. When active, the assist symbol above the assist level will start blinking. Offroad mode is disabled and inactive by default.
+<br><br>
+'''NOTES:'''
+<br><br>
+* It is not recommended to activate offroad mode on public roads. 
+* In many countries offroad mode may only be used on private property.
+<br>
 
-** <u>Motor temperature / battery state of charge in percentage</u>: this field can show either the motor temperature (when the sensor is installed), the battery state in percentage or none (you can switch what is shown by pressing POWER and UP buttons simultaneously).
-*** <u>Motor temperature</u>: motor temperature in degrees Celsius. When the power power is being limited due to over temperature, this field will blink (configure the temperature limits on configurations menu).
-*** <u>Battery state of charge in percentage</u>: this percentage value is based on the accumulated battery power draw from your battery pack (set options on configurations menu).
-<br><br><br>
+---------------------------------------------------------------------------------------------
+=== Motor Temperature Field === 
+This field can either show the motor temperature, when the function is enabled and the temperature sensor is installed, or the battery state of charge in percentage. It is also possible to set so that the field displays nothing. To toggle between the different states simply press the ON/OFF and UP buttons simultaneously.
+<br><br>
+* <u>Motor temperature</u>: Motor temperature in degrees Celsius. When the power power is being limited due to over temperature, this field will blink (configure the temperature limits in the configurations menu).
+* <u>Battery state of charge in percent</u>: This percentage value is based on measured watt hours consumed from the battery. Set different modes and read more in the configurations menu.
+<br>
 
-* '''<u>Odometer field</u>'''
-This field can show a few variables that are logically grouped in sub fields. You can change between fields by pressing ON/OFF button and sub fields by quick pressing UP button followed a long press UP button (you will see temporary the field and sub field number blinking on wheel speed field).
+---------------------------------------------------------------------------------------------
+=== Odometer Field === 
+This field can show a few variables that are logically grouped in sub fields. You can change between fields by pressing ON/OFF button and sub fields by quickly pressing UP button followed by a long press UP button. The current field and sub field numbers will temporarily be blinking on wheel speed field.
 <br><br>
 * <u>1. Distance</u>
 ** <u>1.0 Trip distance</u>: can be reset by quickly pressing DOWN button followed by a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
@@ -94,7 +128,9 @@ This field can show a few variables that are logically grouped in sub fields. Yo
 ** <u>7.0 Current wheel speed </u> Current wheel speed.
 ** <u>7.1 Average wheel speed </u> The average speed since power on.
 ** <u>7.2 Peak wheel speed </u> The measured peak value of wheel speed since power on.
-<br><br><br>
+<br>
+
+---------------------------------------------------------------------------------------------
 
 == 2. Configuration menu ==
 
@@ -103,7 +139,7 @@ This field can show a few variables that are logically grouped in sub fields. Yo
 *To move to next subscreen: press ON/OFF button 
 *To exit: long press the ON/OFF button
 
-== 0: General Setup ==
+=== 0: General Setup ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -118,7 +154,7 @@ Tip: Search on Google how to measure wheel circumference. But for a quick setup 
 <br>
 
 
-== 1: Battery ==
+=== 1: Battery ===
 
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
@@ -151,7 +187,7 @@ Tip: Here you can evaluate and test how the set internal resistance of the batte
 <br>
 
 
-== 2: Battery Capacity Setup ==
+=== 2: Battery Capacity Setup ===
 
 Under this configuration menu you can set parameters to display the state of charge of your E-Bike battery. If this function is enabled it will display how many watt-hours have been consumed since last charge and what percentage remains of the battery. Depending on preferences it is possible to set so that percentage of consumed charge is displayed instead of percentage of remaining charge.
 
@@ -185,7 +221,7 @@ Tip: roughly calculate the capacity by multiplying the nominal voltage with the 
 <br>
 
 
-== 3: Assist Levels ==
+=== 3: Assist Levels ===
 
 Here you can configure how many assist levels you wish to be able to select and also their respective multipliers. The defaults should already work for most situations.
 
@@ -205,7 +241,7 @@ Example: 0.5 * 200 W (human power) = 100 W assist power. This results in 300 W t
 <br>
 
 
-== 4: Walk Assist ==
+=== 4: Walk Assist ===
 
 Here you can enable or disable the walk assist function. And also configure the motor duty cycle in each and every enabled assist level. The defaults should work for most situations.
 
@@ -244,7 +280,7 @@ The walk assist PWM value sets the motor duty cycle. It is an open loop controll
 <br>
 
 
-== X: Cruise Function (BETA) ==
+=== X: Cruise Function (BETA) ===
 
 Here you can enable or disable the cruise function.
 
@@ -265,7 +301,7 @@ NOTE: When hold-to-maintain is enabled it is required to hold the down button fo
 |-
 <br>
 
-== 5: Startup BOOST function ==
+=== 5: Startup BOOST function ===
 
 Here you can enable, disable and configure the BOOST feature. This feature helps from standstills where you might need greater assistance. It gives more power during a set time and then fades the power back to normal assistance. To configure the function for you likening please set appropriate values.
 
@@ -293,11 +329,11 @@ Tip: See assist levels for more information about multipliers.
 <br>
 
 
-== 6: Motor Temperature Protection ==
+=== 6: Motor Temperature Protection ===
 
 This function protects your motor from overheating resulting in permanent damage/loss of torque. See: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature if you have installed the [[How to install motor temperature sensor| motor temperature sensor]].
 
-=== How it works ===
+'''How it works:'''
 
 If you have installed the [[How to install motor temperature sensor| motor temperature sensor]] and you enable the function, you will be able to see the motor temperature in the temperature field of the display. When the set minimum motor temperature threshold is reached, the motor current will start to be limited. If the temperature keeps rising this will result in even more current, and therefore overall power, limitations. If the maximum motor temperature is reached the current will be completely limited.
 
@@ -317,7 +353,7 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 <br>
 
 
-== 7: Display ==
+=== 7: Display ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -336,7 +372,7 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 <br>
 
 
-== 8: Offroad Mode ==
+=== 8: Offroad Mode ===
 
 This function enables user to limit speed and power when using bike on road. When using the bike off road where laws may be different it is possible to toggle Offroad mode and unlock a higher speed or power limit. Set parameters suitable for your specific laws and preferences.
 
@@ -356,7 +392,7 @@ This function enables user to limit speed and power when using bike on road. Whe
 <br>
 
 
-== 9: Various ==
+=== 9: Various ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -379,7 +415,7 @@ Depending on type of motor, select appropriate value so that FOC calculations ar
 <br>
 
 
-== 10: Advanced Technical Data==
+=== 10: Advanced Technical Data ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Description'''
 |-
