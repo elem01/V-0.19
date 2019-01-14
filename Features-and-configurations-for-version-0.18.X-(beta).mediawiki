@@ -120,7 +120,7 @@ Enable or disable walk assist with a long hold of DOWN button at speeds below 8 
 '''NOTES:'''
 <br>
 * This function can be disabled in the configuration menu.
-* Number of walk assist levels correspond to configured assist levels.
+* Number of walk assist levels correspond to number of configured assist levels.
 <br>
 
 ---------------------------------------------------------------------------------------------
