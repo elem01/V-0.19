@@ -46,29 +46,35 @@ How it works: the motor controller will automatically limit current and therefor
 === Odometer Field === 
 This field can show a few variables that are logically grouped in sub fields. You can change between fields by pressing ON/OFF button and sub fields by quickly pressing UP button followed by a long press UP button. The current field and sub field numbers will temporarily be blinking on wheel speed field.
 <br><br>
-* <u>1. Distance</u>
-** <u>1.0 Trip distance</u>: can be reset by quickly pressing DOWN button followed by a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
-** <u>1.1 Distance since power on</u> this value is automatically reset at power on. You can also reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
-** <u>1.2 Odometer</u>: can be set to a specific value on the configurations menu.
-* <u>2. Battery State of Charge</u> (not shown if function is disabled in configuration menu)
-** <u>2.0 State of charge in percentage</u>
-** <u>2.1 Consumed watt-hours</u>
-* <u>3. Battery State</u>
-** <u>3.0 Voltage:</u> Voltage of battery.
-** <u>3.1 Current:</u>: instantaneous current drawn from battery.
-* <u>4. Pedals</u>
-** <u>4.0 Rider pedal power</u>: in watts.
-** <u>4.1 Pedal cadence</u>: in revolutions per minute.
-** <u>4.2 Pedal torque</u>: in newton meter.
-* <u>5. Motor Temperature</u> (not shown if function is disabled in configuration menu)
-** <u>5.0 Motor temperature:</u> Temperature of motor.
-* <u>6. Time Measurement </u>
-** <u>6.0 Time Measurement:</u> Time measured since display is powered on.
-** <u>6.1 Total Time Measurement:</u> Total time measured since last reset.
-* <u>7. Wheel Speed </u>
-** <u>7.0 Current wheel speed </u> Current wheel speed.
-** <u>7.1 Average wheel speed </u> The average speed since power on.
-** <u>7.2 Peak wheel speed </u> The measured peak value of wheel speed since power on.
+*<u>1. Distance</u>
+**<u>1.0 Trip distance</u>: can be reset by quickly pressing DOWN button followed by a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
+**<u>1.1 Distance since power on</u> this value is automatically reset at power on. You can also reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
+**<u>1.2 Odometer</u>: can be set to a specific value on the configurations menu.
+<br>
+*<u>2. Battery State of Charge</u> (not shown if function is disabled in configuration menu)
+**<u>2.0 State of charge in percentage</u>
+**<u>2.1 Consumed watt-hours</u>
+<br>
+*<u>3. Battery State</u>
+**<u>3.0 Voltage:</u> Voltage of battery.
+**<u>3.1 Current:</u>: instantaneous current drawn from battery.
+<br>
+*<u>4. Pedals</u>
+**<u>4.0 Rider pedal power</u>: in watts.
+**<u>4.1 Pedal cadence</u>: in revolutions per minute.
+**<u>4.2 Pedal torque</u>: in newton meter.
+<br>
+*<u>5. Motor Temperature</u> (not shown if function is disabled in configuration menu)
+**<u>5.0 Motor temperature:</u> Temperature of motor.
+<br>
+*<u>6. Time Measurement </u>
+**<u>6.0 Time Measurement:</u> Time measured since display is powered on.
+**<u>6.1 Total Time Measurement:</u> Total time measured since last reset.
+<br>
+*<u>7. Wheel Speed </u>
+**<u>7.0 Current wheel speed </u> Current wheel speed.
+**<u>7.1 Average wheel speed </u> The average speed since power on.
+**<u>7.2 Peak wheel speed </u> The measured peak value of wheel speed since power on.
 <br>
 
 ---------------------------------------------------------------------------------------------
