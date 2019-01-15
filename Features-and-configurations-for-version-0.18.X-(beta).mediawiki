@@ -317,9 +317,11 @@ Here you can configure what variables to show in the main screen. More precisely
 
 === X: Cruise Function (BETA) ===
 
+This function is in development. This menu is not shown to user.
+
 Here you can enable or disable the cruise function.
 
-The function can be activated when the bike is traveling at speeds above 6 km/h or around 4 mph and the user presses and holds the down button. The cruise function will then save the current speed and try to maintain it. 
+The function can be activated when the bike is traveling at speeds above X km/h or around X mph and the user presses and holds the down button. The cruise function will then save the current speed and try to maintain it. 
 
 '''NOTES:'''
 * The cruise function only works at speeds above 6 km/h or around 4 mph.
@@ -330,7 +332,9 @@ The function can be activated when the bike is traveling at speeds above 6 km/h 
 |-
 | 0 || Enable/disable cruise function || 0 ||  Set (1) to enable or set (0) to disable the cruise function.
 |-
-| 1 || Hold-to-maintain || 1 || Set (1) to enable or set (0) to disable the hold-to-maintain feature. 
+| 1 || Set speed to maintain || 0 || Set (1) to enable or set (0) to disable the set speed to maintain feature. This will enable a special mode where the odometer field will display a target speed. Configure this with the UP or DOWN button. When in this special operation mode the motor will automatically accelerate or decelerate to set speed when user is holding the DOWN button and engaging the cruise function.
+|-
+| 2 || Hold-to-maintain || 1 || Set (1) to enable or set (0) to disable the hold-to-maintain feature. 
 <br><br>
 NOTE: When hold-to-maintain is enabled it is required to hold the down button for the cruise function to maintain speed. If disabled the bike will maintain speed until any button is pressed.
 |-
