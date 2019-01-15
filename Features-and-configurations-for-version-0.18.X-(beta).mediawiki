@@ -254,29 +254,7 @@ Example: 0.5 * 200 W (human power) = 100 W assist power. This results in 300 W t
 <br>
 
 
-=== 4: Main Screen Setup ===
-
-Here you can configure what variables to show in the main screen. More precisely what is shown in the odometer field.
-<br><br>
-'''NOTES:'''
-<br>
-* Some variables can only be reset in the odometer field so it is required to enable these variables to be able to reset.
-<br>
-{|
-| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
-|-
-| 0 || Battery state || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is by default enabled (1). Set (0) to disable. 
-|-
-| 1 || Pedal data || 1|| Display of pedal data, i.e. rider pedal power, pedal cadence or pedal torque, in the odometer field is by default enabled (1). Set (0) to disable. 
-|-
-| 2 || Time measurement || 1 || Display of time measurement, i.e. TM or TTM, in the odometer field is by default enabled (1). Set (0) to disable.
-|-
-| 3 || Wheel speed || 1 || Display of wheel speed, i.e. current wheel speed, average wheel speed or peak wheel speed, in the odometer field is by default enabled (1). Set (0) to disable. 
-|}
-<br>
-
-
-=== 5: Walk Assist ===
+=== 4: Walk Assist ===
 
 Here you can enable or disable the walk assist function. And also configure the motor duty cycle in each and every enabled assist level. The defaults should work for most situations.
 
@@ -311,6 +289,28 @@ The walk assist PWM value sets the motor duty cycle. It is an open loop controll
 | - || Walk assist level 8 || 55 || -
 |-
 | - || Walk assist level 9 || 60 || -
+|}
+<br>
+
+
+=== 5: Main Screen Setup ===
+
+Here you can configure what variables to show in the main screen. More precisely what is shown in the odometer field.
+<br><br>
+'''NOTES:'''
+<br>
+* Some variables can only be reset in the odometer field so it is required to enable these variables to be able to reset.
+<br>
+{|
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
+|-
+| 0 || Battery state || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is by default enabled (1). Set (0) to disable. 
+|-
+| 1 || Pedal data || 1|| Display of pedal data, i.e. rider pedal power, pedal cadence or pedal torque, in the odometer field is by default enabled (1). Set (0) to disable. 
+|-
+| 2 || Time measurement || 1 || Display of time measurement, i.e. TM or TTM, in the odometer field is by default enabled (1). Set (0) to disable.
+|-
+| 3 || Wheel speed || 1 || Display of wheel speed, i.e. current wheel speed, average wheel speed or peak wheel speed, in the odometer field is by default enabled (1). Set (0) to disable. 
 |}
 <br>
 
