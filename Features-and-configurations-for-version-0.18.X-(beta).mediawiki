@@ -293,7 +293,33 @@ The walk assist PWM value sets the motor duty cycle. It is an open loop controll
 <br>
 
 
-=== 5: Main Screen Setup ===
+=== 5: Cruise Function (BETA) ===
+
+This function is in development.
+
+Here you can enable or disable the cruise function.
+
+The function can be activated when the bike is traveling at speeds above X km/h or around X mph and the user presses and holds the down button. The cruise function will then save the current speed and try to maintain it. 
+
+'''NOTES:'''
+* The cruise function only works at speeds above X km/h or around X mph.
+
+<br>
+{|
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
+|-
+| 0 || Enable/disable cruise function || 0 ||  Set (1) to enable or set (0) to disable the cruise function.
+|-
+| 1 || Set speed to maintain || 0 || Set (1) to enable or set (0) to disable the set speed to maintain feature. This will enable a special mode where the odometer field will display a target speed. Configure this with the UP or DOWN button. When in this special operation mode the motor will automatically accelerate or decelerate to set speed when user is holding the DOWN button and engaging the cruise function.
+|-
+| 2 || Hold-to-maintain || 1 || Set (1) to enable or set (0) to disable the hold-to-maintain feature. 
+<br><br>
+NOTE: When hold-to-maintain is enabled it is required to hold the down button for the cruise function to maintain speed. If disabled the bike will maintain speed until any button is pressed.
+|-
+<br>
+
+
+=== 6: Main Screen Setup ===
 
 Here you can configure what variables to show in the main screen. More precisely what is shown in the odometer field.
 <br><br>
@@ -315,32 +341,7 @@ Here you can configure what variables to show in the main screen. More precisely
 <br>
 
 
-=== X: Cruise Function (BETA) ===
-
-This function is in development. This menu is not shown to user.
-
-Here you can enable or disable the cruise function.
-
-The function can be activated when the bike is traveling at speeds above X km/h or around X mph and the user presses and holds the down button. The cruise function will then save the current speed and try to maintain it. 
-
-'''NOTES:'''
-* The cruise function only works at speeds above 6 km/h or around 4 mph.
-
-<br>
-{|
-| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
-|-
-| 0 || Enable/disable cruise function || 0 ||  Set (1) to enable or set (0) to disable the cruise function.
-|-
-| 1 || Set speed to maintain || 0 || Set (1) to enable or set (0) to disable the set speed to maintain feature. This will enable a special mode where the odometer field will display a target speed. Configure this with the UP or DOWN button. When in this special operation mode the motor will automatically accelerate or decelerate to set speed when user is holding the DOWN button and engaging the cruise function.
-|-
-| 2 || Hold-to-maintain || 1 || Set (1) to enable or set (0) to disable the hold-to-maintain feature. 
-<br><br>
-NOTE: When hold-to-maintain is enabled it is required to hold the down button for the cruise function to maintain speed. If disabled the bike will maintain speed until any button is pressed.
-|-
-<br>
-
-=== 6: Startup BOOST function ===
+=== 7: Startup BOOST function ===
 
 Here you can enable, disable and configure the BOOST feature. This feature helps from standstills where you might need greater assistance. It gives more power during a set time and then fades the power back to normal assistance. To configure the function for you likening please set appropriate values.
 
@@ -368,7 +369,7 @@ Tip: See assist levels for more information about multipliers.
 <br>
 
 
-=== 7: Motor Temperature Protection ===
+=== 8: Motor Temperature Protection ===
 
 This function protects your motor from overheating resulting in permanent damage/loss of torque. See: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature if you have installed the [[How to install motor temperature sensor| motor temperature sensor]].
 
@@ -392,7 +393,7 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 <br>
 
 
-=== 8: Display ===
+=== 9: Display ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -411,7 +412,7 @@ NOTE: if you do not have the [[How to install motor temperature sensor|motor tem
 <br>
 
 
-=== 9: Offroad Mode ===
+=== 10: Offroad Mode ===
 
 This function enables user to limit speed and power when using bike on road. When using the bike off road where laws may be different it is possible to toggle Offroad mode and unlock a higher speed or power limit. Set parameters suitable for your specific laws and preferences.
 
@@ -431,7 +432,7 @@ This function enables user to limit speed and power when using bike on road. Whe
 <br>
 
 
-=== 10: Various ===
+=== 11: Various ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -454,7 +455,7 @@ Depending on type of motor, select appropriate value so that FOC calculations ar
 <br>
 
 
-=== 11: Advanced Technical Data ===
+=== 12: Advanced Technical Data ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Description'''
 |-
