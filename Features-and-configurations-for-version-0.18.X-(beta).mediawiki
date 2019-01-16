@@ -303,7 +303,7 @@ The function can be activated when the bike is traveling at speeds above X km/h 
 
 '''NOTES:'''
 * The cruise function only works at speeds above X km/h or around X mph.
-
+* The motor power used will not exceed set limits.
 <br>
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
