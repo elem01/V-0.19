@@ -1,11 +1,12 @@
 = KT-LCD3: information and configuration =
 
-The following applies to firmware version 0.18.X only!
+The following only applies to firmware version 0.18.X!
 <br><br><br>
 ''' CAUTION: '''
 <br>
 * Always use the same firmware version for both the motor controller and LCD unless otherwise specified!
 * Before using the mid drive with new firmware, you must configure the options on the display correctly. For instance, you should configure your battery low voltage cut off so as not to over discharge the battery. Do set all other parameters also.
+* When installing new firmware, always check that no unwanted functions have become enabled or disabled during the install process.
 <br>
 
 == 1. Main screen ==
@@ -61,7 +62,7 @@ This field can show a few variables that are logically grouped in sub fields. Yo
 <br>
 *<u>3. Battery State</u>
 **<u>3.0 Voltage:</u> Voltage of battery.
-**<u>3.1 Current:</u>: instantaneous current drawn from battery.
+**<u>3.1 Current:</u> instantaneous current drawn from battery.
 <br>
 *<u>4. Pedals</u>
 **<u>4.0 Rider pedal power</u>: in watts.
@@ -76,11 +77,13 @@ This field can show a few variables that are logically grouped in sub fields. Yo
 **<u>6.1 Total Time Measurement:</u> Total time measured since last reset.
 <br>
 *<u>7. Wheel Speed </u>
-**<u>7.0 Current wheel speed </u> Current wheel speed.
-**<u>7.1 Average wheel speed </u> The average speed since power on.
-**<u>7.2 Peak wheel speed </u> The measured peak value of wheel speed since power on.
+**<u>7.0 Current wheel speed: </u> Current wheel speed.
+**<u>7.1 Average wheel speed: </u> The average speed since power on.
+**<u>7.2 Peak wheel speed: </u> The measured peak value of wheel speed since power on.
 <br>
-
+*<u>8. Cruise Function </u>
+**<u>8.0 Set target speed: </u> In this sub field it is possible to set the target speed for the cruise function.
+<br>
 ---------------------------------------------------------------------------------------------
 === Motor Temperature Field === 
 This field can either show the motor temperature, when the function is enabled and the temperature sensor is installed, or the battery state of charge in percentage. It is also possible to set so that the field displays nothing. To toggle between the different states simply press the ON/OFF and UP buttons simultaneously.
@@ -302,6 +305,7 @@ Here you can enable or disable the cruise function. The function can be activate
 The cruise function has two modes of operation depending on user preference. It can, when activated, save the current speed and maintain it. Or the user can set a desired target speed and the cruise function will accelerate/decelerate to the set speed and then maintain it instead. Both modes of operation are activated the same way as described above.
 
 If it is preferred to set a target speed and let the cruise function maintain that speed there are two ways in which the user can set the speed. The first way is through the configuration menu. The second way is by enabling the cruise display in the odometer field in the Main Screen Setup. This will display an extra sub field where the target speed is displayed in the odometer field. Pressing the UP or DOWN buttons will not change the assist level in this sub field, instead, it will change the target speed.
+<br><br>
 '''NOTES:'''
 * The cruise function only works at speeds above 8 km/h or around 5 mph.
 * The motor power will not exceed set power limits.
@@ -454,8 +458,6 @@ Depending on type of motor, select appropriate value so that FOC calculations ar
 | 2 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep at disabled (0) if you do not have brake sensors installed.
 |-
 | 3 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
-|-
-| 4 || Enable/disable cruise function || 0 ||  Set (1) to enable or set (0) to disable the cruise function.
 |}
 <br>
 
