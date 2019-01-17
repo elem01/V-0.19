@@ -1,7 +1,7 @@
 = KT-LCD3: information and configuration =
+<pre>The following only applies to firmware version 0.18.X! </pre>
 
-The following only applies to firmware version 0.18.X!
-<br><br><br>
+<br>
 ''' CAUTION: '''
 <br>
 * Always use the same firmware version for both the motor controller and LCD unless otherwise specified!
@@ -23,10 +23,10 @@ The assist level field displays the active assist level. This sets the motor pow
 === Wheel Speed Field === 
 This sub field displays information about speed. The values are displayed in either metric or imperial units and the user can change from a couple of different speed measurements. The default one is current wheel speed. Other ones are average speed since power on and peak speed since power on.
 <br><br>
-* <u>1. Wheel speed </u>
-** <u>1.0 Wheel speed</u>
-** <u>1.1 Average wheel speed since power on</u>
-** <u>1.2 Peak wheel speed since power on</u>
+* <u> 1. Wheel speed </u>
+** <u> 1.0 Wheel speed </u>
+** <u> 1.1 Average wheel speed since power on </u>
+** <u> 1.2 Peak wheel speed since power on </u>
 <br>
 
 ---------------------------------------------------------------------------------------------
@@ -45,44 +45,44 @@ How it works: the motor controller will automatically limit current and therefor
 
 ---------------------------------------------------------------------------------------------
 === Odometer Field === 
-This field can show a few variables that are logically grouped in sub fields. You can change between fields by pressing ON/OFF button and sub fields by quickly pressing UP button followed by a long press UP button. The current field and sub field numbers will temporarily be blinking on wheel speed field.
+This field can show a few variables that are logically grouped in sub fields. You can change between fields by pressing ON/OFF button and sub fields by quickly pressing UP button followed by a long press UP button. The current field and sub field number will temporarily blink in the wheel speed field.
 <br><br>
 '''NOTES:'''
 <br>
 * Every sub field is only displayed if the function is enabled and not set to hidden in the configuration menu.
 <br><br>
-*<u>1. Distance</u>
-**<u>1.0 Trip distance</u>: can be reset by quickly pressing DOWN button followed by a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
-**<u>1.1 Distance since power on</u> this value is automatically reset at power on. You can also reset by quick pressing DOWN button followed a long press DOWN button (you will see trip distance value blinking if you keep pressed DOWN button and after 3 seconds the value will reset).
-**<u>1.2 Odometer</u>: can be set to a specific value on the configurations menu.
+* <u> 1. Distance </u>
+** <u> 1.0 Trip distance: </u> You can manually reset the trip distance by pressing DOWN button quickly followed by a long press on the DOWN button until value resets. It will start to blink when it is about to reset.
+** <u> 1.1 Distance since power on: </u> this value will automatically reset during power on/off. But is also manually resettable as described above.
+** <u> 1.2 Odometer: </u> can be set to a specific value in the configurations menu or reset as described above.
 <br>
-*<u>2. Battery State of Charge</u>
-**<u>2.0 State of charge in percentage</u>
-**<u>2.1 Consumed watt-hours</u>
+* <u> 2. Battery State of Charge </u>
+** <u> 2.0 State of charge in percentage </u>
+** <u> 2.1 Consumed watt-hours </u>
 <br>
-*<u>3. Battery State</u>
-**<u>3.0 Voltage:</u> Voltage of battery.
-**<u>3.1 Current:</u> instantaneous current drawn from battery.
+* <u> 3. Battery State </u>
+** <u> 3.0 Voltage: </u> voltage of battery.
+** <u> 3.1 Current: </u> instantaneous current drawn from battery.
 <br>
-*<u>4. Pedals</u>
-**<u>4.0 Rider pedal power</u>: in watts.
-**<u>4.1 Pedal cadence</u>: in revolutions per minute.
-**<u>4.2 Pedal torque</u>: in newton meter.
+* <u> 4. Pedals </u>
+** <u> 4.0 Rider pedal power </u>: in watts.
+** <u> 4.1 Pedal cadence </u>: in revolutions per minute.
+** <u> 4.2 Pedal torque </u>: in newton meter.
 <br>
-*<u>5. Motor Temperature</u>
-**<u>5.0 Motor temperature:</u> Temperature of motor.
+* <u> 5. Motor Temperature </u>
+** <u> 5.0 Motor temperature: </u> temperature of motor.
 <br>
-*<u>6. Time Measurement </u>
-**<u>6.0 Time Measurement:</u> Time measured since display is powered on.
-**<u>6.1 Total Time Measurement:</u> Total time measured since last reset.
+* <u> 6. Time Measurement </u>
+** <u> 6.0 Time Measurement: </u> time measured since display is powered on. You can reset by pressing DOWN button quickly followed by a long press on the DOWN button until value resets. It will start to blink when it is about to reset.
+** <u> 6.1 Total Time Measurement: </u> total time measured since last reset. Can be reset as described above.
 <br>
-*<u>7. Wheel Speed </u>
-**<u>7.0 Current wheel speed: </u> Current wheel speed.
-**<u>7.1 Average wheel speed: </u> The average speed since power on.
-**<u>7.2 Peak wheel speed: </u> The measured peak value of wheel speed since power on.
+* <u> 7. Wheel Speed </u>
+** <u> 7.0 Current wheel speed: </u> Current wheel speed.
+** <u> 7.1 Average wheel speed: </u> The average speed since power on.
+** <u> 7.2 Peak wheel speed: </u> The measured peak value of wheel speed since power on.
 <br>
-*<u>8. Cruise Function </u>
-**<u>8.0 Set target speed: </u> In this sub field it is possible to set the target speed for the cruise function.
+* <u> 8. Cruise Function </u>
+** <u> 8.0 Set target speed: </u> In this sub field it is possible to set the target speed for the cruise function.
 <br>
 ---------------------------------------------------------------------------------------------
 === Motor Temperature Field === 
@@ -455,7 +455,7 @@ Depending on type of motor, select appropriate value so that FOC calculations ar
 |-
 | 1 || Current ramp up, inverse step || 1953 || Set value that defines acceleration. A higher value corresponds to slower acceleration. Be careful not to select too fast acceleration.
 |-
-| 2 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep at disabled (0) if you do not have brake sensors installed.
+| 2 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep disabled (0) if you do not have brake sensors installed.
 |-
 | 3 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
 |}
