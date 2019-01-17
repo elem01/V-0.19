@@ -5,7 +5,7 @@
 ''' CAUTION: '''
 <br>
 * Always use the same firmware version for both the motor controller and LCD unless otherwise specified!
-* Before using the mid drive with new firmware, you must configure the options on the display correctly. For instance, you should configure your battery low voltage cut off so as not to over discharge the battery. Do set all other parameters also.
+* Before using the mid drive with new firmware, you must correctly configure the options on the display. For instance, you should configure your battery low voltage cut off so as not to over discharge the battery. Do set all other parameters also.
 * When installing new firmware, always check that no unwanted functions have become enabled or disabled during the install process.
 <br>
 
