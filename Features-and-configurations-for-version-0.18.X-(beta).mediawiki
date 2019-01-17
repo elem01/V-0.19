@@ -125,7 +125,9 @@ Enable or disable walk assist with a long hold of DOWN button at speeds below 8 
 
 ---------------------------------------------------------------------------------------------
 === Cruise === 
-Enable or disable the cruise function with a long hold of DOWN button at speeds above 8 km/h (approximately 5 mph). The motor will save the current wheel speed and maintain it for as long as the DOWN button is pressed. Simultaneously, the cruise symbol will light up to let the user know that the function is active.
+Enable or disable the cruise function with a long hold of DOWN button at speeds above 8 km/h (approximately 5 mph). If the function is enabled it will by default save the current wheel speed and maintain it for as long as the DOWN button is pressed. The cruise symbol will light up to let the user know that the function is active. 
+
+It is also possible to enable a feature where you enter the desired wheel speed and the cruise function will automatically go to and maintain that speed. More information on how to enable and use the different functions can be found under the configuration menu.
 <br><br>
 '''NOTES:'''
 <br>
@@ -295,26 +297,25 @@ The walk assist PWM value sets the motor duty cycle. It is an open loop controll
 
 === 5: Cruise Function (BETA) ===
 
-This function is in development.
+Here you can enable or disable the cruise function. The function can be activated when the bike is traveling at speeds above 8 km/h or around 5 mph and the user presses and holds the down button. 
 
-Here you can enable or disable the cruise function.
+The cruise function has two modes of operation depending on user preference. It can, when activated, save the current speed and maintain it. Or the user can set a desired target speed and the cruise function will accelerate/decelerate to the set speed and then maintain it instead. Both modes of operation are activated the same way as described above.
 
-The function can be activated when the bike is traveling at speeds above X km/h or around X mph and the user presses and holds the down button. The cruise function will then save the current speed and try to maintain it. 
-
+If it is preferred to set a target speed and let the cruise function maintain that speed there are two ways in which the user can set the speed. The first way is through the configuration menu. The second way is by enabling the cruise display in the odometer field in the Main Screen Setup. This will display an extra sub field where the target speed is displayed in the odometer field. Pressing the UP or DOWN buttons will not change the assist level in this sub field, instead, it will change the target speed.
 '''NOTES:'''
-* The cruise function only works at speeds above X km/h or around X mph.
-* The motor power used will not exceed set limits.
+* The cruise function only works at speeds above 8 km/h or around 5 mph.
+* The motor power will not exceed set power limits.
 <br>
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Enable/disable cruise function || 0 ||  Set (1) to enable or set (0) to disable the cruise function.
 |-
-| 1 || Set speed to maintain || 0 || Set (1) to enable or set (0) to disable the set speed to maintain feature. This will enable a special mode where the odometer field will display a target speed. Configure this with the UP or DOWN button. When in this special operation mode the motor will automatically accelerate or decelerate to set speed when user is holding the DOWN button and engaging the cruise function.
+| 1 || Set speed to maintain || 0 || Set (1) to enable or set (0) to disable the set speed to maintain feature. This will enable the user to set desired speed and the cruise function will maintain that speed.
 |-
-| 2 || Hold-to-maintain || 1 || Set (1) to enable or set (0) to disable the hold-to-maintain feature. 
-<br><br>
-NOTE: When hold-to-maintain is enabled it is required to hold the down button for the cruise function to maintain speed. If disabled the bike will maintain speed until any button is pressed.
+| 2 || Set target speed || 25 kph or 15 mph || Here it is possible to set the target speed for the cruise function to maintain. This is when the "set speed to maintain" feature is enabled. 
+|-
+| 3 || Release-to-maintain || 0 || (NOT ACTIVATED DUE TO SAFETY EVALUATION) Set (1) to enable or set (0) to disable the release-to-maintain feature. When this feature is enabled the user does not need to hold the DOWN button to keep the cruise function active. Instead, it deactivates when the user represses the DOWN button or any other button.
 |-
 <br>
 
@@ -330,13 +331,17 @@ Here you can configure what variables to show in the main screen. More precisely
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Battery state || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is by default enabled (1). Set (0) to disable. 
+| 0 || Distance data || 1 ||  Display of distance data, i.e. trip distance, distance since power on and odometer, in the odometer field is enabled (1) by default. Set (0) to disable. 
 |-
-| 1 || Pedal data || 1|| Display of pedal data, i.e. rider pedal power, pedal cadence or pedal torque, in the odometer field is by default enabled (1). Set (0) to disable. 
+| 1 || Battery state || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is enabled (1) by default. Set (0) to disable. 
 |-
-| 2 || Time measurement || 1 || Display of time measurement, i.e. TM or TTM, in the odometer field is by default enabled (1). Set (0) to disable.
+| 2 || Pedal data || 1|| Display of pedal data, i.e. rider pedal power, pedal cadence or pedal torque, in the odometer field is enabled (1) by default. Set (0) to disable. 
 |-
-| 3 || Wheel speed || 1 || Display of wheel speed, i.e. current wheel speed, average wheel speed or peak wheel speed, in the odometer field is by default enabled (1). Set (0) to disable. 
+| 3 || Time measurement || 1 || Display of time measurement, i.e. TM or TTM, in the odometer field is enabled (1) by default. Set (0) to disable.
+|-
+| 4 || Wheel speed || 1 || Display of wheel speed, i.e. current wheel speed, average wheel speed or peak wheel speed, in the odometer field is enabled (1) by default. Set (0) to disable.
+|-
+| 5 || Set target speed for cruise || 1 || Display of user set target speed which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable. 
 |}
 <br>
 
