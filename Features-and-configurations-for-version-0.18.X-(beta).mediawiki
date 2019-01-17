@@ -319,7 +319,9 @@ If it is preferred to set a target speed and let the cruise function maintain th
 |-
 | 2 || Set target speed || 25 kph or 15 mph || Here it is possible to set the target speed for the cruise function to maintain. This is when the "set speed to maintain" feature is enabled. 
 |-
-| 3 || Release-to-maintain || 0 || (NOT ACTIVATED DUE TO SAFETY EVALUATION) Set (1) to enable or set (0) to disable the release-to-maintain feature. When this feature is enabled the user does not need to hold the DOWN button to keep the cruise function active. Instead, it deactivates when the user represses the DOWN button or any other button.
+| 3 || Display set target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable. 
+|-
+| 4 || Release-to-maintain || 0 || (NOT ACTIVATED DUE TO SAFETY EVALUATION) Set (1) to enable or set (0) to disable the release-to-maintain feature. When this feature is enabled the user does not need to hold the DOWN button to keep the cruise function active. Instead, it deactivates when the user represses the DOWN button or any other button.
 |-
 <br>
 
@@ -345,7 +347,7 @@ Here you can configure what variables to show in the main screen. More precisely
 |-
 | 4 || Wheel speed || 1 || Display of wheel speed, i.e. current wheel speed, average wheel speed or peak wheel speed, in the odometer field is enabled (1) by default. Set (0) to disable.
 |-
-| 5 || Set target speed for cruise || 1 || Display of user set target speed which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable. 
+| 5 || Display set target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable. 
 |}
 <br>
 
