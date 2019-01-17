@@ -86,7 +86,7 @@ This field can show a few variables that are logically grouped in sub fields. Yo
 <br>
 ---------------------------------------------------------------------------------------------
 === Motor Temperature Field === 
-This field can either show the motor temperature, when the function is enabled and the temperature sensor is installed, or the battery state of charge in percentage. It is also possible to set so that the field displays nothing. To toggle between the different states simply press the ON/OFF and UP buttons simultaneously.
+This field can either show the motor temperature, when the function is enabled and the temperature sensor is installed, or the battery state of charge in percentage. It is also possible to set so that the field displays nothing. To toggle between the different states simply press the ON/OFF and DOWN buttons simultaneously.
 <br><br>
 * <u>Motor temperature</u>: Motor temperature in degrees Celsius. When the power power is being limited due to over temperature, this field will blink (configure the temperature limits in the configurations menu).
 * <u>Battery state of charge in percent</u>: This percentage value is based on measured watt hours consumed from the battery. Set different modes and read more in the configurations menu.
