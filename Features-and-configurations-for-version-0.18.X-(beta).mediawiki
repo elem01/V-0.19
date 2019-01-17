@@ -430,7 +430,7 @@ This function enables user to limit speed and power when using bike on road. Whe
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Feature toggle|| 0 || Select (1) to enable or (0) to disable.
+| 0 || Feature toggle|| 0 || Set (1) to enable or (0) to disable.
 |-
 | 1 || Active on system startup || 0 || Determines whether offroad mode should be active on system startup. Select (1) to enable or select (0) to disable.
 |-
@@ -448,12 +448,12 @@ This function enables user to limit speed and power when using bike on road. Whe
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Motor voltage type || 0 ||
-Depending on type of motor, select appropriate value so that FOC calculations are correctly executed. The voltage of the battery does not matter, this value should always be set depending on type of motor.
+Depending on type of motor, set appropriate value so that FOC calculations are correctly executed. The voltage of the battery does not matter, this value should always be set depending on type of motor.
 <br><br>
-* Set 0 for 48 V brushless motor (TSDZ2 52 V version has a 48 V brushless motor).
-* Set 1 for 36 V brushless motor.
-* Set 2 (EXPERIMENTAL) for the 48 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
-* Set 3 (EXPERIMENTAL) for the 36 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
+* Set (0) for 48 V brushless motor (TSDZ2 52 V version has a 48 V brushless motor).
+* Set (1) for 36 V brushless motor.
+* Set (2) (EXPERIMENTAL) for the 48 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
+* Set (3) (EXPERIMENTAL) for the 36 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
 |-
 | 1 || Current ramp up, inverse step || 1953 || Set value that defines acceleration. A higher value corresponds to slower acceleration. Be careful not to select too fast acceleration.
 |-
