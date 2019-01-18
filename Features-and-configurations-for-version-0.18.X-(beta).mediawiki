@@ -152,10 +152,10 @@ If offroad mode is enabled it can be activated with the ON/OFF and UP button com
 
 == 2. Configuration menu ==
 
-*To enter configuration menu: long press UP and DOWN buttons.
-*To enter sub menus: press UP or DOWN button
-*To move to next subscreen: press ON/OFF button 
-*To exit: long press the ON/OFF button
+* To enter the configuration menu: long press UP and DOWN buttons
+* To enter sub menus: press UP or DOWN button
+* To move to next sub menu: press ON/OFF button 
+* To exit sub menu or configuration menu: long press the ON/OFF button
 
 === 0: General Setup ===
 {|
@@ -300,7 +300,7 @@ The walk assist PWM value sets the motor duty cycle. It is an open loop controll
 
 === 5: Cruise Function (BETA) ===
 
-Here you can enable or disable the cruise function. The function can be activated when the bike is traveling at speeds above 8 km/h or around 5 mph and the user presses and holds the down button. 
+Here you can enable or disable the cruise function. The function can be activated when the bike is traveling at speeds above 8 km/h or around 5 mph and the user presses and holds the DOWN button. 
 
 The cruise function has two modes of operation depending on user preference. It can, when activated, save the current speed and maintain it. Or the user can set a desired target speed and the cruise function will accelerate/decelerate to the set speed and then maintain it instead. Both modes of operation are activated the same way as described above.
 
