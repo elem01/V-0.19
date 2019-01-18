@@ -277,23 +277,23 @@ The walk assist PWM value sets the motor duty cycle. It is an open loop controll
 |-
 | - || Walk assist level 0 || 0 || -
 |-
-| - || Walk assist level 1 || 20 || -
+| - || Walk assist level 1 || 25 || -
 |-
-| - || Walk assist level 2 || 25 || -
+| - || Walk assist level 2 || 30 || -
 |-
-| - || Walk assist level 3 || 30 || -
+| - || Walk assist level 3 || 35 || -
 |-
-| - || Walk assist level 4 || 35 || -
+| - || Walk assist level 4 || 40 || -
 |-
-| - || Walk assist level 5 || 40 || -
+| - || Walk assist level 5 || 45 || -
 |-
-| - || Walk assist level 6 || 45 || -
+| - || Walk assist level 6 || 50 || -
 |-
-| - || Walk assist level 7 || 50 || -
+| - || Walk assist level 7 || 55 || -
 |-
-| - || Walk assist level 8 || 55 || -
+| - || Walk assist level 8 || 60 || -
 |-
-| - || Walk assist level 9 || 60 || -
+| - || Walk assist level 9 || 65 || -
 |}
 <br>
 
