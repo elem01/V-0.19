@@ -393,13 +393,15 @@ The temperature value on the display will blink if the motor current is being li
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Motor temperature protection || 0 || Set (1) to enable the motor temperature control or set (0) to disable. 
+| 0 || Throttle enable || 0 || Set (1) to enable the throttle function or set (0) to disable. 
+|-
+| 1 || Motor temperature protection || 0 || Set (1) to enable the motor temperature control or set (0) to disable. 
 <br><br>
 NOTE: if you do not have the [[How to install motor temperature sensor|motor temperature sensor installed]], you should disable this option and ignore the immediate configurations below.
 |-
-| 1 || Minimum temperature || 75 °C || Set the minimum motor temperature at which the motor current will start to be limited.
+| 2 || Minimum temperature || 75 °C || Set the minimum motor temperature at which the motor current will start to be limited.
 |-
-| 2 || Maximum temperature || 85 °C || Set the maximum motor temperature at which the motor current will be completely blocked, i.e., motor shutoff.
+| 3 || Maximum temperature || 85 °C || Set the maximum motor temperature at which the motor current will be completely blocked, i.e., motor shutoff.
 |}
 <br>
 
