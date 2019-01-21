@@ -337,17 +337,19 @@ Here you can configure what variables to show in the main screen. More precisely
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Distance data || 1 ||  Display of distance data, i.e. trip distance, distance since power on and odometer, in the odometer field is enabled (1) by default. Set (0) to disable. 
+| 0 || Temperature field setup || 1 ||  In this sub menu it is possible to set the temperature field to display a couple of different variables. Such as motor temperature (1), battery state of charge (2)
 |-
-| 1 || Battery state || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is enabled (1) by default. Set (0) to disable. 
+| 1 || Distance data || 1 ||  Display of distance data, i.e. trip distance, distance since power on and odometer, in the odometer field is enabled (1) by default. Set (0) to disable. 
 |-
-| 2 || Pedal data || 1|| Display of pedal data, i.e. rider pedal power, pedal cadence or pedal torque, in the odometer field is enabled (1) by default. Set (0) to disable. 
+| 2 || Battery state || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is enabled (1) by default. Set (0) to disable. 
 |-
-| 3 || Time measurement || 1 || Display of time measurement, i.e. TM or TTM, in the odometer field is enabled (1) by default. Set (0) to disable.
+| 3 || Pedal data || 1|| Display of pedal data, i.e. rider pedal power, pedal cadence or pedal torque, in the odometer field is enabled (1) by default. Set (0) to disable. 
 |-
-| 4 || Wheel speed || 1 || Display of wheel speed, i.e. current wheel speed, average wheel speed or peak wheel speed, in the odometer field is enabled (1) by default. Set (0) to disable.
+| 4 || Time measurement || 1 || Display of time measurement, i.e. TM or TTM, in the odometer field is enabled (1) by default. Set (0) to disable.
 |-
-| 5 || Display set target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable. 
+| 5 || Wheel speed || 1 || Display of wheel speed, i.e. current wheel speed, average wheel speed or peak wheel speed, in the odometer field is enabled (1) by default. Set (0) to disable.
+|-
+| 6 || Display set target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable. 
 |}
 <br>
 
