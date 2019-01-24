@@ -393,7 +393,7 @@ In the Main Screen Setup it is possible to configure and customize the main scre
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Temperature field setup (BETA) || 1 ||  In this sub menu it is possible to set the temperature field to display different data depending on user preference. Such as:
+| 0 || Temperature field setup (BETA) || 0 ||  In this sub menu it is possible to set the temperature field to display different data depending on user preference. Such as:
 <br>
 <br> (0) = Display nothing
 <br> (1) = Motor temperature
