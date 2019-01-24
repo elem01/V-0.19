@@ -106,7 +106,9 @@ This field can either show the motor temperature, when the function is enabled a
 <br>
 - <b> Battery voltage: </b> When you prefer to always have the battery voltage displayed it is possible to set this in the motor temperature field.
 <br>
-- <b> Battery current: </b> If it is necessary to monitor the instantaneous current drawn from the battery.
+- <b> Battery current: </b> Monitor the instantaneous current drawn from the battery.
+<br>
+- <b> Pedal cadence: </b> Set to pedal cadence if you wish to see the instantaneous cadence of pedal rotation.
 <br>
 
 ---------------------------------------------------------------------------------------------
@@ -393,14 +395,14 @@ In the Main Screen Setup it is possible to configure and customize the main scre
 |-
 | 0 || Temperature field setup (BETA) || 1 ||  In this sub menu it is possible to set the temperature field to display different data depending on user preference. Such as:
 <br>
-<br> (0) = -
+<br> (0) = Display nothing
 <br> (1) = Motor temperature
-<br> (2) = Battery state of charge
-<br> (3) = Consumed watt-hours
-<br> (4) = Battery Voltage
-<br> (5) = Battery Current
+<br> (2) = Battery state of charge in percent
+<br> (3) = Battery instantaneous voltage
+<br> (4) = Battery instantaneous current
+<br> (5) = Pedal cadence
 <br><br>
-NOTE: If the motor temperature is hitting the temperature limits the field will temporarily hide chosen field so as to show the user of motor temperature.
+NOTE: If the motor temperature is hitting the temperature limits the field will temporarily hide chosen data display so as to show the user the motor temperature.
 <br><br>
 |-
 | 1 || Distance data || 1 ||  Display of distance data, i.e. trip distance, distance since power on and odometer, in the odometer field is enabled (1) by default. Set (0) to disable.
@@ -461,7 +463,9 @@ Tip: See assist levels for more information about multipliers.
 
 === 8: Motor Temperature Protection ===
 
-This function protects your motor from overheating resulting in permanent damage/loss of torque. See: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature if you have installed the [[How to install motor temperature sensor| motor temperature sensor]].
+In this sub menu it is possible to enable or disable the throttle or the motor temperature protection function. Both can not be activated at the same time because they use the same hardware to operate. If the motor temperature sensor is installed it is not possible to use the throttle and do NOT enable throttle if that is the case.
+
+This motor temperature protection eliminates overheating. Without this function and under heavy loads it would result in permanent damage/loss of torque. See: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature if you have installed the [[How to install motor temperature sensor| motor temperature sensor]].
 
 '''How it works:'''
 
@@ -547,7 +551,7 @@ Depending on type of motor, set appropriate value so that FOC calculations are c
 * Set (3) (EXPERIMENTAL) for the 36 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
 <br><br>
 |-
-| 1 || Current ramp up, inverse step || 1953 || Set value that defines acceleration. A higher value corresponds to slower acceleration. Be careful not to select too fast acceleration.
+| 1 || Current ramp up || 5 amps per second|| Set value that defines acceleration. Higher value corresponds to faster acceleration. Be careful not to select too fast acceleration.
 <br><br>
 |-
 | 2 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep disabled (0) if you do not have brake sensors installed.
