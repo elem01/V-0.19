@@ -1,4 +1,7 @@
 = KT-LCD3: information and configuration =
+<br>
+
+
 '''The following only applies to firmware version 0.18.X!'''
 
 <br>
@@ -9,7 +12,8 @@
 * When installing new firmware, always check that no unwanted functions have become enabled or disabled during the install process.
 <br>
 
-== 1. Main screen ==
+
+== 1. Main Screen ==
 ---------------------------------------------------------------------------------------------
 === Assist Level Field ===
 The assist level field displays the active assist level. This sets the motor power as a factor of the power that rider is generating on the pedals. For instance, if current assist level is 3 and if this level is configured as a factor of 2.0, when rider is doing on the pedals a power of 100 watts, the motor power supplied will be 200 watts. The assist level is changed by pressing either UP or DOWN button.
@@ -164,24 +168,32 @@ If offroad mode is enabled it can be activated with the ON/OFF and UP button com
 
 ---------------------------------------------------------------------------------------------
 
-== 2. Configuration menu ==
+== 2. Configuration Menu ==
+<br>
+
+=== How to enter the Configuration Menu ===
 
 * To enter the configuration menu: long press UP and DOWN buttons
 * To enter sub menus: press UP or DOWN button
 * To move to next sub menu: press ON/OFF button 
 * To exit sub menu or configuration menu: long press the ON/OFF button
+<br>
+
 
 === 0: General Setup ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 ||Unit|| Metric || Set (0) for metric units (km/h and kilometers) or (1) for imperial units (mph and miles)
+| 0 ||Unit|| Metric || Set (0) for metric units (km/h and kilometers) or (1) for imperial units (mph and miles).
+<br><br>
 |-
 | 1 || Maximum wheel speed || 50 ||  Enter your speed limit (by law) to run legal on public roads. The motor will fade out from -0.5 km/h to +2,0 km/h. Tip: Europe has generally a speed limit of 25 km/h for E-Bikes.
+<br><br>
 |-
 | 2 || Wheel circumference || 2050 || Enter your wheel circumference so that speed and distance is correctly calculated.
 <br><br>
-Tip: Search on Google how to measure wheel circumference. But for a quick setup with ball park values use: 26'' wheel = 2050;  27'' wheel = 2150;  27.5'' wheel =2215;  28'' wheel = 2250;  29'' wheel = 2300 
+Tip: Search on Google how to measure wheel circumference. But for a quick setup with ball park values use: 26'' wheel = 2050;  27'' wheel = 2150;  27.5'' wheel =2215;  28'' wheel = 2250;  29'' wheel = 2300.
+<br><br>
 |}
 <br>
 
@@ -192,14 +204,17 @@ Tip: Search on Google how to measure wheel circumference. But for a quick setup 
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Maximum current from battery || 16 ampere || Set maximum allowable current to be pulled from the battery. This value is limited internally by the firmware to the safe value of 18 ampere.
+<br><br>
 |-
-| 1 || Battery low-cut-off voltage || 39 volt || The controller will reduce power to stay over this limit! Calculate the limit by multiplying amount of cells in series with the safe cut-off-voltage per cell, which is usually between 2.8 - 3.0 volts. Example: 39.0 volts for: 13 cells in series * 3.0 volts = 39.0 volts. 
+| 1 || Battery low-cut-off voltage || 39 volt || The controller will reduce power to stay over this limit! Calculate the limit by multiplying amount of cells in series with the safe cut-off-voltage per cell, which is usually between 2.8 - 3.0 volts. Example: 39.0 volts for: 13 cells in series * 3.0 volts = 39.0 volts.
 <br><br>
 Tip: The standard Samsung cells allow down to 2.75 V but you need some safety margin because not all cells have exactly the same capacity. But setting a too large value you loose range and power. I like to use the value of 29 V for a 36 V battery pack (= 10 cells in series).
+<br><br>
 |-
 | 2 || Number of cells in series || 13 || Set this value so the battery state indicator works properly. This value can be any integer from 7 to 14
 <br><br>
 Example values: 7 for 24 V battery; 10 for 36 V battery; 13 for 48 V battery; 14 for 52 V battery.
+<br><br>
 |-
 | 3 || Battery internal resistance || 130 milliohms || Set this value so the battery state indicator does not display a lower state of charge when pulling a lot of power from battery and the voltage sags.
 <br><br>
@@ -211,10 +226,12 @@ How to calculate the battery pack resistance:<br>
 3. Calculate the resistance value
 <br><br>
 Example for 10 amps current, R = U / I, R = 1.2 volts drop / 10 amps, R = 0.120 = 120 milliohms.
+<br><br>
 |-
 | 4 || Battery voltage (SOC) || - || Measured and continuously updated battery voltage State Of Charge (SOC). This value is filtered using the battery pack resistance. 
 <br><br>
 Tip: Here you can evaluate and test how the set internal resistance of the battery affects the voltage reading.
+<br><br>
 |}    
 <br>
 
@@ -228,17 +245,19 @@ Tip: If this function is enabled you will be able to see percentage of charge in
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Enable and set State of Charge function || 0 || Set (1) to enable function. It will display watt-hours consumed and percentage of charge remaining, i.e., display percentage value from 100 % to 0 %. 
+| 0 || Enable and set State of Charge function || 0 || Set (1) to enable function. It will display watt-hours consumed and percentage of charge remaining, i.e., display percentage value from 100 % to 0 %.
 <br><br>
-Set (2) to enable function. It will display watt-hours consumed and percentage of charge consumed, i.e., display percentage value from 0 % to 100 %. 
+Set (2) to enable function. It will display watt-hours consumed and percentage of charge consumed, i.e., display percentage value from 0 % to 100 %.
 <br><br>
 Set (0) to disable the function.
+<br><br>
 |-
 | 1 || Threshold voltage to reset watt-hour meter || 54.2 volt || When powering on the display this value is compared to the battery voltage. If it is lower, the battery is expected to be fully charged and the watt-hour meter is reset.
 <br><br>
 Tip: To find a suitable value, fully charge the battery and measure the voltage on the KT-LCD3, use a slightly lower value for the threshold voltage. 
 <br><br>
 Example: my 48 V battery charges up to 54.6 volts, so I set the threshold to 54.2 volts.
+<br><br>
 |-
 | 2 || Total watt-hours of battery || 0 || Set the total capacity in watt-hours your battery has. 
 <br><br>
@@ -247,8 +266,10 @@ Tip: fully charge the battery and then discharge it completely and use the measu
 Tip: the capacities stated from suppliers are often too high, expect a value of around 80 % - 90 % of stated value. I use 350 Wh for my 386 Wh battery.
 <br><br>
 Tip: roughly calculate the capacity by multiplying the nominal voltage with the nominal ampere hours. Example: a 48 volt, 14.5 Ah battery has a nominal watt-hour capacity of 696 Wh.
+<br><br>
 |-
-| 3 || Consumed watt-hours || - || This value represents consumed watt-hours since last reset. It is reset automatically when you power on the LCD and the battery is fully charged, i.e., above the set threshold voltage.
+| 3 || Consumed watt-hours || - || This value represents consumed watt-hours since last reset. It is reset automatically when you power on the LCD and the battery is fully charged, i.e. above the set threshold voltage.
+<br><br>
 |}
 <br>
 
@@ -262,13 +283,16 @@ The assist level sets the motor power as a factor of the power the rider is gene
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Number of assist levels || 5 ||  Select the desired number of assist levels from a minimum of 1 to a maximum of 9. 
+| 0 || Number of assist levels || 5 ||  Select the desired number of assist levels from a minimum of 1 to a maximum of 9.
+<br><br>
 |-
 | 1 || Assist level 1 multiplier || 0.5 || The value with which the human pedaling power is multiplied with.
 <br><br>
 Example: 0.5 * 200 W (human power) = 100 W assist power. This results in 300 W total power.
+<br><br>
 |-
 | X || Assist level X multiplier || .... || The desired multiplier for assist level X.
+<br><br>
 |}
 <br>
 
@@ -288,26 +312,37 @@ The walk assist PWM value sets the motor duty cycle. It is an open loop controll
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Enable/disable walk assist function || 0 ||  Set (1) to enable or set (0) to disable the walk assist function.
+<br><br>
 |-
 | - || Walk assist level 0 || 0 || -
+<br><br>
 |-
 | - || Walk assist level 1 || 25 || -
+<br><br>
 |-
 | - || Walk assist level 2 || 30 || -
+<br><br>
 |-
 | - || Walk assist level 3 || 35 || -
+<br><br>
 |-
 | - || Walk assist level 4 || 40 || -
+<br><br>
 |-
 | - || Walk assist level 5 || 45 || -
+<br><br>
 |-
 | - || Walk assist level 6 || 50 || -
+<br><br>
 |-
 | - || Walk assist level 7 || 55 || -
+<br><br>
 |-
 | - || Walk assist level 8 || 60 || -
+<br><br>
 |-
 | - || Walk assist level 9 || 65 || -
+<br><br>
 |}
 <br>
 
@@ -328,21 +363,26 @@ If it is preferred to set a target speed and let the cruise function maintain th
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Enable/disable cruise function || 0 ||  Set (1) to enable or set (0) to disable the cruise function.
+<br><br>
 |-
 | 1 || Set speed to maintain || 0 || Set (1) to enable or set (0) to disable the set speed to maintain feature. This will enable the user to set desired speed and the cruise function will maintain that speed.
+<br><br>
 |-
-| 2 || Set target speed || 25 kph or 15 mph || Here it is possible to set the target speed for the cruise function to maintain. This is when the "set speed to maintain" feature is enabled. 
+| 2 || Set target speed || 25 kph or 15 mph || Here it is possible to set the target speed for the cruise function to maintain. This is when the "set speed to maintain" feature is enabled.
+<br><br>
 |-
-| 3 || Display set target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable. 
+| 3 || Display set target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable.
+<br><br>
 |-
 | 4 || Release-to-maintain || 0 || (NOT ACTIVATED DUE TO SAFETY EVALUATION) Set (1) to enable or set (0) to disable the release-to-maintain feature. When this feature is enabled the user does not need to hold the DOWN button to keep the cruise function active. Instead, it deactivates when the user represses the DOWN button or any other button.
+<br><br>
 |-
 <br>
 
 
 === 6: Main Screen Setup ===
 
-Here you can configure what variables to show in the main screen. More precisely what is shown in the odometer field.
+In the Main Screen Setup it is possible to configure and customize the main screen.
 <br><br>
 '''NOTES:'''
 <br>
@@ -360,18 +400,26 @@ Here you can configure what variables to show in the main screen. More precisely
 <br> (4) = Battery Voltage
 <br> (5) = Battery Current
 <br><br>
+NOTE: If the motor temperature is hitting the temperature limits the field will temporarily hide chosen field so as to show the user of motor temperature.
+<br><br>
 |-
-| 1 || Distance data || 1 ||  Display of distance data, i.e. trip distance, distance since power on and odometer, in the odometer field is enabled (1) by default. Set (0) to disable. 
+| 1 || Distance data || 1 ||  Display of distance data, i.e. trip distance, distance since power on and odometer, in the odometer field is enabled (1) by default. Set (0) to disable.
+<br><br>
 |-
-| 2 || Battery state || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is enabled (1) by default. Set (0) to disable. 
+| 2 || Battery state || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is enabled (1) by default. Set (0) to disable.
+<br><br>
 |-
 | 3 || Pedal data || 1|| Display of pedal data, i.e. rider pedal power, pedal cadence or pedal torque, in the odometer field is enabled (1) by default. Set (0) to disable. 
+<br><br>
 |-
 | 4 || Time measurement || 1 || Display of time measurement, i.e. TM or TTM, in the odometer field is enabled (1) by default. Set (0) to disable.
+<br><br>
 |-
 | 5 || Wheel speed || 1 || Display of wheel speed, i.e. current wheel speed, average wheel speed or peak wheel speed, in the odometer field is enabled (1) by default. Set (0) to disable.
+<br><br>
 |-
-| 6 || Display set target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable. 
+| 6 || Display set target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable.
+<br><br>
 |}
 <br>
 
@@ -384,22 +432,29 @@ Here you can enable, disable and configure the BOOST feature. This feature helps
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || BOOST feature || 0 ||  Set (1) to enable or (0) to disable.
+<br><br>
 |-
-| 1 || On startup only / everytime || 1 ||  Set (1) to enable BOOST feature every time pedal cadence or torque sensor value are zero. Set (0) to enable BOOST feature only when startup and bicycle wheel speed is equal to zero; 
+| 1 || On startup only / every time || 1 ||  Set (1) to enable BOOST feature every time pedal cadence or torque sensor value are zero. Set (0) to enable BOOST feature only when startup and bicycle wheel speed is equal to zero.
+<br><br>
 |-
 | 2 || Limit BOOST power to max battery power || 0 || Set (1) to enable BOOST power limit to the maximum battery power value. Set (0) to disable.
+<br><br>
 |-
 | 3 || BOOST time || 2.0 seconds || Set time limit of BOOST.
+<br><br>
 |-
 | 4 || Fade out BOOST || 3.5 seconds || Set time limit to transition of power from BOOST to regular power.
+<br><br>
 |-
 | 5 || Assist level 1 BOOST multiplier|| 4 || Set the BOOST multipler corresponding to assist level 1.
 <br><br>
 Tip: See assist levels for more information about multipliers.
+<br><br>
 |-
 | 6 || Assist level X BOOST multiplier || - || Set the BOOST multipler corresponding to assist level X.
 <br><br>
 Tip: See assist levels for more information about multipliers.
+<br><br>
 |}
 <br>
 
@@ -420,10 +475,13 @@ The temperature value on the display will blink if the motor current is being li
 | 0 || Temperature limit or throttle || 0 || This sub menu is by default set to (0). This means neither throttle nor motor temperature limit function is enabled. Set (1) to enable the motor temperature control or set (2) to enable the throttle.  
 <br><br>
 NOTE: Do NOT enable throttle if you have installed the [[How to install motor temperature sensor|motor temperature sensor]]. If you have the sensor installed you need to either have the motor temperature limit function enabled or everything disabled, i.e. set to either (1) or (0).
+<br><br>
 |-
 | 1 || Minimum temperature || 75 °C || Set the minimum motor temperature at which the motor current will start to be limited.
+<br><br>
 |-
 | 2 || Maximum temperature || 85 °C || Set the maximum motor temperature at which the motor current will be completely blocked, i.e., motor shutoff.
+<br><br>
 |}
 <br>
 
@@ -432,17 +490,21 @@ NOTE: Do NOT enable throttle if you have installed the [[How to install motor te
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || LCD brightness when backlight is off || 5 || Percentage of brightness when backlight is turned off, e.g., 5 %
+| 0 || LCD brightness when backlight is off || 5 || Percentage of brightness when back light is turned off. The default value is five (5) percent.
+<br><br>
 |-
-| 1 || LCD brightness when backlight is on || 80 || Percentage of brightness when backlight is turned on, e.g., 80 %
+| 1 || LCD brightness when backlight is on || 80 || Percentage of brightness when back light is turned on. The default value is eighty (80) percent.
+<br><br>
 |-
 | 2 || LCD auto power off || 15 || Automatic power off after set amount of minutes.
+<br><br>
 |-
 | 3 || Reset to factory defaults || 0 ||
 #Increase the value to 10 
 #The display will turn off 
 #Turn it on again 
 #Factory default settings will be restored
+<br><br>
 |}
 <br>
 
@@ -455,14 +517,19 @@ This function enables user to limit speed and power when using bike on road. Whe
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Feature toggle|| 0 || Set (1) to enable or (0) to disable.
+<br><br>
 |-
 | 1 || Active on system startup || 0 || Determines whether offroad mode should be active on system startup. Select (1) to enable or select (0) to disable.
+<br><br>
 |-
 | 2 || Speed limit || 25 km/h || This speed limit is used when offroad mode is not active. Configure your speed which is legal for using on public roads. The motor will fade out power from -0.5 km/h to +2,0 km/h.
+<br><br>
 |-
 | 3 || Limit power || 0 || Determines whether power should be limited when offroad mode is not active. Select (1) to enable or (0) to disable.
+<br><br>
 |-
 | 4 || Power limit || 250 W || The power limit in watts. For most countries in Europe the legal power limit is 250 W.
+<br><br>
 |}
 <br>
 
@@ -478,12 +545,16 @@ Depending on type of motor, set appropriate value so that FOC calculations are c
 * Set (1) for 36 V brushless motor.
 * Set (2) (EXPERIMENTAL) for the 48 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
 * Set (3) (EXPERIMENTAL) for the 36 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
+<br><br>
 |-
 | 1 || Current ramp up, inverse step || 1953 || Set value that defines acceleration. A higher value corresponds to slower acceleration. Be careful not to select too fast acceleration.
+<br><br>
 |-
 | 2 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep disabled (0) if you do not have brake sensors installed.
+<br><br>
 |-
 | 3 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
+<br><br>
 |}
 <br>
 
@@ -492,21 +563,30 @@ Depending on type of motor, set appropriate value so that FOC calculations are c
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Description'''
 |-
-| 0 || ADC throttle || See the current value
+| 0 || ADC throttle || See the current value.
+<br><br>
 |-
-| 1 || Throttle || See the current value
+| 1 || Throttle || See the current value.
+<br><br>
 |-
-| 2 || ADC pedal torque sensor || See the current value
+| 2 || ADC pedal torque sensor || See the current value.
+<br><br>
 |-
-| 3 || Pedal torque sensor || See the current value
+| 3 || Pedal torque sensor || See the current value.
+<br><br>
 |-
-| 4 || Pedal cadence || See the current value
+| 4 || Pedal cadence || See the current value.
+<br><br>
 |-
-| 5 || Pedal human power || See the current value
+| 5 || Pedal human power || See the current value.
+<br><br>
 |-
-| 6 || PWM duty cycle || See the current value
+| 6 || PWM duty cycle || See the current value.
+<br><br>
 |-
-| 7 || Motor speed in ERPs || See the current value
+| 7 || Motor speed in ERPs || See the current value.
+<br><br>
 |-
 | 8 || FOC angle || See the current value. This value must be multiplied by 1.4 to get angle value in degrees.
+<br><br>
 |}
