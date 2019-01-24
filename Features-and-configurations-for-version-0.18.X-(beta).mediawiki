@@ -398,8 +398,8 @@ In the Main Screen Setup it is possible to configure and customize the main scre
 <br> (0) = Display nothing
 <br> (1) = Motor temperature
 <br> (2) = Battery state of charge in percent
-<br> (3) = Battery instantaneous voltage
-<br> (4) = Battery instantaneous current
+<br> (3) = Instantaneous voltage on battery
+<br> (4) = Instantaneous current drawn from battery
 <br> (5) = Pedal cadence
 <br><br>
 NOTE: If the motor temperature is hitting the temperature limits the field will temporarily hide chosen data display so as to show the user the motor temperature.
