@@ -332,12 +332,20 @@ Here you can configure what variables to show in the main screen. More precisely
 <br><br>
 '''NOTES:'''
 <br>
-* Some variables can only be reset in the odometer field so it is required to enable these variables to be able to reset.
+* Some variables can only be reset in the odometer field so it is required to enable those variables to be able to reset.
 <br>
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Temperature field setup || 1 ||  In this sub menu it is possible to set the temperature field to display a couple of different variables. Such as motor temperature (1), battery state of charge (2)
+| 0 || Temperature field setup (BETA) || 1 ||  In this sub menu it is possible to set the temperature field to display different data depending on user preference. Such as:
+<br>
+<br> (0) = -
+<br> (1) = Motor temperature
+<br> (2) = Battery state of charge
+<br> (3) = Consumed watt-hours
+<br> (4) = Battery Voltage
+<br> (5) = Battery Current
+<br><br>
 |-
 | 1 || Distance data || 1 ||  Display of distance data, i.e. trip distance, distance since power on and odometer, in the odometer field is enabled (1) by default. Set (0) to disable. 
 |-
