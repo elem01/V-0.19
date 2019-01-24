@@ -1,5 +1,5 @@
 = KT-LCD3: information and configuration =
-<pre>The following only applies to firmware version 0.18.X! </pre>
+'''The following only applies to firmware version 0.18.X!'''
 
 <br>
 ''' CAUTION: '''
@@ -21,35 +21,37 @@ The assist level field displays the active assist level. This sets the motor pow
 
 ---------------------------------------------------------------------------------------------
 === Wheel Speed Field === 
-This sub field displays information about speed. The values are displayed in either metric or imperial units and the user can change from a couple of different speed measurements. The default one is current wheel speed. Other ones are average speed since power on and peak speed since power on.
+This sub field displays information about speed. The values are displayed in either metric or imperial units and the user can switch between a couple of different speed measurements. The default one is current wheel speed. Other ones are average speed since power on and peak speed since power on.
 <br><br>
-* <u> 1. Wheel speed </u>
-** <u> 1.0 Wheel speed </u>
-** <u> 1.1 Average wheel speed since power on </u>
-** <u> 1.2 Peak wheel speed since power on </u>
+
+- <b> Wheel speed: </b> Displays current wheel speed.
+<br>
+- <b> Average wheel speed: </b> Displays average wheel speed since power on.
+<br>
+- <b> Peak wheel speed: </b> Displays peak wheel speed since power on.
 <br>
 
 ---------------------------------------------------------------------------------------------
 === Motor Power Field === 
 The motor power field displays instantaneous motor power in watts. In the maximum motor power sub menu you can set a limit to maximum motor power. This can be useful for various reasons, like controlling the battery range for long trips.
 
-Access the sub menu by long pressing ON/OFF and UP buttons. Press or hold UP and DOWN buttons to increase or decrease the power limit. Exit this screen by long pressing the ON/OFF button.
+It is also possible to access a quick set sub menu by long pressing ON/OFF and UP buttons. Press or hold UP and DOWN buttons to increase or decrease the power limit. Exit sub menu by holding the ON/OFF button. The quick set sub menu cannot be accessed when offroad mode is enabled. Disable offroad mode first.
 
-How it works: the motor controller will automatically limit current and therefore limit maximum motor power. As the battery discharges and the voltage decreases the motor controller will adapt and adjust the current to maintain the set limit.
+How it works: the motor controller will automatically limit current and therefore limit maximum motor power. As the battery discharges and the voltage decreases the motor controller will adapt and adjust the current to maintain the set power limit.
 <br><br>
 '''NOTES:'''
 <br>
-* This function cannot be used when offroad mode is enabled. Disable offroad mode first.
-* It is not possible to set a higher motor power than the maximum allowed battery current set by user.
+* It is possible to access a quick set sub menu by long pressing ON/OFF and UP buttons. Press or hold UP and DOWN buttons to increase or decrease the power limit. Exit sub menu by holding the ON/OFF button. The quick set sub menu cannot be accessed when offroad mode is enabled. Disable offroad mode first.
+* The motor power will not exceed the maximum allowed battery current set by user.
 <br>
 
 ---------------------------------------------------------------------------------------------
 === Odometer Field === 
-This field can show a few variables that are logically grouped in sub fields. You can change between fields by pressing ON/OFF button and sub fields by quickly pressing UP button followed by a long press UP button. The current field and sub field number will temporarily blink in the wheel speed field.
+The odometer field located at the bottom of the display can show a few variables that are logically grouped in sub fields. You can change between fields by pressing the ON/OFF button. To change between sub fields quickly press UP button followed by a long hold on UP button. The current field and sub field number will temporarily blink in the wheel speed field.
 <br><br>
 '''NOTES:'''
 <br>
-* Every sub field is only displayed if the function is enabled and not set to hidden in the configuration menu.
+* Sub fields are only displayed if the function in question is enabled and not set to hidden in the Configuration Menu, Main Screen Setup.
 <br><br>
 * <u> 1. Distance </u>
 ** <u> 1.0 Trip distance: </u> You can manually reset the trip distance by pressing DOWN button quickly followed by a long press on the DOWN button until value resets. It will start to blink when it is about to reset.
@@ -85,20 +87,32 @@ This field can show a few variables that are logically grouped in sub fields. Yo
 ** <u> 8.0 Set target speed: </u> In this sub field it is possible to set the target speed for the cruise function.
 <br>
 ---------------------------------------------------------------------------------------------
-=== Motor Temperature Field === 
-This field can either show the motor temperature, when the function is enabled and the temperature sensor is installed, or the battery state of charge in percentage. It is also possible to set so that the field displays nothing. To toggle between the different states simply press the ON/OFF and DOWN buttons simultaneously.
+=== Motor Temperature Field (BETA) === 
+This field can either show the motor temperature, when the function is enabled and the temperature sensor is installed, or some other data depending on user preference. It is also possible to set so that the field displays nothing.
+
+'''NOTES:'''
+<br>
+* Set your desired configuration under the Main Screen Setup in the Configuration Menu.
+* The chosen field to be displayed will be temporarily hidden and the motor temperature will be displayed if it is at temperature limits.
 <br><br>
-* <u>Motor temperature</u>: Motor temperature in degrees Celsius. When the power power is being limited due to over temperature, this field will blink (configure the temperature limits in the configurations menu).
-* <u>Battery state of charge in percent</u>: This percentage value is based on measured watt hours consumed from the battery. Set different modes and read more in the configurations menu.
+
+- <b> Motor temperature: </b> Motor temperature in degrees Celsius. When the power power is being limited due to over temperature, this field will blink. It is possible to configure the temperature limits in the Configurations Menu.
+<br>
+- <b> Battery state of charge in percent: </b> This percentage value is based on measured watt hours consumed from the battery. Set different modes and read more about this function in the configurations menu.
+<br>
+- <b> Battery voltage: </b> When you prefer to always have the battery voltage displayed it is possible to set this in the motor temperature field.
+<br>
+- <b> Battery current: </b> If it is necessary to monitor the instantaneous current drawn from the battery.
 <br>
 
 ---------------------------------------------------------------------------------------------
 === Time Measurement Field === 
 The time measurement field displays elapsed time since power on or since last reset. It displays either the TM symbol, stands for Time Measurement, or TTM symbol, stands for Total Time Measurement. This corresponds to the mentioned "time since power on" and "time since last reset".
 <br><br>
-* <u>1. Time measurement </u>
-** <u>1.0 (TM) - Elapsed time since power on</u>
-** <u>1.1 (TTM) - Elapsed time since last reset </u>
+
+- <b> TM: </b> Elapsed time since power on.
+<br>
+- <b> TTM: </b> Elapsed time since last reset.
 <br>
 
 ---------------------------------------------------------------------------------------------
@@ -405,7 +419,7 @@ The temperature value on the display will blink if the motor current is being li
 |-
 | 0 || Temperature limit or throttle || 0 || This sub menu is by default set to (0). This means neither throttle nor motor temperature limit function is enabled. Set (1) to enable the motor temperature control or set (2) to enable the throttle.  
 <br><br>
-NOTE: Do NOT enable throttle if you have installed the [[How to install motor temperature sensor|motor temperature sensor]]. If you have the sensor installed you need to either have the motor temperature limit function enabled or everything disabled, i.e. set to (0).
+NOTE: Do NOT enable throttle if you have installed the [[How to install motor temperature sensor|motor temperature sensor]]. If you have the sensor installed you need to either have the motor temperature limit function enabled or everything disabled, i.e. set to either (1) or (0).
 |-
 | 1 || Minimum temperature || 75 °C || Set the minimum motor temperature at which the motor current will start to be limited.
 |-
