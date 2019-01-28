@@ -460,7 +460,7 @@ Tip: See assist levels for more information about multipliers.
 <br>
 
 
-=== 8: Motor Temperature Protection ===
+=== 8: Motor Temperature Protection and throttle ===
 
 In this sub menu it is possible to enable or disable the throttle or the motor temperature protection function. Both can not be activated at the same time because they use the same hardware to operate. If the motor temperature sensor is installed it is not possible to use the throttle and do NOT enable throttle if that is the case.
 
