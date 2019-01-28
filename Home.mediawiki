@@ -28,12 +28,12 @@ See the more users feedback here: [[Why should you use the Flexible OpenSource f
 * '''Motor'''<br>
 ** '''FOC motor control'''<br>FOC motor control algorithm achieves the best possible motor torque versus motor current usage. Users are reporting that motor has higher torque and their batteries last long/higher trip range.<br>
 ** '''Motor power control'''<br>Control of the motor power and not the motor current, which maintains the motor power assist level when battery has less charge/less voltage.<br>
-** '''Current ramp control'''<br>Current ramp control (the ramp step can be configured on firmware - not yet on LCD) that users can change the ramp step and it then can help to improve the life of the plastic gears, etc. Users can decide to have a very fast torque response from the motor and a lower one to improve the life of the motor parts, or maybe the battery current ramp, or for safety reasons having low torque, etc.
+** '''Current ramp control'''<br>Current ramp control, the acceleration can be configured on the screen. Users can change the ramp step and it then can help to improve the life of the plastic gears, etc. Users can decide to have a very fast torque response from the motor and a lower one to improve the life of the motor parts, or maybe the battery current ramp, or for safety reasons having low torque, etc.
 ** '''Motor max current'''<br>User can set the battery max current that motor pulls from the battery (a configuration on LCD), from 1 up to 18 amps. This can be useful for instance to limit battery current of small battery and so keep in a safe range that will extend battery life.<br>
 ** '''Motor max power'''<br>User can set the motor max power, in watts, that motor pulls from the battery (a configuration on LCD). This can be useful for instance to limit battery power usage when you are doing long travels and want to guarantee that you arrive at your destination.<br>
 <br>
 * '''Battery'''<br>
-** '''Wide range of battery voltages: 24V up to 52V battery (7S up to 14S)'''<br>Users can choose (a configuration on LCD) to use a battery from 7 cells up to 14 cells (can be any number on that interval).<br>
+** '''Wide range of battery voltages: 24 V up to 52 V battery (7S up to 14S)'''<br>Users can choose (a configuration on LCD) to use a battery from 7 cells up to 14 cells (can be any number on that interval).<br>
 ** '''Battery low cut-off voltage'''<br>Users can choose the battery low cut-off voltage (a configuration on LCD) and this way optimize the battery range and/or battery life.<br>
 ** '''Battery SOC and resistance '''<br>The LCD indicates the battery SOC based on the battery voltage and it has in consideration the battery pack resistance value (a configuration on LCD) to avoid fluctuations when motor is pulling current from the battery.<br>
 
