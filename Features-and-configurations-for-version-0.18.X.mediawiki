@@ -59,23 +59,19 @@ The odometer field located at the bottom of the display can show a few variables
 <br><br>
 
 <b> - 1. Distance </b> 
-<br>
 * <u> 1.0 Trip distance: </u> You can manually reset the trip distance by pressing DOWN button quickly followed by a long press on the DOWN button until value resets. It will start to blink when it is about to reset.
 * <u> 1.1 Distance since power on: </u> this value will automatically reset during power on/off. But is also manually resettable as described above.
 * <u> 1.2 Odometer: </u> can be set to a specific value in the configurations menu or reset as described above.
 <br>
 <b> - 2. Battery State of Charge </b>
-<br>
 * <u> 2.0 State of charge in percentage </u>
 * <u> 2.1 Consumed watt-hours </u>
 <br>
 <b> - 3. Battery State </b>
-<br>
 * <u> 3.0 Voltage: </u> voltage of battery.
 * <u> 3.1 Current: </u> instantaneous current drawn from battery.
 <br>
 <b> - 4. Pedals </b>
-<br>
 * <u> 4.0 Rider pedal power </u>: in watts.
 * <u> 4.1 Pedal cadence </u>: in revolutions per minute.
 * <u> 4.2 Pedal torque </u>: in newton meter.
@@ -84,18 +80,15 @@ The odometer field located at the bottom of the display can show a few variables
 * <u> 5.0 Motor temperature: </u> temperature of motor.
 <br>
 <b> - 6. Time Measurement </b>
-<br>
 * <u> 6.0 Time Measurement: </u> time measured since display is powered on. You can reset by pressing DOWN button quickly followed by a long press on the DOWN button until value resets. It will start to blink when it is about to reset.
 * <u> 6.1 Total Time Measurement: </u> total time measured since last reset. Can be reset as described above.
 <br>
 <b> - 7. Wheel Speed </b>
-<br>
 * <u> 7.0 Current wheel speed: </u> Current wheel speed.
 * <u> 7.1 Average wheel speed: </u> The average speed since power on.
 * <u> 7.2 Peak wheel speed: </u> The measured peak value of wheel speed since power on.
 <br>
 <b> - 8. Cruise Function </b>
-<br>
 * <u> 8.0 See target speed for Cruise: </u>
 <br>
 
