@@ -2,7 +2,7 @@
 <br>
 
 
-'''The following only applies to firmware version 0.18.X!'''
+'''The following only applies to firmware version 0.18.0!'''
 
 <br>
 ''' CAUTION: '''
@@ -29,11 +29,11 @@ This sub field displays information about speed. The values are displayed in eit
 <br><br>
 
 - <b> Wheel speed: </b> Displays current wheel speed.
-<br>
+<br><br>
 - <b> Average wheel speed: </b> Displays average wheel speed since power on.
-<br>
+<br><br>
 - <b> Peak wheel speed: </b> Displays peak wheel speed since power on.
-<br>
+<br><br>
 
 ---------------------------------------------------------------------------------------------
 === Motor Power Field === 
@@ -57,41 +57,50 @@ The odometer field located at the bottom of the display can show a few variables
 <br>
 * Sub fields are only displayed if the function in question is enabled and not set to hidden in the Configuration Menu, Main Screen Setup.
 <br><br>
-* <u> 1. Distance </u>
-** <u> 1.0 Trip distance: </u> You can manually reset the trip distance by pressing DOWN button quickly followed by a long press on the DOWN button until value resets. It will start to blink when it is about to reset.
-** <u> 1.1 Distance since power on: </u> this value will automatically reset during power on/off. But is also manually resettable as described above.
-** <u> 1.2 Odometer: </u> can be set to a specific value in the configurations menu or reset as described above.
+
+<b> - 1. Distance </b> 
 <br>
-* <u> 2. Battery State of Charge </u>
-** <u> 2.0 State of charge in percentage </u>
-** <u> 2.1 Consumed watt-hours </u>
+* <u> 1.0 Trip distance: </u> You can manually reset the trip distance by pressing DOWN button quickly followed by a long press on the DOWN button until value resets. It will start to blink when it is about to reset.
+* <u> 1.1 Distance since power on: </u> this value will automatically reset during power on/off. But is also manually resettable as described above.
+* <u> 1.2 Odometer: </u> can be set to a specific value in the configurations menu or reset as described above.
 <br>
-* <u> 3. Battery State </u>
-** <u> 3.0 Voltage: </u> voltage of battery.
-** <u> 3.1 Current: </u> instantaneous current drawn from battery.
+<b> - 2. Battery State of Charge </b>
 <br>
-* <u> 4. Pedals </u>
-** <u> 4.0 Rider pedal power </u>: in watts.
-** <u> 4.1 Pedal cadence </u>: in revolutions per minute.
-** <u> 4.2 Pedal torque </u>: in newton meter.
+* <u> 2.0 State of charge in percentage </u>
+* <u> 2.1 Consumed watt-hours </u>
 <br>
-* <u> 5. Motor Temperature </u>
-** <u> 5.0 Motor temperature: </u> temperature of motor.
+<b> - 3. Battery State </b>
 <br>
-* <u> 6. Time Measurement </u>
-** <u> 6.0 Time Measurement: </u> time measured since display is powered on. You can reset by pressing DOWN button quickly followed by a long press on the DOWN button until value resets. It will start to blink when it is about to reset.
-** <u> 6.1 Total Time Measurement: </u> total time measured since last reset. Can be reset as described above.
+* <u> 3.0 Voltage: </u> voltage of battery.
+* <u> 3.1 Current: </u> instantaneous current drawn from battery.
 <br>
-* <u> 7. Wheel Speed </u>
-** <u> 7.0 Current wheel speed: </u> Current wheel speed.
-** <u> 7.1 Average wheel speed: </u> The average speed since power on.
-** <u> 7.2 Peak wheel speed: </u> The measured peak value of wheel speed since power on.
+<b> - 4. Pedals </b>
 <br>
-* <u> 8. Cruise Function </u>
-** <u> 8.0 Set target speed: </u> In this sub field it is possible to set the target speed for the cruise function.
+* <u> 4.0 Rider pedal power </u>: in watts.
+* <u> 4.1 Pedal cadence </u>: in revolutions per minute.
+* <u> 4.2 Pedal torque </u>: in newton meter.
 <br>
+<b> - 5. Motor Temperature </b>
+* <u> 5.0 Motor temperature: </u> temperature of motor.
+<br>
+<b> - 6. Time Measurement </b>
+<br>
+* <u> 6.0 Time Measurement: </u> time measured since display is powered on. You can reset by pressing DOWN button quickly followed by a long press on the DOWN button until value resets. It will start to blink when it is about to reset.
+* <u> 6.1 Total Time Measurement: </u> total time measured since last reset. Can be reset as described above.
+<br>
+<b> - 7. Wheel Speed </b>
+<br>
+* <u> 7.0 Current wheel speed: </u> Current wheel speed.
+* <u> 7.1 Average wheel speed: </u> The average speed since power on.
+* <u> 7.2 Peak wheel speed: </u> The measured peak value of wheel speed since power on.
+<br>
+<b> - 8. Cruise Function </b>
+<br>
+* <u> 8.0 See target speed for Cruise: </u>
+<br>
+
 ---------------------------------------------------------------------------------------------
-=== Motor Temperature Field (BETA) === 
+=== Motor Temperature Field === 
 This field can either show the motor temperature, when the function is enabled and the temperature sensor is installed, or some other data depending on user preference. It is also possible to set so that the field displays nothing.
 
 '''NOTES:'''
@@ -101,15 +110,15 @@ This field can either show the motor temperature, when the function is enabled a
 <br><br>
 
 - <b> Motor temperature: </b> Motor temperature in degrees Celsius. When the power power is being limited due to over temperature, this field will blink. It is possible to configure the temperature limits in the Configurations Menu.
-<br>
+<br><br>
 - <b> Battery state of charge in percent: </b> This percentage value is based on measured watt hours consumed from the battery. Set different modes and read more about this function in the configurations menu.
-<br>
+<br><br>
 - <b> Battery voltage: </b> When you prefer to always have the battery voltage displayed it is possible to set this in the motor temperature field.
-<br>
+<br><br>
 - <b> Battery current: </b> Monitor the instantaneous current drawn from the battery.
-<br>
+<br><br>
 - <b> Pedal cadence: </b> Set to pedal cadence if you wish to see the instantaneous cadence of pedal rotation.
-<br>
+<br><br>
 
 ---------------------------------------------------------------------------------------------
 === Time Measurement Field === 
@@ -117,9 +126,9 @@ The time measurement field displays elapsed time since power on or since last re
 <br><br>
 
 - <b> TM: </b> Elapsed time since power on.
-<br>
+<br><br>
 - <b> TTM: </b> Elapsed time since last reset.
-<br>
+<br><br>
 
 ---------------------------------------------------------------------------------------------
 === Battery State of Charge Bar === 
@@ -349,7 +358,7 @@ The walk assist PWM value sets the motor duty cycle. It is an open loop controll
 <br>
 
 
-=== 5: Cruise Function (BETA) ===
+=== 5: Cruise Function ===
 
 Here you can enable or disable the cruise function. The function can be activated when the bike is traveling at speeds above 8 km/h or around 5 mph and the user presses and holds the DOWN button. 
 
@@ -376,9 +385,6 @@ If it is preferred to set a target speed and let the cruise function maintain th
 | 3 || Display set target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable.
 <br><br>
 |-
-| 4 || Release-to-maintain || 0 || (NOT ACTIVATED DUE TO SAFETY EVALUATION) Set (1) to enable or set (0) to disable the release-to-maintain feature. When this feature is enabled the user does not need to hold the DOWN button to keep the cruise function active. Instead, it deactivates when the user represses the DOWN button or any other button.
-<br><br>
-|-
 <br>
 
 
@@ -393,7 +399,7 @@ In the Main Screen Setup it is possible to configure and customize the main scre
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Temperature field setup (BETA) || 0 ||  In this sub menu it is possible to set the temperature field to display different data depending on user preference. Such as:
+| 0 || Temperature field setup || 0 ||  In this sub menu it is possible to set the temperature field to display different data depending on user preference. Such as:
 <br>
 <br> (0) = Display nothing
 <br> (1) = Motor temperature
