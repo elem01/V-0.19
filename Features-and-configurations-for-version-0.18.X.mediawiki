@@ -360,6 +360,7 @@ The cruise function has two modes of operation depending on user preference. It 
 If it is preferred to set a target speed and let the cruise function maintain that speed there are two ways in which the user can set the speed. The first way is through the configuration menu. The second way is by enabling the cruise display in the odometer field in the Main Screen Setup. This will display an extra sub field where the target speed is displayed in the odometer field. Pressing the UP or DOWN buttons will not change the assist level in this sub field, instead, it will change the target speed.
 <br><br>
 '''NOTES:'''
+* It is recommended to install and use the E-brakes when using Cruise.
 * The cruise function only works at speeds above 8 km/h or around 5 mph.
 * The motor power will not exceed set power limits.
 <br>
@@ -460,7 +461,7 @@ Tip: See assist levels for more information about multipliers.
 <br>
 
 
-=== 8: Motor Temperature Protection and throttle ===
+=== 8: Motor Temperature Protection and Throttle ===
 
 In this sub menu it is possible to enable or disable the throttle or the motor temperature protection function. Both can not be activated at the same time because they use the same hardware to operate. If the motor temperature sensor is installed it is not possible to use the throttle and do NOT enable throttle if that is the case.
 
