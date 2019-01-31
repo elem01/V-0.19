@@ -198,6 +198,25 @@ If offroad mode is enabled it can be activated with the ON/OFF and UP button com
 <br><br>
 Tip: Search on Google how to measure wheel circumference. But for a quick setup with ball park values use: 26'' wheel = 2050;  27'' wheel = 2150;  27.5'' wheel =2215;  28'' wheel = 2250;  29'' wheel = 2300.
 <br><br>
+|-
+| 3 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
+<br><br>
+|-
+| 4 || LCD brightness when backlight is off || 5 || Percentage of brightness when back light is turned off. The default value is five (5) percent.
+<br><br>
+|-
+| 5 || LCD brightness when backlight is on || 80 || Percentage of brightness when back light is turned on. The default value is eighty (80) percent.
+<br><br>
+|-
+| 6 || LCD auto power off || 15 || Automatic power off after set amount of minutes.
+<br><br>
+|-
+| 7 || Reset to factory defaults || 0 ||
+#Increase the value to 10 
+#The display will turn off 
+#Turn it on again 
+#Factory default settings will be restored
+<br><br>
 |}
 <br>
 
@@ -490,29 +509,6 @@ NOTE: Do NOT enable the throttle if you have installed the [[How to install moto
 <br>
 
 
-=== 9: Display ===
-{|
-| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
-|-
-| 0 || LCD brightness when backlight is off || 5 || Percentage of brightness when back light is turned off. The default value is five (5) percent.
-<br><br>
-|-
-| 1 || LCD brightness when backlight is on || 80 || Percentage of brightness when back light is turned on. The default value is eighty (80) percent.
-<br><br>
-|-
-| 2 || LCD auto power off || 15 || Automatic power off after set amount of minutes.
-<br><br>
-|-
-| 3 || Reset to factory defaults || 0 ||
-#Increase the value to 10 
-#The display will turn off 
-#Turn it on again 
-#Factory default settings will be restored
-<br><br>
-|}
-<br>
-
-
 === 10: Offroad Mode ===
 
 This function enables user to limit speed and power when using bike on road. When using the bike off road where laws may be different it is possible to toggle Offroad mode and unlock a higher speed or power limit. Set parameters suitable for your specific laws and preferences.
@@ -555,9 +551,6 @@ Depending on type of motor, set appropriate value so that FOC calculations are c
 <br><br>
 |-
 | 2 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep disabled (0) if you do not have brake sensors installed.
-<br><br>
-|-
-| 3 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
 <br><br>
 |}
 <br>
