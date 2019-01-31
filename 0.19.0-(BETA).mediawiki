@@ -202,13 +202,13 @@ Tip: Search on Google how to measure wheel circumference. But for a quick setup 
 | 3 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
 <br><br>
 |-
-| 4 || LCD brightness when backlight is off || 5 || Percentage of brightness when back light is turned off. The default value is five (5) percent.
+| 4 || Screen brightness when backlight is off || 5 || Percentage of brightness when back light is turned off. The default value is five (5) percent.
 <br><br>
 |-
-| 5 || LCD brightness when backlight is on || 80 || Percentage of brightness when back light is turned on. The default value is eighty (80) percent.
+| 5 || Screen brightness when backlight is on || 80 || Percentage of brightness when back light is turned on. The default value is eighty (80) percent.
 <br><br>
 |-
-| 6 || LCD auto power off || 15 || Automatic power off after set amount of minutes.
+| 6 || Screen auto power off || 15 || Automatic power off after set amount of minutes.
 <br><br>
 |-
 | 7 || Reset to factory defaults || 0 ||
@@ -216,7 +216,7 @@ Tip: Search on Google how to measure wheel circumference. But for a quick setup 
 #The display will turn off 
 #Turn it on again 
 #Factory default settings will be restored
-<br><br>
+<br>
 |}
 <br>
 
