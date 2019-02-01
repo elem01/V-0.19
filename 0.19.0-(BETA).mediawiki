@@ -436,7 +436,7 @@ In the Main Screen Setup it is possible to configure and customize the main scre
 | 6 || Motor temperature || 1 || Display of motor temperature in the odometer field is enabled (1) by default. Set (0) to disable. This will only be shown if the motor temperature sensor is installed and the function is enabled. Read more about this mod here. LINKLINKLINK
 <br><br>
 |-
-| 7 || Display set target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable.
+| 7 || Display target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. This menu will only be shown if the function is enabled. Press UP or DOWN buttons to increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable.
 <br><br>
 |-
 | 8 || Temperature field setup || 0 ||  In this sub menu it is possible to set the temperature field to display different data depending on user preference. Such as:
