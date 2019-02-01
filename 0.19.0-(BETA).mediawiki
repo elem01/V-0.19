@@ -2,7 +2,7 @@
 <br>
 
 
-'''The following only applies to firmware version 0.18.0!'''
+'''The following only applies to firmware version 0.19.X!'''
 
 <br>
 ''' CAUTION: '''
@@ -37,21 +37,21 @@ This sub field displays information about speed. The values are displayed in eit
 
 ---------------------------------------------------------------------------------------------
 === Motor Power Field === 
-The motor power field displays instantaneous motor power in watts. In the maximum motor power sub menu you can set a limit to maximum motor power. This can be useful for various reasons, like controlling the battery range for long trips.
+The motor power field displays instantaneous motor power in watts. 
 
-It is also possible to access a quick set sub menu by long pressing ON/OFF and UP buttons. Press or hold UP and DOWN buttons to increase or decrease the power limit. Exit sub menu by holding the ON/OFF button. The quick set sub menu cannot be accessed when offroad mode is enabled. Disable offroad mode first.
+If enabled, it is possible to access a quick-set sub menu by long pressing ON/OFF and UP buttons. Press or hold UP and DOWN buttons to increase or decrease the power limit. This can be useful for various reasons, for instance controlling the battery range on long trips. Exit the sub menu by holding the ON/OFF button. The quick-set sub menu cannot be accessed when offroad mode is enabled. Disable offroad mode first or change the motor power limit in the configuration menu.
 
-How it works: the motor controller will automatically limit current and therefore limit maximum motor power. As the battery discharges and the voltage decreases the motor controller will adapt and adjust the current to maintain the set power limit.
+How it works: the motor controller will automatically limit current and therefore limit maximum motor power. As the battery discharges and the voltage decreases the motor controller will adjust the current to maintain the set power limit.
 <br><br>
 '''NOTES:'''
 <br>
-* It is possible to access a quick set sub menu by long pressing ON/OFF and UP buttons. Press or hold UP and DOWN buttons to increase or decrease the power limit. Exit sub menu by holding the ON/OFF button. The quick set sub menu cannot be accessed when offroad mode is enabled. Disable offroad mode first.
-* The motor power will not exceed the maximum allowed battery current set by user.
+* If enabled, it is possible to access a quick set sub menu by long pressing ON/OFF and UP buttons. Press or hold UP and DOWN buttons to increase or decrease the power limit. Exit sub menu by holding the ON/OFF button. The quick set sub menu cannot be accessed when offroad mode is enabled. Disable offroad mode first or set the motor power limit in the configuration menu.
+* The motor power will not exceed the maximum battery current set by user.
 <br>
 
 ---------------------------------------------------------------------------------------------
 === Odometer Field === 
-The odometer field located at the bottom of the display can show a few variables that are logically grouped in sub fields. You can change between fields by pressing the ON/OFF button. To change between sub fields quickly press UP button followed by a long hold on UP button. The current field and sub field number will temporarily blink in the wheel speed field.
+The odometer field located at the bottom of the display can show a few variables that are logically grouped in sub fields. You can change between fields by pressing the ON/OFF button. To change between different data in a sub field quickly press UP button followed by a long hold on UP button. The current field and sub field number will temporarily blink in the wheel speed field.
 <br><br>
 '''NOTES:'''
 <br>
@@ -128,7 +128,9 @@ The time measurement field displays elapsed time since power on or since last re
 
 ---------------------------------------------------------------------------------------------
 === Battery State of Charge Bar === 
-Battery state of charge based on battery voltage. There are 6 different levels. When battery is near empty, the battery symbol will be empty and blinking and the motor power will be reduced up to battery being totally empty.<br>The battery voltage used to calculate the state of charge has in consideration the battery pack resistance to avoid floating when power is being draw from the battery (the battery pack resistance value is set on configurations menu).
+The battery state of charge bar in the top left corner of the display is based on battery voltage. There are 6 different levels. When battery is near empty the bar will start blinking and the motor power will be reduced accordingly.
+<br>
+The system considers the internal resistance of the battery pack to display appropriate battery state of charge. This filters out voltage drops when drawing higher amounts of current from the battery. Set the internal resistance of your particular battery in the configurations menu.
 <br>
 
 ---------------------------------------------------------------------------------------------
@@ -143,7 +145,7 @@ The brake symbol lights up when user engages the E-Bike brakes, if installed. Th
 
 ---------------------------------------------------------------------------------------------
 === Walk Assist === 
-Enable or disable walk assist with a long hold of DOWN button at speeds below 8 km/h (approximately 5 mph). The motor will start to give assistance and maintain a walking pace. At the same time the walk assist symbol will light up. To set different power levels simply select appropriate assist level. The power levels can be configured in the configuration menu.
+Enable or disable walk assist with a long hold of DOWN button at speeds below 8 km/h (approximately 5 mph). The motor will start to give assistance configured by user and maintain that as long as the DOWN button is being pressed. At the same time the walk assist symbol will light up. To set different power levels simply select appropriate assist level. The power levels can be configured in the configuration menu.
 <br><br>
 '''NOTES:'''
 <br>
