@@ -71,13 +71,13 @@ The odometer field located at the bottom of the display can show a few variables
 * <u> 3.0 Voltage: </u> voltage of battery.
 * <u> 3.1 Current: </u> instantaneous current drawn from battery.
 <br>
-<b> - 4. Pedals </b>
+<b> - 4. Pedal data </b>
 * <u> 4.0 Rider pedal power </u>: in watts.
 * <u> 4.1 Pedal cadence </u>: in revolutions per minute.
 * <u> 4.2 Pedal torque </u>: in newton meter.
 <br>
-<b> - 5. Motor Temperature </b>
-* <u> 5.0 Motor temperature: </u> temperature of motor.
+<b> - 5. Energy data </b>
+* <u> 5.0 Average consumed power since power on </u>: displayed in watt-hours per kilometer or watt-hours per mile.
 <br>
 <b> - 6. Time Measurement </b>
 * <u> 6.0 Time Measurement: </u> time measured since display is powered on. You can reset by pressing DOWN button quickly followed by a long press on the DOWN button until value resets. It will start to blink when it is about to reset.
@@ -88,8 +88,11 @@ The odometer field located at the bottom of the display can show a few variables
 * <u> 7.1 Average wheel speed: </u> The average speed since power on.
 * <u> 7.2 Peak wheel speed: </u> The measured peak value of wheel speed since power on.
 <br>
-<b> - 8. Cruise Function </b>
-* <u> 8.0 See target speed for Cruise: </u>
+<b> - 8. Motor Temperature </b>
+* <u> 8.0 Motor temperature: </u> temperature of motor.
+<br>
+<b> - 9. Cruise Function </b>
+* <u> 9.0 See target speed for Cruise: </u>
 <br>
 
 ---------------------------------------------------------------------------------------------
@@ -412,7 +415,31 @@ In the Main Screen Setup it is possible to configure and customize the main scre
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Temperature field setup || 0 ||  In this sub menu it is possible to set the temperature field to display different data depending on user preference. Such as:
+| 0 || Distance data || 1 ||  Display of distance data, i.e. trip distance, distance since power on and odometer, in the odometer field is enabled (1) by default. Set (0) to disable.
+<br><br>
+|-
+| 1 || Battery state || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is enabled (1) by default. Set (0) to disable.
+<br><br>
+|-
+| 2 || Pedal data || 1|| Display of pedal data, i.e. rider pedal power, pedal cadence or pedal torque, in the odometer field is enabled (1) by default. Set (0) to disable. 
+<br><br>
+|-
+| 3 || Energy data || 1|| Display of energy data, i.e. average consumed power since power on, in the odometer field is enabled (1) by default. Set (0) to disable.
+<br><br>
+|-
+| 4 || Time measurement || 1 || Display of time measurement, i.e. TM or TTM, in the odometer field is enabled (1) by default. Set (0) to disable.
+<br><br>
+|-
+| 5 || Wheel speed || 1 || Display of wheel speed, i.e. current wheel speed, average wheel speed or peak wheel speed, in the odometer field is enabled (1) by default. Set (0) to disable.
+<br><br>
+|-
+| 6 || Motor temperature || 1 || Display of motor temperature in the odometer field is enabled (1) by default. Set (0) to disable. This will only be shown if the motor temperature sensor is installed and the function is enabled. Read more about this mod here. LINKLINKLINK
+<br><br>
+|-
+| 7 || Display set target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable.
+<br><br>
+|-
+| 8 || Temperature field setup || 0 ||  In this sub menu it is possible to set the temperature field to display different data depending on user preference. Such as:
 <br>
 <br> (0) = Display nothing
 <br> (1) = Motor temperature
@@ -422,24 +449,6 @@ In the Main Screen Setup it is possible to configure and customize the main scre
 <br> (5) = Pedal cadence
 <br><br>
 NOTE: If the motor temperature is hitting the temperature limits the field will temporarily hide chosen data display so as to show the user the motor temperature.
-<br><br>
-|-
-| 1 || Distance data || 1 ||  Display of distance data, i.e. trip distance, distance since power on and odometer, in the odometer field is enabled (1) by default. Set (0) to disable.
-<br><br>
-|-
-| 2 || Battery state || 1 ||  Display of battery state, i.e. voltage and current, in the odometer field is enabled (1) by default. Set (0) to disable.
-<br><br>
-|-
-| 3 || Pedal data || 1|| Display of pedal data, i.e. rider pedal power, pedal cadence or pedal torque, in the odometer field is enabled (1) by default. Set (0) to disable. 
-<br><br>
-|-
-| 4 || Time measurement || 1 || Display of time measurement, i.e. TM or TTM, in the odometer field is enabled (1) by default. Set (0) to disable.
-<br><br>
-|-
-| 5 || Wheel speed || 1 || Display of wheel speed, i.e. current wheel speed, average wheel speed or peak wheel speed, in the odometer field is enabled (1) by default. Set (0) to disable.
-<br><br>
-|-
-| 6 || Display set target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. In this menu the UP and DOWN buttons will increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable.
 <br><br>
 |}
 <br>
