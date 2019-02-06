@@ -465,7 +465,7 @@ In the Main Screen Setup it is possible to configure and customize the main scre
 <br> (4) = Instantaneous current drawn from battery
 <br> (5) = Pedal cadence
 <br><br>
-NOTE: If the motor temperature is hitting the temperature limits the field will temporarily hide chosen data display so as to show the user the motor temperature.
+NOTE: If the motor temperature is hitting the temperature limits the field will temporarily flash the motor temperature and override any other data.
 <br><br>
 |}
 <br>
