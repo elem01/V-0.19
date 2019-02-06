@@ -45,7 +45,8 @@ How it works: the motor controller will automatically limit current and therefor
 <br><br>
 '''NOTES:'''
 <br>
-* If enabled, it is possible to access a quick set sub menu by long pressing ON/OFF and UP buttons. Press or hold UP and DOWN buttons to increase or decrease the power limit. Exit sub menu by holding the ON/OFF button. The quick set sub menu cannot be accessed when offroad mode is enabled. Disable offroad mode first or set the motor power limit in the configuration menu.
+* If enabled, it is possible to access a quick set sub menu by long pressing ON/OFF and UP buttons. Press or hold UP and DOWN buttons to increase or decrease the power limit. Exit sub menu by holding the ON/OFF button. 
+* The quick set sub menu cannot be accessed when offroad mode is enabled. Disable offroad mode first or set the motor power limit in the configuration menu.
 * The motor power will not exceed the maximum battery current set by user.
 <br>
 
@@ -441,7 +442,10 @@ In the Main Screen Setup it is possible to configure and customize the main scre
 | 7 || Display target speed for cruise || 0 || Display of user set target speed in which the cruise function will try to maintain. This menu will only be shown if the function is enabled. Press UP or DOWN buttons to increment or decrement target speed. The target speed is displayed in the odometer field and is enabled (1) by default. Set (0) to disable.
 <br><br>
 |-
-| 8 || Temperature field setup || 0 ||  In this sub menu it is possible to set the temperature field to display different data depending on user preference. Such as:
+| 8 || Enable main screen power menu || 1 || When this feature is enabled (1) a power menu can be displayed from the main screen so the user can quickly set the motor power limit. This menu can be accessed from the main screen by long pressing the ON/OFF and UP buttons. Press or hold the UP or DOWN button to increase or decrease the power limit. Exit the menu by holding the ON/OFF button. The main screen power menu can not be accessed when offroad mode is enabled. Disable offroad mode first or set the motor power limit in the configuration menu. Set (0) to disable this menu altogether.
+<br><br>
+|-
+| 9 || Temperature field setup || 0 ||  In this sub menu it is possible to set the temperature field to display different data depending on user preference. Such as:
 <br>
 <br> (0) = Display nothing
 <br> (1) = Motor temperature
@@ -558,10 +562,13 @@ Depending on type of motor, set appropriate value so that FOC calculations are c
 * Set (3) (EXPERIMENTAL) for the 36 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
 <br><br>
 |-
-| 1 || Current ramp up || 5 amps per second|| Set value after user preference. Higher value corresponds to faster acceleration but also greater forces on the mid drive. Be mindful not to select too fast acceleration.
+| 1 || Motor power limit || 0 || Set value after user preference. Higher motor power corresponds to more heat generated. It is recommended to install the motor temperature sensor if a lot of power is frequently needed so as not to overheat the motor.
 <br><br>
 |-
-| 2 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep disabled (0) if you do not have brake sensors installed.
+| 2 || Current ramp up || 5 amps per second|| Set value after user preference. Higher value corresponds to faster acceleration but also greater forces on the mid drive. Be mindful not to select too fast acceleration.
+<br><br>
+|-
+| 3 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep disabled (0) if you do not have brake sensors installed.
 <br><br>
 |}
 <br>
