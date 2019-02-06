@@ -562,7 +562,7 @@ Depending on type of motor, set appropriate value so that FOC calculations are c
 * Set (3) (EXPERIMENTAL) for the 36 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
 <br><br>
 |-
-| 1 || Motor power limit || 0 || Set value after user preference. Higher motor power corresponds to more heat generated. It is recommended to install the motor temperature sensor if a lot of power is frequently needed so as not to overheat the motor.
+| 1 || Motor power limit || 0 || Set value after user preference. A tip is to install the motor temperature sensor if a lot of power is frequently needed so as not to overheat the motor. Or set a lower motor power limit.
 <br><br>
 |-
 | 2 || Current ramp up || 5 amps per second|| Set value after user preference. Higher value corresponds to faster acceleration but also greater forces on the mid drive. Be mindful not to select too fast acceleration.
