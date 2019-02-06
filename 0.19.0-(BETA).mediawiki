@@ -79,6 +79,7 @@ The odometer field located at the bottom of the display can show a few variables
 <br>
 <b> - 5. Energy data </b>
 * <u> 5.0 Average consumed power since power on </u>: displayed in watt-hours per kilometer or watt-hours per mile.
+* <u> 5.1 Estimated range since power on </u>: displayed in kilometers or miles and is based on the watt-hour consumption since power on and remaining watt-hours in the battery. This sub field will not be displayed if the Battery State of Charge function has not been enabled.
 <br>
 <b> - 6. Time Measurement </b>
 * <u> 6.0 Time Measurement: </u> time measured since display is powered on. You can reset by pressing DOWN button quickly followed by a long press on the DOWN button until value resets. It will start to blink when it is about to reset.
