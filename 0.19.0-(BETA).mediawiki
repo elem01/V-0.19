@@ -201,9 +201,19 @@ If offroad mode is enabled it can be activated with the ON/OFF and UP button com
 | 1 || Maximum wheel speed || 50 ||  Enter your speed limit (by law) to run legal on public roads. The motor will fade out from -0.5 km/h to +2,0 km/h. Tip: Europe has generally a speed limit of 25 km/h for E-Bikes.
 <br><br>
 |-
-| 2 || Wheel circumference || 2050 || Enter your wheel circumference so that speed and distance is correctly calculated.
+| 2 || Wheel circumference || 2050 || Enter your wheel circumference so that speed and distance are correctly calculated.
 <br><br>
-Tip: Search on Google how to measure wheel circumference. But for a quick setup with ball park values use: 26'' wheel = 2050;  27'' wheel = 2150;  27.5'' wheel =2215;  28'' wheel = 2250;  29'' wheel = 2300.
+Tip: Search on Google how to measure the wheel circumference. Below are approximate values for a quick setup. Remember to calibrate with GPS for finer adjustments.
+<br><br>
+26 inch wheel = 2050 mm
+<br>
+27 inch wheel = 2150 mm
+<br>
+27.5 inch wheel = 2215 mm
+<br>
+28 inch wheel = 2250 mm
+<br>
+29 inch wheel = 2300 mm
 <br><br>
 |-
 | 3 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
