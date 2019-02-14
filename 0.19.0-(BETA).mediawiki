@@ -538,7 +538,7 @@ NOTE: Do NOT enable the throttle if you have installed the [[How to install moto
 <br>
 
 
-=== 10: Offroad Mode ===
+=== 9: Offroad Mode ===
 
 This function enables user to limit speed and power when using bike on road. When using the bike off road where laws may be different it is possible to toggle Offroad mode and unlock a higher speed or power limit. Set parameters suitable for your specific laws and preferences.
 
@@ -563,7 +563,7 @@ This function enables user to limit speed and power when using bike on road. Whe
 <br>
 
 
-=== 11: Various ===
+=== 10: Various ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -588,7 +588,7 @@ Depending on type of motor, set appropriate value so that FOC calculations are c
 <br>
 
 
-=== 12: Advanced Technical Data ===
+=== 11: Advanced Technical Data ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Description'''
 |-
