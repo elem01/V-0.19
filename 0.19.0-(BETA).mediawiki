@@ -61,7 +61,7 @@ The odometer field located at the bottom of the display can show a few variables
 
 <b> - 1. Distance </b> 
 * <u> 1.0 Trip distance: </u> You can manually reset the trip distance by pressing DOWN button quickly followed by a long press on the DOWN button until value resets. It will start to blink when it is about to reset.
-* <u> 1.1 Distance since power on: </u> this value will automatically reset during power on/off. But is also manually resettable as described above.
+* <u> 1.1 Distance since power on: </u> this value will automatically reset during power on/off.
 * <u> 1.2 Odometer: </u> can be set to a specific value in the configurations menu or reset as described above.
 <br>
 <b> - 2. Battery State of Charge </b>
