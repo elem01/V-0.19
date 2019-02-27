@@ -524,15 +524,33 @@ The temperature value on the display will blink if the motor current is being li
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Temperature limit or throttle || 0 || This sub menu is by default set to (0). This means neither throttle nor motor temperature limit function is enabled. Set (1) to enable the motor temperature control or set (2) to enable the throttle.  
+| 0 || Motor voltage type || 0 ||
+Depending on type of motor, set appropriate value so that FOC calculations are correctly executed. The voltage of the battery does not matter, this value should always be set depending on type of motor.
+<br><br>
+* Set (0) for 48 V brushless motor (TSDZ2 52 V version has a 48 V brushless motor).
+* Set (1) for 36 V brushless motor.
+* Set (2) (EXPERIMENTAL) for the 48 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
+* Set (3) (EXPERIMENTAL) for the 36 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
+<br><br>
+|-
+| 1 || Motor power limit || 0 || Set value after user preference. A tip is to install the motor temperature sensor if a lot of power is frequently needed so as not to overheat the motor. Or set a lower motor power limit.
+<br><br>
+|-
+| 2 || Current ramp up || 5 amps per second|| Set value after user preference. Higher value corresponds to faster acceleration but also greater forces on the mid drive. Be mindful not to select too fast acceleration.
+<br><br>
+|-
+| 3 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep disabled (0) if you do not have brake sensors installed.
+<br><br>
+|-
+| 4 || Temperature limit or throttle || 0 || This sub menu is by default set to (0). This means neither throttle nor motor temperature limit function is enabled. Set (1) to enable the motor temperature control or set (2) to enable the throttle.  
 <br><br>
 NOTE: Do NOT enable the throttle if you have installed the [[How to install motor temperature sensor|motor temperature sensor]]. If you have the sensor installed you need to either have the motor temperature limit function enabled or everything disabled, i.e. set to either (1) or (0).
 <br><br>
 |-
-| 1 || Minimum temperature || 75 °C || Set the minimum motor temperature at which the motor current will start to be limited.
+| 5 || Minimum temperature || 75 °C || Set the minimum motor temperature at which the motor current will start to be limited.
 <br><br>
 |-
-| 2 || Maximum temperature || 85 °C || Set the maximum motor temperature at which the motor current will be completely blocked, i.e., motor shutoff.
+| 6 || Maximum temperature || 85 °C || Set the maximum motor temperature at which the motor current will be completely blocked, i.e., motor shutoff.
 <br><br>
 |}
 <br>
@@ -562,33 +580,7 @@ This function enables user to limit speed and power when using bike on road. Whe
 |}
 <br>
 
-
-=== 10: Various ===
-{|
-| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
-|-
-| 0 || Motor voltage type || 0 ||
-Depending on type of motor, set appropriate value so that FOC calculations are correctly executed. The voltage of the battery does not matter, this value should always be set depending on type of motor.
-<br><br>
-* Set (0) for 48 V brushless motor (TSDZ2 52 V version has a 48 V brushless motor).
-* Set (1) for 36 V brushless motor.
-* Set (2) (EXPERIMENTAL) for the 48 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
-* Set (3) (EXPERIMENTAL) for the 36 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
-<br><br>
-|-
-| 1 || Motor power limit || 0 || Set value after user preference. A tip is to install the motor temperature sensor if a lot of power is frequently needed so as not to overheat the motor. Or set a lower motor power limit.
-<br><br>
-|-
-| 2 || Current ramp up || 5 amps per second|| Set value after user preference. Higher value corresponds to faster acceleration but also greater forces on the mid drive. Be mindful not to select too fast acceleration.
-<br><br>
-|-
-| 3 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep disabled (0) if you do not have brake sensors installed.
-<br><br>
-|}
-<br>
-
-
-=== 11: Advanced Technical Data ===
+=== 10: Advanced Technical Data ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Description'''
 |-
