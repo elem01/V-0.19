@@ -7,4 +7,4 @@
 | `PWM` | Pulse Width Modulation - a digital signal that is created through a modulation technique, which involves encoding a message into a pulsing signal.  PWM Duty Cycle refers to the proportion of 'on time' to a regular interval. (from [Wikipedia](https://en.wikipedia.org/wiki/Pulse-width_modulation)) |
 | `SOC` | State Of Charge - the percentage readout of home much battery is remaining, you can access it by pressing the middle and bottom buttons together |
 | `PAS` | |
-| `SVM` | |
+| `SVM` | Space Vector Modulation |
