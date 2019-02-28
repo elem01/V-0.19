@@ -1,20 +1,33 @@
-TSDZ2 Firmware Updating & Open Source firmware.
+= TSDZ2 Firmware Updating & Open Source firmware =
 
-There are only two types of TSDZ2 motor controller hardware, a version with a 6-pin connector to the display, (no throttle) and an 8-pin connector version (throttle can be connected at the display). Voltage (36V, 48V, 52V) does not change the hardware, instead the firmware is different. Stock firmware can be changed, so a 48V system can be changed to 52V, for example.
+''' Written by Tomtom50 '''
 
-There are two TSDZ2 motors, one spins 4000rpm no-load at 36V, the other spins 4000rpm no-load at 48V. If you buy a 52V system you are getting a 48V motor, and it will spin 52/48x4000 = 4333rpm at 52V. The brushless DC motors on ebikes are all like this. As they spin faster they produce 'backwards emf' and the backwards emf automatically limits how much current the motor draws from the controller. At a certain rpm the motor makes so much back emf it spins but makes no torque, this is the no-load rpm. This is why your TSDZ2 gives less assist as your pedal cadence rises to 80rpm or so. There are ways to get around this but that is beyond the scope of this document. Long story short:
-•	If you have a 36V system and you flash to 48V or 52V it will run. The motor spins faster but with lower torque. This can be good if you want assist at a higher pedal cadence. Eco-ebikes sells systems set up this way, they call it overdrive. You can make a 36V system work this way by flashing the firmware to 48V/52V and using a 48V/52V battery.
-•	If you have a 48V/52V system and you flash to 36V it will run. The motor spins slower but with higher torque. This can be good if you have a slow pedal cadence, although it does not get discussed much.
+== TSDZ2 Motor Controller Hardware ==
+
+There are only two hardware versions of the TSDZ2 motor controller, a version with a 6-pin connector to the display with no throttle and an 8-pin connector version where the throttle can be connected to the display. Voltage (36 V, 48 V, 52 V) does not change the hardware, instead the firmware is different and usually locked to different voltages. Stock firmware can be changed to open source firmware so as to unlock and setup different voltages.
+
+== Different Motors in the TSDZ2 ==
+
+There are two TSDZ2 motors, one spins 4000 RPM no-load at 36 V, the other spins 4000 RPM no-load at 48 V. If you buy a 52 V system you are getting the 48 V motor, and it will spin 52/48 x 4000 = 4333 RPM at 52 V. The brushless DC motors on ebikes are all like this. As they spin faster they produce 'backwards emf' and the backwards emf automatically limits how much current the motor draws from the controller. At a certain RPM the motor makes so much back emf it spins but makes no torque, this is the no-load RPM. This is why your TSDZ2 gives less assist as your pedal cadence rises to 80 RPM or so. There are ways to get around this but that is beyond the scope of this document.
+* If you have a 36 V system and you flash to 48 V or 52 V it will run. The motor will spin faster. This can be good if you want assist at a higher pedal cadence. Eco-ebikes sells systems set up this way, they call it overdrive. You can make a 36 V system work this way by flashing the firmware to 48 V/52 V and using a 48 V/52 V battery.
+* If you have a 48 V/52 V system and you flash to 36 V it will run. The motor spins slower. This can be good if you have a slow pedal cadence, although it does not get discussed much.
+
 The motor controller has an STM embedded processor. The processor runs a program called firmware that is stored in non-volatile memory. You can change the motor firmware if you establish communication between a PC and the motor controller using an STM V-link-2 USB adapter and a cable you make.
 To use open source firmware and the KT-LCD3 display you also need to connect to the KT-LCD3 display, which has its own STM embedded processor, using a second cable you need to make. The open source firmware is in two files, firmware for the motor controller and firmware for the KT-LCD3 display.
 Other options exist, but I am not covering them here:
 •	You can use the open source firmware with the standard TSDZ2 display. You change firmware settings from a computer utility, not using the KT-LCD3 display. This is good if you want to avoid buying a dedicated display, making a special cable, etc. Because the stock displays have fewer fields they cannot display all of the information available on the KT-LCD3. Search user marcoq at endless-sphere.
 •	feketehegyi at endless sphere has figured out how to change settings in the stock firmware with bluetooth connection for a mobile phone, so you can ride with no display at all.
 •	casainho, developer of the open source firmware, if working out using the Bafang 850C display. This display is color and pixel-based like a cell phone screen. This is only in development, not yet released. The Bafang display has a different connector than the KT-LCD3.
-Flashing the stock firmware is easier than going to the open source firmware. You make one cable, you establish connection between your PC and the motor controller, you write a different firmware file, and you are done. If your main goal is to match your system to a different battery  voltage it might not be worth it do go to open source firmware. I personally think the stock firmware is pretty good, the open source firmware is probably not worth the trouble for everyone, although I'm glad I did it. My experience is that the system does not feel that much different, but the open source firmware gives far more configuration options, and the KT-LCD3 displays far more information. The biggest difference in terms of assist is assists level. With the open source firmware I can set assist lower than stock level 1 and higher than stock level 4. Combined with up to 9 assist levels you have a lot more control over assist.
+Flashing the stock firmware is easier than going to the open source firmware. You make one cable, you establish connection between your PC and the motor controller, you write a different firmware file, and you are done. If your main goal is to match your system to a different battery  voltage it might not be worth it do go to open source firmware. I personally think the stock firmware is pretty good, the open source firmware is probably not worth the trouble for everyone, although I'm glad I did it. 
+
+== Difference between stock and open source firmware ==
+
+My experience is that the system does not feel that much different, but the open source firmware gives far more configuration options, and the KT-LCD3 displays far more information. The biggest difference in terms of assist is assists level. With the open source firmware I can set assist lower than stock level 1 and higher than stock level 4. Combined with up to 9 assist levels you have a lot more control over assist.
 The open source firmware is developed and modified by volunteers. I think it is very smooth for a volunteer effort, but you get no guarantee that it won't have bugs or omissions. Since it does not have a formal testing program having your brakes connected is something to consider. I did not bother to connect the brakes when I used the stock firmware, with the torque sensor there was no need for the way I ride. But I connected the brakes for the open source and I'm glad I did. With the open source firmware sometimes when I am at a stop with a foot on a pedal it can give little lurches. This never happened with stock firmware (yes, I have assist without pedal rotation disabled). I personally want to be able to kill the motor by grabbing the brake in case there is a glitch in the firmware programming. Going to open source means you are not using the system the way Tongsheng recommends. You take on risk that the motor might misbehave, you take on risk you might damage the hardware.
-Mechanical Issues
+
+== Mechanical Issues ==
 This document is not primarily about the mechanical side, but I will cover a couple main points since I am aiming at people who do not know a lot about the system and may not yet have bought a TSDZ2. I am a mechanical engineer, and in my opinion the TSDZ2 is well-engineered and manufactured, especially considering its price. But compromises were necessarily made.
+
 Mid-drive kits are designed to fit typical bike frame, which has a bottom bracket that carries the crankset axle. 68mm bottom brackets are most common and typical of road bikes. 73mm is also common and shows up more on mountain bikes. Chainline is the distance of the chainwheel to the center of the bike frame, Chainline varies, 45mm is common on road bikes, 50mm on many mountain bikes. Ideally the chainline is right in the center of the rear cluster, so the chain doesn't take too much of an angle as you change gears with the rear derailleur. This becomes more critical with more rear cogs, because as cogs were added the clusters got wider, increasing the angle, and the cogs and chain got smaller and less robust. So a chainline that works OK with a 7-speed rear cluster might cause problems with 10 cogs. There are a lot of hits if you search chainline in https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788
 Mid-drive kits have gears that fit between the right crank and the bottom bracket that transmit the motor power, and those gears need thickness to be strong, so it is tough to keep chainline small. Larger chainlines cause worst misalignment in first gear. If first gear is important because you climb a lot of hills you might be combining a lot of heavy use with a chain that is pretty badly aligned. The TSDZ2 manages a 50mm chainline (not great, not bad), but compromises were made to get there:
 •	The back of the gear shroud is dished because most frames have space and the dish reduces chainline. But some frames (carbon, mountain bike frames where the rear stays splay quickly aft of the bottom bracket) interfere. Using a spacer at the bottom bracket increases chainline.
@@ -25,7 +38,9 @@ The TSDZ2 reacts torque by clamping the rear stays aft of the bottom bracket. Th
 There are a lot posts about the plastic motor drive gear, which fails for some people and not for others. A bronze gear is available which is stronger but increases noise. My belief is that the plastic gear is fine if you take care to avoid a few practices that especially load the gear:
 •	Avoid high-assist startups in a high gear. Motor torque is highest at low rpm, and a torque that is OK at speed can damage a gear at low rpm. Develop a habit of shifting to a low gear when coming to a stop so you are in low gear when you next take off. If you forget reduce assist for launch.
 •	500W is definitely easier on the system than 750W. The open source firmware lets you change power really easily.
-Updating Stock Firmware
+
+== Updating Stock Firmware ==
+
 Eyebyesickle sells from eco-ebikes.com, and at that website there is good instructions about how to:
 1.	Make a cable to connect your computer to the TSDZ2 motor
 2.	How to use the STM V-Link 2 and software on your computer
@@ -37,22 +52,29 @@ The instructions tell you how to edit voltage levels to adapt to a different bat
 https://www.eco-ebike.com/pages/videos
 FIXING FAULTY 52V TSDZ2 PROGRAMMING FROM OTHER DISTRIBUTORS
 He uses an STM brand STM V-Link 2 USB adapter. I bought that type because it was in the instructional. Its voltage output is 3.3V where the cheap generic units source 5V. Both work, but if you plan to flash the KT-LCD3 display the 3.3V means the display is very very dim, you can barely see it.
-TSDZ2 Open Source Firmware Installation Using KT-LCD3 display
-jbalat has great videos on youtube. They are great because you can see very step when using the STM software.
+
+== TSDZ2 Open Source Firmware Installation Using KT-LCD3 display ==
+User Jbalat has great videos on youtube. You can see every step when using the STM software.
+<br><br>
 Part 1
 https://youtu.be/nj8GxKHut3o
+<br><br>
 Part 2
 https://youtu.be/bxEHDFCaKH8
+<br><br>
 Part 3
 https://youtu.be/zChf_2K8rW8
+<br><br>
 Part 4
 https://youtu.be/0nXtaJniZQc
+<br><br>
 Part 5
 https://youtu.be/IrWn6e8bIuQ
-6-pin & 8-pin TSDZ2
+
+== 6-pin & 8-pin TSDZ2 ==
 For installing the open source software the biggest hardware impact will be whether you have 6-pin (no throttle) or 8-pin:
-•	They have different motor connectors so the stock cable from the display to the motor is different, and the cable you need to make is also different.
-•	Adding a temperature sensor uses the throttle connection
+* They have different motor connectors so the stock cable from the display to the motor is different, and the cable you need to make is also different.
+* Adding a temperature sensor uses the throttle connection
 SHOPPING LIST:
 1.	KT-LCD3 display
 casainho had a prior open source firmware project for KT controllers. He already know teh KT-LDC3 display, he knew it also uses an STM processor, and he knew it has a lot of fields to display information. He is working on open source firmware for the Bafang 850C display, but for now the KT-LCD3 is the supported display This display is currently a monochrome display, Kunteng KT-LCD3. Not all KT-LCD3 displays have the same connector. Some have a green 5-pin waterproof (Julet) connector, but not all. For example the KT-LCD3 from BMS Battery has a connector that matches their controllers. I recommend buying a KT-LCD3 that has the 5-pin waterproof connector and a mating extension cable.
@@ -331,4 +353,3 @@ o	Odometer field: this field can show a few variables that are logic grouped in 
 	6. Time Measurement
 	6.0 Time Measurement: Time measured since display is powered on.
 	6.1 Total Time Measurement: Total time measured since last reset.
-
