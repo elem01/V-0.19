@@ -511,11 +511,16 @@ Tip: See assist levels for more information about multipliers.
 
 === 8: Motor Controller Setup ===
 
-In this sub menu it is possible to enable or disable the throttle or the motor temperature protection function. Both can not be activated at the same time because they use the same hardware to operate. If the motor temperature sensor is installed it is not possible to use the throttle and do NOT enable throttle if that is the case.
+In this sub menu the motor controller can be setup to work as desired. It is also possible to enable or disable the throttle or the motor temperature protection function here. 
 
-This motor temperature protection eliminates overheating. Without this function and under heavy loads it would result in permanent damage/loss of torque. See: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature if you have installed the [[How to install motor temperature sensor| motor temperature sensor]].
+'''NOTES:'''
+* Do note that the throttle and the motor temperature protection can not be active simultaneously. This is because they use the same hardware ports to operate. 
+* If the motor temperature sensor is installed it is not possible to use the throttle. Do NOT enable throttle if that is the case.
+<br>
 
-'''How it works:'''
+'''How the motor temperature function works:'''
+
+This motor temperature protection eliminates overheating. Without this function the motor might overheat during heavy loads, resulting in permanent damage/loss of torque. See: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature if you have installed the [[How to install motor temperature sensor| motor temperature sensor]].
 
 If you have installed the [[How to install motor temperature sensor| motor temperature sensor]] and you enable the function, you will be able to see the motor temperature in the temperature field of the display. When the set minimum motor temperature threshold is reached, the motor current will start to be limited. If the temperature keeps rising this will result in even more current, and therefore overall power, limitations. If the maximum motor temperature is reached the current will be completely limited.
 
