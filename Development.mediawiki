@@ -1,3 +1,5 @@
+See here tecnhical notes about TSDZ2: https://opensourceebikefirmware.bitbucket.io/development_tsdz2
+
 = How to compile the code on Windows =
 
 # Install SDCC ([https://sourceforge.net/projects/sdcc/files/snapshot_builds/x86_64-w64-mingw32-setup]) version 3.7 or higher. Make sure to add it to your PATH (option in one of the last screens of the installer... )
