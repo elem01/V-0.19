@@ -43,6 +43,8 @@ See the more users feedback here: [[Why should you use the Flexible OpenSource f
 
 = How to install =
 
+If you prefer to not install by yourself our Flexible OpenSource firmware, you can buy a TSDZ2 motor and LCD already flashed, on [https://www.electrifybike.com/store/c37/TSDZ2_Flexible_Open_Source_Firmware_Products.html#/ www.electrifybike.com]. This store is friendly to the development of our firmware and is donating 10% of the sales.
+
 * '''[[How to install the Flexible OpenSource firmware]]'''
 * [[How to install brake sensors]] (optional but recommended)
 * [[How to install motor temperature sensor]] (optional but recommended)
