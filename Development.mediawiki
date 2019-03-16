@@ -12,3 +12,7 @@ See here tecnhical notes about TSDZ2: https://opensourceebikefirmware.bitbucket.
 The stm8 eforth project is developed on linux.
 
 https://github.com/TG9541/stm8ef/wiki/STM8S-Programming
+
+= Various =
+
+[[How TSDZ2 torque sensor works]]
