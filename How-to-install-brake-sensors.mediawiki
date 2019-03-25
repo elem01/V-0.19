@@ -6,9 +6,9 @@ You can buy brake sensors on online shops like BMSBattery or PSWPower, at prices
 
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/magnetic_brake_sensor-01.jpg]]
 
-This are the most easy and flexible brake sensors to install, since they will be glued to the original bicycle brake lever (a must on hydraulic brakes). They also have only 2 wires to be connected. They act like a mechanical switch, you don't need to care about which wires colors of the brake sensor you connected to the motor controller wires -- follow the next table for the connections.
+This are the most easy and flexible brake sensors to install, since they will be glued to the original bicycle brake lever (a must on hydraulic brakes). They also have only 2 wires to be connected. They act like a mechanical switch, you don't need to care about which wires colors of the brake sensor you connect to the motor controller wires -- follow the next table for the connections.
 
-You can find on Internet shops that sell this sensors as "BAFANG Hydraulic Brake Sensor" but don't worry because this are generic sensor that work also on TSDZ2. You can [http://www.pswpower.com/ven.php?cargo.2016-47-2bxx buy them here on PSWPower] or any other shop.
+You can find on online shops that sell this sensors as "BAFANG Hydraulic Brake Sensor" but don't worry because this are generic sensor that work also on TSDZ2. You can [http://www.pswpower.com/ven.php?cargo.2016-47-2bxx buy them here on PSWPower] or any other shop.
 
 '''Connections between brake sensor and TSDZ2 LCD cable:'''
 {|
