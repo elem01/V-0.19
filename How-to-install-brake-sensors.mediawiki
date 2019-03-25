@@ -2,14 +2,28 @@ TSDZ2 supports the regular cheap ebike brake sensors, like levers brake sensor, 
 
 You can buy brake sensors on online shops like BMSBattery or PSWPower, at prices like 5€ each pair.
 
-= Lever brake sensors and magnetic brake sensors =
+= Magnetic brake sensors =
 
-The lever brake sensors will substitute the original brake levers of the original bicycle. The magnetic brake sensors on the other side, can be glued on the original brake levers which is a good solution for hydraulic brakes.
-
-Example of a magnetic brake sensor glued to the original hydraulic brake lever:
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/magnetic_brake_sensor-01.jpg]]
 
-Both this type of brake sensors come with 2 wires and they act like a mechanical switch, you don't need to care about which wires colors of the brake sensor you connected to the motor controller wires -- follow the next table for the connections.
+This are the most easy and flexible brake sensors to install, since they will be glued to the original bicycle brake lever (a must on hydraulic brakes). They also have only 2 wires to be connected. They act like a mechanical switch, you don't need to care about which wires colors of the brake sensor you connected to the motor controller wires -- follow the next table for the connections.
+
+You can find on Internet shops that sell this sensors as "BAFANG Hydraulic Brake Sensor" but don't worry because this are generic sensor that work also on TSDZ2. You can [http://www.pswpower.com/ven.php?cargo.2016-47-2bxx buy them here on PSWPower] or any other shop.
+
+'''Connections between brake sensor and TSDZ2 LCD cable:'''
+{|
+| '''Brake sensor''' || '''[[Wire-KT-LCD3-to-TSDZ2|TSDZ2 controller wire function]]'''
+|-
+| color 1 || GND ground
+|-
+| color 2 || BRAKE
+|}
+
+= Lever brake sensors =
+
+The lever brake sensors will substitute the original brake levers of the original bicycle.
+
+This type of brake sensors come with 2 wires and they act like a mechanical switch, you don't need to care about which wires colors of the brake sensor you connected to the motor controller wires -- follow the next table for the connections.
 
 '''Connections between brake sensor and TSDZ2 LCD cable:'''
 {|
