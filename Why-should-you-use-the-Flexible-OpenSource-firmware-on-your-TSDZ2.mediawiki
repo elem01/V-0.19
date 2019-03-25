@@ -18,7 +18,7 @@ And the feedback from wheex user:
 
 ''I tried the new opensource firmware and it's awesome much more efficient, stronger (...) Thanks casainho to made this, with the new firmware it's feel like I have a new motor.''
 
-Also, for casainho (the developer that started this project), it is strategic to use and help develop OpenSource knowledge and technology for EBike motor controllers, because it is really important to create better alternatives to fight against the Climate Change -- here [https://www.reuters.com/article/us-pope-environment-excerpts/excerpts-from-pope-francis-encyclical-on-the-environment-idUSKBN0OY17320150618]:
+Also, for casainho (the developer that started this project), it is strategic to use and help develop OpenSource knowledge and technology for EBike motor controllers, because it is really important to create better alternatives to fight against the Climate Change -- here [https://www.reuters.com/article/us-pope-environment-excerpts/excerpts-from-pope-francis-encyclical-on-the-environment-idUSKBN0OY17320150618 words of Pope Francis]:
 
 ''There is an urgent need to develop policies so that, in the next few years, the emission of carbon dioxide and other highly polluting gases can be drastically reduced, for example, substituting for fossil fuels and developing sources of renewable energy.''
 
