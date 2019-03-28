@@ -101,6 +101,14 @@ The odometer field located at the bottom of the display can show a few variables
 === Motor Temperature Field === 
 This field can either show the motor temperature, when the function is enabled and the temperature sensor is installed, or some other data depending on user preference. It is also possible to set so that the field displays nothing.
 
+'''How the motor temperature function works:'''
+
+This motor temperature protection eliminates overheating. Without this function the motor might overheat during heavy loads, resulting in permanent damage/loss of torque. See: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature if you have installed the [[How to install motor temperature sensor| motor temperature sensor]].
+
+If you have installed the [[How to install motor temperature sensor| motor temperature sensor]] and you enable the function, you will be able to see the motor temperature in the temperature field of the display. When the set minimum motor temperature threshold is reached, the motor current will start to be limited. If the temperature keeps rising this will result in even more current, and therefore overall power, limitations. If the maximum motor temperature is reached the current will be completely limited.
+
+The temperature value on the display will blink if the motor current is being limited. As the function limits the current more it will blink faster corresponding to higher limitations on current. Finally, if the current is completely limited, the blink rate will be very fast.
+
 '''NOTES:'''
 <br>
 * Set your desired configuration under the Main Screen Setup in the Configuration Menu.
@@ -511,20 +519,13 @@ Tip: See assist levels for more information about multipliers.
 
 === 8: Motor Controller Setup ===
 
-In this sub menu the motor controller can be setup to work as desired. It is also possible to enable or disable the throttle or the motor temperature protection function here. 
+In this sub menu the motor controller can be setup to work as desired. It is also possible to enable or disable the throttle or the motor temperature protection function here and also various other settings.
 
 '''NOTES:'''
 * Do note that the throttle and the motor temperature protection can not be active simultaneously. This is because they use the same hardware ports to operate. 
 * If the motor temperature sensor is installed it is not possible to use the throttle. Do NOT enable throttle if that is the case.
+* Set the current ramp up to a lower value for a more smooth acceleration and lower strain on the drivetrain.
 <br>
-
-'''How the motor temperature function works:'''
-
-This motor temperature protection eliminates overheating. Without this function the motor might overheat during heavy loads, resulting in permanent damage/loss of torque. See: '''[[TSDZ2 motor demagnetized due to overheating]]'''. You can only use and enable this feature if you have installed the [[How to install motor temperature sensor| motor temperature sensor]].
-
-If you have installed the [[How to install motor temperature sensor| motor temperature sensor]] and you enable the function, you will be able to see the motor temperature in the temperature field of the display. When the set minimum motor temperature threshold is reached, the motor current will start to be limited. If the temperature keeps rising this will result in even more current, and therefore overall power, limitations. If the maximum motor temperature is reached the current will be completely limited.
-
-The temperature value on the display will blink if the motor current is being limited. As the function limits the current more it will blink faster corresponding to higher limitations on current. Finally, if the current is completely limited, the blink rate will be very fast.
 
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
