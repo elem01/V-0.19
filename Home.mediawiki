@@ -25,6 +25,8 @@ See here a [https://www.youtube.com/watch?v=IrWn6e8bIuQ Youtube video review don
 See the more users feedback here: [[Why should you use the Flexible OpenSource firmware on your TSDZ2]]
 
 = Features =
+(work in progress to write all the features)
+
 * '''Motor'''<br>
 ** '''FOC motor control'''<br>FOC motor control algorithm achieves the best possible motor torque versus motor current usage. Users are reporting that motor has higher torque and their batteries last long/higher trip range.<br>
 ** '''Motor power control'''<br>Control of the motor power and not the motor current, which maintains the motor power assist level when battery has less charge/less voltage.<br>
