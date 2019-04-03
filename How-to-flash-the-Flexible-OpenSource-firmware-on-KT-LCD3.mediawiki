@@ -4,7 +4,9 @@ __TOC__
 
 = Buy STLinkV2 clone =
 
-To be able to flash the firmware (both for TSDZ2 motor controller and KT-LCD3), you will need the cheap clone of STLinkV2, that you can buy on EBay as cheap as 2.3€
+To be able to flash the firmware (both for TSDZ2 motor controller and KT-LCD3), you will need the cheap clone of STLinkV2, that you can buy on EBay as cheap as 2.3€.
+
+'''WARNING:''' we found that some STLinkV2 clones can't flash very well the motor controller while other do it well. A good idea is to buy like 3 different STLinkV2 clones, from different shops. 
 
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/STLinkV2_clone.png]]
 
