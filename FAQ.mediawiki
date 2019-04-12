@@ -1,5 +1,35 @@
 __TOC__
 
+= TSDZ2 different versions =
+
+== Voltage, power, throttle  ==
+
+For the TSDZ2 motor versions found on online shops (36V, 48V, 52V, whichever power in watts, with throttle or without) the motor controller electronic board is just the same. The only relevant difference is the brushless motor inside because there are only 2 different versions:
+- TSDZ2 36V version: 36V brushless motor
+- TSDZ2 48V and 52V version: 48V brushless motor
+
+Other difference is the throttle or no throttle version, because with no throttle version there are no throttle wires available to connect it (also, if you plan to install the motor temperature sensor, a throttle version will make your life easier during on the installation).
+
+All motor versions are ready for you to use the brake sensors, you can always buy ebike standard brake sensors and wiring them by yourself.
+
+With our flexible OpenSource firmware, you will able to make any TSDZ2 motor version working with any battery voltage from 24V up to 52V (7S up to 14S battery cells in series). Yes, the motor works well with 24V and there is a report of an user doing that because he wanted to use a very small battery pack. Please note that the brushless motor inside will work at the rated RPM and hence at the regular pedal cadence, if the battery voltage is near the motor voltage, for instance, choose a 36V battery for a 36V brushless motor and a 48V or 52V battery for the 48V brushless motor.
+
+Also, our flexible OpenSource firmware does no limit the motor power and you will be able to run the motor at his max power of 18 amps * battery voltage, for instance, on a 52V battery you will get 936 Watts (18*52 = 936).
+
+== Mechanical ==
+
+There are at least 2 TSDZ2 different (mechanical) versions. The most recent version seems the one that has a helical main gear that makes the motor to be more silent compared to the one that uses a spur gear. Some pictures:
+
+The main gear at top is helical and the one at bottom is a spur gear:<br>
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_v1_and_v2-main_gear.jpg]]
+
+Helical gear on the motor at right side:<br>
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_v1_and_v2.jpg]]
+
+The main gear on the left side is helical (with broken bearing). The bearing has the reference CSK30P, that can be found online as a "CSK30P bearing sprag clutch":
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_v1_and_v2-main_gear-v2_broke_bearing.jpg]]
+
+
 = Install TSDZ2 on full suspension bicycles =
 
 See here how to install: [[How to install TSDZ2 on a full suspension bicycle]]
@@ -40,19 +70,6 @@ You can buy a new main gear, that includes the sprag clutch bearing, [http://www
 
 '''2. Install the new main gear<br>
 See this video from jbalat showing how to remove and install the main gear: https://www.youtube.com/watch?v=u-SY0rGMEMo
-
-= TSDZ2 different (mechanical) versions =
-
-There are at least 2 TSDZ2 different (mechanical) versions. The most recent version seems the one that has a helical main gear. Some pictures:
-
-The main gear at top is helical:<br>
-[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_v1_and_v2-main_gear.jpg]]
-
-Helical gear on the motor at right side:<br>
-[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_v1_and_v2.jpg]]
-
-The main gear on the left side is helical (with broken bearing). The bearing has the reference CSK30P, that can be found online as a "CSK30P bearing sprag clutch":
-[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_v1_and_v2-main_gear-v2_broke_bearing.jpg]]
 
 = Flexible OpenSource firmware =
 
