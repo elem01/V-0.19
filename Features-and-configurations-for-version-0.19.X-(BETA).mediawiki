@@ -192,10 +192,10 @@ If offroad mode is enabled it can be activated with the ON/OFF and UP button com
 
 === How to enter the Configuration Menu ===
 
-* To enter the configuration menu: long press UP and DOWN buttons
-* To enter sub menus: press ON/OFF button
-* To move to next sub menu: press either UP or DOWN button
-* To exit sub menu or configuration menu: long press the ON/OFF button
+* To enter the configuration menu: long press the UP and DOWN buttons
+* To enter a sub menu: press the ON/OFF button
+* To navigate between sub menus: press either the UP or DOWN button
+* To exit a sub menu or the configuration menu: long press the ON/OFF button
 <br>
 
 
