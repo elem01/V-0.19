@@ -248,6 +248,11 @@ Tip: Search on Google how to measure the wheel circumference. Below are approxim
 
 === 1: Battery Setup ===
 
+In this sub menu you can specify all parameters regarding the battery. 
+
+Is is also possible to enable measurements of consumed watt-hours since last charge and also see what percentage of capacity remains during a trip. Depending on preferences it is possible to set so that percentage of consumed charge is displayed instead of percentage of remaining charge.
+
+Tip: If this function is enabled you will be able to see percentage of charge in the temperature field on your display. To enable or disable just click the ON/OFF-button together with the DOWN-button at the same time. Do not forget to enable and set up the function below. 
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
@@ -280,34 +285,22 @@ Example for 10 amps current, R = U / I, R = 1.2 volts drop / 10 amps, R = 0.120 
 <br><br>
 Tip: Here you can evaluate and test how the set internal resistance of the battery affects the voltage reading.
 <br><br>
-|}    
-<br>
-
-
-=== 2: Battery Capacity Setup ===
-
-Under this configuration menu you can set parameters to display the state of charge of your E-Bike battery. If this function is enabled it will display how many watt-hours have been consumed since last charge and what percentage remains of the battery. Depending on preferences it is possible to set so that percentage of consumed charge is displayed instead of percentage of remaining charge.
-
-Tip: If this function is enabled you will be able to see percentage of charge in the temperature field on your display. To enable or disable just click the ON/OFF-button together with the DOWN-button at the same time. Do not forget to enable and set up the function below. 
-
-{|
-| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Enable and set State of Charge function || 0 || Set (1) to enable function. It will display watt-hours consumed and percentage of charge remaining, i.e., display percentage value from 100 % to 0 %.
+| 5 || Enable and set State of Charge function || 0 || Set (1) to enable function. It will display watt-hours consumed and percentage of charge remaining, i.e., display percentage value from 100 % to 0 %.
 <br><br>
 Set (2) to enable function. It will display watt-hours consumed and percentage of charge consumed, i.e., display percentage value from 0 % to 100 %.
 <br><br>
 Set (0) to disable the function.
 <br><br>
 |-
-| 1 || Threshold voltage to reset watt-hour meter || 54.2 volt || When powering on the display this value is compared to the battery voltage. If it is lower, the battery is expected to be fully charged and the watt-hour meter is reset.
+| 6 || Threshold voltage to reset watt-hour meter || 54.2 volt || When powering on the display this value is compared to the battery voltage. If it is lower, the battery is expected to be fully charged and the watt-hour meter is reset.
 <br><br>
 Tip: To find a suitable value, fully charge the battery and measure the voltage on the KT-LCD3, use a slightly lower value for the threshold voltage. 
 <br><br>
 Example: my 48 V battery charges up to 54.6 volts, so I set the threshold to 54.2 volts.
 <br><br>
 |-
-| 2 || Total watt-hours of battery || 0 || Set the total capacity in watt-hours your battery has. 
+| 7 || Total watt-hours of battery || 0 || Set the total capacity in watt-hours your battery has. 
 <br><br>
 Tip: fully charge the battery and then discharge it completely and use the measured value to input here. 
 <br><br>
@@ -316,13 +309,13 @@ Tip: the capacities stated from suppliers are often too high, expect a value of 
 Tip: roughly calculate the capacity by multiplying the nominal voltage with the nominal ampere hours. Example: a 48 volt, 14.5 Ah battery has a nominal watt-hour capacity of 696 Wh.
 <br><br>
 |-
-| 3 || Consumed watt-hours || - || This value represents consumed watt-hours since last reset. It is reset automatically when you power on the LCD and the battery is fully charged, i.e. above the set threshold voltage.
+| 8 || Consumed watt-hours || - || This value represents consumed watt-hours since last reset. It is reset automatically when you power on the LCD and the battery is fully charged, i.e. above the set threshold voltage.
 <br><br>
 |}
 <br>
 
 
-=== 3: Assist Levels ===
+=== 2: Assist Levels ===
 
 Here you can configure how many assist levels you wish to be able to select and also their respective multipliers. The defaults should already work for most situations.
 
@@ -345,7 +338,7 @@ Example: 0.5 * 200 W (human power) = 100 W assist power. This results in 300 W t
 <br>
 
 
-=== 4: Walk Assist ===
+=== 3: Walk Assist ===
 
 Here you can enable or disable the walk assist function. And also configure the motor duty cycle in each and every enabled assist level. The defaults should work for most situations.
 
@@ -395,7 +388,7 @@ The walk assist PWM value sets the motor duty cycle. It is an open loop controll
 <br>
 
 
-=== 5: Cruise Function ===
+=== 4: Cruise Function ===
 
 Here you can enable or disable the cruise function. The function can be activated when the bike is traveling at speeds above 8 km/h or around 5 mph and the user presses and holds the DOWN button. 
 
@@ -426,7 +419,7 @@ If it is preferred to set a target speed and let the cruise function maintain th
 <br>
 
 
-=== 6: Main Screen Setup ===
+=== 5: Main Screen Setup ===
 
 In the Main Screen Setup it is possible to configure and customize the main screen.
 <br><br>
@@ -482,7 +475,7 @@ NOTE: If the motor temperature is hitting the temperature limits the field will 
 <br>
 
 
-=== 7: Startup BOOST function ===
+=== 6: Startup BOOST function ===
 
 Here you can enable, disable and configure the BOOST feature. This feature helps from standstills where you might need greater assistance. It gives more power during a set time and then fades the power back to normal assistance. To configure the function for you likening please set appropriate values.
 
@@ -517,7 +510,7 @@ Tip: See assist levels for more information about multipliers.
 <br>
 
 
-=== 8: Motor Controller Setup ===
+=== 7: Motor Controller Setup ===
 
 In this sub menu the motor controller can be setup to work as desired. It is also possible to enable or disable the throttle or the motor temperature protection function here and also various other settings.
 
@@ -562,7 +555,7 @@ NOTE: Do NOT enable the throttle if you have installed the [[How to install moto
 <br>
 
 
-=== 9: Offroad Mode ===
+=== 8: Offroad Mode ===
 
 This function enables user to limit speed and power when using bike on road. When using the bike off road where laws may be different it is possible to toggle Offroad mode and unlock a higher speed or power limit. Set parameters suitable for your specific laws and preferences.
 
@@ -586,7 +579,7 @@ This function enables user to limit speed and power when using bike on road. Whe
 |}
 <br>
 
-=== 10: Advanced Technical Data ===
+=== 9: Advanced Technical Data ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Description'''
 |-
