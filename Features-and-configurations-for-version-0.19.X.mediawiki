@@ -191,7 +191,7 @@ If there is an error in the system it will be force-displayed in the odometer fi
 <br>
 
 {|
-| '''Error code''' || '''Error name''' || '''Description'''
+| '''Error Codes''' || '''Error name''' || '''Description'''
 |-
 | 1 || ERROR_MOTOR_BLOCKED || Motor is blocked. Excessive current is passing through motor and controller with no motor rotation. Please unblock the wheel or motor. After ten seconds this error will disappear and you will be able to use the system as usual.
 |-
