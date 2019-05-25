@@ -54,7 +54,7 @@ How it works: the motor controller will automatically limit current and therefor
 === Odometer Field === 
 The odometer field located at the bottom of the display can show a few variables that are logically grouped in sub fields. You can change between fields by pressing the ON/OFF button. To change between different data in a sub field quickly press UP button followed by a long hold on UP button. The current field and sub field number will temporarily blink in the wheel speed field.
 
-If there are any system errors the error code will be force-displayed in the odometer field. To look up what the error code means please take a look at Error Codes below.
+If there are any system errors the error code will be force-displayed in the odometer field. To look up what the error code means please take a look at the table under Error Codes.
 <br><br>
 '''NOTES:'''
 <br>
@@ -193,7 +193,7 @@ If there is an error in the system it will be force-displayed in the odometer fi
 <br>
 
 {|
-| '''Error Codes''' || '''Error name''' || '''Description'''
+| '''Error Codes''' || '''Error Name''' || '''Description'''
 |-
 | 1 || ERROR_MOTOR_BLOCKED || Motor is blocked. Excessive current is passing through motor and controller with no motor rotation. Please unblock the wheel or motor. After ten seconds this error will disappear and you will be able to use the system as usual.
 |-
