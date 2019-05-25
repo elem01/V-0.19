@@ -8,7 +8,7 @@
 ''' CAUTION: '''
 <br>
 * Always use the same firmware version for both the motor controller and LCD unless otherwise specified!
-* Before using the mid drive with new firmware, you must correctly configure the options on the display. For instance, you should configure your battery low voltage cut off so as not to over discharge the battery. Do set all other parameters also.
+* Before using the mid drive with new firmware, you must correctly configure the options on the display. For instance, you should configure your battery low voltage cut off so as not to over discharge the battery. Do set all other parameters also to ensure proper operation.
 * When installing new firmware, always check that no unwanted functions have become enabled or disabled during the install process.
 <br>
 
@@ -183,6 +183,26 @@ If offroad mode is enabled it can be activated with the ON/OFF and UP button com
 <br>
 * It is not recommended to activate offroad mode on public roads. 
 * In many countries offroad mode may only be used on private property.
+<br>
+
+---------------------------------------------------------------------------------------------
+=== Error codes === 
+If there is an error in the system it will be force-displayed in the odometer field. There will be a number associated with the error and this is the actual error code. Simply look at the table below for different error codes and what they mean.
+<br>
+
+{|
+| '''Error code''' || '''Error name''' || '''Description'''
+|-
+| 1 || ERROR_MOTOR_BLOCKED || Motor is blocked. Excessive current is passing through motor and controller with no motor rotation. Please unblock the wheel or motor. After ten seconds this error will disappear and you will be able to use the system as usual.
+|-
+| 2 || ERROR_TORQUE_APPLIED_DURING_POWER_ON || (Not yet implemented)
+|-
+| 3 || ERROR_BRAKE_APPLIED_DURING_POWER_ON || (Not yet implemented)
+|-
+| 4 || ERROR_THROTTLE_APPLIED_DURING_POWER_ON || (Not yet implemented)
+|-
+| 5 || ERROR_NO_SPEED_SENSOR_DETECTED || (Not yet implemented)
+|}
 <br>
 
 ---------------------------------------------------------------------------------------------
