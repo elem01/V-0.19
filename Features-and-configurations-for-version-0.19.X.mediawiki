@@ -179,7 +179,7 @@ It is also possible to enable a feature where you enter the desired wheel speed 
 
 ---------------------------------------------------------------------------------------------
 === Offroad Mode === 
-If offroad mode is enabled it can be activated with the ON/OFF and UP button combination and deactivated with the ON/OFF and DOWN button combination. When active, the assist symbol above the assist level will start blinking. Offroad mode is disabled and inactive by default.
+If offroad mode is enabled it can be toggled with the ON/OFF and DOWN button combination. When active, the assist symbol above the assist level will start blinking. Offroad mode is disabled and inactive by default.
 <br><br>
 '''NOTES:'''
 <br>
