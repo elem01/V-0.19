@@ -181,11 +181,6 @@ It is also possible to enable a feature where you enter the desired wheel speed 
 === Offroad Mode === 
 If offroad mode is enabled it can be toggled with the ON/OFF and DOWN button combination. When active, the assist symbol above the assist level will start blinking. Offroad mode is disabled and inactive by default.
 <br><br>
-'''NOTES:'''
-<br>
-* It is not recommended to activate offroad mode on public roads. 
-* In many countries offroad mode may only be used on private property.
-<br>
 
 ---------------------------------------------------------------------------------------------
 === Error codes === 
@@ -579,7 +574,7 @@ NOTE: Do NOT enable the throttle if you have installed the [[How to install moto
 
 === 8: Offroad Mode ===
 
-This function enables user to limit speed and power when using bike on road. When using the bike off road where laws may be different it is possible to toggle Offroad mode and unlock a higher speed or power limit. Set parameters suitable for your specific laws and preferences.
+This function enables user to limit speed and power when using bike on road. When using the bike where laws do not apply it is possible to toggle Offroad mode and unlock a higher speed or power limit. Set parameters suitable for your specific laws and preferences.
 
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
@@ -590,13 +585,13 @@ This function enables user to limit speed and power when using bike on road. Whe
 | 1 || Active on system startup || 0 || Determines whether offroad mode should be active on system startup. Select (1) to enable or select (0) to disable.
 <br><br>
 |-
-| 2 || Speed limit || 25 km/h || This speed limit is used when offroad mode is not active. Configure your speed which is legal for using on public roads. The motor will fade out power from -0.5 km/h to +2,0 km/h.
+| 2 || Speed limit || 25 km/h || Set speed limit for when offroad mode is active. The motor will fade out power from -0.5 km/h to +2,0 km/h to prevent overspeeding.
 <br><br>
 |-
-| 3 || Limit power || 0 || Determines whether power should be limited when offroad mode is not active. Select (1) to enable or (0) to disable.
+| 3 || Limit power || 0 || Determines whether power should be limited when offroad mode is active. Select (1) to enable or (0) to disable.
 <br><br>
 |-
-| 4 || Power limit || 250 W || The power limit in watts. For most countries in Europe the legal power limit is 250 W.
+| 4 || Power limit || 250 W || The power limit in watts.
 <br><br>
 |}
 <br>
