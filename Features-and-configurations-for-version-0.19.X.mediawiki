@@ -128,7 +128,8 @@ The temperature value on the display will blink if the motor current is being li
 <br><br>
 - <b> Pedal cadence: </b> Set to pedal cadence if you wish to see the instantaneous cadence of pedal rotation.
 <br><br>
-
+- <b> Average wheel speed: </b> Set to average wheel speed if you wish to see the average wheel speed since power on.
+<br><br>
 ---------------------------------------------------------------------------------------------
 === Time Measurement Field === 
 The time measurement field displays elapsed time since power on or since last reset. It displays either the TM symbol, stands for Time Measurement, or TTM symbol, stands for Total Time Measurement. This corresponds to the mentioned "time since power on" and "time since last reset".
@@ -486,6 +487,7 @@ In the Main Screen Setup it is possible to configure and customize the main scre
 <br> (3) = Instantaneous voltage on battery
 <br> (4) = Instantaneous current drawn from battery
 <br> (5) = Pedal cadence
+<br> (6) = Average wheel speed since power on
 <br><br>
 NOTE: If the motor temperature is hitting the temperature limits the field will temporarily flash the motor temperature and override any other data.
 <br><br>
