@@ -178,8 +178,8 @@ It is also possible to enable a feature where you enter the desired wheel speed 
 <br>
 
 ---------------------------------------------------------------------------------------------
-=== Offroad Mode === 
-If offroad mode is enabled it can be toggled with the ON/OFF and DOWN button combination. When active, the assist symbol above the assist level will start blinking. Offroad mode is disabled and inactive by default.
+=== Street Mode === 
+If the Street mode function is activated it can be toggled with the ONOFF and DOWN button combination. When active, the "ASSIST" symbol above the assist level will start to blink.
 <br><br>
 
 ---------------------------------------------------------------------------------------------
@@ -576,10 +576,12 @@ NOTE: Do NOT enable the throttle if you have installed the [[How to install moto
 
 This function enables user to limit speed and power when using the bike on public roads. It is also possible to disable the throttle function when in Street Mode. Set parameters suitable for your specific laws and preferences.
 
+When the Street Mode function is activated it is possible to enable it by pressing and holding the ONOFF and DOWN buttons until the "ASSIST" symbol starts to blink. This indicates that Street Mode is enabled. To disable Street Mode simply press and hold the ONOFF and DOWN buttons once again until the "ASSIST" symbol is solid.
+
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
-| 0 || Enable Street Mode|| 0 || Set (1) to enable or (0) to disable.
+| 0 || Enable Street Mode || 0 || Set (1) to enable or (0) to disable.
 <br><br>
 |-
 | 1 || Active on system startup || 0 || Determines whether Street mode should be active on system startup. Select (1) to enable or select (0) to disable.
