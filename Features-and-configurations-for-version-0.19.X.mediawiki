@@ -535,7 +535,7 @@ Tip: See assist levels for more information about multipliers.
 In this sub menu the motor controller can be setup to work as desired. It is also possible to enable or disable the throttle or the motor temperature protection function here and also various other settings.
 
 '''NOTES:'''
-* Do note that the throttle and the motor temperature protection can not be active simultaneously. This is because they use the same hardware ports to operate. 
+* The throttle and the motor temperature protection can not be active simultaneously. This is because they use the same hardware ports to operate. 
 * If the motor temperature sensor is installed it is not possible to use the throttle. Do NOT enable throttle if that is the case.
 * Set the current ramp up to a lower value for a more smooth acceleration and lower strain on the drivetrain.
 <br>
