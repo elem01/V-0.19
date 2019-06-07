@@ -39,14 +39,15 @@ This sub field displays information about speed. The values are displayed in eit
 === Motor Power Field === 
 The motor power field displays instantaneous motor power in watts. 
 
-If enabled, it is possible to access a quick-set sub menu by long pressing ON/OFF and UP buttons. Press or hold UP and DOWN buttons to increase or decrease the power limit. This can be useful for various reasons, for instance controlling the battery range on long trips. Exit the sub menu by holding the ON/OFF button. The quick-set sub menu cannot be accessed when offroad mode is enabled. Disable offroad mode first or change the motor power limit in the configuration menu.
+It is possible to access a quick-power-set menu by pressing and holding the ONOFF and UP buttons. When entered in the menu, press or hold UP and DOWN buttons to increase or decrease the power limit. This can be useful for various reasons, for instance controlling the battery range on long trips. Exit the menu by holding the ONOFF button. 
+
+Note that the menu cannot be accessed when Street Mode is enabled. Disable Street Mode first or change the motor power limit in the configuration menu.
 
 How it works: the motor controller will automatically limit current and therefore limit maximum motor power. As the battery discharges and the voltage decreases the motor controller will adjust the current to maintain the set power limit.
 <br><br>
 '''NOTES:'''
 <br>
-* If enabled, it is possible to access a quick set sub menu by long pressing ON/OFF and UP buttons. Press or hold UP and DOWN buttons to increase or decrease the power limit. Exit sub menu by holding the ON/OFF button. 
-* The quick set sub menu cannot be accessed when offroad mode is enabled. Disable offroad mode first or set the motor power limit in the configuration menu.
+* Enter the quick-power-set menu by pressing and holding the ONOFF and UP buttons. Exit by holding the ONOFF button.
 * The motor power will not exceed the maximum battery current set by user.
 <br>
 
