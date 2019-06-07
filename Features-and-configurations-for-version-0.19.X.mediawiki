@@ -563,10 +563,10 @@ Depending on type of motor, set appropriate value so that FOC calculations are c
 NOTE: Do NOT enable the throttle if you have installed the [[How to install motor temperature sensor|motor temperature sensor]]. If you have the sensor installed you need to either have the motor temperature limit function enabled or everything disabled, i.e. set to either (1) or (0).
 <br><br>
 |-
-| 5 || Minimum temperature || 75 °C || Set the minimum motor temperature at which the motor current will start to be limited.
+| 5 || Minimum temperature || 75 °C || Set the minimum motor temperature at which the power will start to be limited.
 <br><br>
 |-
-| 6 || Maximum temperature || 85 °C || Set the maximum motor temperature at which the motor current will be completely blocked, i.e., motor shutoff.
+| 6 || Maximum temperature || 85 °C || Set the maximum motor temperature at which the power will be completely blocked, i.e. no motor assistance.
 <br><br>
 |}
 <br>
@@ -574,7 +574,7 @@ NOTE: Do NOT enable the throttle if you have installed the [[How to install moto
 
 === 8: Street Mode ===
 
-This function enables user to limit speed and power when using the bike on public roads. It is also possible to disable the throttle function when in Street Mode. Set parameters suitable for your specific laws and preferences.
+This function enables user to limit speed and power when using the bike on public roads. It is also possible to disable the throttle function when in Street Mode. Set parameters suitable for your country's specific laws or personal preferences.
 
 When the Street Mode function is activated it is possible to enable it by pressing and holding the ONOFF and DOWN buttons until the "ASSIST" symbol starts to blink. This indicates that Street Mode is enabled. To disable Street Mode simply press and hold the ONOFF and DOWN buttons once again until the "ASSIST" symbol is solid.
 
