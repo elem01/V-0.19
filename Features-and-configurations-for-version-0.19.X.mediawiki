@@ -225,7 +225,7 @@ If there is an error in the system it will be force-displayed in the odometer fi
 | 0 ||Unit|| Metric || Set (0) for metric units (km/h and kilometers) or (1) for imperial units (mph and miles).
 <br><br>
 |-
-| 1 || Maximum wheel speed || 50 || Enter speed limit from where the motor will fade out power from -0.5 km/h to +2,0 km/h. Tip: If you setup Street Mode this will effectively be the speed limit in Offroad Mode, i.e. when using the bike on non-public roads.
+| 1 || Maximum wheel speed || 50 || Enter speed limit from where the motor will fade out power from. The power fade starts from -0.5 km/h to +2,0 km/h. Tip: If you setup Street Mode this will effectively be the speed limit in Offroad Mode, i.e. when using the bike on non-public roads.
 <br><br>
 |-
 | 2 || Wheel circumference || 2050 || Enter your wheel circumference so that speed and distance are correctly calculated.
