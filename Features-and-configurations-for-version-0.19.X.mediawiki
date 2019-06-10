@@ -599,7 +599,7 @@ When the Street Mode function is activated it is possible to enable it by pressi
 | 4 || Street Mode Power limit || 250 W || The power limit in watts when Street Mode is active.
 <br><br>
 |-
-| 5 || Throttle Enabled || 0 || Determines if throttle should be enabled in Street Mode. Select (1) to enable or select (0) to disable.
+| 5 || Throttle Enabled || 0 || Determines if throttle is enabled in Street Mode. Select (1) to enable or select (0) to disable.
 <br><br>
 |}
 <br>
