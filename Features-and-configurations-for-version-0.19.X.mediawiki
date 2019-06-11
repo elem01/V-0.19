@@ -225,7 +225,9 @@ If there is an error in the system it will be force-displayed in the odometer fi
 | 0 ||Unit|| Metric || Set (0) for metric units (km/h and kilometers) or (1) for imperial units (mph and miles).
 <br><br>
 |-
-| 1 || Maximum wheel speed || 50 || Enter speed limit from where the motor will fade out power from. The power fade starts from -0.5 km/h to +2,0 km/h. Tip: If you setup Street Mode this will effectively be the speed limit in when going offroad, i.e. when using the bike on non-public roads.
+| 1 || Maximum wheel speed || 50 || Enter speed limit from where the motor will fade out power from. The power fade starts from -0.5 km/h to +2,0 km/h. 
+
+Tip: If you setup Street Mode this will effectively be the speed limit when going offroad, i.e. when using the bike on non-public roads.
 <br><br>
 |-
 | 2 || Wheel circumference || 2050 || Enter your wheel circumference so that speed and distance are correctly calculated.
@@ -552,7 +554,7 @@ Depending on type of motor, set appropriate value so that FOC calculations are c
 * Set (3) (EXPERIMENTAL) for the 36 V brushless motor, high cadence mode. Maybe not good for the motor, use at your own risk. Probably only suitable for the 36 V motor.
 <br><br>
 |-
-| 1 || Motor power limit || 0 || Set value after user preference. A tip is to install the motor temperature sensor if a lot of power is frequently needed so as not to overheat the motor. Or set a lower motor power limit.
+| 1 || Motor power limit || 0 || Set value after user preference. A tip is to install the motor temperature sensor if a lot of power is frequently needed so as not to overheat the motor. Or set a lower motor power limit. If you setup Street Mode this will effectively be the power limit when going offroad, i.e. when using the bike on non-public roads. 
 <br><br>
 |-
 | 2 || Current ramp up || 5 amps per second|| Set value after user preference. Higher value corresponds to faster acceleration but also greater forces on the mid drive. Be mindful not to select too fast acceleration.
