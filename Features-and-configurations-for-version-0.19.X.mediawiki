@@ -499,7 +499,7 @@ NOTE: If the motor temperature is hitting the temperature limits the field will 
 
 === 6: Startup BOOST function ===
 
-Here you can enable, disable and configure the BOOST feature. This feature helps from standstills where you might need greater assistance. It gives more power during a set time and then fades the power back to normal assistance. Configure the function after your own likening.
+Here you can enable, disable and configure the BOOST feature. This feature helps from standstills where you might need greater assistance. It gives more power during a set time and then fades the power back to normal assistance. Configure the function after your own likening and preference.
 
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
