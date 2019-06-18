@@ -55,6 +55,10 @@ When you buy a TSDZ2 motor, it will come with the nylon gear. The metal gear is 
 == Should I install the metal gear? ==
 The nylon gear is more weak than the metal gear and many users report that it fails (but this depends on different factors). You can for instance, buy a metal gear and keep it as a spare part that you can use if nylon gear fails.
 
+The metal gear makes the motor a bit more noisy compared to the nylon gear.
+
+Our OpenSource firmware has a specific feature that is the current ramp and can be configured to a conservative value to help reduce the force on the Nylon gear and so protect it. Also, installing the brake sensors will help protect the nylon gear.
+
 See here how to install the TSDZ2 gear: https://www.youtube.com/watch?v=CTbDKN2GzNE 
 
 = Clutch =
