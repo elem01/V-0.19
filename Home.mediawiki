@@ -41,7 +41,7 @@ See the more users feedback here: [[Why should you use the Flexible OpenSource f
 
 = Information and configurations done on LCD =
 
-[[Features and configurations for version 0.18.X| Information and configuration on the KT-LCD3]].
+[[Features and configurations for version 0.19.X| Information and configuration on the KT-LCD3]].
 
 = How to install =
 
