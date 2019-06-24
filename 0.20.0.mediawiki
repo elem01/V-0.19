@@ -1,7 +1,6 @@
 = KT-LCD3: information and configuration =
 <br>
 
-
 '''The following only applies to firmware version 0.20.X!'''
 
 <br>
