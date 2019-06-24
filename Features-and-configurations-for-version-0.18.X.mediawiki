@@ -2,7 +2,7 @@
 <br>
 
 
-'''The following only applies to firmware version 0.18.0!'''
+'''The following only applies to firmware version 0.18.X!'''
 
 <br>
 ''' CAUTION: '''
