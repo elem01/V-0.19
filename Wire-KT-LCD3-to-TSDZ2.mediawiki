@@ -1,20 +1,18 @@
-The KT-LCD3 is signal compatible with TSZD2 motor controller however it uses a different connector so you will need to do the wiring by yourself. I usually use 2.54mm breakaway male and female header as connectors. 
+The KT-LCD3 is signal compatible with TSZD2 motor controller however it uses a different connector so you will need to manage the wiring connection yourself.
 
-TSDZ2  [https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/tsdz2-plug-dimensions.jpg 6 way connector] is [http://www.higocon.com/en/product/?24_38.html Higo HG-F.S-Z*09A] (Mini-A). [https://www.higoconnector.com European Higo ] site no longer lists it  , and (supposedly) is discontinued.  
+TSDZ2  [https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/tsdz2-plug-dimensions.jpg 6 way connector] is [http://www.higocon.com/en/product/?24_38.html Higo HG-F.S-Z*09A] (Mini-A). [https://www.higoconnector.com European Higo ] site no longer lists it, and (supposedly) is discontinued.
 
-So, something must be cut up to get connectors.
-* Get a spare controller $30 from PSWPower and use the cables, seems best value as you will have a spare controller pcb
-* Get Y speed sensor / light cable. Gives 2M 1F connector when cut up. $25
-* Get an [https://www.aliexpress.com/store/product/tongsheng-tsdz-speed-sensor-extension-cable-110cm-length/1971954_32833464583.html tsdz speed sensor extension cable] $39 (do these have 6 conductors inside?)
-* Find the source of [https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/tsdz2-plug-dimensions.jpg Higo Mini-A dimension connector]
+The simplest option is to cut your existing display cable at the display, and either splice it to the KT-LCD3 cable (easiest), or wire it directly to the KT-LCD3 board.  Obviously this renders your original display useless without splicing its cable back together.  If you want either throttle or brake sensor functions, you will also need to connect those components to wires in the original cable (the KT-LCD3 plays no part in those functions)
 
-KT-LCD connectors looks like Higo [https://www.higoconnector.com/products/z209bm-p-00-a0-1000/K999K#title mini-B Z209], available from [https://www.e-bike-technologies.de/index.php/en/connectors/higo/dustcaps-for-higo-mini-b-connectors EBike Technologies].
+To avoid cutting your original display cable, you would need to find the source of [https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/tsdz2-plug-dimensions.jpg Higo Mini-A dimension connector]
 
-On the market, you can find TSZD2 motor with and without throttle connection. The cable that goes from the motor controller to LCD is different and here are the details -- you need to identify your cable signals (use a multimeter to measure between GND and P+ battery voltage):
+The KT-LCD3 kit comes with an extension cable with plug, ready to be spliced.  KT-LCD3 connectors looks like Higo [https://www.higoconnector.com/products/z209bm-p-00-a0-1000/K999K#title mini-B Z209], available from [https://www.e-bike-technologies.de/index.php/en/connectors/higo/dustcaps-for-higo-mini-b-connectors EBike Technologies].
+
+TSZD2 motors models are sold with or without a throttle connection. The cable that goes from the motor controller to LCD is different and here are the details -- you need to identify your cable signals (use a multimeter to measure between GND and P+ battery voltage):
 
 == 6 pin controller (usually this is a TSDZ2 without throttle): ==
 {|
-| '''wire color''' || '''function''' || '''description'''
+! wire color !! function !! description
 |-
 | green || P+ || battery voltage
 |-
@@ -33,7 +31,7 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 
 == [https://endless-sphere.com/forums/viewtopic.php?f=28&t=79788&hilit=flash+lcd3&start=3525#p1415134 8 pin] controller (usually this is a TSDZ2 with throttle): ==
 {|
-| '''wire color''' || '''function''' || '''description'''
+! wire color !! function !! description
 |-
 | blue || P+ || battery voltage
 |-
@@ -56,23 +54,23 @@ On the market, you can find TSZD2 motor with and without throttle connection. Th
 
 = Summary of connections between KT-LCD3, Bafang 850C and TSDZ2 motor cable =
 {|
-| '''KT-LCD3 wire color''' || '''Bafang 850C wire color''' || '''6 wire color (no throttle)''' || ''' 8 wire color (throttle) ''' || '''TSDZ2 controller wire function'''
+! KT-LCD3 wire color !! Bafang 850C wire color !! 6 wire color (no throttle) !!  8 wire color (throttle)  !! TSDZ2 controller wire function
 |-
-| red wire || brown wire || green wire || blue wire || (P+) battery voltage
+| red || brown || green || blue || (P+) battery voltage
 |-
-| blue wire || orange wire || white wire || red wire || Vin
+| blue || orange || white || red || Vin
 |-
-| black wire || black wire || black wire || black wire || GND ground
+| black || black || black || black || GND ground
 |-
-| green wire || green wire || brown wire || brown wire || UART TX motor controller
+| green || green || brown || brown || UART TX motor controller
 |-
-| yellow wire || white wire || orange wire || yellow wire || UART RX motor controller
+| yellow || white || orange || yellow || UART RX motor controller
 |-
-| brake wire || na || purple || green wire || Use with brakes
+| na || na || purple || green || Use with brakes
 |- 
-| throttle wire || na || na || orange wire || Use with throttle
+| na || na || na || orange || Use with throttle
 |- 
-| 5v wire || na || na || white wire || For hidden brakes and throttle
+| na || na || na || white || For hidden brakes and throttle
 |}
 
 * [https://www.endless-sphere.com/forums/download/file.php?id=239409&mode=view KT-LCD3 0.1" Motor Connector Photo]
