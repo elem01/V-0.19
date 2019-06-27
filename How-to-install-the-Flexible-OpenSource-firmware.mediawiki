@@ -1,16 +1,16 @@
-These notes will help you to install the Flexible OpenSource firmware on TSDZ2 motor controller and on KT-LCD3.
+These notes will help you to install the Flexible Open Source firmware on the TSDZ2 motor controller and on the KT-LCD3 display.
 
 '''IMPORTANT NOTES:'''
-* Installing this firmware will void your warranty of TSDZ2 motor and KT-LCD3
-* There is no guaranty using this firmware, please use at your own risk
+* Installing this firmware will void your warranty of TSDZ2 motor and KT-LCD3 display
+* There is no guarantee using this firmware, please use at your own risk
 
 __TOC__
 
 = Introduction =
 
-To use this firmware, other than owning a TSDZ2 motor, you need will need to buy the KT-LCD3. We developed our firmware for this LCD so we have the flexibility we need.
+To use this firmware, other than owning a TSDZ2 motor, you need will need to buy the KT-LCD3 display. We developed our firmware for this LCD so we have the flexibility we need.
 
-Although KT-LCD3 signals are compatible with TSDZ2 motor controller, they have different connectors and so you will have to connect the wires by yourself between them but this is a simple task. You need something to make an adaptor cable with.
+Although KT-LCD3 signals are compatible with TSDZ2 motor controller, they have different connectors so you will have to connect the KT-LCD cable wires to the original TSDZ2 display cable by yourself, but this is a simple soldering task.
 
 '''[https://www.youtube.com/watch?v=nj8GxKHut3o Jbalat did a series of videos explaining how to install the firmware]''' (please take note that some links on the video may be out of date).
 
