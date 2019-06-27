@@ -55,6 +55,30 @@ How it works: the motor controller will automatically limit current and therefor
 === Odometer Field === 
 The odometer field located at the bottom of the display can show a few variables that are logically grouped in sub fields. You can change between fields by pressing the ON/OFF button. To change between different data in a sub field quickly press UP button followed by a long hold on UP button. The current field and sub field number will temporarily blink in the wheel speed field.
 
+Summary:
+
+{|
+! Group !! Option .1 !! Option .2 !! Option .3
+|-
+| 1 - Distance || Trip || Since Power On || Odometer
+|-
+| 2 - Battery Charge || Percentage || Consumed Wh || -
+|-
+| 3 - Battery State || Voltage (V) || Current (A) || -
+|-
+| 4 - Pedal Data || Power || Cadence || Torque
+|-
+| 5 - Energy || Average Wh/distance || Est range || -
+|-
+| 6 - Time || Since Power On || Total || -
+|-
+| 7 - Wheel Speed || Current || Average || Peak
+|-
+| 8 - Motor Temperature || Current || - || -
+|-
+| 9 - Cruise || Target Speed || - || -
+|}
+
 If there are any system errors the error code will be force-displayed in the odometer field. To look up what the error code means please take a look at the table under Error Codes.
 <br><br>
 '''NOTES:'''
