@@ -2,13 +2,31 @@ __TOC__
 
 = Wire the STLinkV2 to the TSDZ2 wheel speed sensor cable =
 
-The microcontroller chip that need to be flashed with the firmware is the STM8S105. The needed wires connection for that are: GND, RST and SWIM. This wires are available on the wheel speed sensor cable (other than the wires needed for the sensor).
+The microcontroller chip that need to be flashed with the firmware is the STM8S105. The needed wires from the STLinkV2 are GND, RST and SWIM, which are to be connected to pins on the plug for the wheel speed sensor cable.
 
-Some options you have:
+You can either connect directly to those pins, or acquire and set up a plug to connect to that cable.
+
+NOTE: the wires from the STLink should be short, like 10 centimeters, or you will probably get errors while trying to flash. If you need a long cable, try to use an USB extension instead.
+
+== To connect directly: ==
+
+This is quite straightforward using female-ended jumper cables as are typically supplied with the STMLink adapter.  See [[https://youtu.be/S2SRKu6-Qyw this Youtube video]], but in summary
+
+# Remove the black plastic ends from one end of the jumper leads by lifting the small retaining tab and gently slipping them off to leave the metal connector underneath
+# put heatshrink over the metal ends to prevent shorts (not essential, but wise)
+# slightly enlarge the holes since the motor plug pins are a little thicker than male jumper lead ends, e.g. by inserting a male jumper rotated 45 degrees.
+# Connect them in as follows with the flat of the cable plug at the bottom:
+## GND to the bottom left pin
+## SWIM to the bottom right pin
+## 5V to the top pin
+
+== To acquire and make a plug to connect ==
+
+You may wish to do this if you frequently flash your motor or dislike the direct pin connection method above.  Some options are:
+
 # buy an extra speed sensor and cut the sensor from the cable and so you will have a cable with a connector that you can use only for programming - be careful, it appears some speed sensors (eg with Y Splitter for light cables) do not have the wires connected required for flashing
 # buy a speed sensor extension cable (have not confirmed myself if all wires for flashing are present)
 # cut the cable to wire the needed wires for flashing and keep the other wires intact - this will work perfectly and you can avoid to buy the extra wheel speed sensor
-# super dodgy way - remove the plastic shells from one end of the connectors on the STLink cable, carefully cover the brass connectors in heat shrink (so you don't get any shorts), slightly increase the internal size of the connectors on the STLink cable by pushing them onto jtag males with 45 deg rotation and then carefully fit over the pins inside the male speed sensor cable coming from the motor. I also found that you don't need the RST pin connected (at least when flashing in Windows) which gives you more space when inserting into the male cable.
 
 Here is the list of wires:
 The connections to STLinkV2 clone:
@@ -16,8 +34,6 @@ The connections to STLinkV2 clone:
 * orange wire connect to STLinkV2 GND pin
 * black wire connect to STLinkV2 SWIM pin
 * brown wire connect to STLinkV2 VCC/5V pin (Optional - For those who want to flash without a battery attached)
-
-NOTE: the wires should be short like 10 centimeters or you will probably get errors while trying to flash. If you need a long cable, try to use an USB extension instead.
 
 Example of my wiring:
 
