@@ -1,15 +1,15 @@
 
 = About the TSDZ2 Flexible OpenSource firmware/embedded software =
 
-This OpenSource firmware/embedded software adds advanced features and customization to TSDZ2 motor that are usually only present on expensive motor and big brands only. Also makes possible to use more advanced LCDs like the Bafang 850C color LCD or the KT-LCD3.
+This OpenSource firmware/embedded software adds advanced features and customization to the TSDZ2 motor that are usually only available on expensive motors from big brands. It also allows the use more advanced LCD displays like the Bafang 850C color LCD or the KT-LCD3.
 
-TSDZ2 Ebike mid drive motor runs more efficient, making it stronger and uses less battery energy. The ebike will be also more responsive, fast and agile.
+This firmware drives the motor more efficiently, making it stronger and using less battery energy. The ebike will also be more responsive, fast and agile.
 
-Bafang 850C color LCD and KT-LCD3 shows advanced information like battery voltage, rider pedal power in watts or motor temperature. Also the user can quickly configure all the options directly on the LCD!!
+The Bafang 850C color LCD and KT-LCD3 show advanced information like battery voltage, rider pedal power in watts or motor temperature. All configuration is available to the user via the LCD display!
 
-This firmware is being developed for free by the community of users, where some of this developers work professionally developing this type of technology for very well known companies.
+This firmware is being actively developed for free by the community of users; some of these developers work professionally developing this type of technology for very well known companies.
 
-= Why should you use =
+= Why should you use it? =
 
 Feedback from users:
 * ''the TSDZ2 now feels more like the Bosch motor''
@@ -18,7 +18,7 @@ Feedback from users:
 * ''the info which is shown on LCD makes the total package way better''
 * ''this is GOLD. I still have a smile on my face''
 
-See here a [https://www.youtube.com/watch?v=IrWn6e8bIuQ Youtube video review done by Jbalat user]:
+See this [https://www.youtube.com/watch?v=IrWn6e8bIuQ Youtube video review by user Jbalat]:
 
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/youtube_review_small.jpg]]
 
@@ -28,24 +28,24 @@ See the more users feedback here: [[Why should you use the Flexible OpenSource f
 (work in progress to write all the features)
 
 * '''Motor'''<br>
-** '''FOC motor control'''<br>FOC motor control algorithm achieves the best possible motor torque versus motor current usage. Users are reporting that motor has higher torque and their batteries last long/higher trip range.<br>
-** '''Motor power control'''<br>Control of the motor power and not the motor current, which maintains the motor power assist level when battery has less charge/less voltage.<br>
-** '''Current ramp control'''<br>Current ramp control, the acceleration can be configured on the screen. Users can change the ramp step and it then can help to improve the life of the plastic gears, etc. Users can decide to have a very fast torque response from the motor and a lower one to improve the life of the motor parts, or maybe the battery current ramp, or for safety reasons having low torque, etc.
-** '''Motor max current'''<br>User can set the battery max current that motor pulls from the battery (a configuration on LCD), from 1 up to 18 amps. This can be useful for instance to limit battery current of small battery and so keep in a safe range that will extend battery life.<br>
-** '''Motor max power'''<br>User can set the motor max power, in watts, that motor pulls from the battery (a configuration on LCD). This can be useful for instance to limit battery power usage when you are doing long travels and want to guarantee that you arrive at your destination.<br>
+** '''FOC motor control'''<br>FOC motor control algorithm generates motor torque with maximum energy efficiency. Users are reporting that motor has higher torque and their batteries last longer and give longer range.<br>
+** '''Motor power control'''<br>Control is of motor power rather than motor current, which maintains the motor power assist level when battery has reduced charge and lower voltage.<br>
+** '''Current ramp control'''<br>Current ramp control. The acceleration can be configured via the display. Users can change the ramp speed that can help to extend the life of the plastic gears etc.. Users can decide to have a very fast torque response from the motor and a lower one to improve the life of the motor parts, or maybe the battery current ramp, or for safety reasons having low torque, etc.
+** '''Motor max current'''<br>The user can configure the maximum current that the motor pulls from the battery, from 1 up to 18 amps. This can be useful for instance to limit battery current from a small battery and so keep in a safe range that will extend battery life.<br>
+** '''Motor max power'''<br>User can set the motor max power, in watts, that motor pulls from the battery (a configuration on LCD). This can be useful for instance to limit battery power usage to ensure extended range.<br>
 <br>
 * '''Battery'''<br>
-** '''Wide range of battery voltages: 24 V up to 52 V battery (7S up to 14S)'''<br>Users can choose (a configuration on LCD) to use a battery from 7 cells up to 14 cells (can be any number on that interval).<br>
-** '''Battery low cut-off voltage'''<br>Users can choose the battery low cut-off voltage (a configuration on LCD) and this way optimize the battery range and/or battery life.<br>
-** '''Battery SOC and resistance '''<br>The LCD indicates the battery SOC based on the battery voltage and it has in consideration the battery pack resistance value (a configuration on LCD) to avoid fluctuations when motor is pulling current from the battery.<br>
+** '''Wide range of battery voltages: 24 V up to 52 V battery (7S up to 14S)'''<br>Users can configure a battery with any number of cells in series from 7 to 14.<br>
+** '''Battery low cut-off voltage'''<br>Draining cells to empty is highly stressful and significantly reduces their lifespan.  Users can configure the battery low cut-off voltage to optimize its life of the battery.<br>
+** '''Battery SOC and resistance '''<br>The LCD indicates the battery SOC (State of Charge) based on the battery voltage and it has in consideration the battery pack resistance (configurable) to avoid fluctuations in the reading when motor is pulling current from the battery.<br>
 
-= Information and configurations done on LCD =
+= Information and configurations via the LCD screen =
 
 [[Features and configurations for version 0.19.X| Information and configuration on the KT-LCD3]].
 
 = How to install =
 
-If you prefer to not install by yourself our Flexible OpenSource firmware, you can buy a TSDZ2 motor and LCD already flashed, on [https://www.electrifybike.com/store/c37/TSDZ2_Flexible_Open_Source_Firmware_Products.html#/ www.electrifybike.com]. This store is friendly to the development of our firmware and is donating 10% of the sales.
+If you prefer to not install our Flexible OpenSource firmware yourself, you can buy a TSDZ2 motor and LCD with the firmware pre-installed at [https://www.electrifybike.com/store/c37/TSDZ2_Flexible_Open_Source_Firmware_Products.html#/ www.electrifybike.com]. This store is a friend of the project and actively supporting the development of our firmware by donating 10% of the sales proceeds.
 
 * '''[[How to install the Flexible OpenSource firmware]]'''
 * [[How to install brake sensors]] (optional but recommended)
