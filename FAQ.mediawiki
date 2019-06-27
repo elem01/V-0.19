@@ -37,7 +37,8 @@ See here how to install: [[How to install TSDZ2 on a full suspension bicycle]]
 = Brakes =
 
 == Should I install the brake sensors? ==
-A: Yes because that way you will avoid motor being working while you brake, that way saving battery energy and put less stress on the system in general (some say this will help to avoid damage of the nylon gear).
+
+A: Brake sensors ensure the motor will not work while you are stopped, avoiding stress on the system and the nylon gear, and wasted power.  However, the default configuration under Motor Controller Setup, to avoid power without pedal rotation, should also protect you from this and some users have no issues running the system without brake sensors.
 
 == Can I use a brake sensor for hydraulic brakes or the "hidden wire brakes sensor"? ==
 A: Yes, see here how to install: [[How to install brake sensors]].
