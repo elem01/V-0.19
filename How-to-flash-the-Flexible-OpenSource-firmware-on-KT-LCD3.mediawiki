@@ -36,3 +36,7 @@ Some pictures:
 # [https://github.com/OpenSource-EBike-firmware/TSDZ2-Smart-EBike/releases Download the firmware hex file from here]. Pick the file with name KT_LCD3_xxxxxx.hex.
 # Erase the STM8 as this way the read protection will be disabled. If you don't disable the read protection/erase, next step will fail.
 # Finally, flash the firmware.
+
+== Flash firmware on Linux ==
+
+The process is the same as how to [[Flash the firmware on TSDZ2]], using the appropriate hex file for the LCD3
