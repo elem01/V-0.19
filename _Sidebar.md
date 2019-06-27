@@ -1,5 +1,5 @@
 * **[Home](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki)**
-* **[Why should you use](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Why-should-you-use-the-Flexible-OpenSource-firmware-on-your-TSDZ2)**
+* **[Why should you use it?](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Why-should-you-use-the-Flexible-OpenSource-firmware-on-your-TSDZ2)**
 * **[Features and configurations for 0.19.X](
 https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Features-and-configurations-for-version-0.19.X)**
 * **[Features and configurations for 0.18.X](https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/wiki/Features-and-configurations-for-version-0.18.X)**
