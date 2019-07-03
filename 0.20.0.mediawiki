@@ -328,9 +328,9 @@ How to calculate the battery pack resistance:<br>
 Example for 10 amps current, R = U / I, R = 1.2 volts drop / 10 amps, R = 0.120 = 120 milliohms.
 <br><br>
 |-
-| 4 || Battery voltage (SOC) || - || Measured and continuously updated battery voltage State Of Charge (SOC). This value is filtered using the battery pack resistance. 
+| 4 || Battery voltage (SOC) || - || This is the voltage adjusted with the configured internal resistance of the battery.
 <br><br>
-Tip: Here you can evaluate and test how the set internal resistance of the battery affects the voltage reading.
+Tip: It is possible to evaluate and test how the configured internal resistance affects the voltage reading.
 <br><br>
 |-
 | 5 || Enable and set State of Charge function || 0 || Set (1) to enable function. It will display watt-hours consumed and percentage of charge remaining, i.e., display percentage value from 100 % to 0 %.
