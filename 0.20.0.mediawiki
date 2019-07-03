@@ -362,11 +362,11 @@ Tip: roughly calculate the capacity by multiplying the nominal voltage with the 
 <br>
 
 
-=== 2: Assist Levels ===
+=== 2: Power Assist ===
 
-Here you can configure how many assist levels you wish to be able to select and also their respective multipliers. The defaults should already work for most situations.
+Here you can configure if you wish to enable the Power Assist riding mode. And also what multipliers for the different assist levels.
 
-The assist level sets the motor power as a factor of the power the rider is generating on the crankshaft. For instance, if assist level 3 is chosen and configured with a multiplier of 2.0, when the rider is generating a power of 100 watts, the motor power will assist another 200 watts.
+The assist level multipliers sets the motor power as a factor of the power the rider is generating at the crankshaft. For instance, if a multiplier is set to 2.0 the motor will assist with 100 watts if the human power generated at the crank shaft is 100 watts.
 
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
