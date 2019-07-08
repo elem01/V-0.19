@@ -16,4 +16,4 @@ https://github.com/TG9541/stm8ef/wiki/STM8S-Programming
 = Various =
 
 * [[How TSDZ2 torque sensor works]]
-* * **[[TSZD2-Hardware-Information]]
+* [[TSZD2-Hardware-Information]]
