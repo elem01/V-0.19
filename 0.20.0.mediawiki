@@ -425,7 +425,20 @@ The assist level multipliers sets the motor power as a factor of applied torque 
 |}
 <br>
 
+=== 4: eMTB Assist ===
 
+Here you can configure if you wish to enable the eMTB Assist riding mode. This riding mode automatically adjusts motor power depending on the torque applied on the pedals. More torque equals a greater percentage of motor power.
+
+{|
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
+|-
+| 0 || eMTB Assist Enable || 5 ||  Select if you wish to enable the eMTB Assist riding mode.
+<br><br>
+|-
+| 1 || eMTB assist power level multiplier || 10.0 || Higher values give a more aggresive assistanse depending on torque applied.
+<br><br>
+|}
+<br>
 
 === 5: Walk Assist ===
 
