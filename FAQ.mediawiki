@@ -90,3 +90,5 @@ Because our Flexible OpenSource firmware has advanced features it was found desi
 == Are there plans to make the firmware compatible with stock LCDs VLCD5 and XH18 ==
 
 Would be possible but that way the advanced features would not be available and this firmware would have small advantages over the original firmware. We are not trying to save money, users that want the advanced features of our firmware will need to spend some money and time.
+
+See here this alternative: https://endless-sphere.com/forums/viewtopic.php?f=30&t=98281
