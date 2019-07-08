@@ -6,7 +6,7 @@ Some torque sensors on TSDZ2 were found to have low sensibility due to a bad cal
 
 =How to verify if my torque sensor is well calibrated=
 
-Go to LCD and on configuration menu, advanced data, look at torque sensor ADC value. With no force applied to pedals, the ADC value should be between 25 and 30 (any high value like 50 or 60 means a bad calibrated torque sensor). Here are values from my well calibrated torque sensor and measures while applying force to pedals and measuring the force using a digital fish scale:
+On LCD, go to configuration menu, advanced data, and look at torque sensor ADC value. With no force applied to pedals, the ADC value should be between 25 and 30 (any high value like 50 or 60 means a bad calibrated torque sensor). Here are values from my well calibrated torque sensor and measures while applying force to pedals and measuring the force using a digital fish scale:
 
 {|
 ! force on pedals !! torque sensor ADC value !! notes
@@ -27,7 +27,7 @@ Go to LCD and on configuration menu, advanced data, look at torque sensor ADC va
 |-
 |}
 
-==How to calibrate your torque sensor==
+=How to calibrate your torque sensor=
 
 Warning: the calibration involves disassembling part of the TSDZ2 motor and handle the torque sensor. The coils and the wires of the torque sensor are fragile and you must handle them with care (you can always buy a spare torque sensor on online shops like PSWPower).
 
@@ -37,7 +37,15 @@ Steps needed:
 ** you will need to remove the main gear, the axle
 ** the coils and the wires of the torque sensor are fragile -- make sure that them with care and make sure to '''disconnect the torque sensor wires from the motor controller otherwise there is an high probability that the wires will break near the torque sensor coil when you remove it!!'''
 * with the torque sensor outside, make sure to hold them against each other and aligned (maybe using some adhesive tape). Take care to not use to much force as the coils are fragile.
-* connect the torque sensor wire to the motor controller 
+* connect the torque sensor wire to the motor controller but make sure the TSDZ2 motor is disabled with the brakes are pressed and motor assist at 0
+* turn on TSDZ2 on LCD and go to configuration menu, advanced data, and look at torque sensor ADC value
+* you will need to adjust the position of the sensor (that black part) and so you will need to loosen the two small screws, as seen on the following picture
+* move slightly the sensor (from right to left and keep it far from the little magnets) part until you read an ADC value of 25 up to 30 (note that a value under 20 means that probably the sensor is not detecting the little magnets, then you need to move it to left side)
+* now tighten the screws but you will see that probably the ADC value will change as the position of the sensor will change - you need to tighten the screws slowly while keep adjusting the sensor position
+* when the screws are finally tighten, you can test the sensor by doing some light force on the top part, like seen on the picture bellow, where I was using a screw driver (but place it on the right side and apply light force that will make that metal parts flex very little to left side). You should see the ADC values increasing and always go the value you calibrated before in the interval of 25 to 30
+* after assembly again the torque sensor on the TSDZ2, finally apply force with your feet on the pedals and verify that ADC torque sensor values are the same you expect - please refer to the values on table top.
+
+<img src="https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/TSDZ2_torque_Sensor_calibration.jpg" width = 800>
 
 
 
