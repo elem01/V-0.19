@@ -384,8 +384,50 @@ Example: 0.5 * 200 W (human power) = 100 W assist power. This results in 300 W t
 |}
 <br>
 
+=== 3: Torque Assist ===
 
-=== 3: Walk Assist ===
+Here you can configure if you wish to enable the Torque Assist riding mode. And also set the multipliers for the different assist levels.
+
+The assist level multipliers sets the motor power as a factor of applied torque on the pedals.
+
+{|
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
+|-
+| 0 || Torque Assist Enable || 5 ||  Select if you wish to enable the Power Assist riding mode.
+<br><br>
+|-
+| 1 || Assist level 1 multiplier || 0.5 || The value with which the pedal torque is multiplied with.
+<br><br>
+|-
+| X || Assist level X multiplier || .... || The desired multiplier for assist level X.
+<br><br>
+|}
+<br>
+
+
+=== 4: Cadence Assist ===
+
+Here you can configure if you wish to enable the Cadence Assist riding mode. And also set the multipliers for the different assist levels.
+
+The assist level multipliers sets the motor power as a factor of applied torque on the pedals.
+
+{|
+| '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
+|-
+| 0 || Torque Assist Enable || 5 ||  Select if you wish to enable the Power Assist riding mode.
+<br><br>
+|-
+| 1 || Assist level 1 multiplier || 0.5 || The value with which the pedal torque is multiplied with.
+<br><br>
+|-
+| X || Assist level X multiplier || .... || The desired multiplier for assist level X.
+<br><br>
+|}
+<br>
+
+
+
+=== 5: Walk Assist ===
 
 Here you can enable or disable the walk assist function. And also configure the motor duty cycle in each and every enabled assist level. The defaults should work for most situations.
 
@@ -435,7 +477,7 @@ The walk assist PWM value sets the motor duty cycle. It is an open loop controll
 <br>
 
 
-=== 4: Cruise Function ===
+=== 6: Cruise Function ===
 
 Here you can enable or disable the cruise function. The function can be activated when the bike is traveling at speeds above 8 km/h or around 5 mph and the user presses and holds the DOWN button. 
 
@@ -466,7 +508,7 @@ If it is preferred to set a target speed and let the cruise function maintain th
 <br>
 
 
-=== 5: Main Screen Setup ===
+=== 7: Main Screen Setup ===
 
 In the Main Screen Setup it is possible to configure and customize the main screen.
 <br><br>
@@ -523,7 +565,7 @@ NOTE: If the motor temperature is hitting the temperature limits the field will 
 <br>
 
 
-=== 6: Startup BOOST function ===
+=== 8: Startup BOOST function ===
 
 Here you can enable, disable and configure the BOOST feature. This feature helps from standstills where you might need greater assistance. It gives more power during a set time and then fades the power back to normal assistance. Configure the function after your own likening and preference.
 
@@ -558,7 +600,7 @@ Tip: See assist levels for more information about multipliers.
 <br>
 
 
-=== 7: Motor Controller Setup ===
+=== 9: Motor Controller Setup ===
 
 In this sub menu the motor controller can be setup to work as desired. It is also possible to enable or disable the throttle or the motor temperature protection function here and also various other settings.
 
@@ -603,7 +645,7 @@ NOTE: Do NOT enable the throttle if you have installed the [[How to install moto
 <br>
 
 
-=== 8: Street Mode ===
+=== 10: Street Mode ===
 
 This function enables user to limit speed and power when using the bike on public roads. It is also possible to disable the throttle function when in Street Mode. Set parameters suitable for your country's specific laws or personal preferences.
 
@@ -632,34 +674,31 @@ When the Street Mode function is activated it is possible to enable it by pressi
 |}
 <br>
 
-=== 9: Advanced Technical Data ===
+=== 11: Advanced Technical Data ===
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Description'''
 |-
-| 0 || ADC throttle || See the current value.
+| 0 || Throttle ADC value || See the current value.
 <br><br>
 |-
-| 1 || Throttle || See the current value.
+| 1 || Throttle value mapped from 0 to 255 || See the current value.
 <br><br>
 |-
-| 2 || ADC pedal torque sensor || See the current value.
+| 2 || Pedal torque sensor ADC value || See the current value.
 <br><br>
 |-
-| 3 || Pedal torque sensor || See the current value.
+| 3 || Pedal torque sensor ADC value with torque calibration offset || See the current value.
 <br><br>
 |-
 | 4 || Pedal cadence || See the current value.
 <br><br>
 |-
-| 5 || Pedal human power || See the current value.
+| 5 || PWM duty cycle || See the current value.
 <br><br>
 |-
-| 6 || PWM duty cycle || See the current value.
+| 6 || Motor speed in ERPs || See the current value.
 <br><br>
 |-
-| 7 || Motor speed in ERPs || See the current value.
-<br><br>
-|-
-| 8 || FOC angle || See the current value. This value must be multiplied by 1.4 to get angle value in degrees.
+| 7 || FOC angle || See the current value. This value must be multiplied by 1.4 to get angle value in degrees.
 <br><br>
 |}
