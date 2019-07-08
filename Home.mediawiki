@@ -50,6 +50,7 @@ If you prefer to not install our Flexible OpenSource firmware yourself, you can 
 * '''[[How to install the Flexible OpenSource firmware]]'''
 * [[How to install brake sensors]] (optional but recommended)
 * [[How to install motor temperature sensor]] (optional but recommended)
+* [[How to calibrate the torque sensor]] (difficult but a must for good response of the motor, like what you want when you do mountain biking)
 
 = See also =
 * If you have any questions please read the '''[[FAQ|FAQ]]'''.
