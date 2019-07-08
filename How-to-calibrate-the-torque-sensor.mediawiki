@@ -1,3 +1,4 @@
+__TOC__
 
 =Why it is important to calibrate the torque sensor?=
 
@@ -5,31 +6,38 @@ Some torque sensors on TSDZ2 were found to have low sensibility due to a bad cal
 
 =How to verify if my torque sensor is well calibrated=
 
-Go to LCD and on configuration menu, advanced data, look at torque sensor ADC value. With no force applied to pedals, the ADC value should be between 25 and 30. Here are values from my well calibrated torque sensor and measures while applying force to pedals and measuring the force using a digital fish scale:
+Go to LCD and on configuration menu, advanced data, look at torque sensor ADC value. With no force applied to pedals, the ADC value should be between 25 and 30 (any high value like 50 or 60 means a bad calibrated torque sensor). Here are values from my well calibrated torque sensor and measures while applying force to pedals and measuring the force using a digital fish scale:
 
 {|
 ! force on pedals !! torque sensor ADC value !! notes
 |-
 | 0 kgs || 30 || resting, no force on pedals
 |-
-| 5 kgs || 33 || 
+| 5 kgs || 33 || linear variation
 |-
-| 5 kgs || 33 || 
+| 10 kgs || 37 || linear variation 
 |-
-| 5 kgs || 33 || 
+| 20 kgs || 43 || linear variation
 |-
-| 5 kgs || 33 || 
+| 30 kgs || 49 || linear variation
 |-
-| 5 kgs || 33 || 
+| 40 kgs || 55 || linear variation
 |-
-| 5 kgs || 33 || 
+| 50 kgs || 57 || no linear variation!<br> maybe in future we can explore this and try improve this on firmware
 |-
-| 5 kgs || 33 || 
-|-
-| 5 kgs || 33 || 
-|-
-| 5 kgs || 33 || 
 |}
+
+==How to calibrate your torque sensor==
+
+Warning: the calibration involves disassembling part of the TSDZ2 motor and handle the torque sensor. The coils and the wires of the torque sensor are fragile and you must handle them with care (you can always buy a spare torque sensor on online shops like PSWPower).
+
+Steps needed:
+* disassembly the torque sensor (follow the [https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki TSDZ2 Repair Manual.pdf file from here])
+** you don't need to remove the motor controller or the motor
+** you will need to remove the main gear, the axle
+** the coils and the wires of the torque sensor are fragile -- make sure that them with care and make sure to '''disconnect the torque sensor wires from the motor controller otherwise there is an high probability that the wires will break near the torque sensor coil when you remove it!!'''
+* with the torque sensor outside, make sure to hold them against each other and aligned (maybe using some adhesive tape). Take care to not use to much force as the coils are fragile.
+* connect the torque sensor wire to the motor controller 
 
 
 
