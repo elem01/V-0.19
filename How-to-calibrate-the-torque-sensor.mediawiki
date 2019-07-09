@@ -36,7 +36,7 @@ Steps needed:
 ** you don't need to remove the motor controller or the motor
 ** you will need to remove the main gear, then the axle and finally the torque sensor
 ** the coils and the wires of the torque sensor are fragile -- make sure to handle them with care and make sure to '''disconnect the torque sensor wires from the motor controller otherwise there is a high probability that the wires will break near the torque sensor coil when you remove it!!'''
-* with the torque sensor outside, make sure to hold them against each other and aligned (maybe using some adhesive tape). Take care to not use to much force as the coils are fragile.
+* with the torque sensor outside, make sure to hold both coils against each other and aligned (maybe using some adhesive tape). Take care to not use to much force as the coils are fragile.
 * connect the torque sensor wire to the motor controller but make sure the TSDZ2 motor is disabled with the brakes are pressed and motor assist at 0
 * turn on TSDZ2 on LCD and go to configuration menu, advanced data, and look at torque sensor ADC value
 * you will need to adjust the position of the sensor (that black part) and so you will need to loosen the two small screws, as seen on the following picture
