@@ -2,7 +2,7 @@ __TOC__
 
 =Why it is important to calibrate the torque sensor?=
 
-Some torque sensors on TSDZ2 were found to have low sensibility due to a bad calibration. On this case, the torque sensor could only measure up to 10 kgs of force on the pedals while a good calibrated torque sensor can measure up to 40 kgs, which is 4x more! Why this is important? because if you do like Mountain Biking, when you stop you want a motor fast response, you will put your max force on the pedals and with a calibrated torque sensor you will get 4x more assistance from the motor.
+Some torque sensors on TSDZ2 were found to have low sensibility due to a bad calibration. On this case, the torque sensor could only measure up to 10 kgs of force on the pedals while a good calibrated torque sensor can measure up to 40 kgs, which is 4x more! Why this is important? because if you do like Mountain Biking, when you stop you want a motor strong and fast response, you will put your max force on the pedals and with a calibrated torque sensor you will get 4x more assistance from the motor.
 
 =How to verify if my torque sensor is well calibrated=
 
