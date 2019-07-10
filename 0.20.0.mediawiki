@@ -436,7 +436,7 @@ Here you can configure if you wish to enable the eMTB Assist riding mode. This r
 | 0 || eMTB Assist Enable || 5 ||  Select if you wish to enable the eMTB Assist riding mode.
 <br><br>
 |-
-| 1 || eMTB assist power level multiplier || 10.0 || Higher values give a more aggresive assistanse depending on torque applied.
+| 1 || eMTB assist power level multiplier || 10.0 || Higher values give a more aggressive assistance depending on the force applied on the pedals.
 <br><br>
 |}
 <br>
