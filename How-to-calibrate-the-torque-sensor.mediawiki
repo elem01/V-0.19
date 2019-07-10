@@ -6,7 +6,7 @@ Some torque sensors on TSDZ2 were found to have low sensibility due to a bad cal
 
 =How to verify if my torque sensor is well calibrated=
 
-On LCD, go to configuration menu, advanced data, and look at torque sensor ADC value. With no force applied to pedals, the ADC value should be between 25 and 30 (any high value like 50 or 60 means a bad calibrated torque sensor). Here are values from my well calibrated torque sensor and measures while applying force to pedals and measuring the force using a digital fish scale:
+On LCD, go to configuration menu, advanced data, and look at torque sensor ADC value. With no force applied to pedals, the ADC value should be between 25 and 30 (any high value like 50 or 60 means a bad calibrated torque sensor). Here are values from my well calibrated torque sensor and measures while applying force to pedals and measuring the force using a digital fish scale (note that pedals must be horizontal and you should apply force on vertical):
 
 {|
 ! force on pedals !! torque sensor ADC value !! notes
