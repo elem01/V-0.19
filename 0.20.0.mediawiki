@@ -234,10 +234,11 @@ If there is an error in the system it will be force-displayed in the odometer fi
 
 === How to enter the Configuration Menu ===
 
-* To enter the configuration menu: long press the UP and DOWN buttons
-* To enter a sub menu: press the ON/OFF button
-* To navigate between sub menus: press either the UP or DOWN button
-* To exit a sub menu or the configuration menu: long or short press the ON/OFF button
+* To enter the configuration menu: hold the UP and DOWN buttons
+* To enter a sub menu: click the ON/OFF button
+* To navigate between sub menus: click either the UP or DOWN button
+* To exit a sub menu: hold or click the ON/OFF button
+* To exit the configuration menu: hold the ON/OFF button
 <br>
 
 
