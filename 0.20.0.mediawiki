@@ -217,7 +217,7 @@ If there is an error in the system it will be force-displayed in the odometer fi
 |-
 | 1 || ERROR_MOTOR_BLOCKED || Motor is blocked. Excessive current is passing through motor and controller with no motor rotation. Please unblock the wheel or motor. After ten seconds this error will disappear and you will be able to use the system as usual.
 |-
-| 2 || ERROR_TORQUE_APPLIED_DURING_POWER_ON || During the calibration period when powering on the system there was an abnormally high value on the torque calibration. The reasons for this can be:
+| 2 || ERROR_TORQUE_APPLIED_DURING_POWER_ON || During the calibration period when powering on the system there was an abnormally high value on the torque sensor. The reasons for this can be:
 * Torque was applied on the pedals causing the calibration of the torque sensor to become inaccurate. Please power off and back on again so the system can calibrate properly with no force on the pedals.
 * Torque sensor has suffered damage and has a too high resting value. Consider calibrating the torque sensor so it is withing specifications.
 |-
