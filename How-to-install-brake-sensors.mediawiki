@@ -19,6 +19,14 @@ You can find on online shops that sell this sensors as "BAFANG Hydraulic Brake S
 | color 2 || BRAKE
 |}
 
+In order to keep the possibility to disconnect the magnetic brake sensors it is recommended to adopt the following configuration:
+
+* Y-splitter (to be cut only at one end to isolate the two correct wires to be connected to GND and BRAKE)
+
+* n.2 magnetic sensors (to be connected to the splitter above)
+
+--SCHEMATIC PICTURE TO BE ADDED--
+
 = Lever brake sensors =
 
 The lever brake sensors will substitute the original brake levers of the original bicycle.
