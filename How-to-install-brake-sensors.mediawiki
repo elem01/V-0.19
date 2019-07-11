@@ -2,6 +2,8 @@ TSDZ2 supports the regular cheap ebike brake sensors, like levers brake sensor, 
 
 You can buy brake sensors on online shops like BMSBattery or PSWPower, at prices like 5€ each pair.
 
+NOTE: it is really important to make sure the brake sensor installation is complete and fully working before booting the display, otherwise it cannot be properly initialized and the full digit and symbols will be displayed.
+
 = Magnetic brake sensors =
 
 [[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/magnetic_brake_sensor-01.jpg]]
