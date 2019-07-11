@@ -694,10 +694,10 @@ When the Street Mode function is activated it is possible to enable it by pressi
 {|
 | '''Submenu number''' || '''Configuration name''' || '''Description'''
 |-
-| 0 || Throttle ADC value || See the current value.
+| 0 || Optinal ADC value, used for either throttle or temperature limiting || See the current value.
 <br><br>
 |-
-| 1 || Throttle value mapped from 0 to 255 || See the current value.
+| 1 || Throttle or temperature limiting value mapped from 0 to 255 || See the current value.
 <br><br>
 |-
 | 2 || Pedal torque sensor ADC value || See the current value.
