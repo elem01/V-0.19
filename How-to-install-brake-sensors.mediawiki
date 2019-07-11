@@ -27,7 +27,7 @@ In order to keep the possibility to disconnect the magnetic brake sensors it is 
 
 * n.2 magnetic sensors (to be connected to the splitter above)
 
---SCHEMATIC PICTURE TO BE ADDED--
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/blob/master/brake_sensor_schematic.png]]
 
 = Lever brake sensors =
 
