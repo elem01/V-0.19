@@ -641,7 +641,7 @@ Depending on type of motor, set appropriate value so that FOC calculations are c
 | 1 || Motor power limit || 0 || Set value after user preference. A tip is to install the motor temperature sensor if a lot of power is frequently needed so as not to overheat the motor. Or set a lower motor power limit. If you setup Street Mode this will effectively be the power limit when going offroad, i.e. when using the bike on non-public roads. 
 <br><br>
 |-
-| 2 || Current ramp up || 5 amps per second|| Set value after user preference. Higher value corresponds to faster acceleration but also greater forces on the mid drive. Be mindful not to select too fast acceleration.
+| 2 || Motor acceleration || 70 % || Set value after user preference. Higher value corresponds to faster acceleration but also greater forces on the mid drive. Be mindful not to select too fast acceleration.
 <br><br>
 |-
 | 3 || Pedal torque conversion factor || 67 || Set the pedal torque conversion so that the displayed weight is correct in the submenu number 4. This is so that human power measurement is correct. It does not affect the resolution nor range of the torque sensor. To change the accuracy and range of the torque sensor you instead need to calibrate the hardware. See: LINK TO TORQUE CALIBRATION.
