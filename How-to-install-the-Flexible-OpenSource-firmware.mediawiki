@@ -23,6 +23,6 @@ Note: before start, please first read all the steps to find the tools you will n
 
 # [[KT-LCD3|Buy the KT-LCD3]]
 # [[How to flash the Flexible OpenSource firmware on KT LCD3|Flash the firmware on KT-LCD3]]
-# [[Wire KT-LCD3 to TSDZ2]]
+# [[Wire LCD to TSDZ2]]
 # [[Flash the firmware on TSDZ2]]
 # [[Usage-and-configuration-of-firmware-version-0.17.x|Configure the options on LCD3]]
