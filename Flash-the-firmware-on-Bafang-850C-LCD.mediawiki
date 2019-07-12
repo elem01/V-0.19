@@ -1,0 +1,38 @@
+__TOC__
+
+Bafang 850C LCD is a color LCD that is manufactured by http://aptdevelop.com/.
+
+Download the firmware binary file from here: https://github.com/OpenSource-EBike-firmware/TSDZ2-Smart-EBike/releases/tag/v0.19.0
+
+Our OpenSource firmware repository: https://github.com/OpenSource-EBike-firmware/Color_LCD/tree/master/Bafang_LCD_850C/Bafang_LCD_850C_firmware
+
+= How to open the LCD =
+
+# use something thin to force open the front cover, by making force on the sides of the case
+# remove the hard plastic layer that is on top of the LCD
+# remove the 2 little screws that fix the LCD and the board to the case
+
+= Flash and debug =
+
+The JTAG SWD pins are available on the board, on the pads as seen on next picture, with the following JTAG pins:
+
+{|
+| '''Pad number'''<br>(from left to right) || ''' JTAG name '''
+|-
+| 1 || GND
+|-
+| 2 || NRST
+|-
+| 3 || SWCLK
+|-
+| 4 || SWDIO
+|-
+| 5 || VCC 3.3V<br>
+(no need to connect if LCD is already powered on)
+|}
+
+[[https://github.com/OpenSource-EBike-firmware/Color_LCD/raw/master/Bafang_color_LCD_850C/Bafang_850C_board-JTAG.jpg]]
+
+To flash the firmware, use the software tool that works on your operation system to flash the STM32F103 microcontrollers. On Linux, for instance, you can use the stm32flash.
+
+On the very first time, you will need to first erase and/or unlock the microcontroller.
