@@ -647,7 +647,7 @@ Depending on type of motor, set appropriate value so that FOC calculations are c
 | 3 || Pedal torque conversion factor || 67 || Set the pedal torque conversion so that the displayed weight is correct in the submenu number 4. This is so that human power measurement is correct. It does not affect the resolution nor range of the torque sensor. To change the accuracy and range of the torque sensor you instead need to calibrate the hardware. See: LINK TO TORQUE CALIBRATION.
 <br><br>
 |-
-| 4 || Weight on pedal || - || Here you can see the weight on the pedal. If it is not correct try adjusting the Pedal torque conversion factor in submenu number 3.
+| 4 || Weight on pedal || - || Here you can see the weight on the pedal. If it is not correct try adjusting the Pedal torque conversion factor in submenu number 3. The weight will be displayed in either metric or imperial units depending on system configuration (NOT YET IMPLEMENTED).
 <br><br>
 |-
 | 5 || Temperature limit or throttle || 0 || This sub menu is by default set to (0). This means neither throttle nor motor temperature limit function is enabled. Set (1) to enable the motor temperature control or set (2) to enable the throttle.  
