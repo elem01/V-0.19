@@ -271,22 +271,19 @@ Tip: Search on Google how to measure the wheel circumference. Below are approxim
 29 inch wheel = 2300 mm
 <br><br>
 |-
-| 3 || Number of assist levels || 5 ||  Select the desired number of assist levels from a minimum of 1 to a maximum of 9.
+| 3 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
 <br><br>
 |-
-| 4 || Set odometer || 0 || Set the odometer to preferred value. Increase the value by pressing UP button or press and hold to have the value increment automatically. Decrease the value by pressing the DOWN button or press and hold to have the value decrement automatically.
+| 4 || Screen brightness when backlight is off || 5 || Percentage of brightness when back light is turned off. The default value is five (5) percent.
 <br><br>
 |-
-| 5 || Screen brightness when backlight is off || 5 || Percentage of brightness when back light is turned off. The default value is five (5) percent.
+| 5 || Screen brightness when backlight is on || 80 || Percentage of brightness when back light is turned on. The default value is eighty (80) percent.
 <br><br>
 |-
-| 6 || Screen brightness when backlight is on || 80 || Percentage of brightness when back light is turned on. The default value is eighty (80) percent.
+| 6 || Screen auto power off || 15 || Automatic power off after set amount of minutes.
 <br><br>
 |-
-| 7 || Screen auto power off || 15 || Automatic power off after set amount of minutes.
-<br><br>
-|-
-| 8 || Reset to factory defaults || 0 ||
+| 7 || Reset to factory defaults || 0 ||
 #Increase the value to 10 
 #The display will turn off 
 #Turn it on again 
@@ -377,7 +374,10 @@ The assist level multipliers sets the motor power as a factor of the power the r
 | 0 || Power Assist Enable || 5 ||  Select if you wish to enable the Power Assist riding mode.
 <br><br>
 |-
-| 1 || Assist level 1 multiplier || 0.5 || The value with which the human pedaling power is multiplied with.
+| 1 || Number of assist levels || 5 ||  Select the desired number of assist levels from a minimum of 1 to a maximum of 9.
+<br><br>
+|-
+| 2 || Assist level 1 multiplier || 0.5 || The value with which the human pedaling power is multiplied with.
 <br><br>
 Example: 0.5 * 200 W (human power) = 100 W assist power. This results in 300 W total power.
 <br><br>
@@ -399,7 +399,10 @@ The assist level multipliers sets the motor power as a factor of applied torque 
 | 0 || Torque Assist Enable || 5 ||  Select if you wish to enable the Power Assist riding mode.
 <br><br>
 |-
-| 1 || Assist level 1 multiplier || 0.5 || The value with which the pedal torque is multiplied with.
+| 1 || Number of assist levels || 5 ||  Select the desired number of assist levels from a minimum of 1 to a maximum of 9.
+<br><br>
+|-
+| 2 || Assist level 1 multiplier || 0.5 || The value with which the pedal torque is multiplied with.
 <br><br>
 |-
 | X || Assist level X multiplier || .... || The desired multiplier for assist level X.
@@ -418,6 +421,9 @@ The assist level multipliers sets the motor power as a factor of applied torque 
 | '''Submenu number''' || '''Configuration name''' || '''Default value''' || '''Description'''
 |-
 | 0 || Torque Assist Enable || 5 ||  Select if you wish to enable the Power Assist riding mode.
+<br><br>
+|-
+| 3 || Number of assist levels || 5 ||  Select the desired number of assist levels from a minimum of 1 to a maximum of 9.
 <br><br>
 |-
 | 1 || Assist level 1 multiplier || 0.5 || The value with which the pedal torque is multiplied with.
