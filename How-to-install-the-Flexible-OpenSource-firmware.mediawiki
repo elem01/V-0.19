@@ -1,4 +1,6 @@
-These notes will help you to install the Flexible Open Source firmware on the TSDZ2 motor controller and on the KT-LCD3 or Bafang 850C / DPC-14 LCD displays.
+These notes will help you to install the Flexible Open Source firmware on the TSDZ2 motor controller and on the KT-LCD3 or Bafang 850C LCD.
+
+NOTE: Bafang 850C LCD is the same model as DPC-14 LCD.
 
 '''IMPORTANT NOTES:'''
 * Installing this firmware will void your warranty of TSDZ2 motor and KT-LCD3 or Bafang 850C LCD displays
