@@ -644,18 +644,21 @@ Depending on type of motor, set appropriate value so that FOC calculations are c
 | 2 || Current ramp up || 5 amps per second|| Set value after user preference. Higher value corresponds to faster acceleration but also greater forces on the mid drive. Be mindful not to select too fast acceleration.
 <br><br>
 |-
-| 3 || Motor assistance startup without pedal rotation || 0 || Select (1) to enable or select (0) to disable. Recommended to keep disabled (0) if you do not have brake sensors installed.
+| 3 || Pedal torque conversion factor || 67 || Set the pedal torque conversion so that the displayed weight is correct in the submenu number 4. This is so that human power measurement is correct. It does not affect the resolution nor range of the torque sensor. To change the accuracy and range of the torque sensor you instead need to calibrate the hardware. See: LINK TO TORQUE CALIBRATION.
 <br><br>
 |-
-| 4 || Temperature limit or throttle || 0 || This sub menu is by default set to (0). This means neither throttle nor motor temperature limit function is enabled. Set (1) to enable the motor temperature control or set (2) to enable the throttle.  
+| 4 || Weight on pedal || - || Here you can see the weight on the pedal. If it is not correct try adjusting the Pedal torque conversion factor in submenu number 3.
+<br><br>
+|-
+| 5 || Temperature limit or throttle || 0 || This sub menu is by default set to (0). This means neither throttle nor motor temperature limit function is enabled. Set (1) to enable the motor temperature control or set (2) to enable the throttle.  
 <br><br>
 NOTE: Do NOT enable the throttle if you have installed the [[How to install motor temperature sensor|motor temperature sensor]]. If you have the sensor installed you need to either have the motor temperature limit function enabled or everything disabled, i.e. set to either (1) or (0).
 <br><br>
 |-
-| 5 || Minimum temperature || 75 °C || Set the minimum motor temperature at which the power will start to be limited.
+| 6 || Minimum temperature || 75 °C || Set the minimum motor temperature at which the power will start to be limited.
 <br><br>
 |-
-| 6 || Maximum temperature || 85 °C || Set the maximum motor temperature at which the power will be completely blocked, i.e. no motor assistance.
+| 7 || Maximum temperature || 85 °C || Set the maximum motor temperature at which the power will be completely blocked, i.e. no motor assistance.
 <br><br>
 |}
 <br>
