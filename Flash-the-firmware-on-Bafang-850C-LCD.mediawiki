@@ -2,6 +2,8 @@ __TOC__
 
 Bafang 850C LCD is a color LCD that is manufactured by http://aptdevelop.com/.
 
+It works from 24V up to 58V (7S up to 14S) battery packs.
+
 Download the firmware binary file from here: https://github.com/OpenSource-EBike-firmware/TSDZ2-Smart-EBike/releases/tag/v0.19.0
 
 Our OpenSource firmware repository: https://github.com/OpenSource-EBike-firmware/Color_LCD/tree/master/Bafang_LCD_850C/Bafang_LCD_850C_firmware
