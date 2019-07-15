@@ -2,7 +2,7 @@ These notes will help you to install the Flexible Open Source firmware on the TS
 * Bafang 850C (320*480 pixels, 3.5 inches color LCD)
 * KT-LCD3 (black and white segment display)
 
-The Bafang 850C display has much more memory and flexibility in showing information than KT-LCD3, has more features and is the recommend display. 
+The Bafang 850C display is the recommended because it has much more memory (and because of that has more features) and flexibility in showing information.
 
 '''IMPORTANT NOTES:'''
 * Installing this firmware will void your warranty of TSDZ2 motor and display
