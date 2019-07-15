@@ -1,5 +1,5 @@
 These notes will help you to install the Flexible Open Source firmware on the TSDZ2 motor controller and on the following displays:
-* Bafang 850C (320*480, 3.5'' color LCD)
+* Bafang 850C (320*480, 3.5 inches color LCD)
 * KT-LCD3 (black and white segment display)
 
 '''IMPORTANT NOTES:'''
