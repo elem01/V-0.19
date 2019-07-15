@@ -1,16 +1,18 @@
-These notes will help you to install the Flexible Open Source firmware on the TSDZ2 motor controller and on the KT-LCD3 or Bafang 850C LCD.
+These notes will help you to install the Flexible Open Source firmware on the TSDZ2 motor controller and on the following displays:
+* Bafang 850C (320*480, 3.5'' color LCD)
+* KT-LCD3 (black and white segment display)
 
 '''IMPORTANT NOTES:'''
-* Installing this firmware will void your warranty of TSDZ2 motor and KT-LCD3 or Bafang 850C LCD displays
+* Installing this firmware will void your warranty of TSDZ2 motor and display
 * There is no guarantee using this firmware, please use at your own risk
 
 __TOC__
 
 = Introduction =
 
-To use this firmware, other than owning a TSDZ2 motor, you need will need to buy the KT-LCD3 display or Bafang 850C LCD display.
+To use this firmware, other than owning a TSDZ2 motor, you need will need to buy the Bafang 850C or KT-LCD3 display.
 
-Although KT-LCD3 and Bafang 850C LCD signals are compatible with TSDZ2 motor controller, they have different connectors so you will have to connect this LCD cable wires to the original TSDZ2 display cable by yourself, but this is a simple soldering task.
+Although this displays signals are compatible with TSDZ2 motor controller, they have different connectors so you will have to connect this display cable wires to the original TSDZ2 display cable by yourself, but this is a simple soldering task.
 
 '''[https://www.youtube.com/watch?v=nj8GxKHut3o Jbalat did a series of videos explaining how to install the firmware]''' (please take note that some links on the video may be out of date).
 
