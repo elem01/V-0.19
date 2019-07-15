@@ -1,8 +1,6 @@
 __TOC__
 
-Bafang 850C LCD is a color LCD that is manufactured by http://aptdevelop.com/.
-
-It works from 24V up to 52V (7S up to 14S) battery packs.
+'''WARNING:''' There is no way to backup the original firmware. Once you erase the original firmware you will never be able to go back.
 
 Download the firmware binary file from here: https://github.com/OpenSource-EBike-firmware/TSDZ2-Smart-EBike/releases/tag/v0.19.0
 
@@ -14,7 +12,9 @@ Our OpenSource firmware repository: https://github.com/OpenSource-EBike-firmware
 # remove the hard plastic layer that is on top of the LCD
 # remove the 2 little screws that fix the LCD and the board to the case
 
-= Flash and debug =
+= Flash the firmware =
+
+== JTAG SWD connector ==
 
 The JTAG SWD pins are available on the board, on the pads as seen on next picture, with the following JTAG pins:
 
@@ -35,6 +35,20 @@ The JTAG SWD pins are available on the board, on the pads as seen on next pictur
 
 [[https://github.com/OpenSource-EBike-firmware/Color_LCD/raw/master/Bafang_color_LCD_850C/Bafang_850C_board-JTAG.jpg]]
 
-To flash the firmware, use the software tool that works on your operation system to flash the STM32F103 microcontrollers. On Linux, for instance, you can use the stm32flash.
+== Software to flash ==
+
+To flash the firmware, use the software tool that works on your operation system to flash the STM32F103 microcontrollers.
 
 On the very first time, you will need to first erase and/or unlock the microcontroller.
+
+===Linux===
+
+Use ''stm32flash'' or ''OpenOCD''.<br>
+''OpenOCD'' is usefull if you want to develop and do debug otherwise the ''stm32flash'' is the most indicated.
+
+===Windows===
+
+Use the '''STM32 ST-LINK Utility'''. Here the main steps:
+* Target Chip erase
+* Load bin file (load the firmware bin file)
+* Target program
