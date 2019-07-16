@@ -10,7 +10,7 @@ NOTE: the wires from the STLink should be short, like 10 centimeters, or you wil
 
 == To connect directly: ==
 
-This is quite straightforward using female-ended jumper cables as are typically supplied with the STMLink adapter.  See [[[[https://youtu.be/S2SRKu6-Qyw|this Youtube video]], but in summary
+This is quite straightforward using female-ended jumper cables as are typically supplied with the STMLink adapter.  See [https://youtu.be/S2SRKu6-Qyw|this Youtube video], but in summary
 
 # Remove the black plastic ends from one end of the jumper leads by lifting the small retaining tab and gently slipping them off to leave the metal connector underneath
 # put heatshrink over the metal ends to prevent shorts (not essential, but wise)
@@ -19,6 +19,8 @@ This is quite straightforward using female-ended jumper cables as are typically 
 ## GND to the bottom left pin
 ## SWIM to the bottom right pin
 ## 5V to the top pin
+
+[[https://github.com/OpenSource-EBike-firmware/TSDZ2_wiki/raw/master/TSDZ2_speed_Sensor_Pinout.jpg]]
 
 == To acquire and make a plug to connect: ==
 
